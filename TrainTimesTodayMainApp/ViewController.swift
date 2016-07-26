@@ -77,6 +77,8 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
          defaults!.setObject(station, forKey: "homeStation")
          defaults!.synchronize()
          
+         
+         
       } else if pickerView == workPickerView {
          
          defaults!.setObject(station, forKey: "workStation")
@@ -84,7 +86,9 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
          
       }
       
-      wormhole.passMessageObject("titleString", identifier: "messageIdentifier")
+      
+      wormhole.passMessageObject(["homeStation" : station], identifier: "stationChanged")
+      
 
    }
    

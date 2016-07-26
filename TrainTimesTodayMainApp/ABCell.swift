@@ -15,7 +15,9 @@ class ABCell: UITableViewCell {
       
       super.init(style: style, reuseIdentifier: reuseIdentifier)
       
-      backgroundColor = UIColor.blueColor()
+//      backgroundColor = UIColor.blueColor()
+      
+      self.textLabel?.textColor = UIColor.whiteColor()
    }
    
    required init?(coder aDecoder: NSCoder) {
