@@ -6,14 +6,14 @@
 target 'TrainTimesTodayMainApp' do
 
 pod 'SwiftyJSON'
-
+pod 'MMWormhole', '~> 2.0.0'
 
 end
 
 target 'TrainTimesTodayExtension' do
 
 pod 'SwiftyJSON'
-
+pod 'MMWormhole', '~> 2.0.0'
 
 end
 

@@ -84,5 +84,6 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "Pods-TrainTimesTodayMainApp/MMWormhole.framework"
   install_framework "Pods-TrainTimesTodayMainApp/SwiftyJSON.framework"
 fi

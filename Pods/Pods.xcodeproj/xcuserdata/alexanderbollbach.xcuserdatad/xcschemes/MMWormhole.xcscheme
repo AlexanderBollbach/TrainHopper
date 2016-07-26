@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '022A98B5B30EF2DA6716A75E'
-               BlueprintName = 'Pods-TrainTimesTodayMainApp'
+               BlueprintIdentifier = '145AE9DD12471902AB403F97'
+               BlueprintName = 'MMWormhole'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'Pods_TrainTimesTodayMainApp.framework'>
+               BuildableName = 'MMWormhole.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

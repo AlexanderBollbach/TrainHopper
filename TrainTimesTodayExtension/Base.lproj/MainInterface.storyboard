@@ -8,7 +8,7 @@
         <!--View Controller-->
         <scene sceneID="cM5-nl-tPz">
             <objects>
-                <viewController id="naS-FB-7as" customClass="ABViewController" customModule="TrainTimesExtension" sceneMemberID="viewController">
+                <viewController id="naS-FB-7as" customClass="ABViewController" customModule="TrainTimesTodayExtension" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1PG-Y3-t8J"/>
                         <viewControllerLayoutGuide type="bottom" id="OhW-it-BPc"/>

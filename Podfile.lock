@@ -1,10 +1,15 @@
 PODS:
+  - MMWormhole (2.0.0):
+    - MMWormhole/Core (= 2.0.0)
+  - MMWormhole/Core (2.0.0)
   - SwiftyJSON (2.3.2)
 
 DEPENDENCIES:
+  - MMWormhole (~> 2.0.0)
   - SwiftyJSON
 
 SPEC CHECKSUMS:
+  MMWormhole: 0cd3fd35a9118b2e2d762b499f54eeaace0be791
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
 
 COCOAPODS: 0.39.0

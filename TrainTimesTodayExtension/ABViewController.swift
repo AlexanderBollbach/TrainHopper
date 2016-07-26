@@ -8,11 +8,13 @@
 
 import UIKit
 import NotificationCenter
-
+import MMWormhole
 
 class ABViewController: UIViewController {
    
    
+   let wormhole = MMWormhole(applicationGroupIdentifier: "group.AB.TrainTimesApp", optionalDirectory: "wormhole")
+
    var stationsTableView: UITableView!
    
    var stationTimes = [String]()
@@ -29,6 +31,12 @@ class ABViewController: UIViewController {
       
     
       
+      wormhole.listenForMessageWithIdentifier("messageIdentifier", listener: { (messageObject) -> Void in
+         if let message: AnyObject = messageObject {
+         
+            self.loadButton.setTitle("changed", forState: .Normal)
+         }
+      })
       
       
       
@@ -37,10 +45,6 @@ class ABViewController: UIViewController {
       
       
       let tableviewFrame = CGRect(x: 0, y: 50, width: self.view.bounds.width, height: 550)
-      
-      
-      
-      
       let buttonFrame = CGRect(x: 0, y: 0, width: self.view.bounds.width, height: 50)
       
       loadButton = UIButton(frame: buttonFrame)
@@ -56,13 +60,7 @@ class ABViewController: UIViewController {
       
       stationsTableView.dataSource = self
       
-      
-      UIView.animateWithDuration(0.4, animations: {
-         self.loadButton.backgroundColor = UIColor.purpleColor()
-      }) { (true) in
-         self.loadButton.backgroundColor = UIColor.clearColor()
-      }
-      
+   
       
    }
    

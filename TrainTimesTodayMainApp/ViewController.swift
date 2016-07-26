@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MMWormhole
 
 import SwiftyJSON
 
@@ -15,6 +16,9 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
    @IBOutlet weak var homePickerView: UIPickerView!
    @IBOutlet weak var workPickerView: UIPickerView!
    
+   
+   let wormhole = MMWormhole(applicationGroupIdentifier: "group.AB.TrainTimesApp", optionalDirectory: "wormhole")
+
    
    let pickerData = ["NYK", "BWN"]
   
@@ -26,7 +30,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
       super.viewDidLoad()
       
       
-      
+
     
       httpGet { (yyy) in
          
@@ -79,6 +83,9 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
          defaults!.synchronize()
          
       }
+      
+      wormhole.passMessageObject("titleString", identifier: "messageIdentifier")
+
    }
    
    
