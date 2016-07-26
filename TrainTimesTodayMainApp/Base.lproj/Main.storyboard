@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TrainTimesToday" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qnm-bE-Dlf">
+                                <rect key="frame" x="70" y="101" width="460" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Z8l-UC-dnf"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="coV-K7-k5I"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="e5o-ep-eJn"/>
+                                </connections>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick Home Station" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ffJ-IK-EyA">
+                                <rect key="frame" x="70" y="46" width="460" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="9UA-yL-Vku"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick A Work Station" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s9W-jR-h1J">
+                                <rect key="frame" x="70" y="231" width="460" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Txu-K9-Qmw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WOx-SM-fy5">
+                                <rect key="frame" x="70" y="282" width="460" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="K86-WL-GIg"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="TDG-sM-UBS"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="PtC-eD-50N"/>
+                                </connections>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.58785468340000002" green="0.98535603279999995" blue="0.0048736236059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ffJ-IK-EyA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="1S9-fE-3mJ"/>
+                            <constraint firstItem="WOx-SM-fy5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="9AJ-yK-uBC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="s9W-jR-h1J" secondAttribute="trailing" constant="50" id="G8K-Mj-48q"/>
+                            <constraint firstItem="ffJ-IK-EyA" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="26" id="IzY-mK-Km3"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ffJ-IK-EyA" secondAttribute="trailing" constant="50" id="R8A-ST-scR"/>
+                            <constraint firstItem="Qnm-bE-Dlf" firstAttribute="top" secondItem="ffJ-IK-EyA" secondAttribute="bottom" constant="30" id="SOe-nO-4Th"/>
+                            <constraint firstItem="s9W-jR-h1J" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="Vp3-oi-aGw"/>
+                            <constraint firstItem="s9W-jR-h1J" firstAttribute="top" secondItem="Qnm-bE-Dlf" secondAttribute="bottom" constant="30" id="Y67-gk-Ggg"/>
+                            <constraint firstItem="WOx-SM-fy5" firstAttribute="top" secondItem="s9W-jR-h1J" secondAttribute="bottom" constant="30" id="bWU-Wu-JK5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Qnm-bE-Dlf" secondAttribute="trailing" constant="50" id="mON-e9-JyK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="WOx-SM-fy5" secondAttribute="trailing" constant="50" id="oqA-e7-Hxa"/>
+                            <constraint firstItem="Qnm-bE-Dlf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="xme-jU-1sK"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="homePickerView" destination="Qnm-bE-Dlf" id="npV-1I-uCu"/>
+                        <outlet property="workPickerView" destination="WOx-SM-fy5" id="msi-7G-NsG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="425" y="147"/>
+        </scene>
+    </scenes>
+</document>
