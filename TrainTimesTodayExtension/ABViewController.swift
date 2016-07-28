@@ -13,24 +13,24 @@ import MMWormhole
 class ABViewController: UIViewController {
    
    
+   @IBOutlet weak var tableView: UITableView!
    let wormhole = MMWormhole(applicationGroupIdentifier: "group.AB.TrainTimesApp", optionalDirectory: "wormhole")
    var stationsTableView: UITableView!
    var stationTimes = [String]()
-   var lirrAPI: LIRR_API!
+   var lirrAPI = LIRR_API()
    
    
    
    override func viewDidLoad() {
       super.viewDidLoad()
       
-      lirrAPI = LIRR_API()
-      
-      
       
       wormhole.listenForMessageWithIdentifier("stationChanged", listener: { (messageObject) -> Void in
          
          
          self.updateStationTimes()
+         
+         
          //         if let message: AnyObject = messageObject {
          //
          //
@@ -45,26 +45,18 @@ class ABViewController: UIViewController {
       })
       
       
+//      self.stationsTableView.registerClass(ABCell.self, forCellReuseIdentifier: "ABCell")
       
       
-      preferredContentSize = CGSizeMake(0, 600)
       
+ //     preferredContentSize = CGSizeMake(0, 600)
       
-      let tableviewFrame = CGRect(x: 0, y: 0, width: self.view.bounds.width, height: 550)
-      
-      stationsTableView = UITableView(frame: tableviewFrame, style: .Plain)
-      stationsTableView.dataSource = self
-      view.addSubview(stationsTableView)
-      
+    
       
    }
    
    
-   
-   func loadButtonPressed() {
-      updateStationTimes()
-   }
-   
+
    
    
    
@@ -89,7 +81,11 @@ class ABViewController: UIViewController {
       lirrAPI.httpGet { asdf in
         
          self.stationTimes = asdf
-         self.stationsTableView.reloadData()
+         self.tableView.reloadData()
+         
+         
+         
+         self.preferredContentSize = self.tableView.contentSize
       }
       
       
@@ -102,12 +98,12 @@ class ABViewController: UIViewController {
       // If there's no update required, use NCUpdateResult.NoData
       // If there's an update, use NCUpdateResult.NewData
       
-      updateStationTimes()
+    //  updateStationTimes()
       
       completionHandler(NCUpdateResult.NewData)
    }
    
-   
+//   
 //   func widgetMarginInsetsForProposedMarginInsets(defaultMarginInsets: UIEdgeInsets) -> (UIEdgeInsets) {
 //      return UIEdgeInsetsZero
 //   }
@@ -153,8 +149,13 @@ extension ABViewController: UITableViewDataSource {
    
    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
       
-      let cell = ABCell(style: .Default, reuseIdentifier: "ABCellId")
-      cell.textLabel?.text = self.stationTimes[indexPath.row]
+
+      let cell = tableView.dequeueReusableCellWithIdentifier("ABCell", forIndexPath: indexPath) as! ABCell
+      
+      cell.label1.text = self.stationTimes[indexPath.row]
+      
+      
+     
       return cell
    }
    

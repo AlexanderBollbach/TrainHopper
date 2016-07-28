@@ -18,7 +18,6 @@
 		29174DEF1D46EAA30013BB43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290406BC1D331E0200A76B49 /* AppDelegate.swift */; };
 		29174DF01D46EAA80013BB43 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290406BE1D331E0200A76B49 /* ViewController.swift */; };
 		29BC93B31D47131E00541481 /* ABCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BC93B21D47131E00541481 /* ABCell.swift */; };
-		29BC93B41D47132400541481 /* ABHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291A07CD1D443B5600435546 /* ABHeaderView.swift */; };
 		29BC93B51D47132600541481 /* ABViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2949592B1D445E0B00C854DB /* ABViewController.swift */; };
 		29BC93B61D47132900541481 /* LIRR_API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F7C5871D446C53006DD03B /* LIRR_API.swift */; };
 		29F7C58B1D457534006DD03B /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29F7C58A1D457534006DD03B /* SwiftyJSON.framework */; };
@@ -65,7 +64,6 @@
 		290406DC1D331E0B00A76B49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../TrainTimesTodayExtension/Info.plist; sourceTree = "<group>"; };
 		29174DEA1D46E4530013BB43 /* TrainTimesTodayExtension.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = TrainTimesTodayExtension.entitlements; path = TrainTimesTodayExtension/TrainTimesTodayExtension.entitlements; sourceTree = SOURCE_ROOT; };
 		29174DED1D46E45F0013BB43 /* TrainTimesTodayMainApp.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = TrainTimesTodayMainApp.entitlements; path = TrainTimesTodayMainApp/TrainTimesTodayMainApp.entitlements; sourceTree = SOURCE_ROOT; };
-		291A07CD1D443B5600435546 /* ABHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ABHeaderView.swift; path = ../TrainTimesTodayExtension/ABHeaderView.swift; sourceTree = "<group>"; };
 		2949592B1D445E0B00C854DB /* ABViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ABViewController.swift; path = ../TrainTimesTodayExtension/ABViewController.swift; sourceTree = "<group>"; };
 		29BC93B21D47131E00541481 /* ABCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ABCell.swift; sourceTree = "<group>"; };
 		29F7C5871D446C53006DD03B /* LIRR_API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LIRR_API.swift; path = ../TrainTimesTodayExtension/LIRR_API.swift; sourceTree = "<group>"; };
@@ -146,11 +144,10 @@
 		290406D61D331E0B00A76B49 /* TrainTimesTodayExtension */ = {
 			isa = PBXGroup;
 			children = (
-				29BC93B21D47131E00541481 /* ABCell.swift */,
 				29174DEA1D46E4530013BB43 /* TrainTimesTodayExtension.entitlements */,
 				290406D91D331E0B00A76B49 /* MainInterface.storyboard */,
 				290406DC1D331E0B00A76B49 /* Info.plist */,
-				291A07CD1D443B5600435546 /* ABHeaderView.swift */,
+				29BC93B21D47131E00541481 /* ABCell.swift */,
 				2949592B1D445E0B00C854DB /* ABViewController.swift */,
 				29F7C5871D446C53006DD03B /* LIRR_API.swift */,
 			);
@@ -226,6 +223,7 @@
 					290406B81D331E0200A76B49 = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = 6UUR9483U2;
+						LastSwiftMigration = 0800;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
@@ -235,6 +233,7 @@
 					290406D11D331E0B00A76B49 = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = 6UUR9483U2;
+						LastSwiftMigration = 0800;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
@@ -393,7 +392,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				29BC93B51D47132600541481 /* ABViewController.swift in Sources */,
-				29BC93B41D47132400541481 /* ABHeaderView.swift in Sources */,
 				29BC93B31D47131E00541481 /* ABCell.swift in Sources */,
 				29BC93B61D47132900541481 /* LIRR_API.swift in Sources */,
 			);
@@ -483,10 +481,12 @@
 				CODE_SIGN_ENTITLEMENTS = TrainTimesTodayMainApp/TrainTimesTodayMainApp.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
 				INFOPLIST_FILE = "$(SRCROOT)/TrainTimesTodayMainApp/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "-6UUR9483U2.TrainTimesToday";
 				PRODUCT_NAME = TrainTimesToday;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -504,6 +504,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

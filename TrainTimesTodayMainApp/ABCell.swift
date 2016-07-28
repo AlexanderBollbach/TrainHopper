@@ -10,24 +10,24 @@ import UIKit
 
 class ABCell: UITableViewCell {
    
+   @IBOutlet weak var label1: UILabel!
    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
       
       
       super.init(style: style, reuseIdentifier: reuseIdentifier)
       
-//      backgroundColor = UIColor.blueColor()
       
-      self.textLabel?.textColor = UIColor.whiteColor()
    }
    
    required init?(coder aDecoder: NSCoder) {
-      fatalError("init(coder:) has not been implemented")
+      super.init(coder: aDecoder)
+
    }
    
    
    override func awakeFromNib() {
       print("test from all")
-      self.backgroundColor = UIColor.blueColor()
+//      self.backgroundColor = UIColor.blueColor()
    }
 
 }

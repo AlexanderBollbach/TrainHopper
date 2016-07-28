@@ -8,43 +8,90 @@
 
 import UIKit
 import MMWormhole
-
 import SwiftyJSON
 
-class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
 
+struct Station {
+   
+   var FullName: String!
+   var Abbr: String!
+}
+
+
+
+class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+   
    @IBOutlet weak var homePickerView: UIPickerView!
    @IBOutlet weak var workPickerView: UIPickerView!
    
    
-   let wormhole = MMWormhole(applicationGroupIdentifier: "group.AB.TrainTimesApp", optionalDirectory: "wormhole")
-
+   // TV datasource
+   var stations = [Station]()
    
-   let pickerData = ["NYK", "BWN"]
-  
    
+   
+   // IPC setup
    let defaults = NSUserDefaults(suiteName: "group.AB.TrainTimesApp")
-
+   let wormhole = MMWormhole(applicationGroupIdentifier: "group.AB.TrainTimesApp", optionalDirectory: "wormhole")
+   
+   
+   
+   
+   
+   
+   
    
    override func viewDidLoad() {
       super.viewDidLoad()
       
       
-
-    
-      httpGet { (yyy) in
+      httpGet { (stations) in
+         
+         self.stations = stations.sort{ $0.FullName < $1.FullName }
+         
+         self.homePickerView.reloadAllComponents()
+         self.workPickerView.reloadAllComponents()
+         
+         
+         self.homePickerView.selectRow(6, inComponent: 0, animated: true)
+         self.workPickerView.selectRow(92, inComponent: 0, animated: true)
+         
+         
+         self.synchronizeStations()
          
       }
       
       
       
- 
       
- 
+      
       
    }
-
+   
+   
+   func synchronizeStations() {
       
+      
+      let homeRow = self.homePickerView.selectedRowInComponent(0)
+      let workRow = self.workPickerView.selectedRowInComponent(0)
+      
+      let pickedHomeStation = stations[homeRow].Abbr
+      let pickedWorkStation = stations[workRow].Abbr
+      
+      defaults!.setObject(pickedHomeStation, forKey: "homeStation")
+      defaults!.setObject(pickedWorkStation, forKey: "workStation")
+      defaults!.synchronize()
+      
+      // notify Extension
+      wormhole.passMessageObject("test", identifier: "stationChanged")
+      
+      
+      
+   }
+   
+   
+   
+   
    
    
    
@@ -58,38 +105,36 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
       return 1
    }
    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-      return pickerData.count
+      return stations.count
    }
-   
    
    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-      return pickerData[row]
+      return stations[row].FullName
    }
+   
+   
+   
    
    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
       
-      let station = pickerData[row]
+      let station = stations[row].Abbr
       
-//      print(pickerData[row])
       
       if pickerView == homePickerView {
         
-         defaults!.setObject(station, forKey: "homeStation")
-         defaults!.synchronize()
          
          
          
       } else if pickerView == workPickerView {
          
-         defaults!.setObject(station, forKey: "workStation")
-         defaults!.synchronize()
+        
          
       }
       
+    
       
-      wormhole.passMessageObject(["homeStation" : station], identifier: "stationChanged")
       
-
+      self.synchronizeStations()
    }
    
    
@@ -108,25 +153,18 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
    
    
    
-
+   
 }
 
 
 
 extension ViewController {
    
-   
-   
-   
-   
-   func httpGet(completion: [String]->())  {
+   func httpGet(completion: [Station]->())  {
       
       
-      var departTimes = [String]()
-      
+      var Stations = [Station]()
       let getStationsReq = "https://traintime.lirr.org/api/StationsAll?api_key=742b288047c382c66326a26f7f5e4e4a"
-      
-      
       
       let request = NSMutableURLRequest(URL: NSURL(string:
          getStationsReq)!)
@@ -139,28 +177,15 @@ extension ViewController {
          
          
          let jsonSw = JSON(data: data!)
-         
-         
          let stations = jsonSw["Stations"]
          
          for (index,subJson):(String, JSON) in stations {
-            
-           
-            
-            print(subJson["NAME"])
-            
+            Stations.append(Station(FullName: subJson["NAME"].stringValue, Abbr: subJson["ABBR"].stringValue))
          }
-         
-         
-         
          
          dispatch_async(dispatch_get_main_queue()) {
-            
-            completion(departTimes)
+            completion(Stations)
          }
-         
-         
-         
          
       }
       task.resume()

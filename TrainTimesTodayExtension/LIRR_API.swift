@@ -43,10 +43,16 @@ class LIRR_API {
             
             let legs = subJson["LEGS"][0]
             
-            let departTime = legs["DEPART_TIME"].stringValue
+            let stops = legs["STOPS"].arrayValue
+            
+            let initialStop = stops[0].dictionaryValue
+            
+            let initialStopTime = initialStop["TIME"]?.stringValue
+            
+//            let departTime = legs["DEPART_TIME"].stringValue
 //            let arriveTime = legs["ARRIVE_TIME"].stringValue
             
-            departTimes.append(departTime)
+            departTimes.append(initialStopTime!)
 
          }
          
