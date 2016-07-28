@@ -27,7 +27,6 @@ class ABViewController: UIViewController {
       
       wormhole.listenForMessageWithIdentifier("stationChanged", listener: { (messageObject) -> Void in
          
-         
          self.updateStationTimes()
          
          
