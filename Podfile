@@ -5,7 +5,7 @@
 
 target 'TrainTimesTodayMainApp' do
 
-pod 'SwiftyJSON'
+pod 'SwiftyJSON’
 pod 'MMWormhole', '~> 2.0.0'
 
 end

@@ -28,7 +28,7 @@
                                 </connections>
                             </pickerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick Home Station" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ffJ-IK-EyA">
-                                <rect key="frame" x="70" y="46" width="460" height="25"/>
+                                <rect key="frame" x="70" y="46" width="256" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="9UA-yL-Vku"/>
                                 </constraints>
@@ -55,14 +55,25 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="PtC-eD-50N"/>
                                 </connections>
                             </pickerView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fvv-nu-vyE">
+                                <rect key="frame" x="351" y="43.5" width="179" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="M0S-P1-idq"/>
+                                    <constraint firstAttribute="width" constant="179" id="Or1-LU-wKi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.58785468340000002" green="0.98535603279999995" blue="0.0048736236059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="ffJ-IK-EyA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="1S9-fE-3mJ"/>
+                            <constraint firstItem="fvv-nu-vyE" firstAttribute="leading" secondItem="ffJ-IK-EyA" secondAttribute="trailing" constant="25" id="73v-1N-dhE"/>
                             <constraint firstItem="WOx-SM-fy5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="9AJ-yK-uBC"/>
                             <constraint firstAttribute="trailingMargin" secondItem="s9W-jR-h1J" secondAttribute="trailing" constant="50" id="G8K-Mj-48q"/>
                             <constraint firstItem="ffJ-IK-EyA" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="26" id="IzY-mK-Km3"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="ffJ-IK-EyA" secondAttribute="trailing" constant="50" id="R8A-ST-scR"/>
+                            <constraint firstItem="fvv-nu-vyE" firstAttribute="centerY" secondItem="ffJ-IK-EyA" secondAttribute="centerY" id="Llu-zh-Yif"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ffJ-IK-EyA" secondAttribute="trailing" constant="254" id="R8A-ST-scR"/>
                             <constraint firstItem="Qnm-bE-Dlf" firstAttribute="top" secondItem="ffJ-IK-EyA" secondAttribute="bottom" constant="30" id="SOe-nO-4Th"/>
                             <constraint firstItem="s9W-jR-h1J" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="Vp3-oi-aGw"/>
                             <constraint firstItem="s9W-jR-h1J" firstAttribute="top" secondItem="Qnm-bE-Dlf" secondAttribute="bottom" constant="30" id="Y67-gk-Ggg"/>

@@ -1,924 +1,2440 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		12C878FE80923B91D4BD38D7A984B3AC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0385DAE07D97B0EDCD51C5FDA6E1153 /* Foundation.framework */; };
-		1F812A95D45B384D5F672EA4FDC9CEBD /* MMWormholeCoordinatedFileTransiting.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D3071113BEB7BEA7D4866B37AC5687 /* MMWormholeCoordinatedFileTransiting.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		250BE8463D2386CA584C71F3BE643C6D /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C90C0CDB102A327864F38F27363470C0 /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		33618BBEB40ED0B04402BD45D0A12D96 /* MMWormholeSessionMessageTransiting.h in Headers */ = {isa = PBXBuildFile; fileRef = 93E23DC92E22B4052DE36E886BC63DE5 /* MMWormholeSessionMessageTransiting.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5C97E326882C3B079F6BCFEF2B61B8DD /* Pods-TrainTimesTodayMainApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3432DD03E32A9FE86161B51C7A1DD1B6 /* Pods-TrainTimesTodayMainApp-dummy.m */; };
-		64EFFD28CE03D338816716C8C78AF78D /* MMWormholeSessionFileTransiting.m in Sources */ = {isa = PBXBuildFile; fileRef = C05978CBC738D57FB5FC4B883EC3352B /* MMWormholeSessionFileTransiting.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		762F18A4394FA15213070BDF993A2B48 /* MMWormholeFileTransiting.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D4AABD780948F9FF32EFC1F850DB423 /* MMWormholeFileTransiting.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		84B37CAEC1716055BEA3DA3795BC8A3C /* MMWormholeCoordinatedFileTransiting.h in Headers */ = {isa = PBXBuildFile; fileRef = AE7939428941AE127DDAEDA988277748 /* MMWormholeCoordinatedFileTransiting.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8CA202DE2B82A4FA9F6433D0034EA12E /* MMWormholeSession.h in Headers */ = {isa = PBXBuildFile; fileRef = 644A23616282C4424172BCD9B367F273 /* MMWormholeSession.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		96B34A6BCC42E8575B1D4A4BD779F499 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC95DB5B6B41B4E52724ED86E16DF6BF /* SwiftyJSON.swift */; };
-		9760CBFA25C5EC99931483285F5C5396 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0385DAE07D97B0EDCD51C5FDA6E1153 /* Foundation.framework */; };
-		97BD31BB166AC5135ED7232E94EFF9C8 /* MMWormholeSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 35D315E5925564DE683D1AC8BB26CF86 /* MMWormholeSession.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		B07198FCDB0B6AA461872F1299CD9FCB /* MMWormholeFileTransiting.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A6A939F19F806E26F85A9503FAADE7 /* MMWormholeFileTransiting.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		B21C5C642DAA9F0A3A3D43BF71FA5DA5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0385DAE07D97B0EDCD51C5FDA6E1153 /* Foundation.framework */; };
-		B32F2854885A96F2FD1CE5C0406BC11C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0385DAE07D97B0EDCD51C5FDA6E1153 /* Foundation.framework */; };
-		C01DBAAF977B02CB9C4E82028B994C62 /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5186D7B3B8852F3F4544CADB74747FDB /* WatchConnectivity.framework */; };
-		CBA8D10CE8113372FC75242EAB036F8E /* Pods-TrainTimesTodayMainApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0322BDD4915684D791E6A21992425D17 /* Pods-TrainTimesTodayMainApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CC31FA025B3936FEC27592CC01AC4A5F /* MMWormholeSessionFileTransiting.h in Headers */ = {isa = PBXBuildFile; fileRef = F46C7F422647FC2EB40A91F28D45842C /* MMWormholeSessionFileTransiting.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D06E287165536614B66FA045D8A5D99A /* MMWormholeTransiting.h in Headers */ = {isa = PBXBuildFile; fileRef = 24AE826A7A89F54AC56B944C6A8A7C64 /* MMWormholeTransiting.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D0BA6B1229447714B1B888BC5A6EBFEF /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BC92B60080CF11024B78696E4E0678B /* SwiftyJSON-dummy.m */; };
-		D805198977203C5B90EE629B35CA45A8 /* Pods-TrainTimesTodayExtension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D69F725FDA08C3DD759C32C42B3D0B8F /* Pods-TrainTimesTodayExtension-dummy.m */; };
-		DE9D89BFECB559F825F1BC2506FB1695 /* MMWormhole.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E953D0AD96DDCC74F1F00F5D38901F8 /* MMWormhole.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DFEEABC8C678127F23965CE3AE4B9F67 /* MMWormholeSessionContextTransiting.h in Headers */ = {isa = PBXBuildFile; fileRef = 980FD0CCD9B871314ADCC3C5DD4B8E96 /* MMWormholeSessionContextTransiting.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F3E82A13FF8E6373C29FCB6C70B9CA14 /* MMWormholeSessionContextTransiting.m in Sources */ = {isa = PBXBuildFile; fileRef = D7FAC0F2DE0BC4A2D2A9F77487DE47CA /* MMWormholeSessionContextTransiting.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		F8D371C19203C82CAE29F749C845484A /* MMWormhole.m in Sources */ = {isa = PBXBuildFile; fileRef = A06685B79369A596612036B0D68260F3 /* MMWormhole.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		FC0CF3F2978060186204610D8D21DB9C /* MMWormhole-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 779E1097BC1B70DE7E3A1B1AE3491865 /* MMWormhole-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FD8C3A12053BBFE6526E99CF6FD0B9C0 /* MMWormhole-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B30B117E782B73F51027C6BBBE1CB7 /* MMWormhole-dummy.m */; };
-		FD964DF641A3F771E9A3686586108445 /* MMWormholeSessionMessageTransiting.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F538C52753098D8BFB5F350C2261D91 /* MMWormholeSessionMessageTransiting.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		FE5A2EADED9F58A5A8F911FF914477AC /* Pods-TrainTimesTodayExtension-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D1E82BC0630139248DCB31D0898822 /* Pods-TrainTimesTodayExtension-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		625812E661FD45FC909EAB3CC7154543 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = DA2550D7D94491C4B4EA8F3435FEEC4B;
-			remoteInfo = MMWormhole;
-		};
-		7B2E0A1EDF271697976916056F5C4897 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = DA2550D7D94491C4B4EA8F3435FEEC4B;
-			remoteInfo = MMWormhole;
-		};
-		B263B742E9F758A0C3D36C2E1B9BACE1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 208B040A48ADD8C28EC2D653C77EFE41;
-			remoteInfo = SwiftyJSON;
-		};
-		DC75BCF46D5482EF83A3ACC33990C22B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 208B040A48ADD8C28EC2D653C77EFE41;
-			remoteInfo = SwiftyJSON;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		0322BDD4915684D791E6A21992425D17 /* Pods-TrainTimesTodayMainApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TrainTimesTodayMainApp-umbrella.h"; sourceTree = "<group>"; };
-		03A6A939F19F806E26F85A9503FAADE7 /* MMWormholeFileTransiting.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMWormholeFileTransiting.m; path = Source/MMWormholeFileTransiting.m; sourceTree = "<group>"; };
-		04A2A3CCDE0D7B7E0BE2F1945FB82F24 /* MMWormhole-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MMWormhole-prefix.pch"; sourceTree = "<group>"; };
-		06DE8A755E4274977DD7AA11BC166429 /* Pods-TrainTimesTodayExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TrainTimesTodayExtension.release.xcconfig"; sourceTree = "<group>"; };
-		128A6ED8E268954797ECDEE1A3128871 /* Pods-TrainTimesTodayExtension-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TrainTimesTodayExtension-acknowledgements.markdown"; sourceTree = "<group>"; };
-		14D1E82BC0630139248DCB31D0898822 /* Pods-TrainTimesTodayExtension-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TrainTimesTodayExtension-umbrella.h"; sourceTree = "<group>"; };
-		1BC92B60080CF11024B78696E4E0678B /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
-		24AE826A7A89F54AC56B944C6A8A7C64 /* MMWormholeTransiting.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMWormholeTransiting.h; path = Source/MMWormholeTransiting.h; sourceTree = "<group>"; };
-		2E953D0AD96DDCC74F1F00F5D38901F8 /* MMWormhole.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMWormhole.h; path = Source/MMWormhole.h; sourceTree = "<group>"; };
-		2F7C04D903AFCCD695C14826C141E209 /* Pods_TrainTimesTodayMainApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrainTimesTodayMainApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		303F6E9BA8DF0FE8A55CEA6730264C6A /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
-		323A03BC1B09D70C5ABD604324A24DE2 /* Pods_TrainTimesTodayExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrainTimesTodayExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		32B30B117E782B73F51027C6BBBE1CB7 /* MMWormhole-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MMWormhole-dummy.m"; sourceTree = "<group>"; };
-		3350E04E3A7E8C6659846BD0C958E32B /* Pods-TrainTimesTodayMainApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TrainTimesTodayMainApp.debug.xcconfig"; sourceTree = "<group>"; };
-		3432DD03E32A9FE86161B51C7A1DD1B6 /* Pods-TrainTimesTodayMainApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TrainTimesTodayMainApp-dummy.m"; sourceTree = "<group>"; };
-		35D315E5925564DE683D1AC8BB26CF86 /* MMWormholeSession.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMWormholeSession.m; path = Source/MMWormholeSession.m; sourceTree = "<group>"; };
-		39B373308283C10A65EB67EA04D71E56 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3C7CF82BCAFD6B49A8F4EED7E54251E5 /* MMWormhole.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MMWormhole.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3CCC9ECFD2C5152523990D8A51F22C16 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		41D3071113BEB7BEA7D4866B37AC5687 /* MMWormholeCoordinatedFileTransiting.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMWormholeCoordinatedFileTransiting.m; path = Source/MMWormholeCoordinatedFileTransiting.m; sourceTree = "<group>"; };
-		4F538C52753098D8BFB5F350C2261D91 /* MMWormholeSessionMessageTransiting.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMWormholeSessionMessageTransiting.m; path = Source/MMWormholeSessionMessageTransiting.m; sourceTree = "<group>"; };
-		5186D7B3B8852F3F4544CADB74747FDB /* WatchConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchConnectivity.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/WatchConnectivity.framework; sourceTree = DEVELOPER_DIR; };
-		59807A87A60A45F780AFADF85C12BC42 /* Pods-TrainTimesTodayMainApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TrainTimesTodayMainApp-acknowledgements.markdown"; sourceTree = "<group>"; };
-		5B428FDD927E5FB44CBBBEA7E579B30E /* Pods-TrainTimesTodayExtension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-TrainTimesTodayExtension.modulemap"; sourceTree = "<group>"; };
-		5B53E6BB76FAAE8916F3146A2395E893 /* MMWormhole.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = MMWormhole.modulemap; sourceTree = "<group>"; };
-		6127E357EC2426662D14D8B9D8E0C88B /* MMWormhole.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MMWormhole.xcconfig; sourceTree = "<group>"; };
-		644A23616282C4424172BCD9B367F273 /* MMWormholeSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMWormholeSession.h; path = Source/MMWormholeSession.h; sourceTree = "<group>"; };
-		6A4B48ACD91B060417065A65848E03C7 /* Pods-TrainTimesTodayMainApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-TrainTimesTodayMainApp.modulemap"; sourceTree = "<group>"; };
-		73C5F8C7D9429FF0240C5408D01E0770 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		779E1097BC1B70DE7E3A1B1AE3491865 /* MMWormhole-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MMWormhole-umbrella.h"; sourceTree = "<group>"; };
-		7A9A81323940EF6DB1D5983C99DEC506 /* Pods-TrainTimesTodayExtension-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TrainTimesTodayExtension-resources.sh"; sourceTree = "<group>"; };
-		860087D96ED6D323A63AE9FED331E780 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8ECDA7B65C8642873D3243754C50AD2C /* Pods-TrainTimesTodayMainApp-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TrainTimesTodayMainApp-resources.sh"; sourceTree = "<group>"; };
-		926FA9B3B9F6D257B660EEEBA210C48E /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
-		93E23DC92E22B4052DE36E886BC63DE5 /* MMWormholeSessionMessageTransiting.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMWormholeSessionMessageTransiting.h; path = Source/MMWormholeSessionMessageTransiting.h; sourceTree = "<group>"; };
-		980FD0CCD9B871314ADCC3C5DD4B8E96 /* MMWormholeSessionContextTransiting.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMWormholeSessionContextTransiting.h; path = Source/MMWormholeSessionContextTransiting.h; sourceTree = "<group>"; };
-		9D4AABD780948F9FF32EFC1F850DB423 /* MMWormholeFileTransiting.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMWormholeFileTransiting.h; path = Source/MMWormholeFileTransiting.h; sourceTree = "<group>"; };
-		A06685B79369A596612036B0D68260F3 /* MMWormhole.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMWormhole.m; path = Source/MMWormhole.m; sourceTree = "<group>"; };
-		A7A28F0A40D0534D84DFD4E084C9A3AE /* Pods-TrainTimesTodayMainApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TrainTimesTodayMainApp-acknowledgements.plist"; sourceTree = "<group>"; };
-		A7D6C52901D22C0B64AA59F10278593C /* Pods-TrainTimesTodayExtension-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TrainTimesTodayExtension-frameworks.sh"; sourceTree = "<group>"; };
-		AE7939428941AE127DDAEDA988277748 /* MMWormholeCoordinatedFileTransiting.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMWormholeCoordinatedFileTransiting.h; path = Source/MMWormholeCoordinatedFileTransiting.h; sourceTree = "<group>"; };
-		B4655D1D87D0A7F5995C62ACDA5D2E50 /* Pods-TrainTimesTodayExtension-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TrainTimesTodayExtension-acknowledgements.plist"; sourceTree = "<group>"; };
-		B7C083DC1614A4240B979C866B5E0D72 /* Pods-TrainTimesTodayMainApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TrainTimesTodayMainApp-frameworks.sh"; sourceTree = "<group>"; };
-		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		C05978CBC738D57FB5FC4B883EC3352B /* MMWormholeSessionFileTransiting.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMWormholeSessionFileTransiting.m; path = Source/MMWormholeSessionFileTransiting.m; sourceTree = "<group>"; };
-		C90C0CDB102A327864F38F27363470C0 /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
-		CC95DB5B6B41B4E52724ED86E16DF6BF /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
-		CE3F6212C9DCE402CD503B237FD6782F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D0385DAE07D97B0EDCD51C5FDA6E1153 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		D69F725FDA08C3DD759C32C42B3D0B8F /* Pods-TrainTimesTodayExtension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TrainTimesTodayExtension-dummy.m"; sourceTree = "<group>"; };
-		D7FAC0F2DE0BC4A2D2A9F77487DE47CA /* MMWormholeSessionContextTransiting.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMWormholeSessionContextTransiting.m; path = Source/MMWormholeSessionContextTransiting.m; sourceTree = "<group>"; };
-		DE69D8BB0B940956423E625307D51B00 /* Pods-TrainTimesTodayMainApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TrainTimesTodayMainApp.release.xcconfig"; sourceTree = "<group>"; };
-		E5FB04C85D7F70B6BE6F5AF4FB59D7F0 /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
-		F46C7F422647FC2EB40A91F28D45842C /* MMWormholeSessionFileTransiting.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMWormholeSessionFileTransiting.h; path = Source/MMWormholeSessionFileTransiting.h; sourceTree = "<group>"; };
-		F7E9016EA14989A9EB3D490027338B1E /* Pods-TrainTimesTodayExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TrainTimesTodayExtension.debug.xcconfig"; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		0C76246C061E92B62D4C62F333F8A258 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B21C5C642DAA9F0A3A3D43BF71FA5DA5 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1F95150333D024602EDC33E340A536D8 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B32F2854885A96F2FD1CE5C0406BC11C /* Foundation.framework in Frameworks */,
-				C01DBAAF977B02CB9C4E82028B994C62 /* WatchConnectivity.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5C99F5B33F0CC4FFC1948C2DFC398634 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9760CBFA25C5EC99931483285F5C5396 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5D4FC0D44C12D2BF5D880695DE3ED476 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				12C878FE80923B91D4BD38D7A984B3AC /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		009CDDBE8F105449CEA15750AC6988AB /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				BCE5AE41201049B9FDADA5A8B3249190 /* Pods-TrainTimesTodayExtension */,
-				2B3524A71DCE331275A03CF0ADA17ACB /* Pods-TrainTimesTodayMainApp */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		0EBA92D03DA61BCC86393EB8932CF1D4 /* SwiftyJSON */ = {
-			isa = PBXGroup;
-			children = (
-				CC95DB5B6B41B4E52724ED86E16DF6BF /* SwiftyJSON.swift */,
-				AF3A27C9E4ECDD41ED050329D7F1422E /* Support Files */,
-			);
-			path = SwiftyJSON;
-			sourceTree = "<group>";
-		};
-		12D764C5342DBE1DC5BB02B509B857AF /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				2E953D0AD96DDCC74F1F00F5D38901F8 /* MMWormhole.h */,
-				A06685B79369A596612036B0D68260F3 /* MMWormhole.m */,
-				AE7939428941AE127DDAEDA988277748 /* MMWormholeCoordinatedFileTransiting.h */,
-				41D3071113BEB7BEA7D4866B37AC5687 /* MMWormholeCoordinatedFileTransiting.m */,
-				9D4AABD780948F9FF32EFC1F850DB423 /* MMWormholeFileTransiting.h */,
-				03A6A939F19F806E26F85A9503FAADE7 /* MMWormholeFileTransiting.m */,
-				644A23616282C4424172BCD9B367F273 /* MMWormholeSession.h */,
-				35D315E5925564DE683D1AC8BB26CF86 /* MMWormholeSession.m */,
-				980FD0CCD9B871314ADCC3C5DD4B8E96 /* MMWormholeSessionContextTransiting.h */,
-				D7FAC0F2DE0BC4A2D2A9F77487DE47CA /* MMWormholeSessionContextTransiting.m */,
-				F46C7F422647FC2EB40A91F28D45842C /* MMWormholeSessionFileTransiting.h */,
-				C05978CBC738D57FB5FC4B883EC3352B /* MMWormholeSessionFileTransiting.m */,
-				93E23DC92E22B4052DE36E886BC63DE5 /* MMWormholeSessionMessageTransiting.h */,
-				4F538C52753098D8BFB5F350C2261D91 /* MMWormholeSessionMessageTransiting.m */,
-				24AE826A7A89F54AC56B944C6A8A7C64 /* MMWormholeTransiting.h */,
-			);
-			name = Core;
-			sourceTree = "<group>";
-		};
-		2B3524A71DCE331275A03CF0ADA17ACB /* Pods-TrainTimesTodayMainApp */ = {
-			isa = PBXGroup;
-			children = (
-				39B373308283C10A65EB67EA04D71E56 /* Info.plist */,
-				6A4B48ACD91B060417065A65848E03C7 /* Pods-TrainTimesTodayMainApp.modulemap */,
-				59807A87A60A45F780AFADF85C12BC42 /* Pods-TrainTimesTodayMainApp-acknowledgements.markdown */,
-				A7A28F0A40D0534D84DFD4E084C9A3AE /* Pods-TrainTimesTodayMainApp-acknowledgements.plist */,
-				3432DD03E32A9FE86161B51C7A1DD1B6 /* Pods-TrainTimesTodayMainApp-dummy.m */,
-				B7C083DC1614A4240B979C866B5E0D72 /* Pods-TrainTimesTodayMainApp-frameworks.sh */,
-				8ECDA7B65C8642873D3243754C50AD2C /* Pods-TrainTimesTodayMainApp-resources.sh */,
-				0322BDD4915684D791E6A21992425D17 /* Pods-TrainTimesTodayMainApp-umbrella.h */,
-				3350E04E3A7E8C6659846BD0C958E32B /* Pods-TrainTimesTodayMainApp.debug.xcconfig */,
-				DE69D8BB0B940956423E625307D51B00 /* Pods-TrainTimesTodayMainApp.release.xcconfig */,
-			);
-			name = "Pods-TrainTimesTodayMainApp";
-			path = "Target Support Files/Pods-TrainTimesTodayMainApp";
-			sourceTree = "<group>";
-		};
-		3628E0285DFC9174BC1F4630C601417E /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				860087D96ED6D323A63AE9FED331E780 /* Info.plist */,
-				5B53E6BB76FAAE8916F3146A2395E893 /* MMWormhole.modulemap */,
-				6127E357EC2426662D14D8B9D8E0C88B /* MMWormhole.xcconfig */,
-				32B30B117E782B73F51027C6BBBE1CB7 /* MMWormhole-dummy.m */,
-				04A2A3CCDE0D7B7E0BE2F1945FB82F24 /* MMWormhole-prefix.pch */,
-				779E1097BC1B70DE7E3A1B1AE3491865 /* MMWormhole-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/MMWormhole";
-			sourceTree = "<group>";
-		};
-		429257485DA9379CC006F33C5FC07ED1 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				D0385DAE07D97B0EDCD51C5FDA6E1153 /* Foundation.framework */,
-				5186D7B3B8852F3F4544CADB74747FDB /* WatchConnectivity.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				429257485DA9379CC006F33C5FC07ED1 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		7DB346D0F39D3F0E887471402A8071AB = {
-			isa = PBXGroup;
-			children = (
-				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
-				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
-				B6D4E6626704742FB87EE092C8F45AC7 /* Pods */,
-				87DF598702D29B4156C845180451ABA4 /* Products */,
-				009CDDBE8F105449CEA15750AC6988AB /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		87DF598702D29B4156C845180451ABA4 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				3C7CF82BCAFD6B49A8F4EED7E54251E5 /* MMWormhole.framework */,
-				323A03BC1B09D70C5ABD604324A24DE2 /* Pods_TrainTimesTodayExtension.framework */,
-				2F7C04D903AFCCD695C14826C141E209 /* Pods_TrainTimesTodayMainApp.framework */,
-				3CCC9ECFD2C5152523990D8A51F22C16 /* SwiftyJSON.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		AF3A27C9E4ECDD41ED050329D7F1422E /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				73C5F8C7D9429FF0240C5408D01E0770 /* Info.plist */,
-				303F6E9BA8DF0FE8A55CEA6730264C6A /* SwiftyJSON.modulemap */,
-				926FA9B3B9F6D257B660EEEBA210C48E /* SwiftyJSON.xcconfig */,
-				1BC92B60080CF11024B78696E4E0678B /* SwiftyJSON-dummy.m */,
-				E5FB04C85D7F70B6BE6F5AF4FB59D7F0 /* SwiftyJSON-prefix.pch */,
-				C90C0CDB102A327864F38F27363470C0 /* SwiftyJSON-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/SwiftyJSON";
-			sourceTree = "<group>";
-		};
-		B6D4E6626704742FB87EE092C8F45AC7 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				BC16280271C54F8C27651C871D2B0623 /* MMWormhole */,
-				0EBA92D03DA61BCC86393EB8932CF1D4 /* SwiftyJSON */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		BC16280271C54F8C27651C871D2B0623 /* MMWormhole */ = {
-			isa = PBXGroup;
-			children = (
-				12D764C5342DBE1DC5BB02B509B857AF /* Core */,
-				3628E0285DFC9174BC1F4630C601417E /* Support Files */,
-			);
-			path = MMWormhole;
-			sourceTree = "<group>";
-		};
-		BCE5AE41201049B9FDADA5A8B3249190 /* Pods-TrainTimesTodayExtension */ = {
-			isa = PBXGroup;
-			children = (
-				CE3F6212C9DCE402CD503B237FD6782F /* Info.plist */,
-				5B428FDD927E5FB44CBBBEA7E579B30E /* Pods-TrainTimesTodayExtension.modulemap */,
-				128A6ED8E268954797ECDEE1A3128871 /* Pods-TrainTimesTodayExtension-acknowledgements.markdown */,
-				B4655D1D87D0A7F5995C62ACDA5D2E50 /* Pods-TrainTimesTodayExtension-acknowledgements.plist */,
-				D69F725FDA08C3DD759C32C42B3D0B8F /* Pods-TrainTimesTodayExtension-dummy.m */,
-				A7D6C52901D22C0B64AA59F10278593C /* Pods-TrainTimesTodayExtension-frameworks.sh */,
-				7A9A81323940EF6DB1D5983C99DEC506 /* Pods-TrainTimesTodayExtension-resources.sh */,
-				14D1E82BC0630139248DCB31D0898822 /* Pods-TrainTimesTodayExtension-umbrella.h */,
-				F7E9016EA14989A9EB3D490027338B1E /* Pods-TrainTimesTodayExtension.debug.xcconfig */,
-				06DE8A755E4274977DD7AA11BC166429 /* Pods-TrainTimesTodayExtension.release.xcconfig */,
-			);
-			name = "Pods-TrainTimesTodayExtension";
-			path = "Target Support Files/Pods-TrainTimesTodayExtension";
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXHeadersBuildPhase section */
-		31D59BA44B6888819B1544FCA00996AC /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				250BE8463D2386CA584C71F3BE643C6D /* SwiftyJSON-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		80B738F7C5F9625D914E0030122A93DB /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FC0CF3F2978060186204610D8D21DB9C /* MMWormhole-umbrella.h in Headers */,
-				DE9D89BFECB559F825F1BC2506FB1695 /* MMWormhole.h in Headers */,
-				84B37CAEC1716055BEA3DA3795BC8A3C /* MMWormholeCoordinatedFileTransiting.h in Headers */,
-				762F18A4394FA15213070BDF993A2B48 /* MMWormholeFileTransiting.h in Headers */,
-				8CA202DE2B82A4FA9F6433D0034EA12E /* MMWormholeSession.h in Headers */,
-				DFEEABC8C678127F23965CE3AE4B9F67 /* MMWormholeSessionContextTransiting.h in Headers */,
-				CC31FA025B3936FEC27592CC01AC4A5F /* MMWormholeSessionFileTransiting.h in Headers */,
-				33618BBEB40ED0B04402BD45D0A12D96 /* MMWormholeSessionMessageTransiting.h in Headers */,
-				D06E287165536614B66FA045D8A5D99A /* MMWormholeTransiting.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BAF51F24B7E32495F1091644B8E5B09F /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FE5A2EADED9F58A5A8F911FF914477AC /* Pods-TrainTimesTodayExtension-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FF4D0987C67DEB7EA764C8D129A948BB /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CBA8D10CE8113372FC75242EAB036F8E /* Pods-TrainTimesTodayMainApp-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
-/* Begin PBXNativeTarget section */
-		208B040A48ADD8C28EC2D653C77EFE41 /* SwiftyJSON */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0AE72575F6F9D553152D691DE7C12939 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
-			buildPhases = (
-				DA4B8226E7FAB4C41579D29BC350C70A /* Sources */,
-				5D4FC0D44C12D2BF5D880695DE3ED476 /* Frameworks */,
-				31D59BA44B6888819B1544FCA00996AC /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = SwiftyJSON;
-			productName = SwiftyJSON;
-			productReference = 3CCC9ECFD2C5152523990D8A51F22C16 /* SwiftyJSON.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		69F2E16D2082E23F987D9CACF250A2BA /* Pods-TrainTimesTodayExtension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 57D4EDC905B97D03AEA11092CE0993D7 /* Build configuration list for PBXNativeTarget "Pods-TrainTimesTodayExtension" */;
-			buildPhases = (
-				FDD277772773961610FE41CA65376027 /* Sources */,
-				5C99F5B33F0CC4FFC1948C2DFC398634 /* Frameworks */,
-				BAF51F24B7E32495F1091644B8E5B09F /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				2019E7A4845ED7EE8704290BC40E3FB7 /* PBXTargetDependency */,
-				3ECEB25AA272C3C3A654C72B32BBF9B7 /* PBXTargetDependency */,
-			);
-			name = "Pods-TrainTimesTodayExtension";
-			productName = "Pods-TrainTimesTodayExtension";
-			productReference = 323A03BC1B09D70C5ABD604324A24DE2 /* Pods_TrainTimesTodayExtension.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		80CD32DA70825087EE316D800F229AD7 /* Pods-TrainTimesTodayMainApp */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1E39ED341CA9ECEC889C6F8B397E2AF6 /* Build configuration list for PBXNativeTarget "Pods-TrainTimesTodayMainApp" */;
-			buildPhases = (
-				A27341AFE2AF0E9F39E689B9A1F68D13 /* Sources */,
-				0C76246C061E92B62D4C62F333F8A258 /* Frameworks */,
-				FF4D0987C67DEB7EA764C8D129A948BB /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				FE4C8890C3F168FC8F20B0C91D6D218A /* PBXTargetDependency */,
-				9FC4BECF9F365E50640CB03C8C7E1505 /* PBXTargetDependency */,
-			);
-			name = "Pods-TrainTimesTodayMainApp";
-			productName = "Pods-TrainTimesTodayMainApp";
-			productReference = 2F7C04D903AFCCD695C14826C141E209 /* Pods_TrainTimesTodayMainApp.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		DA2550D7D94491C4B4EA8F3435FEEC4B /* MMWormhole */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 703F6B8D4921C558E0F0342E84DCD4C4 /* Build configuration list for PBXNativeTarget "MMWormhole" */;
-			buildPhases = (
-				8FC514A28A2A84DA72870553E560BCF7 /* Sources */,
-				1F95150333D024602EDC33E340A536D8 /* Frameworks */,
-				80B738F7C5F9625D914E0030122A93DB /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = MMWormhole;
-			productName = MMWormhole;
-			productReference = 3C7CF82BCAFD6B49A8F4EED7E54251E5 /* MMWormhole.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0700;
-				TargetAttributes = {
-					208B040A48ADD8C28EC2D653C77EFE41 = {
-						LastSwiftMigration = 0800;
-					};
-					69F2E16D2082E23F987D9CACF250A2BA = {
-						LastSwiftMigration = 0800;
-					};
-					80CD32DA70825087EE316D800F229AD7 = {
-						LastSwiftMigration = 0800;
-					};
-				};
-			};
-			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-			);
-			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 87DF598702D29B4156C845180451ABA4 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				DA2550D7D94491C4B4EA8F3435FEEC4B /* MMWormhole */,
-				69F2E16D2082E23F987D9CACF250A2BA /* Pods-TrainTimesTodayExtension */,
-				80CD32DA70825087EE316D800F229AD7 /* Pods-TrainTimesTodayMainApp */,
-				208B040A48ADD8C28EC2D653C77EFE41 /* SwiftyJSON */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXSourcesBuildPhase section */
-		8FC514A28A2A84DA72870553E560BCF7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FD8C3A12053BBFE6526E99CF6FD0B9C0 /* MMWormhole-dummy.m in Sources */,
-				F8D371C19203C82CAE29F749C845484A /* MMWormhole.m in Sources */,
-				1F812A95D45B384D5F672EA4FDC9CEBD /* MMWormholeCoordinatedFileTransiting.m in Sources */,
-				B07198FCDB0B6AA461872F1299CD9FCB /* MMWormholeFileTransiting.m in Sources */,
-				97BD31BB166AC5135ED7232E94EFF9C8 /* MMWormholeSession.m in Sources */,
-				F3E82A13FF8E6373C29FCB6C70B9CA14 /* MMWormholeSessionContextTransiting.m in Sources */,
-				64EFFD28CE03D338816716C8C78AF78D /* MMWormholeSessionFileTransiting.m in Sources */,
-				FD964DF641A3F771E9A3686586108445 /* MMWormholeSessionMessageTransiting.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A27341AFE2AF0E9F39E689B9A1F68D13 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5C97E326882C3B079F6BCFEF2B61B8DD /* Pods-TrainTimesTodayMainApp-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DA4B8226E7FAB4C41579D29BC350C70A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D0BA6B1229447714B1B888BC5A6EBFEF /* SwiftyJSON-dummy.m in Sources */,
-				96B34A6BCC42E8575B1D4A4BD779F499 /* SwiftyJSON.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FDD277772773961610FE41CA65376027 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D805198977203C5B90EE629B35CA45A8 /* Pods-TrainTimesTodayExtension-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		2019E7A4845ED7EE8704290BC40E3FB7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = MMWormhole;
-			target = DA2550D7D94491C4B4EA8F3435FEEC4B /* MMWormhole */;
-			targetProxy = 625812E661FD45FC909EAB3CC7154543 /* PBXContainerItemProxy */;
-		};
-		3ECEB25AA272C3C3A654C72B32BBF9B7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SwiftyJSON;
-			target = 208B040A48ADD8C28EC2D653C77EFE41 /* SwiftyJSON */;
-			targetProxy = DC75BCF46D5482EF83A3ACC33990C22B /* PBXContainerItemProxy */;
-		};
-		9FC4BECF9F365E50640CB03C8C7E1505 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SwiftyJSON;
-			target = 208B040A48ADD8C28EC2D653C77EFE41 /* SwiftyJSON */;
-			targetProxy = B263B742E9F758A0C3D36C2E1B9BACE1 /* PBXContainerItemProxy */;
-		};
-		FE4C8890C3F168FC8F20B0C91D6D218A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = MMWormhole;
-			target = DA2550D7D94491C4B4EA8F3435FEEC4B /* MMWormhole */;
-			targetProxy = 7B2E0A1EDF271697976916056F5C4897 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin XCBuildConfiguration section */
-		134CF8E00706D4DA60861B424126005F /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 926FA9B3B9F6D257B660EEEBA210C48E /* SwiftyJSON.xcconfig */;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = SwiftyJSON;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		377FF5F106730F668C4E02FACF2E2981 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6127E357EC2426662D14D8B9D8E0C88B /* MMWormhole.xcconfig */;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/MMWormhole/MMWormhole-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MMWormhole/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/MMWormhole/MMWormhole.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = MMWormhole;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		5CE5176205D06FF3FFE3DDDA9291E44B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				ONLY_ACTIVE_ARCH = YES;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Debug;
-		};
-		74857149DC1E0D599B8A01A78349A926 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		AD849CE9334D78111AF040864ABBFEAA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F7E9016EA14989A9EB3D490027338B1E /* Pods-TrainTimesTodayExtension.debug.xcconfig */;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-TrainTimesTodayExtension/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-TrainTimesTodayExtension/Pods-TrainTimesTodayExtension.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_TrainTimesTodayExtension;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		C7EDD4A96C7BD6A652471E8F36205280 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3350E04E3A7E8C6659846BD0C958E32B /* Pods-TrainTimesTodayMainApp.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-TrainTimesTodayMainApp/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-TrainTimesTodayMainApp/Pods-TrainTimesTodayMainApp.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_TrainTimesTodayMainApp;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		D0B3945F122E5211C536F22C5D25D67F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 926FA9B3B9F6D257B660EEEBA210C48E /* SwiftyJSON.xcconfig */;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = SwiftyJSON;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		D9DA0BC04CBD398ADFB90DCFE817105E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6127E357EC2426662D14D8B9D8E0C88B /* MMWormhole.xcconfig */;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/MMWormhole/MMWormhole-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MMWormhole/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/MMWormhole/MMWormhole.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = MMWormhole;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		F229A1557236F38D4283A4B24F93370F /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 06DE8A755E4274977DD7AA11BC166429 /* Pods-TrainTimesTodayExtension.release.xcconfig */;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-TrainTimesTodayExtension/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-TrainTimesTodayExtension/Pods-TrainTimesTodayExtension.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_TrainTimesTodayExtension;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		FECA89086A6EA8AF07E182349EB3C18A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DE69D8BB0B940956423E625307D51B00 /* Pods-TrainTimesTodayMainApp.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-TrainTimesTodayMainApp/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-TrainTimesTodayMainApp/Pods-TrainTimesTodayMainApp.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_TrainTimesTodayMainApp;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		0AE72575F6F9D553152D691DE7C12939 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D0B3945F122E5211C536F22C5D25D67F /* Debug */,
-				134CF8E00706D4DA60861B424126005F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		1E39ED341CA9ECEC889C6F8B397E2AF6 /* Build configuration list for PBXNativeTarget "Pods-TrainTimesTodayMainApp" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C7EDD4A96C7BD6A652471E8F36205280 /* Debug */,
-				FECA89086A6EA8AF07E182349EB3C18A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5CE5176205D06FF3FFE3DDDA9291E44B /* Debug */,
-				74857149DC1E0D599B8A01A78349A926 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		57D4EDC905B97D03AEA11092CE0993D7 /* Build configuration list for PBXNativeTarget "Pods-TrainTimesTodayExtension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AD849CE9334D78111AF040864ABBFEAA /* Debug */,
-				F229A1557236F38D4283A4B24F93370F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		703F6B8D4921C558E0F0342E84DCD4C4 /* Build configuration list for PBXNativeTarget "MMWormhole" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				377FF5F106730F668C4E02FACF2E2981 /* Debug */,
-				D9DA0BC04CBD398ADFB90DCFE817105E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>009CDDBE8F105449CEA15750AC6988AB</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>BCE5AE41201049B9FDADA5A8B3249190</string>
+				<string>2B3524A71DCE331275A03CF0ADA17ACB</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Targets Support Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0322BDD4915684D791E6A21992425D17</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Pods-TrainTimesTodayMainApp-umbrella.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>03A6A939F19F806E26F85A9503FAADE7</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>MMWormholeFileTransiting.m</string>
+			<key>path</key>
+			<string>Source/MMWormholeFileTransiting.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>04A2A3CCDE0D7B7E0BE2F1945FB82F24</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>MMWormhole-prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>06DE8A755E4274977DD7AA11BC166429</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-TrainTimesTodayExtension.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0AE72575F6F9D553152D691DE7C12939</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>D0B3945F122E5211C536F22C5D25D67F</string>
+				<string>134CF8E00706D4DA60861B424126005F</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>0C76246C061E92B62D4C62F333F8A258</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>B21C5C642DAA9F0A3A3D43BF71FA5DA5</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>0EBA92D03DA61BCC86393EB8932CF1D4</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>CC95DB5B6B41B4E52724ED86E16DF6BF</string>
+				<string>AF3A27C9E4ECDD41ED050329D7F1422E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>SwiftyJSON</string>
+			<key>path</key>
+			<string>SwiftyJSON</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>128A6ED8E268954797ECDEE1A3128871</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>path</key>
+			<string>Pods-TrainTimesTodayExtension-acknowledgements.markdown</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>12C878FE80923B91D4BD38D7A984B3AC</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D0385DAE07D97B0EDCD51C5FDA6E1153</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>12D764C5342DBE1DC5BB02B509B857AF</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>2E953D0AD96DDCC74F1F00F5D38901F8</string>
+				<string>A06685B79369A596612036B0D68260F3</string>
+				<string>AE7939428941AE127DDAEDA988277748</string>
+				<string>41D3071113BEB7BEA7D4866B37AC5687</string>
+				<string>9D4AABD780948F9FF32EFC1F850DB423</string>
+				<string>03A6A939F19F806E26F85A9503FAADE7</string>
+				<string>644A23616282C4424172BCD9B367F273</string>
+				<string>35D315E5925564DE683D1AC8BB26CF86</string>
+				<string>980FD0CCD9B871314ADCC3C5DD4B8E96</string>
+				<string>D7FAC0F2DE0BC4A2D2A9F77487DE47CA</string>
+				<string>F46C7F422647FC2EB40A91F28D45842C</string>
+				<string>C05978CBC738D57FB5FC4B883EC3352B</string>
+				<string>93E23DC92E22B4052DE36E886BC63DE5</string>
+				<string>4F538C52753098D8BFB5F350C2261D91</string>
+				<string>24AE826A7A89F54AC56B944C6A8A7C64</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Core</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>134CF8E00706D4DA60861B424126005F</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>926FA9B3B9F6D257B660EEEBA210C48E</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>APPLICATION_EXTENSION_API_ONLY</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/SwiftyJSON/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/SwiftyJSON/SwiftyJSON.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>PRODUCT_NAME</key>
+				<string>SwiftyJSON</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>14D1E82BC0630139248DCB31D0898822</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Pods-TrainTimesTodayExtension-umbrella.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1BC92B60080CF11024B78696E4E0678B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>SwiftyJSON-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1E39ED341CA9ECEC889C6F8B397E2AF6</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>C7EDD4A96C7BD6A652471E8F36205280</string>
+				<string>FECA89086A6EA8AF07E182349EB3C18A</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>1F812A95D45B384D5F672EA4FDC9CEBD</key>
+		<dict>
+			<key>fileRef</key>
+			<string>41D3071113BEB7BEA7D4866B37AC5687</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-DOS_OBJECT_USE_OBJC=0</string>
+			</dict>
+		</dict>
+		<key>1F95150333D024602EDC33E340A536D8</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>B32F2854885A96F2FD1CE5C0406BC11C</string>
+				<string>C01DBAAF977B02CB9C4E82028B994C62</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>2019E7A4845ED7EE8704290BC40E3FB7</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>MMWormhole</string>
+			<key>target</key>
+			<string>DA2550D7D94491C4B4EA8F3435FEEC4B</string>
+			<key>targetProxy</key>
+			<string>625812E661FD45FC909EAB3CC7154543</string>
+		</dict>
+		<key>208B040A48ADD8C28EC2D653C77EFE41</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>0AE72575F6F9D553152D691DE7C12939</string>
+			<key>buildPhases</key>
+			<array>
+				<string>DA4B8226E7FAB4C41579D29BC350C70A</string>
+				<string>5D4FC0D44C12D2BF5D880695DE3ED476</string>
+				<string>31D59BA44B6888819B1544FCA00996AC</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>SwiftyJSON</string>
+			<key>productName</key>
+			<string>SwiftyJSON</string>
+			<key>productReference</key>
+			<string>3CCC9ECFD2C5152523990D8A51F22C16</string>
+			<key>productType</key>
+			<string>com.apple.product-type.framework</string>
+		</dict>
+		<key>24AE826A7A89F54AC56B944C6A8A7C64</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>MMWormholeTransiting.h</string>
+			<key>path</key>
+			<string>Source/MMWormholeTransiting.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>250BE8463D2386CA584C71F3BE643C6D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C90C0CDB102A327864F38F27363470C0</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>2B3524A71DCE331275A03CF0ADA17ACB</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>39B373308283C10A65EB67EA04D71E56</string>
+				<string>6A4B48ACD91B060417065A65848E03C7</string>
+				<string>59807A87A60A45F780AFADF85C12BC42</string>
+				<string>A7A28F0A40D0534D84DFD4E084C9A3AE</string>
+				<string>3432DD03E32A9FE86161B51C7A1DD1B6</string>
+				<string>B7C083DC1614A4240B979C866B5E0D72</string>
+				<string>8ECDA7B65C8642873D3243754C50AD2C</string>
+				<string>0322BDD4915684D791E6A21992425D17</string>
+				<string>3350E04E3A7E8C6659846BD0C958E32B</string>
+				<string>DE69D8BB0B940956423E625307D51B00</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods-TrainTimesTodayMainApp</string>
+			<key>path</key>
+			<string>Target Support Files/Pods-TrainTimesTodayMainApp</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2D8E8EC45A3A1A1D94AE762CB5028504</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>5CE5176205D06FF3FFE3DDDA9291E44B</string>
+				<string>74857149DC1E0D599B8A01A78349A926</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>2E953D0AD96DDCC74F1F00F5D38901F8</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>MMWormhole.h</string>
+			<key>path</key>
+			<string>Source/MMWormhole.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2F7C04D903AFCCD695C14826C141E209</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>Pods_TrainTimesTodayMainApp.framework</string>
+			<key>path</key>
+			<string>Pods_TrainTimesTodayMainApp.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>303F6E9BA8DF0FE8A55CEA6730264C6A</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>SwiftyJSON.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>31D59BA44B6888819B1544FCA00996AC</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>250BE8463D2386CA584C71F3BE643C6D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>323A03BC1B09D70C5ABD604324A24DE2</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>Pods_TrainTimesTodayExtension.framework</string>
+			<key>path</key>
+			<string>Pods_TrainTimesTodayExtension.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>32B30B117E782B73F51027C6BBBE1CB7</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>MMWormhole-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3350E04E3A7E8C6659846BD0C958E32B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-TrainTimesTodayMainApp.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>33618BBEB40ED0B04402BD45D0A12D96</key>
+		<dict>
+			<key>fileRef</key>
+			<string>93E23DC92E22B4052DE36E886BC63DE5</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>3432DD03E32A9FE86161B51C7A1DD1B6</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Pods-TrainTimesTodayMainApp-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>35D315E5925564DE683D1AC8BB26CF86</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>MMWormholeSession.m</string>
+			<key>path</key>
+			<string>Source/MMWormholeSession.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3628E0285DFC9174BC1F4630C601417E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>860087D96ED6D323A63AE9FED331E780</string>
+				<string>5B53E6BB76FAAE8916F3146A2395E893</string>
+				<string>6127E357EC2426662D14D8B9D8E0C88B</string>
+				<string>32B30B117E782B73F51027C6BBBE1CB7</string>
+				<string>04A2A3CCDE0D7B7E0BE2F1945FB82F24</string>
+				<string>779E1097BC1B70DE7E3A1B1AE3491865</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Support Files</string>
+			<key>path</key>
+			<string>../Target Support Files/MMWormhole</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>377FF5F106730F668C4E02FACF2E2981</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>6127E357EC2426662D14D8B9D8E0C88B</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>APPLICATION_EXTENSION_API_ONLY</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/MMWormhole/MMWormhole-prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/MMWormhole/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/MMWormhole/MMWormhole.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>PRODUCT_NAME</key>
+				<string>MMWormhole</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>39B373308283C10A65EB67EA04D71E56</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3C7CF82BCAFD6B49A8F4EED7E54251E5</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>MMWormhole.framework</string>
+			<key>path</key>
+			<string>MMWormhole.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>3CCC9ECFD2C5152523990D8A51F22C16</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>SwiftyJSON.framework</string>
+			<key>path</key>
+			<string>SwiftyJSON.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>3ECEB25AA272C3C3A654C72B32BBF9B7</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>SwiftyJSON</string>
+			<key>target</key>
+			<string>208B040A48ADD8C28EC2D653C77EFE41</string>
+			<key>targetProxy</key>
+			<string>DC75BCF46D5482EF83A3ACC33990C22B</string>
+		</dict>
+		<key>41D3071113BEB7BEA7D4866B37AC5687</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>MMWormholeCoordinatedFileTransiting.m</string>
+			<key>path</key>
+			<string>Source/MMWormholeCoordinatedFileTransiting.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>429257485DA9379CC006F33C5FC07ED1</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>D0385DAE07D97B0EDCD51C5FDA6E1153</string>
+				<string>5186D7B3B8852F3F4544CADB74747FDB</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>iOS</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>433CD3331B6C3787F473C941B61FC68F</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>429257485DA9379CC006F33C5FC07ED1</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4F538C52753098D8BFB5F350C2261D91</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>MMWormholeSessionMessageTransiting.m</string>
+			<key>path</key>
+			<string>Source/MMWormholeSessionMessageTransiting.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5186D7B3B8852F3F4544CADB74747FDB</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>WatchConnectivity.framework</string>
+			<key>path</key>
+			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/WatchConnectivity.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>57D4EDC905B97D03AEA11092CE0993D7</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>AD849CE9334D78111AF040864ABBFEAA</string>
+				<string>F229A1557236F38D4283A4B24F93370F</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>59807A87A60A45F780AFADF85C12BC42</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>path</key>
+			<string>Pods-TrainTimesTodayMainApp-acknowledgements.markdown</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5B428FDD927E5FB44CBBBEA7E579B30E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Pods-TrainTimesTodayExtension.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5B53E6BB76FAAE8916F3146A2395E893</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>MMWormhole.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5C97E326882C3B079F6BCFEF2B61B8DD</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3432DD03E32A9FE86161B51C7A1DD1B6</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>5C99F5B33F0CC4FFC1948C2DFC398634</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>9760CBFA25C5EC99931483285F5C5396</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>5CE5176205D06FF3FFE3DDDA9291E44B</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.0</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>STRIP_INSTALLED_PRODUCT</key>
+				<string>NO</string>
+				<key>SYMROOT</key>
+				<string>${SRCROOT}/../build</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>5D4FC0D44C12D2BF5D880695DE3ED476</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>12C878FE80923B91D4BD38D7A984B3AC</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>6127E357EC2426662D14D8B9D8E0C88B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>MMWormhole.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>625812E661FD45FC909EAB3CC7154543</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>D41D8CD98F00B204E9800998ECF8427E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>DA2550D7D94491C4B4EA8F3435FEEC4B</string>
+			<key>remoteInfo</key>
+			<string>MMWormhole</string>
+		</dict>
+		<key>644A23616282C4424172BCD9B367F273</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>MMWormholeSession.h</string>
+			<key>path</key>
+			<string>Source/MMWormholeSession.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>64EFFD28CE03D338816716C8C78AF78D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C05978CBC738D57FB5FC4B883EC3352B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-DOS_OBJECT_USE_OBJC=0</string>
+			</dict>
+		</dict>
+		<key>69F2E16D2082E23F987D9CACF250A2BA</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>57D4EDC905B97D03AEA11092CE0993D7</string>
+			<key>buildPhases</key>
+			<array>
+				<string>FDD277772773961610FE41CA65376027</string>
+				<string>5C99F5B33F0CC4FFC1948C2DFC398634</string>
+				<string>BAF51F24B7E32495F1091644B8E5B09F</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>2019E7A4845ED7EE8704290BC40E3FB7</string>
+				<string>3ECEB25AA272C3C3A654C72B32BBF9B7</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Pods-TrainTimesTodayExtension</string>
+			<key>productName</key>
+			<string>Pods-TrainTimesTodayExtension</string>
+			<key>productReference</key>
+			<string>323A03BC1B09D70C5ABD604324A24DE2</string>
+			<key>productType</key>
+			<string>com.apple.product-type.framework</string>
+		</dict>
+		<key>6A4B48ACD91B060417065A65848E03C7</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Pods-TrainTimesTodayMainApp.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>703F6B8D4921C558E0F0342E84DCD4C4</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>377FF5F106730F668C4E02FACF2E2981</string>
+				<string>D9DA0BC04CBD398ADFB90DCFE817105E</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>73C5F8C7D9429FF0240C5408D01E0770</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>74857149DC1E0D599B8A01A78349A926</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>RELEASE=1</string>
+				</array>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.0</string>
+				<key>STRIP_INSTALLED_PRODUCT</key>
+				<string>NO</string>
+				<key>SYMROOT</key>
+				<string>${SRCROOT}/../build</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>762F18A4394FA15213070BDF993A2B48</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9D4AABD780948F9FF32EFC1F850DB423</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>779E1097BC1B70DE7E3A1B1AE3491865</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>MMWormhole-umbrella.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7A9A81323940EF6DB1D5983C99DEC506</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-TrainTimesTodayExtension-resources.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7B2E0A1EDF271697976916056F5C4897</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>D41D8CD98F00B204E9800998ECF8427E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>DA2550D7D94491C4B4EA8F3435FEEC4B</string>
+			<key>remoteInfo</key>
+			<string>MMWormhole</string>
+		</dict>
+		<key>7DB346D0F39D3F0E887471402A8071AB</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>BA6428E9F66FD5A23C0A2E06ED26CD2F</string>
+				<string>433CD3331B6C3787F473C941B61FC68F</string>
+				<string>B6D4E6626704742FB87EE092C8F45AC7</string>
+				<string>87DF598702D29B4156C845180451ABA4</string>
+				<string>009CDDBE8F105449CEA15750AC6988AB</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>80B738F7C5F9625D914E0030122A93DB</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>FC0CF3F2978060186204610D8D21DB9C</string>
+				<string>DE9D89BFECB559F825F1BC2506FB1695</string>
+				<string>84B37CAEC1716055BEA3DA3795BC8A3C</string>
+				<string>762F18A4394FA15213070BDF993A2B48</string>
+				<string>8CA202DE2B82A4FA9F6433D0034EA12E</string>
+				<string>DFEEABC8C678127F23965CE3AE4B9F67</string>
+				<string>CC31FA025B3936FEC27592CC01AC4A5F</string>
+				<string>33618BBEB40ED0B04402BD45D0A12D96</string>
+				<string>D06E287165536614B66FA045D8A5D99A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>80CD32DA70825087EE316D800F229AD7</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>1E39ED341CA9ECEC889C6F8B397E2AF6</string>
+			<key>buildPhases</key>
+			<array>
+				<string>A27341AFE2AF0E9F39E689B9A1F68D13</string>
+				<string>0C76246C061E92B62D4C62F333F8A258</string>
+				<string>FF4D0987C67DEB7EA764C8D129A948BB</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>FE4C8890C3F168FC8F20B0C91D6D218A</string>
+				<string>9FC4BECF9F365E50640CB03C8C7E1505</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Pods-TrainTimesTodayMainApp</string>
+			<key>productName</key>
+			<string>Pods-TrainTimesTodayMainApp</string>
+			<key>productReference</key>
+			<string>2F7C04D903AFCCD695C14826C141E209</string>
+			<key>productType</key>
+			<string>com.apple.product-type.framework</string>
+		</dict>
+		<key>84B37CAEC1716055BEA3DA3795BC8A3C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>AE7939428941AE127DDAEDA988277748</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>860087D96ED6D323A63AE9FED331E780</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>87DF598702D29B4156C845180451ABA4</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>3C7CF82BCAFD6B49A8F4EED7E54251E5</string>
+				<string>323A03BC1B09D70C5ABD604324A24DE2</string>
+				<string>2F7C04D903AFCCD695C14826C141E209</string>
+				<string>3CCC9ECFD2C5152523990D8A51F22C16</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8CA202DE2B82A4FA9F6433D0034EA12E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>644A23616282C4424172BCD9B367F273</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>8ECDA7B65C8642873D3243754C50AD2C</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-TrainTimesTodayMainApp-resources.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8FC514A28A2A84DA72870553E560BCF7</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>FD8C3A12053BBFE6526E99CF6FD0B9C0</string>
+				<string>F8D371C19203C82CAE29F749C845484A</string>
+				<string>1F812A95D45B384D5F672EA4FDC9CEBD</string>
+				<string>B07198FCDB0B6AA461872F1299CD9FCB</string>
+				<string>97BD31BB166AC5135ED7232E94EFF9C8</string>
+				<string>F3E82A13FF8E6373C29FCB6C70B9CA14</string>
+				<string>64EFFD28CE03D338816716C8C78AF78D</string>
+				<string>FD964DF641A3F771E9A3686586108445</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>926FA9B3B9F6D257B660EEEBA210C48E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>SwiftyJSON.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>93E23DC92E22B4052DE36E886BC63DE5</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>MMWormholeSessionMessageTransiting.h</string>
+			<key>path</key>
+			<string>Source/MMWormholeSessionMessageTransiting.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>96B34A6BCC42E8575B1D4A4BD779F499</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CC95DB5B6B41B4E52724ED86E16DF6BF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9760CBFA25C5EC99931483285F5C5396</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D0385DAE07D97B0EDCD51C5FDA6E1153</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>97BD31BB166AC5135ED7232E94EFF9C8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>35D315E5925564DE683D1AC8BB26CF86</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-DOS_OBJECT_USE_OBJC=0</string>
+			</dict>
+		</dict>
+		<key>980FD0CCD9B871314ADCC3C5DD4B8E96</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>MMWormholeSessionContextTransiting.h</string>
+			<key>path</key>
+			<string>Source/MMWormholeSessionContextTransiting.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9D4AABD780948F9FF32EFC1F850DB423</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>MMWormholeFileTransiting.h</string>
+			<key>path</key>
+			<string>Source/MMWormholeFileTransiting.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9FC4BECF9F365E50640CB03C8C7E1505</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>SwiftyJSON</string>
+			<key>target</key>
+			<string>208B040A48ADD8C28EC2D653C77EFE41</string>
+			<key>targetProxy</key>
+			<string>B263B742E9F758A0C3D36C2E1B9BACE1</string>
+		</dict>
+		<key>A06685B79369A596612036B0D68260F3</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>MMWormhole.m</string>
+			<key>path</key>
+			<string>Source/MMWormhole.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A27341AFE2AF0E9F39E689B9A1F68D13</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>5C97E326882C3B079F6BCFEF2B61B8DD</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>A7A28F0A40D0534D84DFD4E084C9A3AE</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Pods-TrainTimesTodayMainApp-acknowledgements.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A7D6C52901D22C0B64AA59F10278593C</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-TrainTimesTodayExtension-frameworks.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AD849CE9334D78111AF040864ABBFEAA</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>F7E9016EA14989A9EB3D490027338B1E</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>APPLICATION_EXTENSION_API_ONLY</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Pods-TrainTimesTodayExtension/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Pods-TrainTimesTodayExtension/Pods-TrainTimesTodayExtension.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_NAME</key>
+				<string>Pods_TrainTimesTodayExtension</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>SWIFT_OPTIMIZATION_LEVEL</key>
+				<string>-Onone</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>AE7939428941AE127DDAEDA988277748</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>MMWormholeCoordinatedFileTransiting.h</string>
+			<key>path</key>
+			<string>Source/MMWormholeCoordinatedFileTransiting.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AF3A27C9E4ECDD41ED050329D7F1422E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>73C5F8C7D9429FF0240C5408D01E0770</string>
+				<string>303F6E9BA8DF0FE8A55CEA6730264C6A</string>
+				<string>926FA9B3B9F6D257B660EEEBA210C48E</string>
+				<string>1BC92B60080CF11024B78696E4E0678B</string>
+				<string>E5FB04C85D7F70B6BE6F5AF4FB59D7F0</string>
+				<string>C90C0CDB102A327864F38F27363470C0</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Support Files</string>
+			<key>path</key>
+			<string>../Target Support Files/SwiftyJSON</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B07198FCDB0B6AA461872F1299CD9FCB</key>
+		<dict>
+			<key>fileRef</key>
+			<string>03A6A939F19F806E26F85A9503FAADE7</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-DOS_OBJECT_USE_OBJC=0</string>
+			</dict>
+		</dict>
+		<key>B21C5C642DAA9F0A3A3D43BF71FA5DA5</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D0385DAE07D97B0EDCD51C5FDA6E1153</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B263B742E9F758A0C3D36C2E1B9BACE1</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>D41D8CD98F00B204E9800998ECF8427E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>208B040A48ADD8C28EC2D653C77EFE41</string>
+			<key>remoteInfo</key>
+			<string>SwiftyJSON</string>
+		</dict>
+		<key>B32F2854885A96F2FD1CE5C0406BC11C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D0385DAE07D97B0EDCD51C5FDA6E1153</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B4655D1D87D0A7F5995C62ACDA5D2E50</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Pods-TrainTimesTodayExtension-acknowledgements.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B6D4E6626704742FB87EE092C8F45AC7</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>BC16280271C54F8C27651C871D2B0623</string>
+				<string>0EBA92D03DA61BCC86393EB8932CF1D4</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B7C083DC1614A4240B979C866B5E0D72</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-TrainTimesTodayMainApp-frameworks.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BA6428E9F66FD5A23C0A2E06ED26CD2F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>name</key>
+			<string>Podfile</string>
+			<key>path</key>
+			<string>../Podfile</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+			<key>xcLanguageSpecificationIdentifier</key>
+			<string>xcode.lang.ruby</string>
+		</dict>
+		<key>BAF51F24B7E32495F1091644B8E5B09F</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>FE5A2EADED9F58A5A8F911FF914477AC</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>BC16280271C54F8C27651C871D2B0623</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>12D764C5342DBE1DC5BB02B509B857AF</string>
+				<string>3628E0285DFC9174BC1F4630C601417E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>MMWormhole</string>
+			<key>path</key>
+			<string>MMWormhole</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BCE5AE41201049B9FDADA5A8B3249190</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>CE3F6212C9DCE402CD503B237FD6782F</string>
+				<string>5B428FDD927E5FB44CBBBEA7E579B30E</string>
+				<string>128A6ED8E268954797ECDEE1A3128871</string>
+				<string>B4655D1D87D0A7F5995C62ACDA5D2E50</string>
+				<string>D69F725FDA08C3DD759C32C42B3D0B8F</string>
+				<string>A7D6C52901D22C0B64AA59F10278593C</string>
+				<string>7A9A81323940EF6DB1D5983C99DEC506</string>
+				<string>14D1E82BC0630139248DCB31D0898822</string>
+				<string>F7E9016EA14989A9EB3D490027338B1E</string>
+				<string>06DE8A755E4274977DD7AA11BC166429</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods-TrainTimesTodayExtension</string>
+			<key>path</key>
+			<string>Target Support Files/Pods-TrainTimesTodayExtension</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C01DBAAF977B02CB9C4E82028B994C62</key>
+		<dict>
+			<key>fileRef</key>
+			<string>5186D7B3B8852F3F4544CADB74747FDB</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C05978CBC738D57FB5FC4B883EC3352B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>MMWormholeSessionFileTransiting.m</string>
+			<key>path</key>
+			<string>Source/MMWormholeSessionFileTransiting.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C7EDD4A96C7BD6A652471E8F36205280</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>3350E04E3A7E8C6659846BD0C958E32B</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Pods-TrainTimesTodayMainApp/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Pods-TrainTimesTodayMainApp/Pods-TrainTimesTodayMainApp.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_NAME</key>
+				<string>Pods_TrainTimesTodayMainApp</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>SWIFT_OPTIMIZATION_LEVEL</key>
+				<string>-Onone</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>C90C0CDB102A327864F38F27363470C0</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>SwiftyJSON-umbrella.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CBA8D10CE8113372FC75242EAB036F8E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0322BDD4915684D791E6A21992425D17</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>CC31FA025B3936FEC27592CC01AC4A5F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F46C7F422647FC2EB40A91F28D45842C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>CC95DB5B6B41B4E52724ED86E16DF6BF</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>SwiftyJSON.swift</string>
+			<key>path</key>
+			<string>Source/SwiftyJSON.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CE3F6212C9DCE402CD503B237FD6782F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D0385DAE07D97B0EDCD51C5FDA6E1153</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>D06E287165536614B66FA045D8A5D99A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>24AE826A7A89F54AC56B944C6A8A7C64</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>D0B3945F122E5211C536F22C5D25D67F</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>926FA9B3B9F6D257B660EEEBA210C48E</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>APPLICATION_EXTENSION_API_ONLY</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/SwiftyJSON/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/SwiftyJSON/SwiftyJSON.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>PRODUCT_NAME</key>
+				<string>SwiftyJSON</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>SWIFT_OPTIMIZATION_LEVEL</key>
+				<string>-Onone</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>D0BA6B1229447714B1B888BC5A6EBFEF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>1BC92B60080CF11024B78696E4E0678B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D41D8CD98F00B204E9800998ECF8427E</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastSwiftUpdateCheck</key>
+				<string>0700</string>
+				<key>LastUpgradeCheck</key>
+				<string>0700</string>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>2D8E8EC45A3A1A1D94AE762CB5028504</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+			</array>
+			<key>mainGroup</key>
+			<string>7DB346D0F39D3F0E887471402A8071AB</string>
+			<key>productRefGroup</key>
+			<string>87DF598702D29B4156C845180451ABA4</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>DA2550D7D94491C4B4EA8F3435FEEC4B</string>
+				<string>69F2E16D2082E23F987D9CACF250A2BA</string>
+				<string>80CD32DA70825087EE316D800F229AD7</string>
+				<string>208B040A48ADD8C28EC2D653C77EFE41</string>
+			</array>
+		</dict>
+		<key>D69F725FDA08C3DD759C32C42B3D0B8F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Pods-TrainTimesTodayExtension-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D7FAC0F2DE0BC4A2D2A9F77487DE47CA</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>MMWormholeSessionContextTransiting.m</string>
+			<key>path</key>
+			<string>Source/MMWormholeSessionContextTransiting.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D805198977203C5B90EE629B35CA45A8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D69F725FDA08C3DD759C32C42B3D0B8F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D9DA0BC04CBD398ADFB90DCFE817105E</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>6127E357EC2426662D14D8B9D8E0C88B</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>APPLICATION_EXTENSION_API_ONLY</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/MMWormhole/MMWormhole-prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/MMWormhole/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/MMWormhole/MMWormhole.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>PRODUCT_NAME</key>
+				<string>MMWormhole</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>DA2550D7D94491C4B4EA8F3435FEEC4B</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>703F6B8D4921C558E0F0342E84DCD4C4</string>
+			<key>buildPhases</key>
+			<array>
+				<string>8FC514A28A2A84DA72870553E560BCF7</string>
+				<string>1F95150333D024602EDC33E340A536D8</string>
+				<string>80B738F7C5F9625D914E0030122A93DB</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>MMWormhole</string>
+			<key>productName</key>
+			<string>MMWormhole</string>
+			<key>productReference</key>
+			<string>3C7CF82BCAFD6B49A8F4EED7E54251E5</string>
+			<key>productType</key>
+			<string>com.apple.product-type.framework</string>
+		</dict>
+		<key>DA4B8226E7FAB4C41579D29BC350C70A</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>D0BA6B1229447714B1B888BC5A6EBFEF</string>
+				<string>96B34A6BCC42E8575B1D4A4BD779F499</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>DC75BCF46D5482EF83A3ACC33990C22B</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>D41D8CD98F00B204E9800998ECF8427E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>208B040A48ADD8C28EC2D653C77EFE41</string>
+			<key>remoteInfo</key>
+			<string>SwiftyJSON</string>
+		</dict>
+		<key>DE69D8BB0B940956423E625307D51B00</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-TrainTimesTodayMainApp.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DE9D89BFECB559F825F1BC2506FB1695</key>
+		<dict>
+			<key>fileRef</key>
+			<string>2E953D0AD96DDCC74F1F00F5D38901F8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>DFEEABC8C678127F23965CE3AE4B9F67</key>
+		<dict>
+			<key>fileRef</key>
+			<string>980FD0CCD9B871314ADCC3C5DD4B8E96</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>E5FB04C85D7F70B6BE6F5AF4FB59D7F0</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>SwiftyJSON-prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F229A1557236F38D4283A4B24F93370F</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>06DE8A755E4274977DD7AA11BC166429</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>APPLICATION_EXTENSION_API_ONLY</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Pods-TrainTimesTodayExtension/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Pods-TrainTimesTodayExtension/Pods-TrainTimesTodayExtension.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_NAME</key>
+				<string>Pods_TrainTimesTodayExtension</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>F3E82A13FF8E6373C29FCB6C70B9CA14</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D7FAC0F2DE0BC4A2D2A9F77487DE47CA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-DOS_OBJECT_USE_OBJC=0</string>
+			</dict>
+		</dict>
+		<key>F46C7F422647FC2EB40A91F28D45842C</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>MMWormholeSessionFileTransiting.h</string>
+			<key>path</key>
+			<string>Source/MMWormholeSessionFileTransiting.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F7E9016EA14989A9EB3D490027338B1E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-TrainTimesTodayExtension.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F8D371C19203C82CAE29F749C845484A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>A06685B79369A596612036B0D68260F3</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-DOS_OBJECT_USE_OBJC=0</string>
+			</dict>
+		</dict>
+		<key>FC0CF3F2978060186204610D8D21DB9C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>779E1097BC1B70DE7E3A1B1AE3491865</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>FD8C3A12053BBFE6526E99CF6FD0B9C0</key>
+		<dict>
+			<key>fileRef</key>
+			<string>32B30B117E782B73F51027C6BBBE1CB7</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FD964DF641A3F771E9A3686586108445</key>
+		<dict>
+			<key>fileRef</key>
+			<string>4F538C52753098D8BFB5F350C2261D91</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-DOS_OBJECT_USE_OBJC=0</string>
+			</dict>
+		</dict>
+		<key>FDD277772773961610FE41CA65376027</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>D805198977203C5B90EE629B35CA45A8</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>FE4C8890C3F168FC8F20B0C91D6D218A</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>MMWormhole</string>
+			<key>target</key>
+			<string>DA2550D7D94491C4B4EA8F3435FEEC4B</string>
+			<key>targetProxy</key>
+			<string>7B2E0A1EDF271697976916056F5C4897</string>
+		</dict>
+		<key>FE5A2EADED9F58A5A8F911FF914477AC</key>
+		<dict>
+			<key>fileRef</key>
+			<string>14D1E82BC0630139248DCB31D0898822</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>FECA89086A6EA8AF07E182349EB3C18A</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>DE69D8BB0B940956423E625307D51B00</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Pods-TrainTimesTodayMainApp/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Pods-TrainTimesTodayMainApp/Pods-TrainTimesTodayMainApp.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_NAME</key>
+				<string>Pods_TrainTimesTodayMainApp</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>FF4D0987C67DEB7EA764C8D129A948BB</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>CBA8D10CE8113372FC75242EAB036F8E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>D41D8CD98F00B204E9800998ECF8427E</string>
+</dict>
+</plist>
