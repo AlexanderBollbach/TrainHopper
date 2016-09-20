@@ -2,13 +2,12 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Main Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TrainTimesToday" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainController" customModule="TrainTimesToday" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -17,80 +16,80 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qnm-bE-Dlf">
-                                <rect key="frame" x="70" y="101" width="460" height="100"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="Z8l-UC-dnf"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XDQ-aS-5ag">
+                                <rect key="frame" x="48" y="38" width="41" height="30"/>
+                                <state key="normal" title="Home"/>
                                 <connections>
-                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="coV-K7-k5I"/>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="e5o-ep-eJn"/>
+                                    <action selector="pickHomeStation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SIZ-Q0-rHh"/>
                                 </connections>
-                            </pickerView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick Home Station" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ffJ-IK-EyA">
-                                <rect key="frame" x="70" y="46" width="256" height="25"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="25" id="9UA-yL-Vku"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick A Work Station" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s9W-jR-h1J">
-                                <rect key="frame" x="70" y="231" width="460" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="Txu-K9-Qmw"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WOx-SM-fy5">
-                                <rect key="frame" x="70" y="282" width="460" height="100"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="K86-WL-GIg"/>
-                                </constraints>
-                                <connections>
-                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="TDG-sM-UBS"/>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="PtC-eD-50N"/>
-                                </connections>
-                            </pickerView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fvv-nu-vyE">
-                                <rect key="frame" x="351" y="43.5" width="179" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="M0S-P1-idq"/>
-                                    <constraint firstAttribute="width" constant="179" id="Or1-LU-wKi"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vgs-4f-Drd">
+                                <rect key="frame" x="247" y="38" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.58785468340000002" green="0.98535603279999995" blue="0.0048736236059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="ffJ-IK-EyA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="1S9-fE-3mJ"/>
-                            <constraint firstItem="fvv-nu-vyE" firstAttribute="leading" secondItem="ffJ-IK-EyA" secondAttribute="trailing" constant="25" id="73v-1N-dhE"/>
-                            <constraint firstItem="WOx-SM-fy5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="9AJ-yK-uBC"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="s9W-jR-h1J" secondAttribute="trailing" constant="50" id="G8K-Mj-48q"/>
-                            <constraint firstItem="ffJ-IK-EyA" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="26" id="IzY-mK-Km3"/>
-                            <constraint firstItem="fvv-nu-vyE" firstAttribute="centerY" secondItem="ffJ-IK-EyA" secondAttribute="centerY" id="Llu-zh-Yif"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="ffJ-IK-EyA" secondAttribute="trailing" constant="254" id="R8A-ST-scR"/>
-                            <constraint firstItem="Qnm-bE-Dlf" firstAttribute="top" secondItem="ffJ-IK-EyA" secondAttribute="bottom" constant="30" id="SOe-nO-4Th"/>
-                            <constraint firstItem="s9W-jR-h1J" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="Vp3-oi-aGw"/>
-                            <constraint firstItem="s9W-jR-h1J" firstAttribute="top" secondItem="Qnm-bE-Dlf" secondAttribute="bottom" constant="30" id="Y67-gk-Ggg"/>
-                            <constraint firstItem="WOx-SM-fy5" firstAttribute="top" secondItem="s9W-jR-h1J" secondAttribute="bottom" constant="30" id="bWU-Wu-JK5"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Qnm-bE-Dlf" secondAttribute="trailing" constant="50" id="mON-e9-JyK"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="WOx-SM-fy5" secondAttribute="trailing" constant="50" id="oqA-e7-Hxa"/>
-                            <constraint firstItem="Qnm-bE-Dlf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="xme-jU-1sK"/>
-                        </constraints>
+                        <gestureRecognizers/>
                     </view>
-                    <connections>
-                        <outlet property="homePickerView" destination="Qnm-bE-Dlf" id="npV-1I-uCu"/>
-                        <outlet property="workPickerView" destination="WOx-SM-fy5" id="msi-7G-NsG"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="425" y="147"/>
+        </scene>
+        <!--Pick Station View Controller-->
+        <scene sceneID="uLq-iU-9Qz">
+            <objects>
+                <viewController storyboardIdentifier="PickStation" id="ea6-pN-Ydl" customClass="PickStationViewController" customModule="TrainTimesToday" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Gay-4s-DcB"/>
+                        <viewControllerLayoutGuide type="bottom" id="gIn-xb-zeY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="B0c-lS-3t6">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="y8G-zf-MGD">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <pickerView autoresizesSubviews="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9hR-x7-Rph">
+                                <rect key="frame" x="193" y="69" width="215" height="216"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="215" id="RE2-oA-Ulj"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="ea6-pN-Ydl" id="EsG-OS-RMe"/>
+                                    <outlet property="delegate" destination="ea6-pN-Ydl" id="Ayi-0g-NBI"/>
+                                </connections>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.40000000600000002" green="1" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="y8G-zf-MGD" firstAttribute="top" secondItem="B0c-lS-3t6" secondAttribute="top" id="4pb-f5-JVi"/>
+                            <constraint firstAttribute="trailing" secondItem="y8G-zf-MGD" secondAttribute="trailing" id="PJ8-sw-UJo"/>
+                            <constraint firstItem="9hR-x7-Rph" firstAttribute="centerX" secondItem="B0c-lS-3t6" secondAttribute="centerX" id="Tki-ph-stn"/>
+                            <constraint firstItem="9hR-x7-Rph" firstAttribute="top" secondItem="y8G-zf-MGD" secondAttribute="bottom" constant="25" id="cNl-I8-JSY"/>
+                            <constraint firstItem="y8G-zf-MGD" firstAttribute="leading" secondItem="B0c-lS-3t6" secondAttribute="leading" id="rGu-vg-ebQ"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="pUM-PQ-AdA" appends="YES" id="vDj-zz-lMX"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="pickerView" destination="9hR-x7-Rph" id="9Tw-Sc-1aj"/>
+                        <outlet property="searchField" destination="y8G-zf-MGD" id="7HK-LX-ZdU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BsS-Yl-lMD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="pUM-PQ-AdA">
+                    <connections>
+                        <action selector="tapped1:" destination="ea6-pN-Ydl" id="J11-yB-xzE"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1148" y="121"/>
         </scene>
     </scenes>
 </document>
