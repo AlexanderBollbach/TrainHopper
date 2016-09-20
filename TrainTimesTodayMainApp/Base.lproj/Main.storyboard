@@ -51,6 +51,9 @@
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="y8G-zf-MGD">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="ea6-pN-Ydl" id="BXw-Ei-OhI"/>
+                                </connections>
                             </searchBar>
                             <pickerView autoresizesSubviews="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9hR-x7-Rph">
                                 <rect key="frame" x="193" y="69" width="215" height="216"/>

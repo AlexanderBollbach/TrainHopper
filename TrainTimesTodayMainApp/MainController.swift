@@ -13,16 +13,9 @@ import UIKit
 
 class MainController: UIViewController {
    
-   
-   
-   
-   
+ 
    
    let dao = DAO.sharedInstance
-   
-   
-   
-   
    
    
    override func viewDidLoad() {
@@ -31,18 +24,9 @@ class MainController: UIViewController {
       
       dao.configureData()
       
-      
    }
    
-   
 
-   
-   
-   
-   
-   
-   
-   
    
    
    
@@ -67,14 +51,7 @@ class MainController: UIViewController {
    }
    
    
-   
-   
-   
-   
-   
-   
-   
-   
+
    
    
    
