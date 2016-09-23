@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Main Controller-->
@@ -22,10 +23,6 @@
                                 <connections>
                                     <action selector="pickHomeStation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SIZ-Q0-rHh"/>
                                 </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vgs-4f-Drd">
-                                <rect key="frame" x="247" y="38" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.58785468340000002" green="0.98535603279999995" blue="0.0048736236059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -48,13 +45,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="y8G-zf-MGD">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <outlet property="delegate" destination="ea6-pN-Ydl" id="BXw-Ei-OhI"/>
-                                </connections>
-                            </searchBar>
                             <pickerView autoresizesSubviews="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9hR-x7-Rph">
                                 <rect key="frame" x="193" y="69" width="215" height="216"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
@@ -66,15 +56,41 @@
                                     <outlet property="delegate" destination="ea6-pN-Ydl" id="Ayi-0g-NBI"/>
                                 </connections>
                             </pickerView>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="y8G-zf-MGD">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="3Bm-sK-uus">
+                                <rect key="frame" x="20" y="570" width="560" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kHV-tW-svN">
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="30"/>
+                                        <state key="normal" title="Cancel"/>
+                                        <connections>
+                                            <action selector="tappedCancel:" destination="ea6-pN-Ydl" eventType="touchUpInside" id="Sgl-SI-FDv"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oH7-hz-pSR">
+                                        <rect key="frame" x="281" y="0.0" width="279" height="30"/>
+                                        <state key="normal" title="Select"/>
+                                        <connections>
+                                            <action selector="tappedSelect:" destination="ea6-pN-Ydl" eventType="touchUpInside" id="rqe-4h-yjN"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.40000000600000002" green="1" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="y8G-zf-MGD" firstAttribute="top" secondItem="B0c-lS-3t6" secondAttribute="top" id="4pb-f5-JVi"/>
                             <constraint firstAttribute="trailing" secondItem="y8G-zf-MGD" secondAttribute="trailing" id="PJ8-sw-UJo"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3Bm-sK-uus" secondAttribute="trailing" id="Sgw-2W-CHU"/>
                             <constraint firstItem="9hR-x7-Rph" firstAttribute="centerX" secondItem="B0c-lS-3t6" secondAttribute="centerX" id="Tki-ph-stn"/>
+                            <constraint firstItem="3Bm-sK-uus" firstAttribute="leading" secondItem="B0c-lS-3t6" secondAttribute="leadingMargin" id="VPw-gT-sqc"/>
                             <constraint firstItem="9hR-x7-Rph" firstAttribute="top" secondItem="y8G-zf-MGD" secondAttribute="bottom" constant="25" id="cNl-I8-JSY"/>
                             <constraint firstItem="y8G-zf-MGD" firstAttribute="leading" secondItem="B0c-lS-3t6" secondAttribute="leading" id="rGu-vg-ebQ"/>
+                            <constraint firstItem="gIn-xb-zeY" firstAttribute="top" secondItem="3Bm-sK-uus" secondAttribute="bottom" id="ymb-DB-hkt"/>
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="pUM-PQ-AdA" appends="YES" id="vDj-zz-lMX"/>

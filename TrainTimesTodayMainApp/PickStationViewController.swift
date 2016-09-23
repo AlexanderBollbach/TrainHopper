@@ -28,6 +28,8 @@ class PickStationViewController: UIViewController {
       
       self.pickerView.selectRow(3, inComponent: 0, animated: true)
       
+//      self.transitioningDelegate = self
+      
       
    }
    
@@ -55,6 +57,16 @@ class PickStationViewController: UIViewController {
       filteredStationList.removeAll()
       filteredStationList.appendContentsOf(stationList)
    }
+   
+   @IBAction func tappedCancel(sender: AnyObject) {
+      
+      self.dismissViewControllerAnimated(true, completion: nil)
+   }
+   
+  
+   @IBAction func tappedSelect(sender: AnyObject) {
+   }
+   
    
    
 }
@@ -97,24 +109,6 @@ extension PickStationViewController: UISearchBarDelegate {
 }
 
 
-extension String {
-   
-   func ABHasPrefix(searchTerm: String) -> Bool {
-      
-      let lowerSearch = searchTerm.lowercaseString
-      
-      let lowerSelf = self.lowercaseString
-      
-      if lowerSelf.hasPrefix(lowerSearch) {
-         return true
-      } else {
-         return false
-      }
-      
-   }
-   
-}
-
 
 extension PickStationViewController: UIPickerViewDelegate, UIPickerViewDataSource {
    
@@ -156,5 +150,29 @@ extension PickStationViewController: UIViewControllerTransitioningDelegate {
    
 }
 
+
+
+
+
+
+
+
+extension String {
+   
+   func ABHasPrefix(searchTerm: String) -> Bool {
+      
+      let lowerSearch = searchTerm.lowercaseString
+      
+      let lowerSelf = self.lowercaseString
+      
+      if lowerSelf.hasPrefix(lowerSearch) {
+         return true
+      } else {
+         return false
+      }
+      
+   }
+   
+}
 
 

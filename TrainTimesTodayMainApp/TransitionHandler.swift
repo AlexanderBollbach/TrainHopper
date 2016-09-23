@@ -80,6 +80,8 @@ class PopAnimator: NSObject, UIViewControllerAnimatedTransitioning {
    
    func animateTransition(transitionContext: UIViewControllerContextTransitioning) {
       
+      
+      
       transitionContext.completeTransition(!transitionContext.transitionWasCancelled())
       
    }
