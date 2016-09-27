@@ -19,17 +19,20 @@ class LIRR_API {
    
    
    
-   func httpGet(completion: [String]->())  {
+   func httpGet(completion: @escaping ([String])->())  {
       
       
       var departTimes = [String]()
       
-      let request = NSMutableURLRequest(URL: NSURL(string:
-         "https://traintime.lirr.org/api/TrainTime?api_key=742b288047c382c66326a26f7f5e4e4a&startsta="+homeStation+"&endsta="+workStation)!)
-      let session = NSURLSession.sharedSession()
+      
+      let urlString = "https://traintime.lirr.org/api/TrainTime?" +
+         "api_key=742b288047c382c66326a26f7f5e4e4a&startsta=" + homeStation + "&endsta=" + workStation
+      
+      let request = URLRequest(url: URL(string: urlString)!)
+      let session = URLSession.shared
       
       
-      let task = session.dataTaskWithRequest(request) {
+      let task = session.dataTask(with: request) {
          
          (data, response, error) -> Void in
          
@@ -39,7 +42,7 @@ class LIRR_API {
          
          let trips = jsonSw["TRIPS"]
          
-         for (index,subJson):(String, JSON) in trips {
+         for (_,subJson):(String, JSON) in trips {
             
             let legs = subJson["LEGS"][0]
             
@@ -59,10 +62,12 @@ class LIRR_API {
          
          
          
-         dispatch_async(dispatch_get_main_queue()) {
-            
+         DispatchQueue.main.sync {
             completion(departTimes)
          }
+            
+            
+         
          
          
          

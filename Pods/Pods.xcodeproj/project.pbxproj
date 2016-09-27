@@ -7,172 +7,162 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		12C878FE80923B91D4BD38D7A984B3AC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0385DAE07D97B0EDCD51C5FDA6E1153 /* Foundation.framework */; };
+		1BFA351541390A77A2E6E98F51F6AF1A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DA24BE23AC14FEFB14D3D531FC4CAD0 /* Foundation.framework */; };
 		1F812A95D45B384D5F672EA4FDC9CEBD /* MMWormholeCoordinatedFileTransiting.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D3071113BEB7BEA7D4866B37AC5687 /* MMWormholeCoordinatedFileTransiting.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		250BE8463D2386CA584C71F3BE643C6D /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C90C0CDB102A327864F38F27363470C0 /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		293EAA14B1546643E727FB36217C950F /* Pods-TrainTimesTodayMainApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BD9C940ACA648F6F643125D814E1BC2 /* Pods-TrainTimesTodayMainApp-dummy.m */; };
+		29AABFD6C8AD268E8C7C3F249B7DEDC6 /* Pods-TrainTimesTodayExtension-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A68AA0DB6C1A9954948249F62124DC4F /* Pods-TrainTimesTodayExtension-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2E1831DFF2984D4B9744FFBD480692B2 /* Pods-TrainTimesTodayMainApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7738F3EE9D066AC43D6210F00B03A233 /* Pods-TrainTimesTodayMainApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		33618BBEB40ED0B04402BD45D0A12D96 /* MMWormholeSessionMessageTransiting.h in Headers */ = {isa = PBXBuildFile; fileRef = 93E23DC92E22B4052DE36E886BC63DE5 /* MMWormholeSessionMessageTransiting.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5C97E326882C3B079F6BCFEF2B61B8DD /* Pods-TrainTimesTodayMainApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3432DD03E32A9FE86161B51C7A1DD1B6 /* Pods-TrainTimesTodayMainApp-dummy.m */; };
+		45D865CB1822646EFC53BFA48FC4A0B4 /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF3B1598234AEC6BA60EC23B764B4E8A /* WatchConnectivity.framework */; };
+		4E63336167B93D8E3FD6918610D2D056 /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BC92B60080CF11024B78696E4E0678B /* SwiftyJSON-dummy.m */; };
+		5EA2356DBF3DC93DFFF650550FFB49E1 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC95DB5B6B41B4E52724ED86E16DF6BF /* SwiftyJSON.swift */; };
 		64EFFD28CE03D338816716C8C78AF78D /* MMWormholeSessionFileTransiting.m in Sources */ = {isa = PBXBuildFile; fileRef = C05978CBC738D57FB5FC4B883EC3352B /* MMWormholeSessionFileTransiting.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		7184EBC88761EE18547C55829A9124A3 /* Pods-TrainTimesTodayExtension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BCDCB51C7C36B6E8F9528B8909037DA6 /* Pods-TrainTimesTodayExtension-dummy.m */; };
 		762F18A4394FA15213070BDF993A2B48 /* MMWormholeFileTransiting.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D4AABD780948F9FF32EFC1F850DB423 /* MMWormholeFileTransiting.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E45F0A4864675CF876C8F20DCA0DAD4 /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C90C0CDB102A327864F38F27363470C0 /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8286A097D517FF5E9AFA0BA22888E369 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DA24BE23AC14FEFB14D3D531FC4CAD0 /* Foundation.framework */; };
 		84B37CAEC1716055BEA3DA3795BC8A3C /* MMWormholeCoordinatedFileTransiting.h in Headers */ = {isa = PBXBuildFile; fileRef = AE7939428941AE127DDAEDA988277748 /* MMWormholeCoordinatedFileTransiting.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8CA202DE2B82A4FA9F6433D0034EA12E /* MMWormholeSession.h in Headers */ = {isa = PBXBuildFile; fileRef = 644A23616282C4424172BCD9B367F273 /* MMWormholeSession.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		96B34A6BCC42E8575B1D4A4BD779F499 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC95DB5B6B41B4E52724ED86E16DF6BF /* SwiftyJSON.swift */; };
-		9760CBFA25C5EC99931483285F5C5396 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0385DAE07D97B0EDCD51C5FDA6E1153 /* Foundation.framework */; };
 		97BD31BB166AC5135ED7232E94EFF9C8 /* MMWormholeSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 35D315E5925564DE683D1AC8BB26CF86 /* MMWormholeSession.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		AB440047782927CD747895B7CD0F440D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DA24BE23AC14FEFB14D3D531FC4CAD0 /* Foundation.framework */; };
 		B07198FCDB0B6AA461872F1299CD9FCB /* MMWormholeFileTransiting.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A6A939F19F806E26F85A9503FAADE7 /* MMWormholeFileTransiting.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		B21C5C642DAA9F0A3A3D43BF71FA5DA5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0385DAE07D97B0EDCD51C5FDA6E1153 /* Foundation.framework */; };
-		B32F2854885A96F2FD1CE5C0406BC11C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0385DAE07D97B0EDCD51C5FDA6E1153 /* Foundation.framework */; };
-		C01DBAAF977B02CB9C4E82028B994C62 /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5186D7B3B8852F3F4544CADB74747FDB /* WatchConnectivity.framework */; };
-		CBA8D10CE8113372FC75242EAB036F8E /* Pods-TrainTimesTodayMainApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0322BDD4915684D791E6A21992425D17 /* Pods-TrainTimesTodayMainApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CC31FA025B3936FEC27592CC01AC4A5F /* MMWormholeSessionFileTransiting.h in Headers */ = {isa = PBXBuildFile; fileRef = F46C7F422647FC2EB40A91F28D45842C /* MMWormholeSessionFileTransiting.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D06E287165536614B66FA045D8A5D99A /* MMWormholeTransiting.h in Headers */ = {isa = PBXBuildFile; fileRef = 24AE826A7A89F54AC56B944C6A8A7C64 /* MMWormholeTransiting.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D0BA6B1229447714B1B888BC5A6EBFEF /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BC92B60080CF11024B78696E4E0678B /* SwiftyJSON-dummy.m */; };
-		D805198977203C5B90EE629B35CA45A8 /* Pods-TrainTimesTodayExtension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D69F725FDA08C3DD759C32C42B3D0B8F /* Pods-TrainTimesTodayExtension-dummy.m */; };
 		DE9D89BFECB559F825F1BC2506FB1695 /* MMWormhole.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E953D0AD96DDCC74F1F00F5D38901F8 /* MMWormhole.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DFEEABC8C678127F23965CE3AE4B9F67 /* MMWormholeSessionContextTransiting.h in Headers */ = {isa = PBXBuildFile; fileRef = 980FD0CCD9B871314ADCC3C5DD4B8E96 /* MMWormholeSessionContextTransiting.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F282E18AB7B7C15A6720E35FEB5B8502 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DA24BE23AC14FEFB14D3D531FC4CAD0 /* Foundation.framework */; };
 		F3E82A13FF8E6373C29FCB6C70B9CA14 /* MMWormholeSessionContextTransiting.m in Sources */ = {isa = PBXBuildFile; fileRef = D7FAC0F2DE0BC4A2D2A9F77487DE47CA /* MMWormholeSessionContextTransiting.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		F8D371C19203C82CAE29F749C845484A /* MMWormhole.m in Sources */ = {isa = PBXBuildFile; fileRef = A06685B79369A596612036B0D68260F3 /* MMWormhole.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		FC0CF3F2978060186204610D8D21DB9C /* MMWormhole-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 779E1097BC1B70DE7E3A1B1AE3491865 /* MMWormhole-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FD8C3A12053BBFE6526E99CF6FD0B9C0 /* MMWormhole-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B30B117E782B73F51027C6BBBE1CB7 /* MMWormhole-dummy.m */; };
 		FD964DF641A3F771E9A3686586108445 /* MMWormholeSessionMessageTransiting.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F538C52753098D8BFB5F350C2261D91 /* MMWormholeSessionMessageTransiting.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		FE5A2EADED9F58A5A8F911FF914477AC /* Pods-TrainTimesTodayExtension-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D1E82BC0630139248DCB31D0898822 /* Pods-TrainTimesTodayExtension-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		625812E661FD45FC909EAB3CC7154543 /* PBXContainerItemProxy */ = {
+		0E004B4B5621520C84A6415CCB157A71 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = DA2550D7D94491C4B4EA8F3435FEEC4B;
 			remoteInfo = MMWormhole;
 		};
-		7B2E0A1EDF271697976916056F5C4897 /* PBXContainerItemProxy */ = {
+		4FF6E27266457354C031F9F141091A04 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = DA2550D7D94491C4B4EA8F3435FEEC4B;
-			remoteInfo = MMWormhole;
-		};
-		B263B742E9F758A0C3D36C2E1B9BACE1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 208B040A48ADD8C28EC2D653C77EFE41;
+			remoteGlobalIDString = 63C0291F086DBBDF3052D2D2FEA0E2CB;
 			remoteInfo = SwiftyJSON;
 		};
-		DC75BCF46D5482EF83A3ACC33990C22B /* PBXContainerItemProxy */ = {
+		538A499FEFBA53D3D7809FF4F8EABBEB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 208B040A48ADD8C28EC2D653C77EFE41;
+			remoteGlobalIDString = DA2550D7D94491C4B4EA8F3435FEEC4B;
+			remoteInfo = MMWormhole;
+		};
+		5EDCBE37760F38296B0E1FA0F6D5F0B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 63C0291F086DBBDF3052D2D2FEA0E2CB;
 			remoteInfo = SwiftyJSON;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0322BDD4915684D791E6A21992425D17 /* Pods-TrainTimesTodayMainApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TrainTimesTodayMainApp-umbrella.h"; sourceTree = "<group>"; };
+		01F1965067B12B19D5A144F6EF321296 /* Pods_TrainTimesTodayMainApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrainTimesTodayMainApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		03A6A939F19F806E26F85A9503FAADE7 /* MMWormholeFileTransiting.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMWormholeFileTransiting.m; path = Source/MMWormholeFileTransiting.m; sourceTree = "<group>"; };
 		04A2A3CCDE0D7B7E0BE2F1945FB82F24 /* MMWormhole-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MMWormhole-prefix.pch"; sourceTree = "<group>"; };
-		06DE8A755E4274977DD7AA11BC166429 /* Pods-TrainTimesTodayExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TrainTimesTodayExtension.release.xcconfig"; sourceTree = "<group>"; };
-		128A6ED8E268954797ECDEE1A3128871 /* Pods-TrainTimesTodayExtension-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TrainTimesTodayExtension-acknowledgements.markdown"; sourceTree = "<group>"; };
-		14D1E82BC0630139248DCB31D0898822 /* Pods-TrainTimesTodayExtension-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TrainTimesTodayExtension-umbrella.h"; sourceTree = "<group>"; };
+		0FD7C005ECC3A04E555A7A516C919A89 /* Pods-TrainTimesTodayMainApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-TrainTimesTodayMainApp.modulemap"; sourceTree = "<group>"; };
+		1BABBF28E769349882C667211AB03AB3 /* Pods-TrainTimesTodayMainApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TrainTimesTodayMainApp-frameworks.sh"; sourceTree = "<group>"; };
 		1BC92B60080CF11024B78696E4E0678B /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
+		230D2F3007EC895D0319CCF66941F102 /* Pods-TrainTimesTodayMainApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TrainTimesTodayMainApp.release.xcconfig"; sourceTree = "<group>"; };
 		24AE826A7A89F54AC56B944C6A8A7C64 /* MMWormholeTransiting.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMWormholeTransiting.h; path = Source/MMWormholeTransiting.h; sourceTree = "<group>"; };
+		289DA343AC56049CA2EFA140484782C0 /* MMWormhole.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MMWormhole.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E953D0AD96DDCC74F1F00F5D38901F8 /* MMWormhole.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMWormhole.h; path = Source/MMWormhole.h; sourceTree = "<group>"; };
-		2F7C04D903AFCCD695C14826C141E209 /* Pods_TrainTimesTodayMainApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrainTimesTodayMainApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		303F6E9BA8DF0FE8A55CEA6730264C6A /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
-		323A03BC1B09D70C5ABD604324A24DE2 /* Pods_TrainTimesTodayExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrainTimesTodayExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		32B30B117E782B73F51027C6BBBE1CB7 /* MMWormhole-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MMWormhole-dummy.m"; sourceTree = "<group>"; };
-		3350E04E3A7E8C6659846BD0C958E32B /* Pods-TrainTimesTodayMainApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TrainTimesTodayMainApp.debug.xcconfig"; sourceTree = "<group>"; };
-		3432DD03E32A9FE86161B51C7A1DD1B6 /* Pods-TrainTimesTodayMainApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TrainTimesTodayMainApp-dummy.m"; sourceTree = "<group>"; };
 		35D315E5925564DE683D1AC8BB26CF86 /* MMWormholeSession.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMWormholeSession.m; path = Source/MMWormholeSession.m; sourceTree = "<group>"; };
-		39B373308283C10A65EB67EA04D71E56 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3C7CF82BCAFD6B49A8F4EED7E54251E5 /* MMWormhole.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MMWormhole.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3CCC9ECFD2C5152523990D8A51F22C16 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		375C15B03DB30C721A11F2901964489A /* Pods-TrainTimesTodayExtension-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TrainTimesTodayExtension-acknowledgements.plist"; sourceTree = "<group>"; };
 		41D3071113BEB7BEA7D4866B37AC5687 /* MMWormholeCoordinatedFileTransiting.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMWormholeCoordinatedFileTransiting.m; path = Source/MMWormholeCoordinatedFileTransiting.m; sourceTree = "<group>"; };
 		4F538C52753098D8BFB5F350C2261D91 /* MMWormholeSessionMessageTransiting.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMWormholeSessionMessageTransiting.m; path = Source/MMWormholeSessionMessageTransiting.m; sourceTree = "<group>"; };
-		5186D7B3B8852F3F4544CADB74747FDB /* WatchConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchConnectivity.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/WatchConnectivity.framework; sourceTree = DEVELOPER_DIR; };
-		59807A87A60A45F780AFADF85C12BC42 /* Pods-TrainTimesTodayMainApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TrainTimesTodayMainApp-acknowledgements.markdown"; sourceTree = "<group>"; };
-		5B428FDD927E5FB44CBBBEA7E579B30E /* Pods-TrainTimesTodayExtension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-TrainTimesTodayExtension.modulemap"; sourceTree = "<group>"; };
 		5B53E6BB76FAAE8916F3146A2395E893 /* MMWormhole.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = MMWormhole.modulemap; sourceTree = "<group>"; };
 		6127E357EC2426662D14D8B9D8E0C88B /* MMWormhole.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MMWormhole.xcconfig; sourceTree = "<group>"; };
 		644A23616282C4424172BCD9B367F273 /* MMWormholeSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMWormholeSession.h; path = Source/MMWormholeSession.h; sourceTree = "<group>"; };
-		6A4B48ACD91B060417065A65848E03C7 /* Pods-TrainTimesTodayMainApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-TrainTimesTodayMainApp.modulemap"; sourceTree = "<group>"; };
+		6DA24BE23AC14FEFB14D3D531FC4CAD0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6DF021EB97AF6CB23D006B17AEB3004B /* Pods_TrainTimesTodayExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrainTimesTodayExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		73C5F8C7D9429FF0240C5408D01E0770 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74ED8E79379A9EC42EEAA7B16894683D /* Pods-TrainTimesTodayMainApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TrainTimesTodayMainApp.debug.xcconfig"; sourceTree = "<group>"; };
+		7738F3EE9D066AC43D6210F00B03A233 /* Pods-TrainTimesTodayMainApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TrainTimesTodayMainApp-umbrella.h"; sourceTree = "<group>"; };
 		779E1097BC1B70DE7E3A1B1AE3491865 /* MMWormhole-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MMWormhole-umbrella.h"; sourceTree = "<group>"; };
-		7A9A81323940EF6DB1D5983C99DEC506 /* Pods-TrainTimesTodayExtension-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TrainTimesTodayExtension-resources.sh"; sourceTree = "<group>"; };
+		78E7172BDAFDAABD897A34F0247C2B28 /* Pods-TrainTimesTodayMainApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TrainTimesTodayMainApp-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7F01D908773E0C8A0936F8BD6CDC6DED /* Pods-TrainTimesTodayExtension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-TrainTimesTodayExtension.modulemap"; sourceTree = "<group>"; };
 		860087D96ED6D323A63AE9FED331E780 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8ECDA7B65C8642873D3243754C50AD2C /* Pods-TrainTimesTodayMainApp-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TrainTimesTodayMainApp-resources.sh"; sourceTree = "<group>"; };
 		926FA9B3B9F6D257B660EEEBA210C48E /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		93E23DC92E22B4052DE36E886BC63DE5 /* MMWormholeSessionMessageTransiting.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMWormholeSessionMessageTransiting.h; path = Source/MMWormholeSessionMessageTransiting.h; sourceTree = "<group>"; };
 		980FD0CCD9B871314ADCC3C5DD4B8E96 /* MMWormholeSessionContextTransiting.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMWormholeSessionContextTransiting.h; path = Source/MMWormholeSessionContextTransiting.h; sourceTree = "<group>"; };
+		9BD9C940ACA648F6F643125D814E1BC2 /* Pods-TrainTimesTodayMainApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TrainTimesTodayMainApp-dummy.m"; sourceTree = "<group>"; };
 		9D4AABD780948F9FF32EFC1F850DB423 /* MMWormholeFileTransiting.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMWormholeFileTransiting.h; path = Source/MMWormholeFileTransiting.h; sourceTree = "<group>"; };
 		A06685B79369A596612036B0D68260F3 /* MMWormhole.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMWormhole.m; path = Source/MMWormhole.m; sourceTree = "<group>"; };
-		A7A28F0A40D0534D84DFD4E084C9A3AE /* Pods-TrainTimesTodayMainApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TrainTimesTodayMainApp-acknowledgements.plist"; sourceTree = "<group>"; };
-		A7D6C52901D22C0B64AA59F10278593C /* Pods-TrainTimesTodayExtension-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TrainTimesTodayExtension-frameworks.sh"; sourceTree = "<group>"; };
+		A68AA0DB6C1A9954948249F62124DC4F /* Pods-TrainTimesTodayExtension-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TrainTimesTodayExtension-umbrella.h"; sourceTree = "<group>"; };
+		AA10DC30E88C5855350AB1928F470847 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA322C220265277E252954A16249CD96 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE7939428941AE127DDAEDA988277748 /* MMWormholeCoordinatedFileTransiting.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMWormholeCoordinatedFileTransiting.h; path = Source/MMWormholeCoordinatedFileTransiting.h; sourceTree = "<group>"; };
-		B4655D1D87D0A7F5995C62ACDA5D2E50 /* Pods-TrainTimesTodayExtension-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TrainTimesTodayExtension-acknowledgements.plist"; sourceTree = "<group>"; };
-		B7C083DC1614A4240B979C866B5E0D72 /* Pods-TrainTimesTodayMainApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TrainTimesTodayMainApp-frameworks.sh"; sourceTree = "<group>"; };
-		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B674CBC0A3EE12E5777FBF2679ADF350 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCDCB51C7C36B6E8F9528B8909037DA6 /* Pods-TrainTimesTodayExtension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TrainTimesTodayExtension-dummy.m"; sourceTree = "<group>"; };
 		C05978CBC738D57FB5FC4B883EC3352B /* MMWormholeSessionFileTransiting.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMWormholeSessionFileTransiting.m; path = Source/MMWormholeSessionFileTransiting.m; sourceTree = "<group>"; };
 		C90C0CDB102A327864F38F27363470C0 /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
 		CC95DB5B6B41B4E52724ED86E16DF6BF /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
-		CE3F6212C9DCE402CD503B237FD6782F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D0385DAE07D97B0EDCD51C5FDA6E1153 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		D69F725FDA08C3DD759C32C42B3D0B8F /* Pods-TrainTimesTodayExtension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TrainTimesTodayExtension-dummy.m"; sourceTree = "<group>"; };
+		CF3B1598234AEC6BA60EC23B764B4E8A /* WatchConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchConnectivity.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/WatchConnectivity.framework; sourceTree = DEVELOPER_DIR; };
+		D4DB2D19970E0549C9203190ADE8D049 /* Pods-TrainTimesTodayExtension-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TrainTimesTodayExtension-acknowledgements.markdown"; sourceTree = "<group>"; };
 		D7FAC0F2DE0BC4A2D2A9F77487DE47CA /* MMWormholeSessionContextTransiting.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMWormholeSessionContextTransiting.m; path = Source/MMWormholeSessionContextTransiting.m; sourceTree = "<group>"; };
-		DE69D8BB0B940956423E625307D51B00 /* Pods-TrainTimesTodayMainApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TrainTimesTodayMainApp.release.xcconfig"; sourceTree = "<group>"; };
+		DFC2CB77F50A6522130E5D5699D02EB5 /* Pods-TrainTimesTodayMainApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TrainTimesTodayMainApp-acknowledgements.plist"; sourceTree = "<group>"; };
+		E0D9409C6B8E18D1463B8DA10BA418DD /* Pods-TrainTimesTodayExtension-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TrainTimesTodayExtension-resources.sh"; sourceTree = "<group>"; };
 		E5FB04C85D7F70B6BE6F5AF4FB59D7F0 /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
+		EA17AB0C280A03F1E7F56455FA7E0EA6 /* Pods-TrainTimesTodayExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TrainTimesTodayExtension.release.xcconfig"; sourceTree = "<group>"; };
+		F2B511C13CDD21925330F45580430EFC /* Pods-TrainTimesTodayMainApp-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TrainTimesTodayMainApp-resources.sh"; sourceTree = "<group>"; };
 		F46C7F422647FC2EB40A91F28D45842C /* MMWormholeSessionFileTransiting.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMWormholeSessionFileTransiting.h; path = Source/MMWormholeSessionFileTransiting.h; sourceTree = "<group>"; };
-		F7E9016EA14989A9EB3D490027338B1E /* Pods-TrainTimesTodayExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TrainTimesTodayExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		FE0B410ED3A8BADED84EBEC409DF53A6 /* Pods-TrainTimesTodayExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TrainTimesTodayExtension.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0C76246C061E92B62D4C62F333F8A258 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B21C5C642DAA9F0A3A3D43BF71FA5DA5 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		1F95150333D024602EDC33E340A536D8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B32F2854885A96F2FD1CE5C0406BC11C /* Foundation.framework in Frameworks */,
-				C01DBAAF977B02CB9C4E82028B994C62 /* WatchConnectivity.framework in Frameworks */,
+				F282E18AB7B7C15A6720E35FEB5B8502 /* Foundation.framework in Frameworks */,
+				45D865CB1822646EFC53BFA48FC4A0B4 /* WatchConnectivity.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5C99F5B33F0CC4FFC1948C2DFC398634 /* Frameworks */ = {
+		BDB939CD77D2A427BD5C27BDD39206D7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9760CBFA25C5EC99931483285F5C5396 /* Foundation.framework in Frameworks */,
+				AB440047782927CD747895B7CD0F440D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5D4FC0D44C12D2BF5D880695DE3ED476 /* Frameworks */ = {
+		CBDD53E9A3BB7BEB7EDF23A882A5E6B5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				12C878FE80923B91D4BD38D7A984B3AC /* Foundation.framework in Frameworks */,
+				1BFA351541390A77A2E6E98F51F6AF1A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF9980A31B657A1090D1B6F79A1FCC03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8286A097D517FF5E9AFA0BA22888E369 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		009CDDBE8F105449CEA15750AC6988AB /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				BCE5AE41201049B9FDADA5A8B3249190 /* Pods-TrainTimesTodayExtension */,
-				2B3524A71DCE331275A03CF0ADA17ACB /* Pods-TrainTimesTodayMainApp */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
 		0EBA92D03DA61BCC86393EB8932CF1D4 /* SwiftyJSON */ = {
 			isa = PBXGroup;
 			children = (
@@ -204,22 +194,13 @@
 			name = Core;
 			sourceTree = "<group>";
 		};
-		2B3524A71DCE331275A03CF0ADA17ACB /* Pods-TrainTimesTodayMainApp */ = {
+		304DB24A54B324BA80C91F6229EA6836 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				39B373308283C10A65EB67EA04D71E56 /* Info.plist */,
-				6A4B48ACD91B060417065A65848E03C7 /* Pods-TrainTimesTodayMainApp.modulemap */,
-				59807A87A60A45F780AFADF85C12BC42 /* Pods-TrainTimesTodayMainApp-acknowledgements.markdown */,
-				A7A28F0A40D0534D84DFD4E084C9A3AE /* Pods-TrainTimesTodayMainApp-acknowledgements.plist */,
-				3432DD03E32A9FE86161B51C7A1DD1B6 /* Pods-TrainTimesTodayMainApp-dummy.m */,
-				B7C083DC1614A4240B979C866B5E0D72 /* Pods-TrainTimesTodayMainApp-frameworks.sh */,
-				8ECDA7B65C8642873D3243754C50AD2C /* Pods-TrainTimesTodayMainApp-resources.sh */,
-				0322BDD4915684D791E6A21992425D17 /* Pods-TrainTimesTodayMainApp-umbrella.h */,
-				3350E04E3A7E8C6659846BD0C958E32B /* Pods-TrainTimesTodayMainApp.debug.xcconfig */,
-				DE69D8BB0B940956423E625307D51B00 /* Pods-TrainTimesTodayMainApp.release.xcconfig */,
+				8DFEA4FDDE5D822ABA030F4089C27E06 /* Pods-TrainTimesTodayExtension */,
+				54608D1175D333F62A98E8B9F4CDAB15 /* Pods-TrainTimesTodayMainApp */,
 			);
-			name = "Pods-TrainTimesTodayMainApp";
-			path = "Target Support Files/Pods-TrainTimesTodayMainApp";
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		3628E0285DFC9174BC1F4630C601417E /* Support Files */ = {
@@ -236,43 +217,78 @@
 			path = "../Target Support Files/MMWormhole";
 			sourceTree = "<group>";
 		};
-		429257485DA9379CC006F33C5FC07ED1 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				D0385DAE07D97B0EDCD51C5FDA6E1153 /* Foundation.framework */,
-				5186D7B3B8852F3F4544CADB74747FDB /* WatchConnectivity.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
 		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				429257485DA9379CC006F33C5FC07ED1 /* iOS */,
+				A535147B05BC495C2C899AAA178AF7FE /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		54608D1175D333F62A98E8B9F4CDAB15 /* Pods-TrainTimesTodayMainApp */ = {
+			isa = PBXGroup;
+			children = (
+				AA10DC30E88C5855350AB1928F470847 /* Info.plist */,
+				0FD7C005ECC3A04E555A7A516C919A89 /* Pods-TrainTimesTodayMainApp.modulemap */,
+				78E7172BDAFDAABD897A34F0247C2B28 /* Pods-TrainTimesTodayMainApp-acknowledgements.markdown */,
+				DFC2CB77F50A6522130E5D5699D02EB5 /* Pods-TrainTimesTodayMainApp-acknowledgements.plist */,
+				9BD9C940ACA648F6F643125D814E1BC2 /* Pods-TrainTimesTodayMainApp-dummy.m */,
+				1BABBF28E769349882C667211AB03AB3 /* Pods-TrainTimesTodayMainApp-frameworks.sh */,
+				F2B511C13CDD21925330F45580430EFC /* Pods-TrainTimesTodayMainApp-resources.sh */,
+				7738F3EE9D066AC43D6210F00B03A233 /* Pods-TrainTimesTodayMainApp-umbrella.h */,
+				74ED8E79379A9EC42EEAA7B16894683D /* Pods-TrainTimesTodayMainApp.debug.xcconfig */,
+				230D2F3007EC895D0319CCF66941F102 /* Pods-TrainTimesTodayMainApp.release.xcconfig */,
+			);
+			name = "Pods-TrainTimesTodayMainApp";
+			path = "Target Support Files/Pods-TrainTimesTodayMainApp";
+			sourceTree = "<group>";
+		};
+		60785302B9327880CCD4CFD85DA836A3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				289DA343AC56049CA2EFA140484782C0 /* MMWormhole.framework */,
+				6DF021EB97AF6CB23D006B17AEB3004B /* Pods_TrainTimesTodayExtension.framework */,
+				01F1965067B12B19D5A144F6EF321296 /* Pods_TrainTimesTodayMainApp.framework */,
+				B674CBC0A3EE12E5777FBF2679ADF350 /* SwiftyJSON.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
-				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
 				B6D4E6626704742FB87EE092C8F45AC7 /* Pods */,
-				87DF598702D29B4156C845180451ABA4 /* Products */,
-				009CDDBE8F105449CEA15750AC6988AB /* Targets Support Files */,
+				60785302B9327880CCD4CFD85DA836A3 /* Products */,
+				304DB24A54B324BA80C91F6229EA6836 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		87DF598702D29B4156C845180451ABA4 /* Products */ = {
+		8DFEA4FDDE5D822ABA030F4089C27E06 /* Pods-TrainTimesTodayExtension */ = {
 			isa = PBXGroup;
 			children = (
-				3C7CF82BCAFD6B49A8F4EED7E54251E5 /* MMWormhole.framework */,
-				323A03BC1B09D70C5ABD604324A24DE2 /* Pods_TrainTimesTodayExtension.framework */,
-				2F7C04D903AFCCD695C14826C141E209 /* Pods_TrainTimesTodayMainApp.framework */,
-				3CCC9ECFD2C5152523990D8A51F22C16 /* SwiftyJSON.framework */,
+				AA322C220265277E252954A16249CD96 /* Info.plist */,
+				7F01D908773E0C8A0936F8BD6CDC6DED /* Pods-TrainTimesTodayExtension.modulemap */,
+				D4DB2D19970E0549C9203190ADE8D049 /* Pods-TrainTimesTodayExtension-acknowledgements.markdown */,
+				375C15B03DB30C721A11F2901964489A /* Pods-TrainTimesTodayExtension-acknowledgements.plist */,
+				BCDCB51C7C36B6E8F9528B8909037DA6 /* Pods-TrainTimesTodayExtension-dummy.m */,
+				E0D9409C6B8E18D1463B8DA10BA418DD /* Pods-TrainTimesTodayExtension-resources.sh */,
+				A68AA0DB6C1A9954948249F62124DC4F /* Pods-TrainTimesTodayExtension-umbrella.h */,
+				FE0B410ED3A8BADED84EBEC409DF53A6 /* Pods-TrainTimesTodayExtension.debug.xcconfig */,
+				EA17AB0C280A03F1E7F56455FA7E0EA6 /* Pods-TrainTimesTodayExtension.release.xcconfig */,
 			);
-			name = Products;
+			name = "Pods-TrainTimesTodayExtension";
+			path = "Target Support Files/Pods-TrainTimesTodayExtension";
+			sourceTree = "<group>";
+		};
+		A535147B05BC495C2C899AAA178AF7FE /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6DA24BE23AC14FEFB14D3D531FC4CAD0 /* Foundation.framework */,
+				CF3B1598234AEC6BA60EC23B764B4E8A /* WatchConnectivity.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		AF3A27C9E4ECDD41ED050329D7F1422E /* Support Files */ = {
@@ -307,32 +323,30 @@
 			path = MMWormhole;
 			sourceTree = "<group>";
 		};
-		BCE5AE41201049B9FDADA5A8B3249190 /* Pods-TrainTimesTodayExtension */ = {
-			isa = PBXGroup;
-			children = (
-				CE3F6212C9DCE402CD503B237FD6782F /* Info.plist */,
-				5B428FDD927E5FB44CBBBEA7E579B30E /* Pods-TrainTimesTodayExtension.modulemap */,
-				128A6ED8E268954797ECDEE1A3128871 /* Pods-TrainTimesTodayExtension-acknowledgements.markdown */,
-				B4655D1D87D0A7F5995C62ACDA5D2E50 /* Pods-TrainTimesTodayExtension-acknowledgements.plist */,
-				D69F725FDA08C3DD759C32C42B3D0B8F /* Pods-TrainTimesTodayExtension-dummy.m */,
-				A7D6C52901D22C0B64AA59F10278593C /* Pods-TrainTimesTodayExtension-frameworks.sh */,
-				7A9A81323940EF6DB1D5983C99DEC506 /* Pods-TrainTimesTodayExtension-resources.sh */,
-				14D1E82BC0630139248DCB31D0898822 /* Pods-TrainTimesTodayExtension-umbrella.h */,
-				F7E9016EA14989A9EB3D490027338B1E /* Pods-TrainTimesTodayExtension.debug.xcconfig */,
-				06DE8A755E4274977DD7AA11BC166429 /* Pods-TrainTimesTodayExtension.release.xcconfig */,
-			);
-			name = "Pods-TrainTimesTodayExtension";
-			path = "Target Support Files/Pods-TrainTimesTodayExtension";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		31D59BA44B6888819B1544FCA00996AC /* Headers */ = {
+		1C8AFE0A8448E0F2FC1C7E2BAB9870DC /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				250BE8463D2386CA584C71F3BE643C6D /* SwiftyJSON-umbrella.h in Headers */,
+				29AABFD6C8AD268E8C7C3F249B7DEDC6 /* Pods-TrainTimesTodayExtension-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C7E32339AF8F61C7A35E3CDD046424E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E45F0A4864675CF876C8F20DCA0DAD4 /* SwiftyJSON-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		611ADB7A278274EA345DE1414C9669AB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E1831DFF2984D4B9744FFBD480692B2 /* Pods-TrainTimesTodayMainApp-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,32 +366,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BAF51F24B7E32495F1091644B8E5B09F /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FE5A2EADED9F58A5A8F911FF914477AC /* Pods-TrainTimesTodayExtension-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FF4D0987C67DEB7EA764C8D129A948BB /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CBA8D10CE8113372FC75242EAB036F8E /* Pods-TrainTimesTodayMainApp-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		208B040A48ADD8C28EC2D653C77EFE41 /* SwiftyJSON */ = {
+		32B6857DF0BD6102E7FBCC8200514B91 /* Pods-TrainTimesTodayMainApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0AE72575F6F9D553152D691DE7C12939 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
+			buildConfigurationList = 01169BB6CB6F604829322F8FDA04313A /* Build configuration list for PBXNativeTarget "Pods-TrainTimesTodayMainApp" */;
 			buildPhases = (
-				DA4B8226E7FAB4C41579D29BC350C70A /* Sources */,
-				5D4FC0D44C12D2BF5D880695DE3ED476 /* Frameworks */,
-				31D59BA44B6888819B1544FCA00996AC /* Headers */,
+				9D215FA40A257BAD96BEF5BCB56F319E /* Sources */,
+				FF9980A31B657A1090D1B6F79A1FCC03 /* Frameworks */,
+				611ADB7A278274EA345DE1414C9669AB /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7A94C4F90FDAE577B52D5A91D9D8D93A /* PBXTargetDependency */,
+				59F1E103F1FC16891D5C531A21EA41AA /* PBXTargetDependency */,
+			);
+			name = "Pods-TrainTimesTodayMainApp";
+			productName = "Pods-TrainTimesTodayMainApp";
+			productReference = 01F1965067B12B19D5A144F6EF321296 /* Pods_TrainTimesTodayMainApp.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		63C0291F086DBBDF3052D2D2FEA0E2CB /* SwiftyJSON */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C572437A37B858B0E4AB42501D2964BF /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
+			buildPhases = (
+				CC28866F9417C272F3A78557F082424D /* Sources */,
+				CBDD53E9A3BB7BEB7EDF23A882A5E6B5 /* Frameworks */,
+				3C7E32339AF8F61C7A35E3CDD046424E /* Headers */,
 			);
 			buildRules = (
 			);
@@ -385,45 +402,7 @@
 			);
 			name = SwiftyJSON;
 			productName = SwiftyJSON;
-			productReference = 3CCC9ECFD2C5152523990D8A51F22C16 /* SwiftyJSON.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		69F2E16D2082E23F987D9CACF250A2BA /* Pods-TrainTimesTodayExtension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 57D4EDC905B97D03AEA11092CE0993D7 /* Build configuration list for PBXNativeTarget "Pods-TrainTimesTodayExtension" */;
-			buildPhases = (
-				FDD277772773961610FE41CA65376027 /* Sources */,
-				5C99F5B33F0CC4FFC1948C2DFC398634 /* Frameworks */,
-				BAF51F24B7E32495F1091644B8E5B09F /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				2019E7A4845ED7EE8704290BC40E3FB7 /* PBXTargetDependency */,
-				3ECEB25AA272C3C3A654C72B32BBF9B7 /* PBXTargetDependency */,
-			);
-			name = "Pods-TrainTimesTodayExtension";
-			productName = "Pods-TrainTimesTodayExtension";
-			productReference = 323A03BC1B09D70C5ABD604324A24DE2 /* Pods_TrainTimesTodayExtension.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		80CD32DA70825087EE316D800F229AD7 /* Pods-TrainTimesTodayMainApp */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1E39ED341CA9ECEC889C6F8B397E2AF6 /* Build configuration list for PBXNativeTarget "Pods-TrainTimesTodayMainApp" */;
-			buildPhases = (
-				A27341AFE2AF0E9F39E689B9A1F68D13 /* Sources */,
-				0C76246C061E92B62D4C62F333F8A258 /* Frameworks */,
-				FF4D0987C67DEB7EA764C8D129A948BB /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				FE4C8890C3F168FC8F20B0C91D6D218A /* PBXTargetDependency */,
-				9FC4BECF9F365E50640CB03C8C7E1505 /* PBXTargetDependency */,
-			);
-			name = "Pods-TrainTimesTodayMainApp";
-			productName = "Pods-TrainTimesTodayMainApp";
-			productReference = 2F7C04D903AFCCD695C14826C141E209 /* Pods_TrainTimesTodayMainApp.framework */;
+			productReference = B674CBC0A3EE12E5777FBF2679ADF350 /* SwiftyJSON.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		DA2550D7D94491C4B4EA8F3435FEEC4B /* MMWormhole */ = {
@@ -440,7 +419,26 @@
 			);
 			name = MMWormhole;
 			productName = MMWormhole;
-			productReference = 3C7CF82BCAFD6B49A8F4EED7E54251E5 /* MMWormhole.framework */;
+			productReference = 289DA343AC56049CA2EFA140484782C0 /* MMWormhole.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EFAFC3BBEF8D0A838F87CC9D58BB0EC2 /* Pods-TrainTimesTodayExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B827C416C7C75FEFD416087556E92E3 /* Build configuration list for PBXNativeTarget "Pods-TrainTimesTodayExtension" */;
+			buildPhases = (
+				7B2C0696D93B3748AB3905B0A36085FF /* Sources */,
+				BDB939CD77D2A427BD5C27BDD39206D7 /* Frameworks */,
+				1C8AFE0A8448E0F2FC1C7E2BAB9870DC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BAD4BAF6D32048AD09DAEECC1781CFA6 /* PBXTargetDependency */,
+				4720A40850E31371618F27ABA99F98D8 /* PBXTargetDependency */,
+			);
+			name = "Pods-TrainTimesTodayExtension";
+			productName = "Pods-TrainTimesTodayExtension";
+			productReference = 6DF021EB97AF6CB23D006B17AEB3004B /* Pods_TrainTimesTodayExtension.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -449,7 +447,7 @@
 		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0700;
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0700;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
@@ -460,19 +458,27 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 87DF598702D29B4156C845180451ABA4 /* Products */;
+			productRefGroup = 60785302B9327880CCD4CFD85DA836A3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				DA2550D7D94491C4B4EA8F3435FEEC4B /* MMWormhole */,
-				69F2E16D2082E23F987D9CACF250A2BA /* Pods-TrainTimesTodayExtension */,
-				80CD32DA70825087EE316D800F229AD7 /* Pods-TrainTimesTodayMainApp */,
-				208B040A48ADD8C28EC2D653C77EFE41 /* SwiftyJSON */,
+				EFAFC3BBEF8D0A838F87CC9D58BB0EC2 /* Pods-TrainTimesTodayExtension */,
+				32B6857DF0BD6102E7FBCC8200514B91 /* Pods-TrainTimesTodayMainApp */,
+				63C0291F086DBBDF3052D2D2FEA0E2CB /* SwiftyJSON */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		7B2C0696D93B3748AB3905B0A36085FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7184EBC88761EE18547C55829A9124A3 /* Pods-TrainTimesTodayExtension-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8FC514A28A2A84DA72870553E560BCF7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -488,81 +494,80 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A27341AFE2AF0E9F39E689B9A1F68D13 /* Sources */ = {
+		9D215FA40A257BAD96BEF5BCB56F319E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C97E326882C3B079F6BCFEF2B61B8DD /* Pods-TrainTimesTodayMainApp-dummy.m in Sources */,
+				293EAA14B1546643E727FB36217C950F /* Pods-TrainTimesTodayMainApp-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DA4B8226E7FAB4C41579D29BC350C70A /* Sources */ = {
+		CC28866F9417C272F3A78557F082424D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0BA6B1229447714B1B888BC5A6EBFEF /* SwiftyJSON-dummy.m in Sources */,
-				96B34A6BCC42E8575B1D4A4BD779F499 /* SwiftyJSON.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FDD277772773961610FE41CA65376027 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D805198977203C5B90EE629B35CA45A8 /* Pods-TrainTimesTodayExtension-dummy.m in Sources */,
+				4E63336167B93D8E3FD6918610D2D056 /* SwiftyJSON-dummy.m in Sources */,
+				5EA2356DBF3DC93DFFF650550FFB49E1 /* SwiftyJSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2019E7A4845ED7EE8704290BC40E3FB7 /* PBXTargetDependency */ = {
+		4720A40850E31371618F27ABA99F98D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyJSON;
+			target = 63C0291F086DBBDF3052D2D2FEA0E2CB /* SwiftyJSON */;
+			targetProxy = 5EDCBE37760F38296B0E1FA0F6D5F0B6 /* PBXContainerItemProxy */;
+		};
+		59F1E103F1FC16891D5C531A21EA41AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyJSON;
+			target = 63C0291F086DBBDF3052D2D2FEA0E2CB /* SwiftyJSON */;
+			targetProxy = 4FF6E27266457354C031F9F141091A04 /* PBXContainerItemProxy */;
+		};
+		7A94C4F90FDAE577B52D5A91D9D8D93A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = MMWormhole;
 			target = DA2550D7D94491C4B4EA8F3435FEEC4B /* MMWormhole */;
-			targetProxy = 625812E661FD45FC909EAB3CC7154543 /* PBXContainerItemProxy */;
+			targetProxy = 0E004B4B5621520C84A6415CCB157A71 /* PBXContainerItemProxy */;
 		};
-		3ECEB25AA272C3C3A654C72B32BBF9B7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SwiftyJSON;
-			target = 208B040A48ADD8C28EC2D653C77EFE41 /* SwiftyJSON */;
-			targetProxy = DC75BCF46D5482EF83A3ACC33990C22B /* PBXContainerItemProxy */;
-		};
-		9FC4BECF9F365E50640CB03C8C7E1505 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SwiftyJSON;
-			target = 208B040A48ADD8C28EC2D653C77EFE41 /* SwiftyJSON */;
-			targetProxy = B263B742E9F758A0C3D36C2E1B9BACE1 /* PBXContainerItemProxy */;
-		};
-		FE4C8890C3F168FC8F20B0C91D6D218A /* PBXTargetDependency */ = {
+		BAD4BAF6D32048AD09DAEECC1781CFA6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = MMWormhole;
 			target = DA2550D7D94491C4B4EA8F3435FEEC4B /* MMWormhole */;
-			targetProxy = 7B2E0A1EDF271697976916056F5C4897 /* PBXContainerItemProxy */;
+			targetProxy = 538A499FEFBA53D3D7809FF4F8EABBEB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		134CF8E00706D4DA60861B424126005F /* Release */ = {
+		0457C5607AC17DA7DF302269FAAC08AC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 926FA9B3B9F6D257B660EEEBA210C48E /* SwiftyJSON.xcconfig */;
+			baseConfigurationReference = 230D2F3007EC895D0319CCF66941F102 /* Pods-TrainTimesTodayMainApp.release.xcconfig */;
 			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TrainTimesTodayMainApp/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TrainTimesTodayMainApp/Pods-TrainTimesTodayMainApp.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = SwiftyJSON;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TrainTimesTodayMainApp;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -571,38 +576,48 @@
 			};
 			name = Release;
 		};
-		377FF5F106730F668C4E02FACF2E2981 /* Debug */ = {
+		06D8EE6506F4E85409C1CEE9B1D92ADE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6127E357EC2426662D14D8B9D8E0C88B /* MMWormhole.xcconfig */;
+			baseConfigurationReference = FE0B410ED3A8BADED84EBEC409DF53A6 /* Pods-TrainTimesTodayExtension.debug.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/MMWormhole/MMWormhole-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MMWormhole/Info.plist";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TrainTimesTodayExtension/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/MMWormhole/MMWormhole.modulemap";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TrainTimesTodayExtension/Pods-TrainTimesTodayExtension.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = MMWormhole;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TrainTimesTodayExtension;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		5CE5176205D06FF3FFE3DDDA9291E44B /* Debug */ = {
+		12914D756594D15C6F2CA12FE5F89F1B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -616,11 +631,14 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
 					"DEBUG=1",
 					"$(inherited)",
 				);
@@ -631,17 +649,224 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		74857149DC1E0D599B8A01A78349A926 /* Release */ = {
+		1787C2D26D991548E001BFBE66BA8C2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 926FA9B3B9F6D257B660EEEBA210C48E /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		41B9BB1C50850F92E4C3CDE699B1527E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 926FA9B3B9F6D257B660EEEBA210C48E /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6BBD68B6753C634157111B986C2DD358 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6127E357EC2426662D14D8B9D8E0C88B /* MMWormhole.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MMWormhole/MMWormhole-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MMWormhole/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MMWormhole/MMWormhole.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = MMWormhole;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8D7566311838DDF2204F9040745695D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA17AB0C280A03F1E7F56455FA7E0EA6 /* Pods-TrainTimesTodayExtension.release.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TrainTimesTodayExtension/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TrainTimesTodayExtension/Pods-TrainTimesTodayExtension.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TrainTimesTodayExtension;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		936E032712BF4B760C530D9DDA47BC1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6127E357EC2426662D14D8B9D8E0C88B /* MMWormhole.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MMWormhole/MMWormhole-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MMWormhole/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MMWormhole/MMWormhole.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = MMWormhole;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CB7289E12D60BFA610CBB0DB08EF7832 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74ED8E79379A9EC42EEAA7B16894683D /* Pods-TrainTimesTodayMainApp.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TrainTimesTodayMainApp/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TrainTimesTodayMainApp/Pods-TrainTimesTodayMainApp.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TrainTimesTodayMainApp;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E72E7977875C2D251FC62736BBDDC389 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -655,223 +880,45 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		AD849CE9334D78111AF040864ABBFEAA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F7E9016EA14989A9EB3D490027338B1E /* Pods-TrainTimesTodayExtension.debug.xcconfig */;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-TrainTimesTodayExtension/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-TrainTimesTodayExtension/Pods-TrainTimesTodayExtension.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_TrainTimesTodayExtension;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		C7EDD4A96C7BD6A652471E8F36205280 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3350E04E3A7E8C6659846BD0C958E32B /* Pods-TrainTimesTodayMainApp.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-TrainTimesTodayMainApp/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-TrainTimesTodayMainApp/Pods-TrainTimesTodayMainApp.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_TrainTimesTodayMainApp;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		D0B3945F122E5211C536F22C5D25D67F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 926FA9B3B9F6D257B660EEEBA210C48E /* SwiftyJSON.xcconfig */;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = SwiftyJSON;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		D9DA0BC04CBD398ADFB90DCFE817105E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6127E357EC2426662D14D8B9D8E0C88B /* MMWormhole.xcconfig */;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREFIX_HEADER = "Target Support Files/MMWormhole/MMWormhole-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MMWormhole/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/MMWormhole/MMWormhole.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = MMWormhole;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		F229A1557236F38D4283A4B24F93370F /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 06DE8A755E4274977DD7AA11BC166429 /* Pods-TrainTimesTodayExtension.release.xcconfig */;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-TrainTimesTodayExtension/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-TrainTimesTodayExtension/Pods-TrainTimesTodayExtension.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_TrainTimesTodayExtension;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		FECA89086A6EA8AF07E182349EB3C18A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DE69D8BB0B940956423E625307D51B00 /* Pods-TrainTimesTodayMainApp.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-TrainTimesTodayMainApp/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-TrainTimesTodayMainApp/Pods-TrainTimesTodayMainApp.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_TrainTimesTodayMainApp;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0AE72575F6F9D553152D691DE7C12939 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
+		01169BB6CB6F604829322F8FDA04313A /* Build configuration list for PBXNativeTarget "Pods-TrainTimesTodayMainApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D0B3945F122E5211C536F22C5D25D67F /* Debug */,
-				134CF8E00706D4DA60861B424126005F /* Release */,
+				CB7289E12D60BFA610CBB0DB08EF7832 /* Debug */,
+				0457C5607AC17DA7DF302269FAAC08AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1E39ED341CA9ECEC889C6F8B397E2AF6 /* Build configuration list for PBXNativeTarget "Pods-TrainTimesTodayMainApp" */ = {
+		0B827C416C7C75FEFD416087556E92E3 /* Build configuration list for PBXNativeTarget "Pods-TrainTimesTodayExtension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C7EDD4A96C7BD6A652471E8F36205280 /* Debug */,
-				FECA89086A6EA8AF07E182349EB3C18A /* Release */,
+				06D8EE6506F4E85409C1CEE9B1D92ADE /* Debug */,
+				8D7566311838DDF2204F9040745695D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -879,17 +926,8 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5CE5176205D06FF3FFE3DDDA9291E44B /* Debug */,
-				74857149DC1E0D599B8A01A78349A926 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		57D4EDC905B97D03AEA11092CE0993D7 /* Build configuration list for PBXNativeTarget "Pods-TrainTimesTodayExtension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AD849CE9334D78111AF040864ABBFEAA /* Debug */,
-				F229A1557236F38D4283A4B24F93370F /* Release */,
+				12914D756594D15C6F2CA12FE5F89F1B /* Debug */,
+				E72E7977875C2D251FC62736BBDDC389 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -897,8 +935,17 @@
 		703F6B8D4921C558E0F0342E84DCD4C4 /* Build configuration list for PBXNativeTarget "MMWormhole" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				377FF5F106730F668C4E02FACF2E2981 /* Debug */,
-				D9DA0BC04CBD398ADFB90DCFE817105E /* Release */,
+				6BBD68B6753C634157111B986C2DD358 /* Debug */,
+				936E032712BF4B760C530D9DDA47BC1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C572437A37B858B0E4AB42501D2964BF /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41B9BB1C50850F92E4C3CDE699B1527E /* Debug */,
+				1787C2D26D991548E001BFBE66BA8C2B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

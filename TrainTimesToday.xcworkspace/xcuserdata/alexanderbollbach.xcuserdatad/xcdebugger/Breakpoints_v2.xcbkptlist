@@ -9,30 +9,14 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "TrainTimesTodayMainApp/ViewController.swift"
-            timestampString = "492889709.06384"
+            filePath = "TrainTimesTodayMainApp/TransitionHandler.swift"
+            timestampString = "496645744.80307"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "242"
-            endingLineNumber = "242"
-            landmarkName = "animationControllerForPresentedController(_:presentingController:sourceController:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TrainTimesTodayMainApp/ViewController.swift"
-            timestampString = "492891752.105063"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "253"
-            endingLineNumber = "253"
-            landmarkName = "animationControllerForDismissedController(_:)"
-            landmarkType = "5">
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "animateTransition(using:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -42,13 +26,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TrainTimesTodayMainApp/MainController.swift"
-            timestampString = "496331882.131107"
+            timestampString = "496645772.642687"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "78"
-            endingLineNumber = "78"
-            landmarkName = "animationControllerForDismissedController(_:)"
-            landmarkType = "5">
+            startingLineNumber = "109"
+            endingLineNumber = "109"
+            landmarkName = "animationControllerForPresentedController(presented:presentingController:sourceController:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

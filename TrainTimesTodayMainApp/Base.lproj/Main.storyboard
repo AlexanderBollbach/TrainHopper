@@ -1,8 +1,9 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11521.1" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11517.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Main Controller-->
@@ -14,20 +15,56 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XDQ-aS-5ag">
-                                <rect key="frame" x="48" y="38" width="41" height="30"/>
-                                <state key="normal" title="Home"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="URY-Zp-aIo" customClass="ABCustomButton1" customModule="TrainTimesToday">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="KA0-l8-Swk"/>
+                                </constraints>
+                                <state key="normal" title="from"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="bezierShapeColor">
+                                        <color key="value" red="0.92829816542331978" green="1" blue="0.5053828714548716" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="pickHomeStation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SIZ-Q0-rHh"/>
+                                    <action selector="fromStationButtonTappedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s49-PV-bN5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Za0-rL-ge3" customClass="ABCustomButton1" customModule="TrainTimesToday">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="pGi-gt-X0L"/>
+                                </constraints>
+                                <state key="normal" title="to"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="toStationButtonTappedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vWY-38-l3l"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.58785468340000002" green="0.98535603279999995" blue="0.0048736236059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="URY-Zp-aIo" firstAttribute="width" secondItem="Za0-rL-ge3" secondAttribute="width" id="I8s-d2-jPt"/>
+                            <constraint firstItem="Za0-rL-ge3" firstAttribute="leading" secondItem="URY-Zp-aIo" secondAttribute="trailing" constant="15" id="OvH-v0-ZaT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Za0-rL-ge3" secondAttribute="trailing" id="cHY-NI-Ute"/>
+                            <constraint firstItem="URY-Zp-aIo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="cg1-6N-eOc"/>
+                            <constraint firstItem="Za0-rL-ge3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="dL8-To-nWD"/>
+                            <constraint firstItem="URY-Zp-aIo" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="lU8-bk-chT"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="fromStationButton" destination="URY-Zp-aIo" id="fIU-Tt-Whl"/>
+                        <outlet property="toStationButton" destination="Za0-rL-ge3" id="28r-0U-gHj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -42,71 +79,57 @@
                         <viewControllerLayoutGuide type="bottom" id="gIn-xb-zeY"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="B0c-lS-3t6">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <pickerView autoresizesSubviews="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9hR-x7-Rph">
-                                <rect key="frame" x="193" y="69" width="215" height="216"/>
-                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="215" id="RE2-oA-Ulj"/>
-                                </constraints>
-                                <connections>
-                                    <outlet property="dataSource" destination="ea6-pN-Ydl" id="EsG-OS-RMe"/>
-                                    <outlet property="delegate" destination="ea6-pN-Ydl" id="Ayi-0g-NBI"/>
-                                </connections>
-                            </pickerView>
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="y8G-zf-MGD">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="ea6-pN-Ydl" id="m8S-MO-YiW"/>
+                                </connections>
                             </searchBar>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="3Bm-sK-uus">
-                                <rect key="frame" x="20" y="570" width="560" height="30"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kHV-tW-svN">
-                                        <rect key="frame" x="0.0" y="0.0" width="280" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kHV-tW-svN">
                                         <state key="normal" title="Cancel"/>
                                         <connections>
-                                            <action selector="tappedCancel:" destination="ea6-pN-Ydl" eventType="touchUpInside" id="Sgl-SI-FDv"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oH7-hz-pSR">
-                                        <rect key="frame" x="281" y="0.0" width="279" height="30"/>
-                                        <state key="normal" title="Select"/>
-                                        <connections>
-                                            <action selector="tappedSelect:" destination="ea6-pN-Ydl" eventType="touchUpInside" id="rqe-4h-yjN"/>
+                                            <action selector="tappedCancelWithSender:" destination="ea6-pN-Ydl" eventType="touchUpInside" id="VgS-eS-Jkf"/>
                                         </connections>
                                     </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="LO1-Oh-zJ4"/>
+                                </constraints>
                             </stackView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kZe-Cv-kN8">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="ea6-pN-Ydl" id="h59-E4-w9b"/>
+                                    <outlet property="delegate" destination="ea6-pN-Ydl" id="0dd-MA-V9U"/>
+                                </connections>
+                            </tableView>
                         </subviews>
-                        <color key="backgroundColor" red="0.40000000600000002" green="1" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.40000000600000002" green="1" blue="0.80000001190000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="y8G-zf-MGD" firstAttribute="top" secondItem="B0c-lS-3t6" secondAttribute="top" id="4pb-f5-JVi"/>
-                            <constraint firstAttribute="trailing" secondItem="y8G-zf-MGD" secondAttribute="trailing" id="PJ8-sw-UJo"/>
+                            <constraint firstItem="kZe-Cv-kN8" firstAttribute="top" secondItem="y8G-zf-MGD" secondAttribute="bottom" id="302-n8-Vd6"/>
+                            <constraint firstItem="y8G-zf-MGD" firstAttribute="top" secondItem="B0c-lS-3t6" secondAttribute="topMargin" id="4pb-f5-JVi"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="y8G-zf-MGD" secondAttribute="trailing" id="4tO-JI-F6R"/>
+                            <constraint firstItem="3Bm-sK-uus" firstAttribute="top" secondItem="kZe-Cv-kN8" secondAttribute="bottom" id="8Qj-xv-Nex"/>
                             <constraint firstAttribute="trailingMargin" secondItem="3Bm-sK-uus" secondAttribute="trailing" id="Sgw-2W-CHU"/>
-                            <constraint firstItem="9hR-x7-Rph" firstAttribute="centerX" secondItem="B0c-lS-3t6" secondAttribute="centerX" id="Tki-ph-stn"/>
                             <constraint firstItem="3Bm-sK-uus" firstAttribute="leading" secondItem="B0c-lS-3t6" secondAttribute="leadingMargin" id="VPw-gT-sqc"/>
-                            <constraint firstItem="9hR-x7-Rph" firstAttribute="top" secondItem="y8G-zf-MGD" secondAttribute="bottom" constant="25" id="cNl-I8-JSY"/>
-                            <constraint firstItem="y8G-zf-MGD" firstAttribute="leading" secondItem="B0c-lS-3t6" secondAttribute="leading" id="rGu-vg-ebQ"/>
+                            <constraint firstAttribute="rightMargin" secondItem="kZe-Cv-kN8" secondAttribute="right" id="cnw-7y-W3Y"/>
+                            <constraint firstItem="y8G-zf-MGD" firstAttribute="leading" secondItem="B0c-lS-3t6" secondAttribute="leadingMargin" id="rGu-vg-ebQ"/>
+                            <constraint firstItem="kZe-Cv-kN8" firstAttribute="leading" secondItem="B0c-lS-3t6" secondAttribute="leadingMargin" id="t29-Ib-laV"/>
                             <constraint firstItem="gIn-xb-zeY" firstAttribute="top" secondItem="3Bm-sK-uus" secondAttribute="bottom" id="ymb-DB-hkt"/>
                         </constraints>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="pUM-PQ-AdA" appends="YES" id="vDj-zz-lMX"/>
-                        </connections>
                     </view>
                     <connections>
-                        <outlet property="pickerView" destination="9hR-x7-Rph" id="9Tw-Sc-1aj"/>
                         <outlet property="searchField" destination="y8G-zf-MGD" id="7HK-LX-ZdU"/>
+                        <outlet property="tableview" destination="kZe-Cv-kN8" id="8A2-Lq-0Kb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BsS-Yl-lMD" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="pUM-PQ-AdA">
-                    <connections>
-                        <action selector="tapped1:" destination="ea6-pN-Ydl" id="J11-yB-xzE"/>
-                    </connections>
-                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1148" y="121"/>
         </scene>

@@ -13,9 +13,17 @@ import UIKit
 
 class MainController: UIViewController {
    
- 
    
+   
+   
+   @IBOutlet weak var fromStationButton: ABCustomButton1!
+   @IBOutlet weak var toStationButton: ABCustomButton1!
+   let storyBoard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
    let dao = DAO.sharedInstance
+   
+   
+   var activeButton: ABCustomButton1?
+   
    
    
    override func viewDidLoad() {
@@ -24,34 +32,61 @@ class MainController: UIViewController {
       
       dao.configureData()
       
+      self.updateStationButtons()
+      
+      
    }
    
-
    
    
    
    
-   // actions
+   // Actions
    
-   
-   @IBAction func pickHomeStation(sender: UIButton) {
+   @IBAction func fromStationButtonTapped(sender: ABCustomButton1) {
       
-      let storyBoard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+      activeButton = sender
+      launchPopUp(station: dao.fromStation)
+   }
+   
+   @IBAction func toStationButtonTapped(sender: ABCustomButton1) {
       
-      let vc = storyBoard.instantiateViewControllerWithIdentifier("PickStation") as! PickStationViewController
+      activeButton = sender
+      launchPopUp(station: dao.toStation)
+   }
+   
+   
+   
+   func launchPopUp(station: SelectedStationModel) {
       
-      vc.modalPresentationStyle = .OverCurrentContext
+      let vc = storyBoard.instantiateViewController(withIdentifier: "PickStation") as! PickStationViewController
+      
+      vc.modalPresentationStyle = .overCurrentContext
       
       vc.transitioningDelegate = self
       
-      vc.stationList = dao.getStationList()
+      vc.stationToPick = station
       
-      self.presentViewController(vc, animated: true, completion: nil)
+      let stationList = dao.getStationList()
+      
+      vc.stationList = stationList
+      
+      self.present(vc, animated: true, completion: nil)
       
    }
    
    
-
+   
+   
+   
+   
+   
+   func updateStationButtons() {
+      
+      //      self.fromStationButton.setStationLabel(dao.fromStation.stationName)
+      //      self.toStationButton.setStationLabel(dao.toStation.stationName)
+      
+   }
    
    
    
@@ -64,24 +99,20 @@ class MainController: UIViewController {
 
 
 
+
+
+// Transition
+
 extension MainController: UIViewControllerTransitioningDelegate {
-   
    
    func animationControllerForPresentedController(presented: UIViewController, presentingController presenting: UIViewController, sourceController source: UIViewController) ->
       UIViewControllerAnimatedTransitioning? {
-         
-         let push = PushAnimator()
-         return push
+         return PushAnimator()
    }
-   
    
    func animationControllerForDismissedController(dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-      
-      let pop = PopAnimator()
-      return pop
+      return PopAnimator()
    }
-   
-   
 }
 
 

@@ -8,15 +8,20 @@
 
 import UIKit
 
+
+
 class PickStationViewController: UIViewController {
    
    
    @IBOutlet weak var searchField: UISearchBar!
-   @IBOutlet weak var pickerView: UIPickerView!
+   
    var stationList: [String]!
    
    var filteredStationList = [String]()
    
+   var stationToPick: SelectedStationModel!
+   
+   @IBOutlet weak var tableview: UITableView!
    
    override func viewDidLoad() {
       super.viewDidLoad()
@@ -24,83 +29,75 @@ class PickStationViewController: UIViewController {
       
       resetFilteredStationList()
       
-      self.pickerView.reloadAllComponents()
+      self.searchField.backgroundColor = UIColor.clear
+      self.searchField.backgroundImage = UIImage()
       
-      self.pickerView.selectRow(3, inComponent: 0, animated: true)
+      self.tableview.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
       
-//      self.transitioningDelegate = self
       
+      
+      
+      let index = indexOfCurrentStation()
+      let indexPath = IndexPath(row: index, section: 0)
+      self.tableview.scrollToRow(at: indexPath, at: UITableViewScrollPosition.bottom, animated: true)
+   
+   
+   }
+   
+   
+   
+   func indexOfCurrentStation() -> Int {
+      
+      let idx = filteredStationList.index(of: stationToPick.stationName)!
+      
+      return idx
       
    }
    
    
    
-   override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+   override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
       self.searchField.resignFirstResponder()
    }
    
-   
-   @IBAction func tapped1(sender: AnyObject) {
-      
-      UIView.animateWithDuration(0.6, animations: {
-      
-//         self.searchField.resignFirstResponder()
-         
-      }, completion: nil)
-      
-   }
-   
-   
-   
+ 
    
    func resetFilteredStationList() {
       filteredStationList.removeAll()
-      filteredStationList.appendContentsOf(stationList)
+      filteredStationList.append(contentsOf: stationList)
    }
+   
+   
    
    @IBAction func tappedCancel(sender: AnyObject) {
       
-      self.dismissViewControllerAnimated(true, completion: nil)
+      self.dismiss(animated: true, completion: nil)
    }
    
   
-   @IBAction func tappedSelect(sender: AnyObject) {
-   }
+
    
-   
-   
-}
-
-
-
-
-
-
-extension PickStationViewController: UISearchBarDelegate {
    
    func searchBar(searchBar: UISearchBar, textDidChange searchText: String) {
       
-      let temp = self.stationList?.filter{ $0.ABHasPrefix(searchText) }
-      
-      
+      let temp = self.stationList?.filter{ $0.ABHasPrefix(searchTerm: searchText) }
       
       if searchText == "" {
          resetFilteredStationList()
-         self.pickerView.reloadAllComponents()
+         self.tableview.reloadData()
          return
       }
       
       filteredStationList = temp!
       
-      self.pickerView.reloadAllComponents()
+      self.tableview.reloadData()
       
    }
    
    func searchBarCancelButtonClicked(searchBar: UISearchBar) {
       resetFilteredStationList()
-      self.pickerView.reloadAllComponents()
+      self.tableview.reloadData()
    }
-   
    
    
    
@@ -110,33 +107,47 @@ extension PickStationViewController: UISearchBarDelegate {
 
 
 
-extension PickStationViewController: UIPickerViewDelegate, UIPickerViewDataSource {
+
+
+
+extension PickStationViewController: UITableViewDelegate, UITableViewDataSource {
    
    
-   func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
-      return 1
+   
+   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+      return filteredStationList.count // ?? 0
    }
    
-   func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-      return filteredStationList.count ?? 0
-   }
-   
-   func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-      return filteredStationList[row]
-   }
-   
-   
-   
-   
-   func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
       
+      let cell: UITableViewCell = self.tableview.dequeueReusableCell(withIdentifier: "cell")!
       
+      cell.textLabel?.text = filteredStationList[indexPath.row]
+      
+      return cell
+
    }
    
+   
+   
+   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+      
+      stationToPick.stationName = filteredStationList[indexPath.row]
+      
+      let presentingVC = self.presentingViewController as! MainController
+      
+      presentingVC.updateStationButtons()
+      
+      self.presentingViewController?.dismiss(animated: true, completion: nil)
+   }
    
    
    
 }
+
+
+
+
 
 
 
@@ -161,18 +172,15 @@ extension String {
    
    func ABHasPrefix(searchTerm: String) -> Bool {
       
-      let lowerSearch = searchTerm.lowercaseString
-      
-      let lowerSelf = self.lowercaseString
+      let lowerSearch = searchTerm.lowercased()
+      let lowerSelf = self.lowercased()
       
       if lowerSelf.hasPrefix(lowerSearch) {
          return true
       } else {
          return false
       }
-      
    }
-   
 }
 
 

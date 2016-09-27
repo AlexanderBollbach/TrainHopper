@@ -1,19 +1,17 @@
-# Uncomment this line to define a global platform for your project
-# platform :ios, '8.0'
-# Uncomment this line if you're using Swift
- use_frameworks!
+
+platform :ios, '10.0'
+use_frameworks!
+
+def available_pods
+pod 'SwiftyJSON', '3.0.0'
+pod 'MMWormhole', '~> 2.0.0'
+end
 
 target 'TrainTimesTodayMainApp' do
-
-pod 'SwiftyJSON’
-pod 'MMWormhole', '~> 2.0.0'
-
+available_pods
 end
 
 target 'TrainTimesTodayExtension' do
-
-pod 'SwiftyJSON'
-pod 'MMWormhole', '~> 2.0.0'
-
+available_pods
 end
 

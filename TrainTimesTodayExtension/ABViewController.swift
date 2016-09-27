@@ -25,7 +25,7 @@ class ABViewController: UIViewController {
       super.viewDidLoad()
       
       
-      wormhole.listenForMessageWithIdentifier("stationChanged", listener: { (messageObject) -> Void in
+      wormhole.listenForMessage(withIdentifier: "stationChanged", listener: { (messageObject) -> Void in
          
          self.updateStationTimes()
          
@@ -62,13 +62,13 @@ class ABViewController: UIViewController {
    func updateStationTimes() {
       
       
-      let defaults = NSUserDefaults(suiteName: "group.AB.TrainTimesApp")!
+      let defaults = UserDefaults(suiteName: "group.AB.TrainTimesApp")!
       
-      guard let homeStation = defaults.stringForKey("homeStation") else {
+      guard let homeStation = defaults.string(forKey: "homeStation") else {
          return
       }
       
-      guard let workStation = defaults.stringForKey("workStation") else {
+      guard let workStation = defaults.string(forKey: "workStation") else {
          return
       }
       
@@ -99,7 +99,7 @@ class ABViewController: UIViewController {
       
     //  updateStationTimes()
       
-      completionHandler(NCUpdateResult.NewData)
+      completionHandler(NCUpdateResult.newData)
    }
    
 //   
@@ -110,7 +110,7 @@ class ABViewController: UIViewController {
    
    
    
-   override func viewDidAppear(animated: Bool) {
+   override func viewDidAppear(_ animated: Bool) {
       updateStationTimes()
    }
    
@@ -136,20 +136,22 @@ extension ABViewController: UITableViewDataSource {
    
    
    
-   func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+   private func numberOfSectionsInTableView(tableView: UITableView) -> Int {
       return 1
    }
    
    
-   func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
       return stationTimes.count
    }
    
    
-   func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+   
+   
+   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
       
 
-      let cell = tableView.dequeueReusableCellWithIdentifier("ABCell", forIndexPath: indexPath) as! ABCell
+      let cell = tableView.dequeueReusableCell(withIdentifier: "ABCell", for: indexPath) as! ABCell
       
       cell.label1.text = self.stationTimes[indexPath.row]
       

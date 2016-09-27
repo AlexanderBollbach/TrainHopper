@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'F690AD07A9FC673722FFD896'
+               BlueprintIdentifier = 'DA2550D7D94491C4B4EA8F3435FEEC4B'
                BlueprintName = 'MMWormhole'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'MMWormhole.framework'>
