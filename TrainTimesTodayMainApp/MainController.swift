@@ -15,16 +15,22 @@ class MainController: UIViewController {
    
    
    
+   var transferLayer: CAShapeLayer?
    
-   @IBOutlet weak var fromStationButton: ABCustomButton1!
-   @IBOutlet weak var toStationButton: ABCustomButton1!
+   @IBOutlet weak var fromStationButton: StationButton!
+   
+   
    let storyBoard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
    let dao = DAO.sharedInstance
    
+   var savedButtonFrame: CGRect?
+   var tempConstraints: [NSLayoutConstraint]?
+   var tempLayer: CAShapeLayer!
    
-   var activeButton: ABCustomButton1?
    
+   var activeButton: StationButton?
    
+   var transitionLayer: CAShapeLayer?
    
    override func viewDidLoad() {
       super.viewDidLoad()
@@ -35,25 +41,23 @@ class MainController: UIViewController {
       self.updateStationButtons()
       
       
+      
+      
+      
    }
-   
    
    
    
    
    // Actions
    
-   @IBAction func fromStationButtonTapped(sender: ABCustomButton1) {
+   @IBAction func fromStationButtonTapped(sender: StationButton) {
       
       activeButton = sender
       launchPopUp(station: dao.fromStation)
    }
    
-   @IBAction func toStationButtonTapped(sender: ABCustomButton1) {
-      
-      activeButton = sender
-      launchPopUp(station: dao.toStation)
-   }
+   
    
    
    
@@ -81,10 +85,15 @@ class MainController: UIViewController {
    
    
    
+   
+   
+   
+   
+   
    func updateStationButtons() {
       
-      //      self.fromStationButton.setStationLabel(dao.fromStation.stationName)
-      //      self.toStationButton.setStationLabel(dao.toStation.stationName)
+      self.fromStationButton.setTitle(dao.fromStation.stationName, for: .normal)
+      //      self.toStationButton.setTitle(dao.toStation.stationName, for: .normal)
       
    }
    
@@ -105,15 +114,21 @@ class MainController: UIViewController {
 
 extension MainController: UIViewControllerTransitioningDelegate {
    
-   func animationControllerForPresentedController(presented: UIViewController, presentingController presenting: UIViewController, sourceController source: UIViewController) ->
-      UIViewControllerAnimatedTransitioning? {
-         return PushAnimator()
+   
+   func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+      return PushAnimator()
    }
    
-   func animationControllerForDismissedController(dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+   
+   
+   func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
       return PopAnimator()
    }
+   
+   
 }
+
+
 
 
 

@@ -11,43 +11,41 @@ import MMWormhole
 import SwiftyJSON
 
 
-
-struct Station {
-   
-   var FullName: String!
-   var Abbr: String!
-}
-
-
-
 class DAO {
-   
-   
-   
    
    
    var fromStation: SelectedStationModel = SelectedStationModel(stationName: "Baldwin")
    var toStation: SelectedStationModel = SelectedStationModel(stationName: "Penn Station")
    
-   var stations = [Station]()
+   var stations = [[String : String]]()
    
    
    // IPC setup
-   let defaults = UserDefaults(suiteName: "group.AB.TrainTimesApp")
+   let defaults = UserDefaults(suiteName: "group.AB.TrainTimesApp")!
+   let defaults_standard = UserDefaults()
    let wormhole = MMWormhole(applicationGroupIdentifier: "group.AB.TrainTimesApp", optionalDirectory: "wormhole")
    
    static let sharedInstance = DAO()
    
+   
    func configureData() {
+      
+      
+      if let stations = defaults_standard.value(forKey: "stations") {
+         
+         self.stations = stations as! [[String : String]]
+         
+         return
+      }
+      
       
       httpGet { (stations) in
          
-         self.stations = stations.sorted{ $0.FullName < $1.FullName }
+         self.stations = stations.sorted{ $0["name"]! < $1["name"]! }
          
+         self.defaults_standard.set(self.stations, forKey: "stations")
          
-         print(stations)
-         self.synchronizeStations()
-         
+         //         self.synchronizeStations()
       }
       
    }
@@ -56,9 +54,7 @@ class DAO {
    
    func getStationList() -> [String] {
       
-      print(stations)
-      
-      return stations.map { $0.FullName }
+      return stations.map { $0["name"]! }
    }
    
    
@@ -98,10 +94,10 @@ class DAO {
    
    
    
-   func httpGet(completion: @escaping ([Station])->())  {
+   func httpGet(completion: @escaping ([[String : String]])->())  {
       
       
-      var Stations = [Station]()
+      var stations_store = [[String : String]]()
       let getStationsReq = "https://traintime.lirr.org/api/StationsAll?api_key=742b288047c382c66326a26f7f5e4e4a"
       
       let request = URLRequest(url: URL(string: getStationsReq)!)
@@ -123,12 +119,14 @@ class DAO {
          
          for (_,subJson):(String, JSON) in stations {
             
-            Stations.append(Station(FullName: subJson["NAME"].stringValue, Abbr: subJson["ABBR"].stringValue))
+            
+            let dict1 = ["name": subJson["NAME"].stringValue, "abbr": subJson["ABBR"].stringValue]
+            stations_store.append(dict1)
          }
          
          
          DispatchQueue.main.sync {
-            completion(Stations)
+            completion(stations_store)
          }
          
          

@@ -9,29 +9,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "TrainTimesTodayMainApp/TransitionHandler.swift"
-            timestampString = "496645744.80307"
+            filePath = "TrainTimesTodayMainApp/PickStationViewController.swift"
+            timestampString = "496733453.470896"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
-            landmarkName = "animateTransition(using:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TrainTimesTodayMainApp/MainController.swift"
-            timestampString = "496645772.642687"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "109"
-            endingLineNumber = "109"
-            landmarkName = "animationControllerForPresentedController(presented:presentingController:sourceController:)"
+            startingLineNumber = "158"
+            endingLineNumber = "158"
+            landmarkName = "updateCellStyles()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

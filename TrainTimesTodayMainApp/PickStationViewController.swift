@@ -17,6 +17,9 @@ class PickStationViewController: UIViewController {
    
    var stationList: [String]!
    
+   
+   @IBOutlet weak var mainStackView: UIStackView!
+   
    var filteredStationList = [String]()
    
    var stationToPick: SelectedStationModel!
@@ -27,23 +30,42 @@ class PickStationViewController: UIViewController {
       super.viewDidLoad()
       
       
+      
       resetFilteredStationList()
       
       self.searchField.backgroundColor = UIColor.clear
       self.searchField.backgroundImage = UIImage()
       
-      self.tableview.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+      //      self.tableview.register(UITableViewCell.self, forCellReuseIdentifier: "stationCell")
       
       
+      //      scrollToSelectedStation()
+      
+      
+      
+   }
+   
+   
+   
+   override func viewDidLayoutSubviews() {
+      updateCellStyles()
+   }
+   
+   
+   
+   
+   
+   func scrollToSelectedStation() {
       
       
       let index = indexOfCurrentStation()
       let indexPath = IndexPath(row: index, section: 0)
       self.tableview.scrollToRow(at: indexPath, at: UITableViewScrollPosition.bottom, animated: true)
-   
-   
+      
+      
+      
+      
    }
-   
    
    
    func indexOfCurrentStation() -> Int {
@@ -60,7 +82,7 @@ class PickStationViewController: UIViewController {
       self.searchField.resignFirstResponder()
    }
    
- 
+   
    
    func resetFilteredStationList() {
       filteredStationList.removeAll()
@@ -74,8 +96,8 @@ class PickStationViewController: UIViewController {
       self.dismiss(animated: true, completion: nil)
    }
    
-  
-
+   
+   
    
    
    func searchBar(searchBar: UISearchBar, textDidChange searchText: String) {
@@ -106,6 +128,76 @@ class PickStationViewController: UIViewController {
 }
 
 
+// handles tableviewcell dynamics styling
+
+extension PickStationViewController {
+   
+   
+   func scrollViewDidScroll(_ scrollView: UIScrollView) {
+      updateCellStyles()
+   }
+   
+   func updateCellStyles() {
+      
+      
+      
+      let cells = self.tableview.visibleCells as! [StationCell]
+      
+      let maxHeight = self.view.frame.size.height
+      
+      for cell in cells {
+         
+         let indexpath = self.tableview.indexPath(for: cell)!
+         let rect = self.tableview.rectForRow(at: indexpath)
+         let rectOfCellInSuperview: CGRect = self.tableview.convert(rect, to: self.view)
+         let heightInMainView = rectOfCellInSuperview.origin.y
+         
+         
+         var mappedVal: Float!
+         
+         
+         
+         if heightInMainView < maxHeight / 2 {
+            mappedVal = mapToRange(input: Float(heightInMainView), outputStart: 0, outputEnd: 1, inputStart: 0, inputEnd: Float(self.view.frame.size.height / 2), descending: false)
+         } else {
+            mappedVal = mapToRange(input: Float(heightInMainView), outputStart: 0, outputEnd: 1, inputStart: Float(self.view.frame.size.height / 2), inputEnd: Float(self.view.frame.size.height), descending: true)
+         }
+
+         cell.alpha = CGFloat(mappedVal)
+         
+         cell.leftConstraint.constant = CGFloat(mappedVal * 100)
+         
+         cell.stationName.font = UIFont(name: "Helvetica Neue", size: CGFloat(mappedVal * 30.0))
+  
+         
+      }
+
+   }
+   
+   
+
+
+   func mapToRange(input: Float,  outputStart: Float, outputEnd: Float, inputStart: Float, inputEnd: Float, descending: Bool) -> Float {
+ 
+      let outputDelta = outputEnd - outputStart
+      let inputDelta = inputEnd - inputStart
+      
+      let slope = outputDelta / inputDelta
+     
+      var output = outputStart + (slope * (input - inputStart))
+      
+      if descending {
+         output = outputEnd - output
+      }
+      
+      return output
+      
+   }
+   
+   
+}
+
+
 
 
 
@@ -120,12 +212,12 @@ extension PickStationViewController: UITableViewDelegate, UITableViewDataSource 
    
    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
       
-      let cell: UITableViewCell = self.tableview.dequeueReusableCell(withIdentifier: "cell")!
+      let cell: StationCell = self.tableview.dequeueReusableCell(withIdentifier: "stationCell")! as! StationCell
       
-      cell.textLabel?.text = filteredStationList[indexPath.row]
+      cell.stationName.text = filteredStationList[indexPath.row]
       
       return cell
-
+      
    }
    
    
@@ -141,6 +233,8 @@ extension PickStationViewController: UITableViewDelegate, UITableViewDataSource 
       self.presentingViewController?.dismiss(animated: true, completion: nil)
    }
    
+   
+
    
    
 }

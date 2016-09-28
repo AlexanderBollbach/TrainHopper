@@ -1,25 +1,10 @@
-//
-//  TransitionHandler.swift
-//  contactsTest
-//
-//  Created by alexanderbollbach on 5/30/16.
-//  Copyright © 2016 alexanderbollbach. All rights reserved.
-//
 
 import UIKit
 
 
 
 
-let transitionDurationValue: TimeInterval = 0.8
-
-
-
-
-
-
-
-// push
+let transitionDurationValue: TimeInterval = 0.3
 
 class PushAnimator: NSObject, UIViewControllerAnimatedTransitioning {
    
@@ -38,17 +23,15 @@ class PushAnimator: NSObject, UIViewControllerAnimatedTransitioning {
       
       
       // setup
+      
+      let containerView = transitionContext.containerView
+
+      
       let mainVC = transitionContext.viewController(forKey: UITransitionContextViewControllerKey.from)! as! MainController
       let stationVC = transitionContext.viewController(forKey: UITransitionContextViewControllerKey.to)! as! PickStationViewController
       
-      
-      
-      let mainView = mainVC.view
-      let stationView = stationVC.view
-      
-      
-      let frame = stationView!.frame
-      
+      let mainView = mainVC.view!
+      let stationView = stationVC.view!
       
       
       
@@ -57,34 +40,63 @@ class PushAnimator: NSObject, UIViewControllerAnimatedTransitioning {
      
       
       
-      let animation = CABasicAnimation(keyPath: "strokeEnd")
-      animation.fromValue = 0.0
-      animation.toValue = 1.0
-      animation.duration = 2
-      mainVC.activeButton?.outline.add(animation, forKey: nil)
+      
+
+      
+      
+      
+      
+      
+      CATransaction.begin()
+      CATransaction.setCompletionBlock({
+         
+         
+         containerView.insertSubview(stationView, aboveSubview:mainView)
+         transitionContext.completeTransition(!transitionContext.transitionWasCancelled)
+      })
+      
+
+      
+      
+      
+      let activeButton = mainVC.activeButton!
+      
+      
+      activeButton.hideLayer()
+      
+      
+      mainVC.tempLayer = activeButton.getLayerCopy()
+      
+      
+      mainVC.view.layer.addSublayer(mainVC.tempLayer)
+      
+      
+      
+      let oldPathRect = mainVC.view.convert(activeButton.frame, to: mainVC.view)
+      
+      let startPath = UIBezierPath(roundedRect: oldPathRect, cornerRadius: 0).cgPath
+      let endPath = UIBezierPath(roundedRect: mainVC.view.frame, cornerRadius: 0).cgPath
+      
+      
+      let animation = CABasicAnimation(keyPath: "path")
+      animation.fromValue = startPath
+      animation.toValue = endPath
+      animation.duration = transitionDuration(using: transitionContext)
+      animation.isRemovedOnCompletion = false
+      animation.fillMode = kCAFillModeForwards
+      mainVC.tempLayer.add(animation, forKey: nil)
+      
+      
+      
+      
+      
+      
       
       
 //      
-//      
-//      let containerView = transitionContext.containerView()
-//      containerView!.insertSubview(stationVC.view, aboveSubview:mainView!)
-//      
-//      
-//      let newRect = CGRect(x: frame.origin.x + (frame.size.width * 0.25), y: frame.origin.y, width: frame.size.width * 0.75, height: frame.size.height / 1.4)
-//      
-//      UIView.animateWithDuration(transitionDuration(nil), delay: 0.5, usingSpringWithDamping: 0.3, initialSpringVelocity: 0, options: [], animations: {
-//        
-//         mainView.alpha = 0.3
-//         
-//         stationView!.frame = newRect
-//         stationView.center = mainView.center
-//         
-//         }, completion: { finished in
-//            transitionContext.completeTransition(!transitionContext.transitionWasCancelled())
-//      })
-//      
-//      
-    
+      
+      CATransaction.commit()
+      
       
       
       
@@ -93,11 +105,6 @@ class PushAnimator: NSObject, UIViewControllerAnimatedTransitioning {
    }
 }
 
-
-
-
-
-// pop
 
 class PopAnimator: NSObject, UIViewControllerAnimatedTransitioning {
    
@@ -108,32 +115,43 @@ class PopAnimator: NSObject, UIViewControllerAnimatedTransitioning {
    func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
       
       let mainVC = transitionContext.viewController(forKey: UITransitionContextViewControllerKey.to)! as! MainController
-      let stationVC = transitionContext.viewController(forKey: UITransitionContextViewControllerKey.from)! as! PickStationViewController
-      
-      let mainView = mainVC.view
-      let stationView = stationVC.view
-      
-      
-      UIView.animate(withDuration: transitionDuration(using: nil)) { 
-         mainView?.alpha = 1
-      }
-      
-      UIView.animate(withDuration: transitionDuration(using: nil), delay: 0.1, usingSpringWithDamping: 0.5, initialSpringVelocity: 0, options: [], animations: {
-         
-         
-         
-//         stationView.frame = CGRect(origin: stationView.frame.origin, size: CGSize(width: 0, height: 0))
-         stationView!.alpha = 0
-         
 
-         
-         }, completion: { finished in
-            transitionContext.completeTransition(!transitionContext.transitionWasCancelled)
+      
+      let stationView = transitionContext.view(forKey: .from)
+      stationView?.removeFromSuperview()
+      
+      
+      
+      
+      CATransaction.begin()
+      CATransaction.setCompletionBlock({
+
+         mainVC.tempLayer.removeFromSuperlayer()
+         transitionContext.completeTransition(!transitionContext.transitionWasCancelled)
       })
       
       
       
       
+      
+      let startPath = UIBezierPath(roundedRect: mainVC.view.frame, cornerRadius: 0).cgPath
+      let endPath = UIBezierPath(roundedRect: mainVC.activeButton!.frame, cornerRadius: 0).cgPath
+      
+      
+      let animation = CABasicAnimation(keyPath: "path")
+      animation.fromValue = startPath
+      animation.toValue = endPath
+      animation.duration = transitionDuration(using: transitionContext)
+      animation.isRemovedOnCompletion = false
+      animation.fillMode = kCAFillModeForwards
+      mainVC.tempLayer.add(animation, forKey: nil)
+      
+      
+      
+      
+      
+
+      CATransaction.commit()
       
       
    }
