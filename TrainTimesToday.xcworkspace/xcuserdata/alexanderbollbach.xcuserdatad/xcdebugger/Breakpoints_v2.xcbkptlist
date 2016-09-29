@@ -10,12 +10,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TrainTimesTodayMainApp/PickStationViewController.swift"
-            timestampString = "496733453.470896"
+            timestampString = "496748729.327078"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "158"
-            endingLineNumber = "158"
-            landmarkName = "updateCellStyles()"
+            startingLineNumber = "121"
+            endingLineNumber = "121"
+            landmarkName = "searchBar(_:textDidChange:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

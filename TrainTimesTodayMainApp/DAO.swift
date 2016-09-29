@@ -14,10 +14,10 @@ import SwiftyJSON
 class DAO {
    
    
-   var fromStation: SelectedStationModel = SelectedStationModel(stationName: "Baldwin")
-   var toStation: SelectedStationModel = SelectedStationModel(stationName: "Penn Station")
+   var fromStation = StationModel()
+   var toStation = StationModel()
    
-   var stations = [[String : String]]()
+   var stations = [StationModel]()
    
    
    // IPC setup
@@ -33,7 +33,9 @@ class DAO {
       
       if let stations = defaults_standard.value(forKey: "stations") {
          
-         self.stations = stations as! [[String : String]]
+         
+
+         self.stations = NSKeyedUnarchiver.unarchiveObject(with: stations as! Data) as! [StationModel]
          
          return
       }
@@ -41,9 +43,9 @@ class DAO {
       
       httpGet { (stations) in
          
-         self.stations = stations.sorted{ $0["name"]! < $1["name"]! }
+         self.stations = stations.sorted{ $0.name < $1.name }
          
-         self.defaults_standard.set(self.stations, forKey: "stations")
+         self.defaults_standard.set(NSKeyedArchiver.archivedData(withRootObject: self.stations), forKey: "stations")
          
          //         self.synchronizeStations()
       }
@@ -52,9 +54,9 @@ class DAO {
    
    
    
-   func getStationList() -> [String] {
+   func getStationList() -> [StationModel] {
       
-      return stations.map { $0["name"]! }
+      return stations
    }
    
    
@@ -94,10 +96,10 @@ class DAO {
    
    
    
-   func httpGet(completion: @escaping ([[String : String]])->())  {
+   func httpGet(completion: @escaping ([StationModel])->())  {
       
       
-      var stations_store = [[String : String]]()
+      var stations_store = [StationModel]()
       let getStationsReq = "https://traintime.lirr.org/api/StationsAll?api_key=742b288047c382c66326a26f7f5e4e4a"
       
       let request = URLRequest(url: URL(string: getStationsReq)!)
@@ -118,10 +120,9 @@ class DAO {
          let stations = jsonSw["Stations"]
          
          for (_,subJson):(String, JSON) in stations {
-            
-            
-            let dict1 = ["name": subJson["NAME"].stringValue, "abbr": subJson["ABBR"].stringValue]
-            stations_store.append(dict1)
+        
+            let station = StationModel(name: subJson["NAME"].stringValue, abbr: subJson["ABBR"].stringValue, lat: subJson["LATITUDE"].floatValue, long: subJson["LONGITUDE"].floatValue)
+            stations_store.append(station)
          }
          
          

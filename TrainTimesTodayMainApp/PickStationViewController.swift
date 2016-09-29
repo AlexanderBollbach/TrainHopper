@@ -15,14 +15,13 @@ class PickStationViewController: UIViewController {
    
    @IBOutlet weak var searchField: UISearchBar!
    
-   var stationList: [String]!
+   var stationList: [StationModel]!
    
    
-   @IBOutlet weak var mainStackView: UIStackView!
    
-   var filteredStationList = [String]()
+   var filteredStationList = [StationModel]()
    
-   var stationToPick: SelectedStationModel!
+   var stationToPick: StationModel!
    
    @IBOutlet weak var tableview: UITableView!
    
@@ -33,14 +32,8 @@ class PickStationViewController: UIViewController {
       
       resetFilteredStationList()
       
-      self.searchField.backgroundColor = UIColor.clear
-      self.searchField.backgroundImage = UIImage()
-      
-      //      self.tableview.register(UITableViewCell.self, forCellReuseIdentifier: "stationCell")
-      
-      
-      //      scrollToSelectedStation()
-      
+      //      self.searchField.backgroundColor = UIColor.clear
+      //      self.searchField.backgroundImage = UIImage()
       
       
    }
@@ -49,32 +42,49 @@ class PickStationViewController: UIViewController {
    
    override func viewDidLayoutSubviews() {
       updateCellStyles()
+      
+      
+      
+      resizeSearchField()
+   }
+   
+   
+   func resizeSearchField() {
+      
+      for subView1 in self.searchField.subviews as [UIView]  {
+         
+         for subView in subView1.subviews {
+            if let textField = subView as? UITextField {
+               var bounds: CGRect
+               bounds = textField.frame
+               bounds.size.height = self.searchField.frame.size.height
+               textField.frame = bounds
+               //               textField.borderStyle = UITextBorderStyle.RoundedRect
+               
+               
+            }
+         }
+         
+      }
+      
+      
    }
    
    
    
    
    
-   func scrollToSelectedStation() {
+   func scrollToStation(station: StationModel) {
       
       
-      let index = indexOfCurrentStation()
-      let indexPath = IndexPath(row: index, section: 0)
-      self.tableview.scrollToRow(at: indexPath, at: UITableViewScrollPosition.bottom, animated: true)
-      
-      
-      
+      let idx = stationList.index(of: station)!
+      let indexPath = IndexPath(row: idx, section: 0)
+      self.tableview.scrollToRow(at: indexPath, at: .middle, animated: true)
       
    }
    
    
-   func indexOfCurrentStation() -> Int {
-      
-      let idx = filteredStationList.index(of: stationToPick.stationName)!
-      
-      return idx
-      
-   }
+   
    
    
    
@@ -91,35 +101,10 @@ class PickStationViewController: UIViewController {
    
    
    
-   @IBAction func tappedCancel(sender: AnyObject) {
-      
-      self.dismiss(animated: true, completion: nil)
-   }
    
    
    
    
-   
-   func searchBar(searchBar: UISearchBar, textDidChange searchText: String) {
-      
-      let temp = self.stationList?.filter{ $0.ABHasPrefix(searchTerm: searchText) }
-      
-      if searchText == "" {
-         resetFilteredStationList()
-         self.tableview.reloadData()
-         return
-      }
-      
-      filteredStationList = temp!
-      
-      self.tableview.reloadData()
-      
-   }
-   
-   func searchBarCancelButtonClicked(searchBar: UISearchBar) {
-      resetFilteredStationList()
-      self.tableview.reloadData()
-   }
    
    
    
@@ -128,6 +113,21 @@ class PickStationViewController: UIViewController {
 }
 
 
+
+
+extension PickStationViewController: UISearchBarDelegate {
+   
+   
+   func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+      
+      let temp = self.stationList.filter{ $0.name.ABHasPrefix(searchTerm: searchText) }
+      
+      if temp.count >= 0 {
+         scrollToStation(station: temp[0])
+      }
+   }
+   
+}
 // handles tableviewcell dynamics styling
 
 extension PickStationViewController {
@@ -157,34 +157,63 @@ extension PickStationViewController {
          
          
          
-         if heightInMainView < maxHeight / 2 {
-            mappedVal = mapToRange(input: Float(heightInMainView), outputStart: 0, outputEnd: 1, inputStart: 0, inputEnd: Float(self.view.frame.size.height / 2), descending: false)
+         let offsetFromCenter = (maxHeight / 5)
+         let mid = maxHeight / 2
+         
+         let lowerBound = mid - offsetFromCenter
+         let upperBound = mid + offsetFromCenter
+         
+         if (heightInMainView < lowerBound) {
+            
+            mappedVal = mapToRange(input: Float(heightInMainView),
+                                   outputStart: 0,
+                                   outputEnd: 1,
+                                   inputStart: 0,
+                                   inputEnd: Float(lowerBound),
+                                   descending: false)
+            
+         } else if (heightInMainView > upperBound) {
+            
+            mappedVal = mapToRange(input: Float(heightInMainView), outputStart: 0,
+                                   outputEnd: 1,
+                                   inputStart: Float(upperBound),
+                                   inputEnd: Float(maxHeight),
+                                   descending: true)
          } else {
-            mappedVal = mapToRange(input: Float(heightInMainView), outputStart: 0, outputEnd: 1, inputStart: Float(self.view.frame.size.height / 2), inputEnd: Float(self.view.frame.size.height), descending: true)
+            mappedVal = 1
          }
-
-         cell.alpha = CGFloat(mappedVal)
          
-         cell.leftConstraint.constant = CGFloat(mappedVal * 100)
          
-         cell.stationName.font = UIFont(name: "Helvetica Neue", size: CGFloat(mappedVal * 30.0))
-  
+         if mappedVal < 0.5 {
+            cell.alpha = CGFloat(mappedVal - 0.14)
+         } else {
+            cell.alpha = CGFloat(mappedVal)
+         }
+         
+         
+         cell.leftConstraint.constant = CGFloat(mappedVal * 150) - 150
+         
+         
+         cell.stationName.font = UIFont.systemFont(ofSize: CGFloat(1 * 20))
+         
+         
          
       }
-
+      
    }
    
    
-
-
+   
+   
    func mapToRange(input: Float,  outputStart: Float, outputEnd: Float, inputStart: Float, inputEnd: Float, descending: Bool) -> Float {
- 
+      
       let outputDelta = outputEnd - outputStart
       let inputDelta = inputEnd - inputStart
       
       let slope = outputDelta / inputDelta
-     
-      var output = outputStart + (slope * (input - inputStart))
+      let inputOffset = input - inputStart
+      
+      var output = outputStart + (slope * inputOffset)
       
       if descending {
          output = outputEnd - output
@@ -214,7 +243,7 @@ extension PickStationViewController: UITableViewDelegate, UITableViewDataSource 
       
       let cell: StationCell = self.tableview.dequeueReusableCell(withIdentifier: "stationCell")! as! StationCell
       
-      cell.stationName.text = filteredStationList[indexPath.row]
+      cell.stationName.text = filteredStationList[indexPath.row].name
       
       return cell
       
@@ -224,7 +253,12 @@ extension PickStationViewController: UITableViewDelegate, UITableViewDataSource 
    
    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
       
-      stationToPick.stationName = filteredStationList[indexPath.row]
+      
+      let newStation = filteredStationList[indexPath.row]
+      stationToPick.name = newStation.name
+      stationToPick.abbr = newStation.abbr
+      stationToPick.lat = newStation.lat
+      stationToPick.long = newStation.long
       
       let presentingVC = self.presentingViewController as! MainController
       
@@ -234,26 +268,26 @@ extension PickStationViewController: UITableViewDelegate, UITableViewDataSource 
    }
    
    
-
    
    
-}
-
-
-
-
-
-
-
-
-
-extension PickStationViewController: UIViewControllerTransitioningDelegate {
-   
-   func animationControllerForDismissedController(dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-      return PopAnimator()
-   }
    
 }
+
+
+
+
+
+
+
+
+
+//extension PickStationViewController: UIViewControllerTransitioningDelegate {
+//
+//   func animationControllerForDismissedController(dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+//      return PopAnimator()
+//   }
+//
+//}
 
 
 
@@ -278,3 +312,11 @@ extension String {
 }
 
 
+
+
+
+//
+//
+//
+//
+//

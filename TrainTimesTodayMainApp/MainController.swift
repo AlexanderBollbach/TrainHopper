@@ -8,12 +8,13 @@
 
 import UIKit
 
-
+import MapKit
 
 
 class MainController: UIViewController {
    
    
+   @IBOutlet weak var mapView: MKMapView!
    
    var transferLayer: CAShapeLayer?
    
@@ -38,10 +39,30 @@ class MainController: UIViewController {
       
       dao.configureData()
       
-      self.updateStationButtons()
+//      self.updateStationButtons()
       
       
       
+      
+      
+   }
+   
+   override func viewDidAppear(_ animated: Bool) {
+      applyMask()
+   }
+   
+   func applyMask() {
+      
+      
+      let gradientLayer = CAGradientLayer()
+      
+      gradientLayer.frame = self.view.bounds
+//      gradientLayer.locations = [0.0, 0.1, 0.8, 1.0]
+      gradientLayer.colors = [UIColor.white.cgColor, UIColor.clear.cgColor]
+      gradientLayer.startPoint = CGPoint(x: 0.0, y: 0)
+      gradientLayer.endPoint = CGPoint(x: 0.0, y: 1)
+//      self.view.layer.insertSublayer(gradientLayer, above: self.mapView.layer)
+      self.mapView.layer.insertSublayer(gradientLayer, above: self.mapView.layer)
       
       
    }
@@ -61,7 +82,7 @@ class MainController: UIViewController {
    
    
    
-   func launchPopUp(station: SelectedStationModel) {
+   func launchPopUp(station: StationModel?) {
       
       let vc = storyBoard.instantiateViewController(withIdentifier: "PickStation") as! PickStationViewController
       
@@ -92,8 +113,27 @@ class MainController: UIViewController {
    
    func updateStationButtons() {
       
-      self.fromStationButton.setTitle(dao.fromStation.stationName, for: .normal)
-      //      self.toStationButton.setTitle(dao.toStation.stationName, for: .normal)
+      self.fromStationButton.setTitle(dao.fromStation.name, for: .normal)
+      
+      let coord = CLLocationCoordinate2DMake(Double(dao.fromStation.lat), Double(dao.fromStation.long))
+      let span1 =  MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)
+      let region = MKCoordinateRegion(center: coord, span: span1)
+      self.mapView.setRegion(region, animated: true)
+      
+      
+      
+      let point = self.mapView.convert(coord, toPointTo: self.view)
+      
+      
+      let layer = CAShapeLayer()
+      layer.path = UIBezierPath(rect: CGRect(origin: point, size: CGSize(width: 10, height: 10))).cgPath
+      layer.fillColor = UIColor.red.cgColor
+      
+      self.view.layer.addSublayer(layer)
+      
+      
+//
+      
       
    }
    

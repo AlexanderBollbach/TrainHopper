@@ -36,13 +36,13 @@ public class StationButton: UIButton {
    
    required public init?(coder aDecoder: NSCoder) {
       super.init(coder: aDecoder)
-      setup()
+//      setup()
    }
    
    override init(frame: CGRect) {
       
       super.init(frame: frame)
-      setup()
+//      setup()
    }
    
    
@@ -65,18 +65,18 @@ public class StationButton: UIButton {
    
    
    
-   public override func layoutSubviews() {
-      
-      
-      print("layout called")
-      
-      transferLayer.path = UIBezierPath(roundedRect: self.bounds, cornerRadius: cornerRadius).cgPath
-      
-      super.layoutSubviews()
-      
-      
-      
-   }
+//   public override func layoutSubviews() {
+//      
+//      
+//      print("layout called")
+//      
+//      transferLayer.path = UIBezierPath(roundedRect: self.bounds, cornerRadius: cornerRadius).cgPath
+//      
+//      super.layoutSubviews()
+//      
+//      
+//      
+//   }
    
    
       //

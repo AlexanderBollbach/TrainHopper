@@ -4,6 +4,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11517.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -19,6 +20,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="m3T-9j-UZp"/>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="URY-Zp-aIo" customClass="StationButton" customModule="TrainTimesToday" customModuleProvider="target">
                                 <color key="backgroundColor" red="0.17803969559999999" green="1" blue="0.072035416180000006" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -41,15 +43,20 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="m3T-9j-UZp" secondAttribute="bottom" id="FXO-Qg-zJH"/>
+                            <constraint firstAttribute="leading" secondItem="m3T-9j-UZp" secondAttribute="leading" id="OM2-Cr-kgR"/>
                             <constraint firstItem="URY-Zp-aIo" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="25" id="jSv-ta-maE"/>
+                            <constraint firstAttribute="trailing" secondItem="m3T-9j-UZp" secondAttribute="trailing" id="peN-pO-p7X"/>
+                            <constraint firstItem="m3T-9j-UZp" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.3" id="tuW-dc-b3A"/>
                             <constraint firstItem="URY-Zp-aIo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="25" id="wZE-DG-Jrk"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="fromStationButton" destination="URY-Zp-aIo" id="fIU-Tt-Whl"/>
+                        <outlet property="mapView" destination="m3T-9j-UZp" id="qxB-aA-2DV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -68,12 +75,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y8G-zf-MGD">
-                                <frame key="frameInset" minX="36" width="303" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="y8G-zf-MGD">
+                                <color key="backgroundColor" red="1" green="0.86018193279999999" blue="0.095569731569999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="QB1-yf-V8D"/>
+                                </constraints>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <outlet property="delegate" destination="ea6-pN-Ydl" id="m8S-MO-YiW"/>
+                                    <outlet property="delegate" destination="ea6-pN-Ydl" id="HcZ-IX-fA6"/>
                                 </connections>
                             </searchBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="57" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kZe-Cv-kN8">
@@ -89,17 +98,17 @@
                                             <frame key="frameInset" width="375" height="57"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eTX-5Q-8Ju">
-                                                    <frame key="frameInset" minX="70" minY="12" width="235" height="33"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eTX-5Q-8Ju">
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="33" id="GL8-ze-h9M"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="eTX-5Q-8Ju" firstAttribute="centerY" secondItem="qem-4E-EDd" secondAttribute="centerY" id="A1i-cz-G79"/>
                                                 <constraint firstItem="eTX-5Q-8Ju" firstAttribute="leading" secondItem="qem-4E-EDd" secondAttribute="leadingMargin" constant="62" id="DEx-bi-xnv"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="eTX-5Q-8Ju" secondAttribute="trailing" constant="62" id="Z41-0r-q45"/>
                                             </constraints>
@@ -118,6 +127,11 @@
                             </tableView>
                         </subviews>
                         <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="y8G-zf-MGD" secondAttribute="trailing" constant="5" id="68X-BZ-kVH"/>
+                            <constraint firstItem="y8G-zf-MGD" firstAttribute="top" secondItem="Gay-4s-DcB" secondAttribute="bottom" id="ahE-9t-Hbp"/>
+                            <constraint firstItem="y8G-zf-MGD" firstAttribute="leading" secondItem="B0c-lS-3t6" secondAttribute="leadingMargin" constant="5" id="gEe-lu-E1v"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="searchField" destination="y8G-zf-MGD" id="7HK-LX-ZdU"/>
