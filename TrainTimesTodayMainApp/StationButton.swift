@@ -1,113 +1,67 @@
-//
-//  ABCustomButton1.swift
-//  TrainTimesToday
-//
-//  Created by alexanderbollbach on 9/26/16.
-//  Copyright © 2016 alexanderbollbach. All rights reserved.
-//
+
+
+
+
+
+
 
 import UIKit
 
+
 @IBDesignable
 
-public class StationButton: UIButton {
+class StationButton: UIButton {
+   
+   var contentView : UIView?
+   
+   var stationType: ActiveStationType!
    
    
-   let transferLayer = CAShapeLayer()
+   @IBOutlet weak var name: UILabel!
    
-   var bezierShapeColor: UIColor = UIColor.red
+   @IBInspectable @IBOutlet weak var iconView: UIImageView!
    
-   
-   let cornerRadius: CGFloat = 0
-   //   @IBInspectable var cornerRadius: CGFloat = 0 {
-   //      didSet {
-   //         transferLayer.path = UIBezierPath(roundedRect: self.bounds, cornerRadius: cornerRadius).cgPath
-   //      }
-   //   }
-   //
-   //   @IBInspectable var bezierShapeColor: UIColor = UIColor.red
-   //
-   //
-   //
-   
-   
-   
-   
-   
-   required public init?(coder aDecoder: NSCoder) {
-      super.init(coder: aDecoder)
-//      setup()
+   @IBInspectable var iconImage: UIImage? {
+      didSet {
+         self.iconView.image = iconImage
+      }
    }
-   
    override init(frame: CGRect) {
-      
       super.init(frame: frame)
-//      setup()
+      xibSetup()
    }
    
-   
-   
-   
-   private func setup() {
-      
-      transferLayer.frame = self.bounds
-      
-      transferLayer.path = UIBezierPath(roundedRect: self.bounds, cornerRadius: cornerRadius).cgPath
-      transferLayer.fillColor = bezierShapeColor.cgColor
-      
-      
-      self.layer.addSublayer(transferLayer)
-      
-      
-      
-      
+   required init?(coder aDecoder: NSCoder) {
+      super.init(coder: aDecoder)
+      xibSetup()
    }
    
+   func xibSetup() {
+     
+      
+      contentView = loadViewFromNib()
+      
+      // use bounds not frame or it'll be offset
+      contentView!.frame = bounds
+      
+      // Make the view stretch with containing view
+      contentView!.autoresizingMask = [UIViewAutoresizing.flexibleWidth, UIViewAutoresizing.flexibleHeight]
+      
+      
+      // Adding custom subview on top of our view (over any custom drawing > see note below)
+      addSubview(contentView!)
+   }
    
+   func loadViewFromNib() -> UIView! {
+      
+      
+      
+      let bundle = Bundle(for: type(of: self))
+      
+      let nib = UINib(nibName: String(describing: type(of: self)), bundle: bundle)
+      let view = nib.instantiate(withOwner: self, options: nil)[0] as! UIView
+      
+      return view
+   }
    
-//   public override func layoutSubviews() {
-//      
-//      
-//      print("layout called")
-//      
-//      transferLayer.path = UIBezierPath(roundedRect: self.bounds, cornerRadius: cornerRadius).cgPath
-//      
-//      super.layoutSubviews()
-//      
-//      
-//      
-//   }
-   
-   
-      //
-   //   public override func prepareForInterfaceBuilder() {
-   //      transferLayer.fillColor = bezierShapeColor.cgColor
-   //   }
-   //
-   
-   
-   
-      func hideLayer() {
-         self.transferLayer.isHidden = true
-      }
-   
-   
-      func unhideLayer() {
-         self.transferLayer.isHidden = false
-      }
-   
-   
-   
-      func getLayerCopy() -> CAShapeLayer {
-   
-         let arched = NSKeyedArchiver.archivedData(withRootObject: self.transferLayer)
-   
-         let copiedLayer = NSKeyedUnarchiver.unarchiveObject(with: arched) as! CAShapeLayer
-   
-         copiedLayer.isHidden = false
-         
-         return copiedLayer
-         
-      }
-
 }

@@ -58,42 +58,42 @@ class PushAnimator: NSObject, UIViewControllerAnimatedTransitioning {
 
       
       
-      
-      let activeButton = mainVC.activeButton!
-      
-      
-      activeButton.hideLayer()
-      
-      
-      mainVC.tempLayer = activeButton.getLayerCopy()
-      
-      
-      mainVC.view.layer.addSublayer(mainVC.tempLayer)
-      
-      
-      
-      let oldPathRect = mainVC.view.convert(activeButton.frame, to: mainVC.view)
-      
-      let startPath = UIBezierPath(roundedRect: oldPathRect, cornerRadius: 0).cgPath
-      let endPath = UIBezierPath(roundedRect: mainVC.view.frame, cornerRadius: 0).cgPath
-      
-      
-      let animation = CABasicAnimation(keyPath: "path")
-      animation.fromValue = startPath
-      animation.toValue = endPath
-      animation.duration = transitionDuration(using: transitionContext)
-      animation.isRemovedOnCompletion = false
-      animation.fillMode = kCAFillModeForwards
-      mainVC.tempLayer.add(animation, forKey: nil)
-      
-      
-      
-      
-      
-      
-      
-      
 //      
+//      let activeButton = mainVC.activeButton!
+//      
+//      
+//      activeButton.hideLayer()
+//      
+//      
+//      mainVC.tempLayer = activeButton.getLayerCopy()
+//      
+//      
+//      mainVC.view.layer.addSublayer(mainVC.tempLayer)
+//      
+//      
+//      
+//      let oldPathRect = mainVC.view.convert(activeButton.frame, to: mainVC.view)
+//      
+//      let startPath = UIBezierPath(roundedRect: oldPathRect, cornerRadius: 0).cgPath
+//      let endPath = UIBezierPath(roundedRect: mainVC.view.frame, cornerRadius: 0).cgPath
+//      
+//      
+//      let animation = CABasicAnimation(keyPath: "path")
+//      animation.fromValue = startPath
+//      animation.toValue = endPath
+//      animation.duration = transitionDuration(using: transitionContext)
+//      animation.isRemovedOnCompletion = false
+//      animation.fillMode = kCAFillModeForwards
+//      mainVC.tempLayer.add(animation, forKey: nil)
+//      
+//      
+//      
+//      
+//      
+//      
+//      
+//      
+//
       
       CATransaction.commit()
       
@@ -126,29 +126,29 @@ class PopAnimator: NSObject, UIViewControllerAnimatedTransitioning {
       CATransaction.begin()
       CATransaction.setCompletionBlock({
 
-         mainVC.tempLayer.removeFromSuperlayer()
+//         mainVC.tempLayer.removeFromSuperlayer()
          transitionContext.completeTransition(!transitionContext.transitionWasCancelled)
       })
       
       
-      
-      
-      
-      let startPath = UIBezierPath(roundedRect: mainVC.view.frame, cornerRadius: 0).cgPath
-      let endPath = UIBezierPath(roundedRect: mainVC.activeButton!.frame, cornerRadius: 0).cgPath
-      
-      
-      let animation = CABasicAnimation(keyPath: "path")
-      animation.fromValue = startPath
-      animation.toValue = endPath
-      animation.duration = transitionDuration(using: transitionContext)
-      animation.isRemovedOnCompletion = false
-      animation.fillMode = kCAFillModeForwards
-      mainVC.tempLayer.add(animation, forKey: nil)
-      
-      
-      
-      
+//      
+//      
+//      
+//      let startPath = UIBezierPath(roundedRect: mainVC.view.frame, cornerRadius: 0).cgPath
+//      let endPath = UIBezierPath(roundedRect: mainVC.activeButton!.frame, cornerRadius: 0).cgPath
+//      
+//      
+//      let animation = CABasicAnimation(keyPath: "path")
+//      animation.fromValue = startPath
+//      animation.toValue = endPath
+//      animation.duration = transitionDuration(using: transitionContext)
+//      animation.isRemovedOnCompletion = false
+//      animation.fillMode = kCAFillModeForwards
+//      mainVC.tempLayer.add(animation, forKey: nil)
+//      
+//      
+//      
+//      
       
 
       CATransaction.commit()

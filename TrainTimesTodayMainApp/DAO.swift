@@ -11,11 +11,17 @@ import MMWormhole
 import SwiftyJSON
 
 
+
+
 class DAO {
    
    
    var fromStation = StationModel()
    var toStation = StationModel()
+   
+   
+   
+   var activeStation = ActiveStationType.departing
    
    var stations = [StationModel]()
    
@@ -51,6 +57,24 @@ class DAO {
       }
       
    }
+   
+   
+   
+   
+   func setActiveStation(station: StationModel) {
+      
+      switch activeStation {
+      case .departing:
+         fromStation = station
+      case .arriving:
+         toStation = station
+         
+         
+      }
+      
+      
+   }
+   
    
    
    

@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11521.1" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11521.1" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="LZ2-rP-PGe">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11517.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Main Controller-->
+        <!--pick stations-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="MainController" customModule="TrainTimesToday" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="pick stations" id="BYZ-38-t0r" customClass="MainController" customModule="TrainTimesToday" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -20,48 +19,63 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="m3T-9j-UZp"/>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="URY-Zp-aIo" customClass="StationButton" customModule="TrainTimesToday" customModuleProvider="target">
-                                <color key="backgroundColor" red="0.17803969559999999" green="1" blue="0.072035416180000006" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.9842078313" green="0.40271464280000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="LII-oh-IT3"/>
-                                    <constraint firstAttribute="width" constant="150" id="V3U-ye-dB2"/>
+                                    <constraint firstAttribute="height" constant="149" id="zv9-jI-O3s"/>
                                 </constraints>
-                                <state key="normal" title="from">
+                                <state key="normal">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="0.0"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="bezierShapeColor">
-                                        <color key="value" red="1" green="0.62016118580000001" blue="0.61892985730000005" alpha="1" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="arriving"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="iconImage" value="departing"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="departing"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="stationtype" value="departing"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="stationType" value="departing"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="fromStationButtonTappedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s49-PV-bN5"/>
+                                    <segue destination="ea6-pN-Ydl" kind="show" id="wVu-Za-OCp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZeZ-iT-3C4" customClass="StationButton" customModule="TrainTimesToday" customModuleProvider="target">
+                                <color key="backgroundColor" red="0.9842078313" green="0.40271464280000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="arriving"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="iconImage" value="arriving"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="departing"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="stationtype" value="departing"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="stationType" value="departing"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="ea6-pN-Ydl" kind="show" id="B0Q-xd-oDR"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="m3T-9j-UZp" secondAttribute="bottom" id="FXO-Qg-zJH"/>
-                            <constraint firstAttribute="leading" secondItem="m3T-9j-UZp" secondAttribute="leading" id="OM2-Cr-kgR"/>
-                            <constraint firstItem="URY-Zp-aIo" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="25" id="jSv-ta-maE"/>
-                            <constraint firstAttribute="trailing" secondItem="m3T-9j-UZp" secondAttribute="trailing" id="peN-pO-p7X"/>
-                            <constraint firstItem="m3T-9j-UZp" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.3" id="tuW-dc-b3A"/>
-                            <constraint firstItem="URY-Zp-aIo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="25" id="wZE-DG-Jrk"/>
+                            <constraint firstItem="ZeZ-iT-3C4" firstAttribute="leading" secondItem="URY-Zp-aIo" secondAttribute="trailing" constant="19" id="4ET-fE-Xif"/>
+                            <constraint firstItem="URY-Zp-aIo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="25" id="7GT-Yf-SUh"/>
+                            <constraint firstItem="ZeZ-iT-3C4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="25" id="9JU-RO-N51"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="URY-Zp-aIo" secondAttribute="trailing" constant="175" id="Bhf-JE-19l"/>
+                            <constraint firstItem="ZeZ-iT-3C4" firstAttribute="height" secondItem="URY-Zp-aIo" secondAttribute="height" id="bZU-jI-dCb"/>
+                            <constraint firstItem="URY-Zp-aIo" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="25" id="llh-ze-eur"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZeZ-iT-3C4" secondAttribute="trailing" constant="13" id="zbz-af-pbm"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="3e4-Iv-taX"/>
                     <connections>
-                        <outlet property="fromStationButton" destination="URY-Zp-aIo" id="fIU-Tt-Whl"/>
-                        <outlet property="mapView" destination="m3T-9j-UZp" id="qxB-aA-2DV"/>
+                        <outlet property="arrivingButton" destination="ZeZ-iT-3C4" id="UrN-6p-G3C"/>
+                        <outlet property="departingButton" destination="URY-Zp-aIo" id="OWQ-H0-WEp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="425" y="147"/>
+            <point key="canvasLocation" x="1364" y="146.17691154422789"/>
         </scene>
         <!--Pick Station View Controller-->
         <scene sceneID="uLq-iU-9Qz">
@@ -85,9 +99,7 @@
                                     <outlet property="delegate" destination="ea6-pN-Ydl" id="HcZ-IX-fA6"/>
                                 </connections>
                             </searchBar>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="57" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kZe-Cv-kN8">
-                                <frame key="frameInset" minY="50" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="57" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kZe-Cv-kN8">
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" red="0.68067175759999998" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
@@ -98,15 +110,15 @@
                                             <frame key="frameInset" width="375" height="57"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eTX-5Q-8Ju">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eTX-5Q-8Ju">
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="33" id="GL8-ze-h9M"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
                                                 <constraint firstItem="eTX-5Q-8Ju" firstAttribute="centerY" secondItem="qem-4E-EDd" secondAttribute="centerY" id="A1i-cz-G79"/>
                                                 <constraint firstItem="eTX-5Q-8Ju" firstAttribute="leading" secondItem="qem-4E-EDd" secondAttribute="leadingMargin" constant="62" id="DEx-bi-xnv"/>
@@ -128,11 +140,16 @@
                         </subviews>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="y8G-zf-MGD" secondAttribute="trailing" constant="5" id="68X-BZ-kVH"/>
+                            <constraint firstItem="y8G-zf-MGD" firstAttribute="trailing" secondItem="B0c-lS-3t6" secondAttribute="trailing" id="68X-BZ-kVH"/>
+                            <constraint firstItem="kZe-Cv-kN8" firstAttribute="width" secondItem="B0c-lS-3t6" secondAttribute="width" id="GZx-Fw-Bdx"/>
+                            <constraint firstItem="gIn-xb-zeY" firstAttribute="top" secondItem="kZe-Cv-kN8" secondAttribute="bottom" constant="-50" id="UdO-OI-PC0"/>
                             <constraint firstItem="y8G-zf-MGD" firstAttribute="top" secondItem="Gay-4s-DcB" secondAttribute="bottom" id="ahE-9t-Hbp"/>
-                            <constraint firstItem="y8G-zf-MGD" firstAttribute="leading" secondItem="B0c-lS-3t6" secondAttribute="leadingMargin" constant="5" id="gEe-lu-E1v"/>
+                            <constraint firstItem="kZe-Cv-kN8" firstAttribute="leading" secondItem="B0c-lS-3t6" secondAttribute="leadingMargin" constant="-16" id="ebs-zv-tbG"/>
+                            <constraint firstItem="y8G-zf-MGD" firstAttribute="leading" secondItem="B0c-lS-3t6" secondAttribute="leading" id="gEe-lu-E1v"/>
+                            <constraint firstItem="kZe-Cv-kN8" firstAttribute="top" secondItem="y8G-zf-MGD" secondAttribute="bottom" id="jJa-MQ-Dtv"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="nNF-Ar-sU4"/>
                     <connections>
                         <outlet property="searchField" destination="y8G-zf-MGD" id="7HK-LX-ZdU"/>
                         <outlet property="tableview" destination="kZe-Cv-kN8" id="8A2-Lq-0Kb"/>
@@ -140,7 +157,32 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BsS-Yl-lMD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1148" y="120.98950524737631"/>
+            <point key="canvasLocation" x="2087.1999999999998" y="120.98950524737631"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="J0Z-tF-cIK">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LZ2-rP-PGe" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5Uc-tm-iml">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="9mM-QZ-eug"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kBC-pO-aLW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="424.80000000000001" y="146.17691154422789"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="arriving" width="600" height="600"/>
+        <image name="departing" width="600" height="600"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="wVu-Za-OCp"/>
+    </inferredMetricsTieBreakers>
 </document>
