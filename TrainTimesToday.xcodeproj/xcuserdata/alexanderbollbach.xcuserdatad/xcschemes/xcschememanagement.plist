@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>SharedCode.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
 		<key>TrainTimesTodayExtension.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -23,6 +28,11 @@
 			<true/>
 		</dict>
 		<key>290406D11D331E0B00A76B49</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>29C8B7F81DA1EDCE00034CEB</key>
 		<dict>
 			<key>primary</key>
 			<true/>

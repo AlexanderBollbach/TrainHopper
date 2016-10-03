@@ -14,6 +14,8 @@ class StationButton: UIButton {
    
    var contentView : UIView?
    
+   var borderLayer: CAShapeLayer!
+   
    var stationType: ActiveStationType!
    
    
@@ -36,6 +38,15 @@ class StationButton: UIButton {
       xibSetup()
    }
    
+   
+   
+   override func layoutSubviews() {
+      
+ 
+      
+      self.borderLayer?.frame = self.bounds
+      self.borderLayer.path = UIBezierPath(roundedRect: self.bounds, cornerRadius: 5).cgPath
+   }
    func xibSetup() {
      
       
@@ -50,7 +61,22 @@ class StationButton: UIButton {
       
       // Adding custom subview on top of our view (over any custom drawing > see note below)
       addSubview(contentView!)
+      
+      self.borderLayer = CAShapeLayer()
+      self.borderLayer.path = UIBezierPath(roundedRect: self.bounds, cornerRadius: 5).cgPath
+      self.borderLayer.strokeColor = UIColor.black.cgColor
+      self.borderLayer.fillColor = UIColor.clear.cgColor
+      self.layer.addSublayer(self.borderLayer)
+      
+      
+      
+
    }
+   
+   
+   
+   
+   
    
    func loadViewFromNib() -> UIView! {
       

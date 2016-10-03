@@ -8,7 +8,7 @@
 
 import Foundation
 
-final class StationModel : NSObject, NSCoding {
+final public class StationModel : NSObject, NSCoding {
    
    
    public init?(coder aDecoder: NSCoder) {
@@ -31,12 +31,12 @@ final class StationModel : NSObject, NSCoding {
 
    
    
-   var name: String!
-   var abbr: String!
-   var lat: Float!
-   var long: Float!
+   public var name: String!
+   public var abbr: String!
+   public var lat: Float!
+   public var long: Float!
    
-   init(name: String, abbr: String, lat: Float, long: Float) {
+   public init(name: String, abbr: String, lat: Float, long: Float) {
       
       self.name = name
       self.abbr = abbr
@@ -46,7 +46,7 @@ final class StationModel : NSObject, NSCoding {
    
    
    
-   convenience override init() {
+   public convenience override init() {
     
       
       self.init(name: "---", abbr: "---", lat: 40, long: 70)

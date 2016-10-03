@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-SharedCode.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-TrainTimesTodayExtension.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -32,12 +37,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>63C0291F086DBBDF3052D2D2FEA0E2CB</key>
+		<key>C320C9070D08D91766DD70B2E3928FDF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>DA2550D7D94491C4B4EA8F3435FEEC4B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E721F86FCE2BB65F98AD56F3B49191D1</key>
 		<dict>
 			<key>primary</key>
 			<true/>

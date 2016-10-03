@@ -114,7 +114,7 @@ class PopAnimator: NSObject, UIViewControllerAnimatedTransitioning {
    
    func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
       
-      let mainVC = transitionContext.viewController(forKey: UITransitionContextViewControllerKey.to)! as! MainController
+//      let mainVC = transitionContext.viewController(forKey: UITransitionContextViewControllerKey.to)! as! MainController
 
       
       let stationView = transitionContext.view(forKey: .from)

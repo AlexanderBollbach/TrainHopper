@@ -27,12 +27,12 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
-                <constraint firstItem="778-HN-urI" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="3wC-xp-aWW"/>
-                <constraint firstItem="DZD-lG-GMx" firstAttribute="top" secondItem="778-HN-urI" secondAttribute="bottom" constant="5" id="PaE-UM-8gj"/>
-                <constraint firstItem="DZD-lG-GMx" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="ZzV-Iu-vbI"/>
-                <constraint firstAttribute="trailing" secondItem="778-HN-urI" secondAttribute="trailing" constant="5" id="efG-7g-KmC"/>
-                <constraint firstItem="778-HN-urI" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="k7z-gU-gLK"/>
-                <constraint firstItem="778-HN-urI" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottom" multiplier="1:2" id="mpH-ZB-FxY"/>
+                <constraint firstItem="778-HN-urI" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="AEx-ds-2F8"/>
+                <constraint firstItem="778-HN-urI" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="3:5" id="CNK-i5-Vce"/>
+                <constraint firstItem="778-HN-urI" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="GmW-Hn-DpA"/>
+                <constraint firstAttribute="bottom" secondItem="DZD-lG-GMx" secondAttribute="bottom" constant="5" id="YJ1-TX-ZbR"/>
+                <constraint firstItem="DZD-lG-GMx" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="r4T-4e-9Dm"/>
+                <constraint firstItem="778-HN-urI" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="3:5" id="rNB-ur-yyx"/>
             </constraints>
             <point key="canvasLocation" x="33.5" y="54.5"/>
         </view>

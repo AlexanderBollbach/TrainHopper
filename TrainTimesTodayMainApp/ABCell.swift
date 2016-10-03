@@ -11,6 +11,7 @@ import UIKit
 class ABCell: UITableViewCell {
    
    @IBOutlet weak var label1: UILabel!
+   
    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
       
       

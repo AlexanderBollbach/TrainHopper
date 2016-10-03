@@ -7,35 +7,21 @@
 //
 
 import UIKit
-
 import MapKit
-
+import SharedCode
 
 class MainController: UIViewController {
    
-   
-   
-   
-   
+
    
    @IBOutlet weak var departingButton: StationButton!
-   
    @IBOutlet weak var arrivingButton: StationButton!
-   
-//   let storyBoard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-   let dao = DAO.sharedInstance
-   
-   
-   
-//   var activeButton: StationButton?
-   
-   
+
    override func viewDidLoad() {
       super.viewDidLoad()
       
       
-      dao.configureData()
-      
+      DAO.sharedInstance.configureData()
       
       
       self.departingButton.stationType = .departing
@@ -44,7 +30,7 @@ class MainController: UIViewController {
       
    }
    
-   
+
    
    override func viewWillAppear(_ animated: Bool) {
       updateUI()
@@ -53,11 +39,9 @@ class MainController: UIViewController {
    
    
    func updateUI() {
-      
-      
-      
-      self.departingButton.name.text = dao.fromStation.name
-      self.arrivingButton.name.text = dao.toStation.name
+  
+      self.departingButton.name.text = DAO.sharedInstance.fromStation.name
+      self.arrivingButton.name.text = DAO.sharedInstance.toStation.name
    }
    
    
@@ -67,42 +51,15 @@ class MainController: UIViewController {
    
    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
       
+      guard let button = sender as? StationButton else {
+         return
+      }
       
-      
-         
-            
-            guard let button = sender as? StationButton else {
-               return
-            }
-
-            
-            
-               dao.activeStation = button.stationType
-      
+      DAO.sharedInstance.activeStation = button.stationType
    }
-   
-   
-   
 
-   
-   
-   
-   
-   
-   
-   
-   
-
-   
-   
    
 }
-
-
-
-
-
-
 
 
 
@@ -127,43 +84,6 @@ extension MainController: UIViewControllerTransitioningDelegate {
 
 
 
-
-
-
-
-
-// extension stuff
-
-extension MainController {
-   
-   
-   func updateStationButtons() {
-      //
-      //      self.fromStationButton.setTitle(dao.fromStation.name, for: .normal)
-      //
-      //      let coord = CLLocationCoordinate2DMake(Double(dao.fromStation.lat), Double(dao.fromStation.long))
-      //      let span1 =  MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)
-      //      let region = MKCoordinateRegion(center: coord, span: span1)
-      //      self.mapView.setRegion(region, animated: true)
-      //
-      //
-      //
-      //      let point = self.mapView.convert(coord, toPointTo: self.view)
-      //
-      //
-      //      let layer = CAShapeLayer()
-      //      layer.path = UIBezierPath(rect: CGRect(origin: point, size: CGSize(width: 10, height: 10))).cgPath
-      //      layer.fillColor = UIColor.red.cgColor
-      //      
-      //      self.view.layer.addSublayer(layer)
-      
-      
-      //
-      
-      
-   }
-   
-}
 
 
 

@@ -4,6 +4,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11517.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -19,52 +20,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="URY-Zp-aIo" customClass="StationButton" customModule="TrainTimesToday" customModuleProvider="target">
-                                <color key="backgroundColor" red="0.9842078313" green="0.40271464280000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="149" id="zv9-jI-O3s"/>
-                                </constraints>
-                                <state key="normal">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="arriving"/>
-                                    <userDefinedRuntimeAttribute type="image" keyPath="iconImage" value="departing"/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="departing"/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="stationtype" value="departing"/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="stationType" value="departing"/>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <segue destination="ea6-pN-Ydl" kind="show" id="wVu-Za-OCp"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZeZ-iT-3C4" customClass="StationButton" customModule="TrainTimesToday" customModuleProvider="target">
-                                <color key="backgroundColor" red="0.9842078313" green="0.40271464280000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="arriving"/>
-                                    <userDefinedRuntimeAttribute type="image" keyPath="iconImage" value="arriving"/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="departing"/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="stationtype" value="departing"/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="stationType" value="departing"/>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <segue destination="ea6-pN-Ydl" kind="show" id="B0Q-xd-oDR"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="1Eh-3E-pSi">
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="URY-Zp-aIo" customClass="StationButton" customModule="TrainTimesToday" customModuleProvider="target">
+                                        <color key="backgroundColor" red="0.9842078313" green="0.40271464280000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="iconImage" value="departing"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="ea6-pN-Ydl" kind="show" id="wVu-Za-OCp"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZeZ-iT-3C4" customClass="StationButton" customModule="TrainTimesToday" customModuleProvider="target">
+                                        <color key="backgroundColor" red="0.9842078313" green="0.40271464280000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="iconImage" value="arriving"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="ea6-pN-Ydl" kind="show" id="B0Q-xd-oDR"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <edgeInsets key="layoutMargins" top="15" left="15" bottom="15" right="15"/>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="ZeZ-iT-3C4" firstAttribute="leading" secondItem="URY-Zp-aIo" secondAttribute="trailing" constant="19" id="4ET-fE-Xif"/>
-                            <constraint firstItem="URY-Zp-aIo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="25" id="7GT-Yf-SUh"/>
-                            <constraint firstItem="ZeZ-iT-3C4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="25" id="9JU-RO-N51"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="URY-Zp-aIo" secondAttribute="trailing" constant="175" id="Bhf-JE-19l"/>
-                            <constraint firstItem="ZeZ-iT-3C4" firstAttribute="height" secondItem="URY-Zp-aIo" secondAttribute="height" id="bZU-jI-dCb"/>
-                            <constraint firstItem="URY-Zp-aIo" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="25" id="llh-ze-eur"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="ZeZ-iT-3C4" secondAttribute="trailing" constant="13" id="zbz-af-pbm"/>
+                            <constraint firstItem="1Eh-3E-pSi" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="CBE-iQ-fCK"/>
+                            <constraint firstItem="1Eh-3E-pSi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LCL-Ec-Wkq"/>
+                            <constraint firstItem="1Eh-3E-pSi" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1:5" id="OGy-Oh-8sm"/>
+                            <constraint firstItem="1Eh-3E-pSi" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="SrI-1P-FQE"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="3e4-Iv-taX"/>

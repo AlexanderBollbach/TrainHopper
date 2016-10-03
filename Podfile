@@ -11,6 +11,11 @@ target 'TrainTimesTodayMainApp' do
 available_pods
 end
 
+
+target 'SharedCode' do
+pod 'SwiftyJSON', '3.0.0'
+end
+
 target 'TrainTimesTodayExtension' do
 available_pods
 end

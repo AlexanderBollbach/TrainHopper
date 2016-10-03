@@ -21,17 +21,21 @@
 		29174DEF1D46EAA30013BB43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290406BC1D331E0200A76B49 /* AppDelegate.swift */; };
 		29174DF01D46EAA80013BB43 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290406BE1D331E0200A76B49 /* MainVC.swift */; };
 		294826A71D9F919C00C915FE /* ActiveStationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294826A61D9F919C00C915FE /* ActiveStationType.swift */; };
-		299A98781D98F2C2003CD8A7 /* StationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299A98771D98F2C2003CD8A7 /* StationModel.swift */; };
 		299A987C1D99025D003CD8A7 /* StationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299A987B1D99025D003CD8A7 /* StationButton.swift */; };
 		29BC93B31D47131E00541481 /* ABCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BC93B21D47131E00541481 /* ABCell.swift */; };
 		29BC93B51D47132600541481 /* ABViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2949592B1D445E0B00C854DB /* ABViewController.swift */; };
-		29BC93B61D47132900541481 /* LIRR_API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F7C5871D446C53006DD03B /* LIRR_API.swift */; };
 		29BF2D9C1D52AF1000422425 /* PickStationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BF2D9B1D52AF1000422425 /* PickStationVC.swift */; };
 		29BF2D9E1D53900900422425 /* TransitionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BF2D9D1D53900900422425 /* TransitionHandler.swift */; };
+		29C8B7FD1DA1EDCE00034CEB /* SharedCode.h in Headers */ = {isa = PBXBuildFile; fileRef = 29C8B7FB1DA1EDCE00034CEB /* SharedCode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		29C8B8001DA1EDCE00034CEB /* SharedCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29C8B7F91DA1EDCE00034CEB /* SharedCode.framework */; };
+		29C8B8011DA1EDCE00034CEB /* SharedCode.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 29C8B7F91DA1EDCE00034CEB /* SharedCode.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		29C8B8051DA1EE7100034CEB /* Service_API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F7C5871D446C53006DD03B /* Service_API.swift */; };
+		29C8B8081DA1EFD500034CEB /* SharedCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29C8B7F91DA1EDCE00034CEB /* SharedCode.framework */; };
+		29C8B80D1DA2053600034CEB /* StationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299A98771D98F2C2003CD8A7 /* StationModel.swift */; };
 		29F1A5DC1D72B27A0048CED7 /* DAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F1A5DB1D72B27A0048CED7 /* DAO.swift */; };
-		29F7C58B1D457534006DD03B /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29F7C58A1D457534006DD03B /* SwiftyJSON.framework */; };
 		3DCB61EC37204D1EF80B0181 /* Pods_TrainTimesTodayMainApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F3D7CB1CDD1EBF585D15E03 /* Pods_TrainTimesTodayMainApp.framework */; };
 		94FDB708DD2B8F0CC883B357 /* Pods_TrainTimesTodayExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07C88341F5D7A374C1B82B3C /* Pods_TrainTimesTodayExtension.framework */; };
+		B631176CF0B4440BE457F5FB /* Pods_SharedCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9774E16CD80D2A674FAD42C9 /* Pods_SharedCode.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +45,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 290406D11D331E0B00A76B49;
 			remoteInfo = TestToday;
+		};
+		29C8B7FE1DA1EDCE00034CEB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 290406B11D331E0200A76B49 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 29C8B7F81DA1EDCE00034CEB;
+			remoteInfo = SharedCode;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -56,10 +67,22 @@
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		29C8B8041DA1EDCE00034CEB /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				29C8B8011DA1EDCE00034CEB /* SharedCode.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		07C88341F5D7A374C1B82B3C /* Pods_TrainTimesTodayExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrainTimesTodayExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1414D9DE263A9A2F889298CA /* Pods-SharedCode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SharedCode.release.xcconfig"; path = "Pods/Target Support Files/Pods-SharedCode/Pods-SharedCode.release.xcconfig"; sourceTree = "<group>"; };
 		290406B91D331E0200A76B49 /* TrainTimesToday.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrainTimesToday.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		290406BC1D331E0200A76B49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		290406BE1D331E0200A76B49 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
@@ -78,16 +101,21 @@
 		29174DED1D46E45F0013BB43 /* TrainTimesTodayMainApp.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = TrainTimesTodayMainApp.entitlements; path = TrainTimesTodayMainApp/TrainTimesTodayMainApp.entitlements; sourceTree = SOURCE_ROOT; };
 		294826A61D9F919C00C915FE /* ActiveStationType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActiveStationType.swift; sourceTree = "<group>"; };
 		2949592B1D445E0B00C854DB /* ABViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ABViewController.swift; path = ../TrainTimesTodayExtension/ABViewController.swift; sourceTree = "<group>"; };
-		299A98771D98F2C2003CD8A7 /* StationModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StationModel.swift; sourceTree = "<group>"; };
+		299A98771D98F2C2003CD8A7 /* StationModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StationModel.swift; path = ../TrainTimesTodayMainApp/StationModel.swift; sourceTree = "<group>"; };
 		299A987B1D99025D003CD8A7 /* StationButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StationButton.swift; sourceTree = "<group>"; };
 		29BC93B21D47131E00541481 /* ABCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ABCell.swift; sourceTree = "<group>"; };
 		29BF2D9B1D52AF1000422425 /* PickStationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickStationVC.swift; sourceTree = "<group>"; };
 		29BF2D9D1D53900900422425 /* TransitionHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionHandler.swift; sourceTree = "<group>"; };
+		29C8B7F91DA1EDCE00034CEB /* SharedCode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SharedCode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		29C8B7FB1DA1EDCE00034CEB /* SharedCode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SharedCode.h; sourceTree = "<group>"; };
+		29C8B7FC1DA1EDCE00034CEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29C8B8061DA1EF6300034CEB /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../../../../Library/Developer/Xcode/DerivedData/TrainTimesToday-ghczrqxqugwfxgdgndiobfdsozij/Build/Products/Release-iphoneos/SwiftyJSON/SwiftyJSON.framework"; sourceTree = "<group>"; };
 		29F1A5DB1D72B27A0048CED7 /* DAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DAO.swift; sourceTree = "<group>"; };
-		29F7C5871D446C53006DD03B /* LIRR_API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LIRR_API.swift; path = ../TrainTimesTodayExtension/LIRR_API.swift; sourceTree = "<group>"; };
+		29F7C5871D446C53006DD03B /* Service_API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Service_API.swift; path = ../TrainTimesTodayExtension/Service_API.swift; sourceTree = "<group>"; };
 		29F7C58A1D457534006DD03B /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../../Library/Developer/Xcode/DerivedData/TestAppExtension-agapxgrcjyhlrmdkjoedvmmjetdq/Build/Products/Debug-iphoneos/SwiftyJSON.framework"; sourceTree = "<group>"; };
 		4F3D7CB1CDD1EBF585D15E03 /* Pods_TrainTimesTodayMainApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrainTimesTodayMainApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		71BEFD28B08F22BA59EFA2E2 /* Pods-TrainTimesTodayMainApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrainTimesTodayMainApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TrainTimesTodayMainApp/Pods-TrainTimesTodayMainApp.debug.xcconfig"; sourceTree = "<group>"; };
+		9774E16CD80D2A674FAD42C9 /* Pods_SharedCode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SharedCode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8BFD5DD54EA2FEBFD6EE3B8 /* Pods-TrainTimesTodayMainApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrainTimesTodayMainApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-TrainTimesTodayMainApp/Pods-TrainTimesTodayMainApp.release.xcconfig"; sourceTree = "<group>"; };
 		FC724E7F9FBC0D5669EB685F /* Pods-TrainTimesTodayExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrainTimesTodayExtension.release.xcconfig"; path = "Pods/Target Support Files/Pods-TrainTimesTodayExtension/Pods-TrainTimesTodayExtension.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -97,8 +125,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29F7C58B1D457534006DD03B /* SwiftyJSON.framework in Frameworks */,
 				290F50E21D9B95EE006D31D7 /* MapKit.framework in Frameworks */,
+				29C8B8001DA1EDCE00034CEB /* SharedCode.framework in Frameworks */,
 				3DCB61EC37204D1EF80B0181 /* Pods_TrainTimesTodayMainApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -107,8 +135,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29C8B8081DA1EFD500034CEB /* SharedCode.framework in Frameworks */,
 				290406D51D331E0B00A76B49 /* NotificationCenter.framework in Frameworks */,
 				94FDB708DD2B8F0CC883B357 /* Pods_TrainTimesTodayExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29C8B7F51DA1EDCE00034CEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B631176CF0B4440BE457F5FB /* Pods_SharedCode.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,6 +157,7 @@
 			children = (
 				290406D61D331E0B00A76B49 /* TrainTimesTodayExtension */,
 				290406BB1D331E0200A76B49 /* TrainTimesTodayMainApp */,
+				29C8B7FA1DA1EDCE00034CEB /* SharedCode */,
 				290406D31D331E0B00A76B49 /* Frameworks */,
 				290406BA1D331E0200A76B49 /* Products */,
 				F69B7B85E54FA542D02E0CA4 /* Pods */,
@@ -131,6 +169,7 @@
 			children = (
 				290406B91D331E0200A76B49 /* TrainTimesToday.app */,
 				290406D21D331E0B00A76B49 /* TrainTimesTodayExtension.appex */,
+				29C8B7F91DA1EDCE00034CEB /* SharedCode.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -142,7 +181,6 @@
 				290406C01D331E0200A76B49 /* Main.storyboard */,
 				290406BC1D331E0200A76B49 /* AppDelegate.swift */,
 				29F1A5DB1D72B27A0048CED7 /* DAO.swift */,
-				299A98771D98F2C2003CD8A7 /* StationModel.swift */,
 				290406BE1D331E0200A76B49 /* MainVC.swift */,
 				294826A61D9F919C00C915FE /* ActiveStationType.swift */,
 				29BF2D9B1D52AF1000422425 /* PickStationVC.swift */,
@@ -157,11 +195,13 @@
 		290406D31D331E0B00A76B49 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				29C8B8061DA1EF6300034CEB /* SwiftyJSON.framework */,
 				290F50E11D9B95EE006D31D7 /* MapKit.framework */,
 				29F7C58A1D457534006DD03B /* SwiftyJSON.framework */,
 				290406D41D331E0B00A76B49 /* NotificationCenter.framework */,
 				07C88341F5D7A374C1B82B3C /* Pods_TrainTimesTodayExtension.framework */,
 				4F3D7CB1CDD1EBF585D15E03 /* Pods_TrainTimesTodayMainApp.framework */,
+				9774E16CD80D2A674FAD42C9 /* Pods_SharedCode.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -173,7 +213,6 @@
 				290406D91D331E0B00A76B49 /* MainInterface.storyboard */,
 				29BC93B21D47131E00541481 /* ABCell.swift */,
 				2949592B1D445E0B00C854DB /* ABViewController.swift */,
-				29F7C5871D446C53006DD03B /* LIRR_API.swift */,
 			);
 			name = TrainTimesTodayExtension;
 			path = TrainTimesTodayMainApp;
@@ -199,17 +238,40 @@
 			name = extras;
 			sourceTree = "<group>";
 		};
+		29C8B7FA1DA1EDCE00034CEB /* SharedCode */ = {
+			isa = PBXGroup;
+			children = (
+				29F7C5871D446C53006DD03B /* Service_API.swift */,
+				299A98771D98F2C2003CD8A7 /* StationModel.swift */,
+				29C8B7FB1DA1EDCE00034CEB /* SharedCode.h */,
+				29C8B7FC1DA1EDCE00034CEB /* Info.plist */,
+			);
+			path = SharedCode;
+			sourceTree = "<group>";
+		};
 		F69B7B85E54FA542D02E0CA4 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				71BEFD28B08F22BA59EFA2E2 /* Pods-TrainTimesTodayMainApp.debug.xcconfig */,
 				F8BFD5DD54EA2FEBFD6EE3B8 /* Pods-TrainTimesTodayMainApp.release.xcconfig */,
 				FC724E7F9FBC0D5669EB685F /* Pods-TrainTimesTodayExtension.release.xcconfig */,
+				1414D9DE263A9A2F889298CA /* Pods-SharedCode.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		29C8B7F61DA1EDCE00034CEB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29C8B7FD1DA1EDCE00034CEB /* SharedCode.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		290406B81D331E0200A76B49 /* TrainTimesTodayMainApp */ = {
@@ -223,11 +285,13 @@
 				290406E31D331E0B00A76B49 /* Embed App Extensions */,
 				1101E8765860144EAE4D622D /* [CP] Embed Pods Frameworks */,
 				F66C501C795BBBF7AD9D4B73 /* [CP] Copy Pods Resources */,
+				29C8B8041DA1EDCE00034CEB /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				290406DE1D331E0B00A76B49 /* PBXTargetDependency */,
+				29C8B7FF1DA1EDCE00034CEB /* PBXTargetDependency */,
 			);
 			name = TrainTimesTodayMainApp;
 			productName = TestAppExtension;
@@ -252,6 +316,26 @@
 			productName = TestToday;
 			productReference = 290406D21D331E0B00A76B49 /* TrainTimesTodayExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
+		};
+		29C8B7F81DA1EDCE00034CEB /* SharedCode */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 29C8B8021DA1EDCE00034CEB /* Build configuration list for PBXNativeTarget "SharedCode" */;
+			buildPhases = (
+				5948294B04E18FE0CD8B15D0 /* [CP] Check Pods Manifest.lock */,
+				29C8B7F41DA1EDCE00034CEB /* Sources */,
+				29C8B7F51DA1EDCE00034CEB /* Frameworks */,
+				29C8B7F61DA1EDCE00034CEB /* Headers */,
+				29C8B7F71DA1EDCE00034CEB /* Resources */,
+				9F73F50EE9C7A4C47F23DD27 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SharedCode;
+			productName = SharedCode;
+			productReference = 29C8B7F91DA1EDCE00034CEB /* SharedCode.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -286,6 +370,11 @@
 							};
 						};
 					};
+					29C8B7F81DA1EDCE00034CEB = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 6UUR9483U2;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 290406B41D331E0200A76B49 /* Build configuration list for PBXProject "TrainTimesToday" */;
@@ -303,6 +392,7 @@
 			targets = (
 				290406B81D331E0200A76B49 /* TrainTimesTodayMainApp */,
 				290406D11D331E0B00A76B49 /* TrainTimesTodayExtension */,
+				29C8B7F81DA1EDCE00034CEB /* SharedCode */,
 			);
 		};
 /* End PBXProject section */
@@ -312,11 +402,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29174DEE1D46E45F0013BB43 /* TrainTimesTodayMainApp.entitlements in Resources */,
-				290406C71D331E0200A76B49 /* LaunchScreen.storyboard in Resources */,
-				290406C41D331E0200A76B49 /* Assets.xcassets in Resources */,
 				290406C21D331E0200A76B49 /* Main.storyboard in Resources */,
 				290681321D9D8CFC00A826C2 /* StationButton.xib in Resources */,
+				290406C41D331E0200A76B49 /* Assets.xcassets in Resources */,
+				290406C71D331E0200A76B49 /* LaunchScreen.storyboard in Resources */,
+				29174DEE1D46E45F0013BB43 /* TrainTimesTodayMainApp.entitlements in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,6 +416,13 @@
 			files = (
 				290406DB1D331E0B00A76B49 /* MainInterface.storyboard in Resources */,
 				29174DEC1D46E4560013BB43 /* TrainTimesTodayExtension.entitlements in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29C8B7F71DA1EDCE00034CEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,6 +474,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TrainTimesTodayExtension/Pods-TrainTimesTodayExtension-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		5948294B04E18FE0CD8B15D0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		626A1382368BA6550409ED7A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -390,6 +502,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9F73F50EE9C7A4C47F23DD27 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SharedCode/Pods-SharedCode-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F66C501C795BBBF7AD9D4B73 /* [CP] Copy Pods Resources */ = {
@@ -414,7 +541,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				299A98781D98F2C2003CD8A7 /* StationModel.swift in Sources */,
 				29BF2D9C1D52AF1000422425 /* PickStationVC.swift in Sources */,
 				29174DF01D46EAA80013BB43 /* MainVC.swift in Sources */,
 				29174DEF1D46EAA30013BB43 /* AppDelegate.swift in Sources */,
@@ -432,7 +558,15 @@
 			files = (
 				29BC93B51D47132600541481 /* ABViewController.swift in Sources */,
 				29BC93B31D47131E00541481 /* ABCell.swift in Sources */,
-				29BC93B61D47132900541481 /* LIRR_API.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29C8B7F41DA1EDCE00034CEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29C8B8051DA1EE7100034CEB /* Service_API.swift in Sources */,
+				29C8B80D1DA2053600034CEB /* StationModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,6 +577,11 @@
 			isa = PBXTargetDependency;
 			target = 290406D11D331E0B00A76B49 /* TrainTimesTodayExtension */;
 			targetProxy = 290406DD1D331E0B00A76B49 /* PBXContainerItemProxy */;
+		};
+		29C8B7FF1DA1EDCE00034CEB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 29C8B7F81DA1EDCE00034CEB /* SharedCode */;
+			targetProxy = 29C8B7FE1DA1EDCE00034CEB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -521,7 +660,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F8BFD5DD54EA2FEBFD6EE3B8 /* Pods-TrainTimesTodayMainApp.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_ENTITLEMENTS = TrainTimesTodayMainApp/TrainTimesTodayMainApp.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -530,7 +669,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "-6UUR9483U2.TrainTimesToday";
 				PRODUCT_NAME = TrainTimesToday;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -539,13 +678,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FC724E7F9FBC0D5669EB685F /* Pods-TrainTimesTodayExtension.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = TrainTimesTodayExtension/TrainTimesTodayExtension.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_OPTIMIZATION_LEVEL = 0;
 				INFOPLIST_FILE = "$(SRCROOT)/TrainTimesTodayExtension/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "-6UUR9483U2.TrainTimesToday.Extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -554,6 +693,39 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		29C8B8031DA1EDCE00034CEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1414D9DE263A9A2F889298CA /* Pods-SharedCode.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 6UUR9483U2;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = SharedCode/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = test.SharedCode;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos10.1;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -580,6 +752,14 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				290406E21D331E0B00A76B49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		29C8B8021DA1EDCE00034CEB /* Build configuration list for PBXNativeTarget "SharedCode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29C8B8031DA1EDCE00034CEB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
