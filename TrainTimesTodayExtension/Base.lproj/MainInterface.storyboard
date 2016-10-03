@@ -17,7 +17,47 @@
                     <view key="view" contentMode="scaleToFill" id="d7b-ux-gJX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZOP-PP-jZ9">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="extensionCell" id="H89-Yo-MYZ" customClass="ABCell" customModule="TrainTimesTodayExtension">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="H89-Yo-MYZ" id="6hY-TP-Ngk">
+                                            <frame key="frameInset" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x3G-39-M9z">
+                                                    <frame key="frameInset" minX="21" minY="11" width="42" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="label1" destination="x3G-39-M9z" id="FFx-32-nOX"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="naS-FB-7as" id="53U-2Q-XdJ"/>
+                                    <outlet property="delegate" destination="naS-FB-7as" id="ibK-2O-jzC"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="ZOP-PP-jZ9" firstAttribute="centerX" secondItem="d7b-ux-gJX" secondAttribute="centerX" id="1Ta-J2-Xwn"/>
+                            <constraint firstItem="ZOP-PP-jZ9" firstAttribute="height" secondItem="d7b-ux-gJX" secondAttribute="height" id="W2P-Zw-U1f"/>
+                            <constraint firstItem="ZOP-PP-jZ9" firstAttribute="width" secondItem="d7b-ux-gJX" secondAttribute="width" id="ZSb-f1-Dbz"/>
+                            <constraint firstItem="OhW-it-BPc" firstAttribute="top" secondItem="ZOP-PP-jZ9" secondAttribute="bottom" id="zjC-SP-r4E"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="ZOP-PP-jZ9" id="erM-Ux-VbY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B0a-Tp-HGY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

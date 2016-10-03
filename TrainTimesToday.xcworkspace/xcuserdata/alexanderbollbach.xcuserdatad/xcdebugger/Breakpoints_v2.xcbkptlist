@@ -25,124 +25,12 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "TrainTimesTodayMainApp/DAO.swift"
-            timestampString = "497163981.021531"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
-            landmarkName = "configureData()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TrainTimesTodayMainApp/DAO.swift"
-            timestampString = "497165481.825812"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
-            landmarkName = "configureData()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "TrainTimesToday.DAO.configureData () -&gt; ()"
-                  moduleName = "TrainTimesToday"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/alexanderbollbach/Dropbox/projs/iOS/TrainTimesToday/TrainTimesTodayMainApp/DAO.swift"
-                  timestampString = "497166621.337511"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "38"
-                  endingLineNumber = "38"
-                  offsetFromSymbolStart = "912">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "TrainTimesToday.DAO.(configureData () -&gt; ()).(closure #1)"
-                  moduleName = "TrainTimesToday"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/alexanderbollbach/Dropbox/projs/iOS/TrainTimesToday/TrainTimesTodayMainApp/DAO.swift"
-                  timestampString = "497166621.339363"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "40"
-                  endingLineNumber = "40"
-                  offsetFromSymbolStart = "48">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TrainTimesTodayMainApp/DAO.swift"
-            timestampString = "497165482.266536"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "40"
-            endingLineNumber = "40"
-            landmarkName = "configureData()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "TrainTimesToday.DAO.(configureData () -&gt; ()).(closure #1)"
-                  moduleName = "TrainTimesToday"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/alexanderbollbach/Dropbox/projs/iOS/TrainTimesToday/TrainTimesTodayMainApp/DAO.swift"
-                  timestampString = "497166621.343151"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "40"
-                  endingLineNumber = "40"
-                  offsetFromSymbolStart = "48">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "TrainTimesToday.DAO.(configureData () -&gt; ()).(closure #1).(closure #1)"
-                  moduleName = "TrainTimesToday"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/alexanderbollbach/Dropbox/projs/iOS/TrainTimesToday/TrainTimesTodayMainApp/DAO.swift"
-                  timestampString = "497166621.345486"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "40"
-                  endingLineNumber = "40"
-                  offsetFromSymbolStart = "20">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "TrainTimesTodayExtension/Service_API.swift"
-            timestampString = "497165528.173745"
+            timestampString = "497167829.132393"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "98"
-            endingLineNumber = "98"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
             landmarkName = "httpGetStations(completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -154,13 +42,45 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TrainTimesTodayExtension/Service_API.swift"
-            timestampString = "497165533.573169"
+            timestampString = "497167829.132393"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "108"
-            endingLineNumber = "108"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
             landmarkName = "httpGetStations(completion:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static SharedCode.Service_API.httpGetStations (completion : (Swift.Array&lt;SharedCode.StationModel&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "SharedCode"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alexanderbollbach/Dropbox/projs/iOS/TrainTimesToday/TrainTimesTodayExtension/Service_API.swift"
+                  timestampString = "497169669.899817"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "78"
+                  endingLineNumber = "78"
+                  offsetFromSymbolStart = "356">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static SharedCode.Service_API.(httpGetStations (completion : (Swift.Array&lt;SharedCode.StationModel&gt;) -&gt; ()) -&gt; ()).(closure #1)"
+                  moduleName = "SharedCode"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alexanderbollbach/Dropbox/projs/iOS/TrainTimesToday/TrainTimesTodayExtension/Service_API.swift"
+                  timestampString = "497169669.902366"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "71"
+                  endingLineNumber = "71"
+                  offsetFromSymbolStart = "32">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -170,11 +90,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TrainTimesTodayExtension/Service_API.swift"
-            timestampString = "497165535.556366"
+            timestampString = "497167829.132393"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "120"
-            endingLineNumber = "120"
+            startingLineNumber = "90"
+            endingLineNumber = "90"
             landmarkName = "httpGetStations(completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -186,12 +106,44 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TrainTimesTodayExtension/ABViewController.swift"
-            timestampString = "497166620.176339"
+            timestampString = "497169668.465396"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "114"
-            endingLineNumber = "114"
-            landmarkName = "widgetPerformUpdateWithCompletionHandler(completionHandler:)"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
+            landmarkName = "viewDidAppear(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TrainTimesTodayExtension/ABViewController.swift"
+            timestampString = "497169668.465396"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
+            landmarkName = "viewDidAppear(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TrainTimesTodayExtension/ABViewController.swift"
+            timestampString = "497169668.465396"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
+            landmarkName = "viewDidAppear(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

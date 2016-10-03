@@ -7,50 +7,31 @@
 //
 
 import Foundation
-
 import SwiftyJSON
-
-
 
 public class Service_API {
    
    
-   var homeStation: String!
-   var workStation: String!
-   
-   
-   
-   func httpGet(completion: @escaping ([String])->())  {
-      
+   public static func httpGetStationTimes(from: String, to: String, completion: @escaping ([String])->())  {
       
       var departTimes = [String]()
-      
-      
       let urlString = "https://traintime.lirr.org/api/TrainTime?" +
-         "api_key=742b288047c382c66326a26f7f5e4e4a&startsta=" + homeStation + "&endsta=" + workStation
+         "api_key=742b288047c382c66326a26f7f5e4e4a&startsta=" + from + "&endsta=" + to
       
       let request = URLRequest(url: URL(string: urlString)!)
       let session = URLSession.shared
       
-      
       let task = session.dataTask(with: request) {
-         
          (data, response, error) -> Void in
          
-         
          let jsonSw = JSON(data: data!)
-         
-         
          let trips = jsonSw["TRIPS"]
          
          for (_,subJson):(String, JSON) in trips {
             
             let legs = subJson["LEGS"][0]
-            
             let stops = legs["STOPS"].arrayValue
-            
             let initialStop = stops[0].dictionaryValue
-            
             let initialStopTime = initialStop["TIME"]?.stringValue
             
             //            let departTime = legs["DEPART_TIME"].stringValue
@@ -59,20 +40,9 @@ public class Service_API {
             departTimes.append(initialStopTime!)
             
          }
-         
-         
-         
-         
          DispatchQueue.main.sync {
             completion(departTimes)
          }
-         
-         
-         
-         
-         
-         
-         
       }
       task.resume()
    }

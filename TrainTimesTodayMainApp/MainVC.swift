@@ -24,6 +24,8 @@ class MainController: UIViewController {
       DAO.sharedInstance.configureData()
       
       
+  
+      
       self.departingButton.stationType = .departing
       self.arrivingButton.stationType = .arriving
       
@@ -46,8 +48,7 @@ class MainController: UIViewController {
    
    
    
-   
-   
+
    
    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
       

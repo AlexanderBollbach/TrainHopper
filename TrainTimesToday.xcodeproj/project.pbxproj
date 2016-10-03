@@ -155,8 +155,8 @@
 		290406B01D331E0200A76B49 = {
 			isa = PBXGroup;
 			children = (
-				290406D61D331E0B00A76B49 /* TrainTimesTodayExtension */,
 				290406BB1D331E0200A76B49 /* TrainTimesTodayMainApp */,
+				290406D61D331E0B00A76B49 /* TrainTimesTodayExtension */,
 				29C8B7FA1DA1EDCE00034CEB /* SharedCode */,
 				290406D31D331E0B00A76B49 /* Frameworks */,
 				290406BA1D331E0200A76B49 /* Products */,
@@ -651,7 +651,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

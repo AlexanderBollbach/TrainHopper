@@ -57,8 +57,10 @@ class DAO {
       switch activeStation {
       case .departing:
          fromStation = station
+         self.defaults.set(NSKeyedArchiver.archivedData(withRootObject: self.fromStation), forKey: "fromStation")
       case .arriving:
          toStation = station
+         self.defaults.set(NSKeyedArchiver.archivedData(withRootObject: self.toStation), forKey: "toStation")
       }
    }
    

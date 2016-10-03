@@ -18,10 +18,9 @@ class ABViewController: UIViewController {
    var toStation: StationModel!
    
    
-//   @IBOutlet weak var tableView: UITableView!
+   @IBOutlet weak var tableView: UITableView!
    let wormhole = MMWormhole(applicationGroupIdentifier: "group.AB.TrainTimesApp", optionalDirectory: "wormhole")
    let defaults = UserDefaults(suiteName: "group.AB.TrainTimesApp")!
-   var stationsTableView: UITableView!
    var stationTimes = [String]()
    
    
@@ -32,21 +31,21 @@ class ABViewController: UIViewController {
    override func viewDidLoad() {
       super.viewDidLoad()
       
-//      
-//      
-//      
-//      
-//      if defaults.value(forKey: "fromStation") != nil {
-//         fromStation = NSKeyedUnarchiver.unarchiveObject(with: defaults.value(forKey: "fromStation") as! Data) as! StationModel!
-//      } else {
-//         fromStation = StationModel()
-//      }
-//      
-//      if defaults.value(forKey: "toStation") != nil {
-//         fromStation = NSKeyedUnarchiver.unarchiveObject(with: defaults.value(forKey: "toStation") as! Data) as! StationModel!
-//      } else {
-//         toStation = StationModel()
-//      }
+      
+      
+      
+      
+      if defaults.value(forKey: "fromStation") != nil {
+         fromStation = NSKeyedUnarchiver.unarchiveObject(with: defaults.value(forKey: "fromStation") as! Data) as! StationModel!
+      } else {
+         fromStation = StationModel()
+      }
+      
+      if defaults.value(forKey: "toStation") != nil {
+         toStation = NSKeyedUnarchiver.unarchiveObject(with: defaults.value(forKey: "toStation") as! Data) as! StationModel!
+      } else {
+         toStation = StationModel()
+      }
       //
       //      wormhole.listenForMessage(withIdentifier: "stationChanged", listener: { (messageObject) -> Void in
       //
@@ -55,7 +54,6 @@ class ABViewController: UIViewController {
       //      })
       
       
-//      self.stationsTableView.register(ABCell.self, forCellReuseIdentifier: "ABCell")
       
       preferredContentSize = CGSize(width: 0, height: 600)
       
@@ -65,7 +63,14 @@ class ABViewController: UIViewController {
    
    
    override func viewDidAppear(_ animated: Bool) {
-      animate1()
+      
+    
+      
+      Service_API.httpGetStationTimes(from: fromStation.abbr, to: toStation.abbr) { (times) in
+         self.stationTimes = times
+         self.tableView.reloadData()
+      }
+      
    }
    
    
@@ -102,15 +107,7 @@ class ABViewController: UIViewController {
    }
    
    
-   func animate1() {
-      UIView.animate(withDuration: 0.2, animations: {
-         self.view.backgroundColor = UIColor.black
-      }) { (true) in
-         self.view.backgroundColor = UIColor.white
-      }
 
-   }
-   
    func widgetPerformUpdateWithCompletionHandler(completionHandler: ((NCUpdateResult) -> Void)) {
 
       
@@ -139,38 +136,38 @@ class ABViewController: UIViewController {
    
 }
 
-//
-//
-//extension ABViewController: UITableViewDataSource {
-//   
-//   
-//   
-//   
-//   private func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-//      return 1
-//   }
-//   
-//   
-//   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//      return stationTimes.count
-//   }
-//   
-//   
-//   
-//   
-//   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//      
-//      
-//      let cell = tableView.dequeueReusableCell(withIdentifier: "ABCell", for: indexPath) as! ABCell
-//      
-//      cell.label1.text = self.stationTimes[indexPath.row]
-//      
-//      
-//      
-//      return cell
-//   }
-//   
-//   
-//}
-//
+
+
+extension ABViewController: UITableViewDataSource {
+   
+   
+   
+   
+   private func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+      return 1
+   }
+   
+   
+   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+      return stationTimes.count
+   }
+   
+   
+   
+   
+   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+      
+      
+      let cell = tableView.dequeueReusableCell(withIdentifier: "extensionCell", for: indexPath) as! ABCell
+      
+      cell.label1.text = self.stationTimes[indexPath.row]
+      
+      
+      
+      return cell
+   }
+   
+   
+}
+
 //
