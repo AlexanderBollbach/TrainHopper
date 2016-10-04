@@ -2,16 +2,19 @@ PODS:
   - MMWormhole (2.0.0):
     - MMWormhole/Core (= 2.0.0)
   - MMWormhole/Core (2.0.0)
+  - Presentr (1.0.0)
   - SwiftyJSON (3.0.0)
 
 DEPENDENCIES:
   - MMWormhole (~> 2.0.0)
+  - Presentr (= 1.0.0)
   - SwiftyJSON (= 3.0.0)
 
 SPEC CHECKSUMS:
   MMWormhole: 0cd3fd35a9118b2e2d762b499f54eeaace0be791
+  Presentr: aecad4c648e51a434b38cab602d314a26d6453d0
   SwiftyJSON: f57b2b44bc166617372d1c70773591fe9f0f5fd4
 
-PODFILE CHECKSUM: a5e0fe3287b244e8371b614372f8b5826333f189
+PODFILE CHECKSUM: 947ab64b02478061aad33c238273f36247e6807d
 
 COCOAPODS: 1.1.0.rc.2

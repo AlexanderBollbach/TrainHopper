@@ -12,9 +12,27 @@ import SwiftyJSON
 public class Service_API {
    
    
-   public static func httpGetStationTimes(from: String, to: String, completion: @escaping ([String])->())  {
+   public static func httpGetStationTimes(from: String, to: String, completion: @escaping ([TripModel])->())  {
       
-      var departTimes = [String]()
+      
+      
+      
+      func getTimeWithAbbr(abbr: String, stops: [JSON]) -> String? {
+         
+         for stop in stops {
+            
+            
+            if stop.dictionaryValue["STATION"]?.stringValue == abbr {
+               return stop.dictionaryValue["TIME"]!.stringValue
+            }
+         }
+         
+         return nil
+         
+      }
+      
+      
+      var tripTimes = [TripModel]()
       let urlString = "https://traintime.lirr.org/api/TrainTime?" +
          "api_key=742b288047c382c66326a26f7f5e4e4a&startsta=" + from + "&endsta=" + to
       
@@ -29,22 +47,37 @@ public class Service_API {
          
          for (_,subJson):(String, JSON) in trips {
             
-            let legs = subJson["LEGS"][0]
-            let stops = legs["STOPS"].arrayValue
-            let initialStop = stops[0].dictionaryValue
-            let initialStopTime = initialStop["TIME"]?.stringValue
+            let legs = subJson["LEGS"].array!
             
-            //            let departTime = legs["DEPART_TIME"].stringValue
-            //            let arriveTime = legs["ARRIVE_TIME"].stringValue
+            let firstLeg = legs.first!
+            let lastLeg = legs.last!
             
-            departTimes.append(initialStopTime!)
+            let stops1 = firstLeg["STOPS"].arrayValue
+            let stops2 = lastLeg["STOPS"].arrayValue
+            
+            
+            
+            
+            let departingTime = getTimeWithAbbr(abbr: from, stops: stops1)!
+            let arrivingTime = getTimeWithAbbr(abbr: to, stops: stops2)!
+
+//            let arriveTime = legs["ARRIVE_TIME"].stringValue
+            
+            let trip = TripModel(departing: departingTime, arriving: arrivingTime)
+            tripTimes.append(trip)
             
          }
+         
          DispatchQueue.main.sync {
-            completion(departTimes)
+            completion(tripTimes)
          }
       }
       task.resume()
+      
+      
+      
+      
+     
    }
    
    

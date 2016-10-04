@@ -20,12 +20,14 @@
 		29174DEE1D46E45F0013BB43 /* TrainTimesTodayMainApp.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 29174DED1D46E45F0013BB43 /* TrainTimesTodayMainApp.entitlements */; };
 		29174DEF1D46EAA30013BB43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290406BC1D331E0200A76B49 /* AppDelegate.swift */; };
 		29174DF01D46EAA80013BB43 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290406BE1D331E0200A76B49 /* MainVC.swift */; };
-		294826A71D9F919C00C915FE /* ActiveStationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294826A61D9F919C00C915FE /* ActiveStationType.swift */; };
+		2922A1091DA35A1100462DDF /* StationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2922A1081DA35A1100462DDF /* StationHandler.swift */; };
+		2922A10B1DA35F7E00462DDF /* TripModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2922A10A1DA35F7E00462DDF /* TripModel.swift */; };
+		2922A10D1DA3633600462DDF /* TripsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2922A10C1DA3633600462DDF /* TripsDataSource.swift */; };
+		2922A10E1DA3671A00462DDF /* TripsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2922A1031DA357C300462DDF /* TripsCell.swift */; };
+		294826A71D9F919C00C915FE /* ActiveStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294826A61D9F919C00C915FE /* ActiveStation.swift */; };
 		299A987C1D99025D003CD8A7 /* StationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299A987B1D99025D003CD8A7 /* StationButton.swift */; };
-		29BC93B31D47131E00541481 /* ABCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BC93B21D47131E00541481 /* ABCell.swift */; };
 		29BC93B51D47132600541481 /* ABViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2949592B1D445E0B00C854DB /* ABViewController.swift */; };
 		29BF2D9C1D52AF1000422425 /* PickStationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BF2D9B1D52AF1000422425 /* PickStationVC.swift */; };
-		29BF2D9E1D53900900422425 /* TransitionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BF2D9D1D53900900422425 /* TransitionHandler.swift */; };
 		29C8B7FD1DA1EDCE00034CEB /* SharedCode.h in Headers */ = {isa = PBXBuildFile; fileRef = 29C8B7FB1DA1EDCE00034CEB /* SharedCode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		29C8B8001DA1EDCE00034CEB /* SharedCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29C8B7F91DA1EDCE00034CEB /* SharedCode.framework */; };
 		29C8B8011DA1EDCE00034CEB /* SharedCode.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 29C8B7F91DA1EDCE00034CEB /* SharedCode.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -99,13 +101,15 @@
 		290F50E11D9B95EE006D31D7 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		29174DEA1D46E4530013BB43 /* TrainTimesTodayExtension.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = TrainTimesTodayExtension.entitlements; path = TrainTimesTodayExtension/TrainTimesTodayExtension.entitlements; sourceTree = SOURCE_ROOT; };
 		29174DED1D46E45F0013BB43 /* TrainTimesTodayMainApp.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = TrainTimesTodayMainApp.entitlements; path = TrainTimesTodayMainApp/TrainTimesTodayMainApp.entitlements; sourceTree = SOURCE_ROOT; };
-		294826A61D9F919C00C915FE /* ActiveStationType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActiveStationType.swift; sourceTree = "<group>"; };
+		2922A1031DA357C300462DDF /* TripsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TripsCell.swift; path = ../TrainTimesTodayMainApp/TripsCell.swift; sourceTree = "<group>"; };
+		2922A1081DA35A1100462DDF /* StationHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StationHandler.swift; sourceTree = "<group>"; };
+		2922A10A1DA35F7E00462DDF /* TripModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripModel.swift; sourceTree = "<group>"; };
+		2922A10C1DA3633600462DDF /* TripsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripsDataSource.swift; sourceTree = "<group>"; };
+		294826A61D9F919C00C915FE /* ActiveStation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActiveStation.swift; sourceTree = "<group>"; };
 		2949592B1D445E0B00C854DB /* ABViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ABViewController.swift; path = ../TrainTimesTodayExtension/ABViewController.swift; sourceTree = "<group>"; };
 		299A98771D98F2C2003CD8A7 /* StationModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StationModel.swift; path = ../TrainTimesTodayMainApp/StationModel.swift; sourceTree = "<group>"; };
 		299A987B1D99025D003CD8A7 /* StationButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StationButton.swift; sourceTree = "<group>"; };
-		29BC93B21D47131E00541481 /* ABCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ABCell.swift; sourceTree = "<group>"; };
 		29BF2D9B1D52AF1000422425 /* PickStationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickStationVC.swift; sourceTree = "<group>"; };
-		29BF2D9D1D53900900422425 /* TransitionHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionHandler.swift; sourceTree = "<group>"; };
 		29C8B7F91DA1EDCE00034CEB /* SharedCode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SharedCode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		29C8B7FB1DA1EDCE00034CEB /* SharedCode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SharedCode.h; sourceTree = "<group>"; };
 		29C8B7FC1DA1EDCE00034CEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -177,17 +181,14 @@
 		290406BB1D331E0200A76B49 /* TrainTimesTodayMainApp */ = {
 			isa = PBXGroup;
 			children = (
-				2970EF2A1D60E57C00A823A3 /* extras */,
+				2922A1071DA359CD00462DDF /* Protocols and Types */,
+				2922A1061DA3599600462DDF /* Views */,
+				2922A1051DA3596D00462DDF /* Data */,
 				290406C01D331E0200A76B49 /* Main.storyboard */,
 				290406BC1D331E0200A76B49 /* AppDelegate.swift */,
-				29F1A5DB1D72B27A0048CED7 /* DAO.swift */,
 				290406BE1D331E0200A76B49 /* MainVC.swift */,
-				294826A61D9F919C00C915FE /* ActiveStationType.swift */,
 				29BF2D9B1D52AF1000422425 /* PickStationVC.swift */,
-				29BF2D9D1D53900900422425 /* TransitionHandler.swift */,
-				299A987B1D99025D003CD8A7 /* StationButton.swift */,
-				290681311D9D8CFC00A826C2 /* StationButton.xib */,
-				290F50DF1D9B7564006D31D7 /* StationCell.swift */,
+				2970EF2A1D60E57C00A823A3 /* extras */,
 			);
 			path = TrainTimesTodayMainApp;
 			sourceTree = "<group>";
@@ -211,11 +212,37 @@
 			children = (
 				2927C65D1D9B148A00228D0F /* extras */,
 				290406D91D331E0B00A76B49 /* MainInterface.storyboard */,
-				29BC93B21D47131E00541481 /* ABCell.swift */,
 				2949592B1D445E0B00C854DB /* ABViewController.swift */,
 			);
 			name = TrainTimesTodayExtension;
 			path = TrainTimesTodayMainApp;
+			sourceTree = "<group>";
+		};
+		2922A1051DA3596D00462DDF /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				29F1A5DB1D72B27A0048CED7 /* DAO.swift */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		2922A1061DA3599600462DDF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				299A987B1D99025D003CD8A7 /* StationButton.swift */,
+				290681311D9D8CFC00A826C2 /* StationButton.xib */,
+				290F50DF1D9B7564006D31D7 /* StationCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		2922A1071DA359CD00462DDF /* Protocols and Types */ = {
+			isa = PBXGroup;
+			children = (
+				294826A61D9F919C00C915FE /* ActiveStation.swift */,
+				2922A1081DA35A1100462DDF /* StationHandler.swift */,
+			);
+			name = "Protocols and Types";
 			sourceTree = "<group>";
 		};
 		2927C65D1D9B148A00228D0F /* extras */ = {
@@ -241,9 +268,12 @@
 		29C8B7FA1DA1EDCE00034CEB /* SharedCode */ = {
 			isa = PBXGroup;
 			children = (
+				2922A1031DA357C300462DDF /* TripsCell.swift */,
 				29F7C5871D446C53006DD03B /* Service_API.swift */,
 				299A98771D98F2C2003CD8A7 /* StationModel.swift */,
+				2922A10A1DA35F7E00462DDF /* TripModel.swift */,
 				29C8B7FB1DA1EDCE00034CEB /* SharedCode.h */,
+				2922A10C1DA3633600462DDF /* TripsDataSource.swift */,
 				29C8B7FC1DA1EDCE00034CEB /* Info.plist */,
 			);
 			path = SharedCode;
@@ -544,10 +574,10 @@
 				29BF2D9C1D52AF1000422425 /* PickStationVC.swift in Sources */,
 				29174DF01D46EAA80013BB43 /* MainVC.swift in Sources */,
 				29174DEF1D46EAA30013BB43 /* AppDelegate.swift in Sources */,
-				29BF2D9E1D53900900422425 /* TransitionHandler.swift in Sources */,
 				29F1A5DC1D72B27A0048CED7 /* DAO.swift in Sources */,
-				294826A71D9F919C00C915FE /* ActiveStationType.swift in Sources */,
+				294826A71D9F919C00C915FE /* ActiveStation.swift in Sources */,
 				290F50E01D9B7564006D31D7 /* StationCell.swift in Sources */,
+				2922A1091DA35A1100462DDF /* StationHandler.swift in Sources */,
 				299A987C1D99025D003CD8A7 /* StationButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -557,7 +587,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				29BC93B51D47132600541481 /* ABViewController.swift in Sources */,
-				29BC93B31D47131E00541481 /* ABCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -566,7 +595,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				29C8B8051DA1EE7100034CEB /* Service_API.swift in Sources */,
+				2922A10D1DA3633600462DDF /* TripsDataSource.swift in Sources */,
 				29C8B80D1DA2053600034CEB /* StationModel.swift in Sources */,
+				2922A10E1DA3671A00462DDF /* TripsCell.swift in Sources */,
+				2922A10B1DA35F7E00462DDF /* TripModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -690,7 +722,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

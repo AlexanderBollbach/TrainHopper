@@ -16,7 +16,7 @@ class StationButton: UIButton {
    
    var borderLayer: CAShapeLayer!
    
-   var stationType: ActiveStationType!
+   var stationType: ActiveStation!
    
    
    @IBOutlet weak var name: UILabel!

@@ -8,7 +8,6 @@
 
 import UIKit
 import NotificationCenter
-import MMWormhole
 import SharedCode
 
 class ABViewController: UIViewController {
@@ -18,12 +17,15 @@ class ABViewController: UIViewController {
    var toStation: StationModel!
    
    
+   
+   
+//   var tripsDataSource: TripsDataSource?
+   
    @IBOutlet weak var tableView: UITableView!
-   let wormhole = MMWormhole(applicationGroupIdentifier: "group.AB.TrainTimesApp", optionalDirectory: "wormhole")
+
    let defaults = UserDefaults(suiteName: "group.AB.TrainTimesApp")!
-   var stationTimes = [String]()
-   
-   
+
+   let tripsDataSource = TripsDataSource()
    
    
    
@@ -32,6 +34,18 @@ class ABViewController: UIViewController {
       super.viewDidLoad()
       
       
+      
+      
+      initData()
+  
+
+      preferredContentSize = CGSize(width: 0, height: 600)
+      
+      
+      
+   }
+   
+   func initData() {
       
       
       
@@ -46,17 +60,6 @@ class ABViewController: UIViewController {
       } else {
          toStation = StationModel()
       }
-      //
-      //      wormhole.listenForMessage(withIdentifier: "stationChanged", listener: { (messageObject) -> Void in
-      //
-      //         self.updateStationTimes()
-      //
-      //      })
-      
-      
-      
-      preferredContentSize = CGSize(width: 0, height: 600)
-      
       
       
    }
@@ -66,45 +69,18 @@ class ABViewController: UIViewController {
       
     
       
-      Service_API.httpGetStationTimes(from: fromStation.abbr, to: toStation.abbr) { (times) in
-         self.stationTimes = times
+      Service_API.httpGetStationTimes(from: fromStation.abbr, to: toStation.abbr) { (trips) in
+
+         
+         self.tripsDataSource.dataStore = trips
+         
          self.tableView.reloadData()
       }
       
    }
    
    
-   
-   func updateStationTimes() {
-      
-      
-      
-      
-      //      guard let homeStation = defaults.string(forKey: "homeStation") else {
-      //         return
-      //      }
-      //
-      //      guard let workStation = defaults.string(forKey: "workStation") else {
-      //         return
-      //      }
-      
-      
-      //      lirrAPI.homeStation = homeStation
-      //      lirrAPI.workStation = workStation
-      
-      
-      //      lirrAPI.httpGet { asdf in
-      //
-      //         self.stationTimes = asdf
-      //         self.tableView.reloadData()
-      //
-      
-      
-      //         self.preferredContentSize = self.tableView.contentSize
-      //      }
-      
-      
-   }
+
    
    
 
@@ -137,37 +113,37 @@ class ABViewController: UIViewController {
 }
 
 
-
-extension ABViewController: UITableViewDataSource {
-   
-   
-   
-   
-   private func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-      return 1
-   }
-   
-   
-   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-      return stationTimes.count
-   }
-   
-   
-   
-   
-   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-      
-      
-      let cell = tableView.dequeueReusableCell(withIdentifier: "extensionCell", for: indexPath) as! ABCell
-      
-      cell.label1.text = self.stationTimes[indexPath.row]
-      
-      
-      
-      return cell
-   }
-   
-   
-}
+//
+//extension ABViewController: UITableViewDataSource {
+//   
+//   
+//   
+//   
+//   private func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+//      return 1
+//   }
+//   
+//   
+//   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//      return stationTimes.count
+//   }
+//   
+//   
+//   
+//   
+//   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//      
+//      
+//      let cell = tableView.dequeueReusableCell(withIdentifier: "extensionCell", for: indexPath) as! ABCell
+//      
+//      cell.label1.text = self.stationTimes[indexPath.row]
+//      
+//      
+//      
+//      return cell
+//   }
+//   
+//   
+//}
 
 //

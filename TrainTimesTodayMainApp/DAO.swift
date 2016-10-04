@@ -14,7 +14,7 @@ class DAO {
    
    var fromStation = StationModel()
    var toStation = StationModel()
-   var activeStation = ActiveStationType.departing
+   var activeStation = ActiveStation.departing
    var stations = [StationModel]()
    
    // IPC setup
@@ -28,28 +28,53 @@ class DAO {
       
       
       if let stations = defaults.value(forKey: "stations") {
-         
          self.stations = NSKeyedUnarchiver.unarchiveObject(with: stations as! Data) as! [StationModel]
-         
-         return
+      } else {
+         fetchStationsFromNetwork()
       }
       
+      if let fromStationDefault = defaults.value(forKey: "fromStation") {
       
-      Service_API.httpGetStations { (stations) in
+         fromStation = NSKeyedUnarchiver.unarchiveObject(with: fromStationDefault as! Data) as! StationModel
          
-         self.stations = stations.sorted{ $0.name < $1.name }
-         
-         self.defaults.set(NSKeyedArchiver.archivedData(withRootObject: self.stations), forKey: "stations")
-         
-         self.defaults.set(self.fromStation, forKey: "fromStation")
-         self.defaults.set(self.toStation, forKey: "toStation")
-         
-         
+      } else {
+         fromStation = StationModel()
       }
+      
+      if let toStationDefault = defaults.value(forKey: "toStation") {
+         
+         toStation = NSKeyedUnarchiver.unarchiveObject(with: toStationDefault as! Data) as! StationModel
+         
+      } else {
+         toStation = StationModel()
+      }
+
+      
+      
+      
       
  
       
       
+   }
+   
+   
+   
+   
+   func fetchStationsFromNetwork() {
+      Service_API.httpGetStations { (stations) in
+         
+         self.stations = stations.sorted{ $0.name < $1.name }
+         
+         self.defaults.setValue(NSKeyedArchiver.archivedData(withRootObject: self.stations), forKey: "stations")
+         
+         self.defaults.setValue(NSKeyedArchiver.archivedData(withRootObject: self.fromStation), forKey: "fromStation")
+         
+         
+         self.defaults.setValue(NSKeyedArchiver.archivedData(withRootObject: self.toStation), forKey: "toStation")
+         
+         
+      }
    }
    
    

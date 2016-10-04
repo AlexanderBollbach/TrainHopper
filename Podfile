@@ -9,6 +9,7 @@ end
 
 target 'TrainTimesTodayMainApp' do
 available_pods
+pod 'Presentr', '1.0.0'
 end
 
 
