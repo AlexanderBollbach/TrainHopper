@@ -7,115 +7,132 @@
 //
 
 import Foundation
-import MMWormhole
-import SharedCode
 
-class DAO {
+import MapKit
+
+public class DAO {
    
-   var fromStation = StationModel()
-   var toStation = StationModel()
-   var activeStation = ActiveStation.departing
-   var stations = [StationModel]()
    
-   // IPC setup
+   var context = Context()
+   
+   
+   
+   
+   
+   
    let defaults = UserDefaults(suiteName: "group.AB.TrainTimesApp")!
-//   let wormhole = MMWormhole(applicationGroupIdentifier: "alexander bollbach.group.AB.TrainTimesApp", optionalDirectory: "wormhole")
-   static let sharedInstance = DAO()
    
-   func configureData() {
+   
+   public static let sharedInstance = DAO()
+   
+   
+   
+   
+   public func configureData() {
+
+ 
+      fetchStationsFromNetwork()
       
-      
-      
-      
-      if let stations = defaults.value(forKey: "stations") {
-         self.stations = NSKeyedUnarchiver.unarchiveObject(with: stations as! Data) as! [StationModel]
-      } else {
-         fetchStationsFromNetwork()
-      }
-      
-      if let fromStationDefault = defaults.value(forKey: "fromStation") {
-      
-         fromStation = NSKeyedUnarchiver.unarchiveObject(with: fromStationDefault as! Data) as! StationModel
-         
-      } else {
-         fromStation = StationModel()
-      }
-      
-      if let toStationDefault = defaults.value(forKey: "toStation") {
-         
-         toStation = NSKeyedUnarchiver.unarchiveObject(with: toStationDefault as! Data) as! StationModel
-         
-      } else {
-         toStation = StationModel()
-      }
 
       
+   }
+   
+   
+   
+   
+   public func getStations() -> [Station]? {
       
-      
-      
- 
+      return context.stations
       
       
    }
    
+   
+   public func getCurrentTripsStops() -> [Stop]? {
+      
+      
+      return context.trips?.first?.stops
+   }
    
    
    
    func fetchStationsFromNetwork() {
+      
       Service_API.httpGetStations { (stations) in
          
-         self.stations = stations.sorted{ $0.name < $1.name }
-         
-         self.defaults.setValue(NSKeyedArchiver.archivedData(withRootObject: self.stations), forKey: "stations")
-         
-         self.defaults.setValue(NSKeyedArchiver.archivedData(withRootObject: self.fromStation), forKey: "fromStation")
-         
-         
-         self.defaults.setValue(NSKeyedArchiver.archivedData(withRootObject: self.toStation), forKey: "toStation")
-         
+         self.context.stations = stations.sorted { $0.name < $1.name }
          
       }
    }
    
    
-   func setActiveStation(station: StationModel) {
-      switch activeStation {
+   
+   public func getCoordinateList() -> [CLLocationCoordinate2D]? {
+      
+      
+      return context.coordinatesFromTrips()
+      
+      
+   }
+   
+   
+   
+   public func setStation(active: StationType, station: Station) {
+      
+      switch active {
+         
+         
       case .departing:
-         fromStation = station
-         self.defaults.set(NSKeyedArchiver.archivedData(withRootObject: self.fromStation), forKey: "fromStation")
+         
+         context.from = station
+         
+         
       case .arriving:
-         toStation = station
-         self.defaults.set(NSKeyedArchiver.archivedData(withRootObject: self.toStation), forKey: "toStation")
+         
+         context.to = station
       }
-   }
-   
-   
-
-   func getStationList() -> [StationModel] {
-      return stations
-   }
-   
-   
-   func synchronizeStations() {
       
-      //
-      //            let homeRow = self.homePickerView.selectedRowInComponent(0)
-      //            let workRow = self.workPickerView.selectedRowInComponent(0)
-      //
-      //            let pickedHomeStation = stations[homeRow].Abbr
-      //            let pickedWorkStation = stations[workRow].Abbr
-      //
-      //            defaults!.setObject(pickedHomeStation, forKey: "homeStation")
-      //            defaults!.setObject(pickedWorkStation, forKey: "workStation")
-      //            defaults!.synchronize()
-      //
-      //            // notify Extension
-      //            wormhole.passMessageObject("test", identifier: "stationChanged")
       
-      //
       
    }
    
+   
+   
+   public func fetchTrips(completion: @escaping ([Trip]) -> ()) {
+      
+      
+      
+      let from = context.from.abbr!
+      let to = context.to.abbr!
   
+      Service_API.getTripsForStations(from: from, to: to) { (trips) in
+
+
+         self.context.trips = trips
+         completion(trips)
+      }
+      
+      
+      
+   }
+   
+   
+   
+   
+   public func getFromStation() -> Station {
+      
+      return context.from
+   }
+   
+   
+   public func getToStation() -> Station {
+      
+      return context.to
+   }
+   
+   
+   
+   
+   
    
 }

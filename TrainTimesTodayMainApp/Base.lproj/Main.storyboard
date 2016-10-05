@@ -212,6 +212,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="edX-mx-QFZ" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="NKc-eo-EBq">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
@@ -227,7 +228,7 @@
         <!--Item-->
         <scene sceneID="zPN-KF-QWx">
             <objects>
-                <viewController id="cYg-9d-6vf" sceneMemberID="viewController">
+                <viewController id="cYg-9d-6vf" customClass="MapVC" customModule="TrainTimesToday" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hn5-II-5OE"/>
                         <viewControllerLayoutGuide type="bottom" id="k4c-rO-wai"/>
@@ -236,21 +237,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="favs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xts-bd-Vgf">
-                                <frame key="frameInset" minX="29" minY="28" width="32" height="21"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ze5-SQ-dnm">
+                                <frame key="frameInset" minX="23" minY="37" width="311" height="235"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <connections>
+                                    <outlet property="delegate" destination="cYg-9d-6vf" id="D3q-vU-Wfn"/>
+                                </connections>
+                            </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="NJn-Qf-Nry"/>
+                    <connections>
+                        <outlet property="mapView" destination="ze5-SQ-dnm" id="WXy-iq-hsJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KGA-ps-jSv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1930" y="867"/>
+            <point key="canvasLocation" x="1928.8" y="866.71664167916049"/>
         </scene>
     </scenes>
     <resources>

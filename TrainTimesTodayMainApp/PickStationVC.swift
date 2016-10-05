@@ -10,15 +10,36 @@ import UIKit
 import SharedCode
 
 
+
+
+
+protocol PickStationDelegate {
+   
+   func didTapOnStation(station: Station, stationType: StationType)
+   
+}
+
+
+
 class PickStationViewController: UIViewController {
    
    
-   var delegate: StationHandler?
+   
+   var delegate: PickStationDelegate?
+   
+   let dao = DAO.sharedInstance
+   
    
    @IBOutlet weak var searchField: UISearchBar!
-   var stationList: [StationModel]!
-   var dao = DAO.sharedInstance
-   var filteredStationList = [StationModel]()
+   
+   var stationList: [Station]?
+   
+   
+   var stationType: StationType?
+   
+   
+   var filteredStationList: [Station]?
+   
    @IBOutlet weak var tableview: UITableView!
    
    
@@ -27,11 +48,9 @@ class PickStationViewController: UIViewController {
       super.viewDidLoad()
       
       
-      stationList = dao.getStationList()
+      stationList = dao.getStations()
       
-      filteredStationList.removeAll()
-      filteredStationList.append(contentsOf: stationList)
-      
+      filteredStationList = stationList
       
       self.searchField.backgroundColor = UIColor.clear
       self.searchField.backgroundImage = UIImage()
@@ -40,32 +59,7 @@ class PickStationViewController: UIViewController {
    
    
    
-   
-   
-   
-   
-   
-   func scrollToStation(station: StationModel) {
 
-      let idx = stationList.index(of: station)!
-      let indexPath = IndexPath(row: idx, section: 0)
-      self.tableview.scrollToRow(at: indexPath, at: .middle, animated: true)
-      
-   }
-   
-   
-   
-   
-   // handle keyboard
-   
-   override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-      self.searchField.resignFirstResponder()
-   }
-   
-   
-   
-   
-   
    
    
    
@@ -93,7 +87,7 @@ extension PickStationViewController: UISearchBarDelegate {
    
    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
       
-      filteredStationList = self.stationList.filter{ $0.name.ABHasPrefix(searchTerm: searchText) }
+      filteredStationList = self.stationList?.filter { $0.name.ABHasPrefix(searchTerm: searchText) }
       self.tableview.reloadData()
       
    }
@@ -108,14 +102,14 @@ extension PickStationViewController: UITableViewDelegate, UITableViewDataSource 
    
    
    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-      return filteredStationList.count // ?? 0
+      return filteredStationList?.count ?? 0
    }
    
    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
       
       let cell: StationCell = self.tableview.dequeueReusableCell(withIdentifier: "stationCell")! as! StationCell
       
-      cell.stationName.text = filteredStationList[indexPath.row].name
+      cell.stationName.text = filteredStationList?[indexPath.row].name
       
       return cell
       
@@ -126,11 +120,12 @@ extension PickStationViewController: UITableViewDelegate, UITableViewDataSource 
    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
       
       
-      let chosenStation = filteredStationList[indexPath.row]
+      let chosenStation = filteredStationList?[indexPath.row]
       
-      delegate?.didPickStation(station: chosenStation)
       
-      self.dismiss(animated: true, completion: nil)
+      delegate?.didTapOnStation(station: chosenStation!, stationType: stationType!)
+      
+      dismiss(animated: true, completion: nil)
    }
    
    
@@ -172,106 +167,6 @@ extension String {
 
 
 
-
-//
-//// handles tableviewcell dynamics styling
-//
-//extension PickStationViewController {
-//
-//
-//   func scrollViewDidScroll(_ scrollView: UIScrollView) {
-//      updateCellStyles()
-//   }
-//
-//   func updateCellStyles() {
-//
-//
-//
-//      let cells = self.tableview.visibleCells as! [StationCell]
-//
-//      let maxHeight = self.view.frame.size.height
-//
-//      for cell in cells {
-//
-//         let indexpath = self.tableview.indexPath(for: cell)!
-//         let rect = self.tableview.rectForRow(at: indexpath)
-//         let rectOfCellInSuperview: CGRect = self.tableview.convert(rect, to: self.view)
-//         let heightInMainView = rectOfCellInSuperview.origin.y
-//
-//
-//         var mappedVal: Float!
-//
-//
-//
-//         let offsetFromCenter = (maxHeight / 5)
-//         let mid = maxHeight / 2
-//
-//         let lowerBound = mid - offsetFromCenter
-//         let upperBound = mid + offsetFromCenter
-//
-//         if (heightInMainView < lowerBound) {
-//
-//            mappedVal = mapToRange(input: Float(heightInMainView),
-//                                   outputStart: 0,
-//                                   outputEnd: 1,
-//                                   inputStart: 0,
-//                                   inputEnd: Float(lowerBound),
-//                                   descending: false)
-//
-//         } else if (heightInMainView > upperBound) {
-//
-//            mappedVal = mapToRange(input: Float(heightInMainView), outputStart: 0,
-//                                   outputEnd: 1,
-//                                   inputStart: Float(upperBound),
-//                                   inputEnd: Float(maxHeight),
-//                                   descending: true)
-//         } else {
-//            mappedVal = 1
-//         }
-//
-//
-//         if mappedVal < 0.5 {
-//            cell.alpha = CGFloat(mappedVal - 0.14)
-//         } else {
-//            cell.alpha = CGFloat(mappedVal)
-//         }
-//
-//
-//         cell.leftConstraint.constant = CGFloat(mappedVal * 150) - 150
-//
-//
-//         cell.stationName.font = UIFont.systemFont(ofSize: CGFloat(1 * 20))
-//
-//
-//
-//      }
-//
-//   }
-//
-//
-//
-//
-//   func mapToRange(input: Float,  outputStart: Float, outputEnd: Float, inputStart: Float, inputEnd: Float, descending: Bool) -> Float {
-//
-//      let outputDelta = outputEnd - outputStart
-//      let inputDelta = inputEnd - inputStart
-//
-//      let slope = outputDelta / inputDelta
-//      let inputOffset = input - inputStart
-//
-//      var output = outputStart + (slope * inputOffset)
-//
-//      if descending {
-//         output = outputEnd - output
-//      }
-//
-//      return output
-//
-//   }
-//
-//
-//}
-//
 
 
 

@@ -26,54 +26,6 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TrainTimesTodayMainApp/TripsCell.swift"
-            timestampString = "497255982.15318"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
-            landmarkName = "init(coder:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "SharedCode.TripsCell.__allocating_init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;SharedCode.TripsCell&gt;"
-                  moduleName = "SharedCode"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/alexanderbollbach/Dropbox/projs/iOS/TrainTimesToday/TrainTimesTodayMainApp/TripsCell.swift"
-                  timestampString = "497258577.095134"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "12">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "SharedCode.TripsCell.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;SharedCode.TripsCell&gt;"
-                  moduleName = "SharedCode"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/alexanderbollbach/Dropbox/projs/iOS/TrainTimesToday/TrainTimesTodayMainApp/TripsCell.swift"
-                  timestampString = "497258577.096966"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "19"
-                  endingLineNumber = "19"
-                  offsetFromSymbolStart = "20">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TrainTimesTodayMainApp/TripsCell.swift"
             timestampString = "497256394.147856"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
@@ -89,13 +41,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "TrainTimesTodayMainApp/MainVC.swift"
-            timestampString = "497256925.366844"
+            filePath = "TrainTimesTodayExtension/ABViewController.swift"
+            timestampString = "497310101.389028"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "67"
-            endingLineNumber = "67"
-            landmarkName = "fetchTrips()"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
+            landmarkName = "viewDidAppear(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -105,13 +57,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "TrainTimesTodayMainApp/DAO.swift"
-            timestampString = "497257763.487196"
+            filePath = "TrainTimesTodayMainApp/MapVC.swift"
+            timestampString = "497344112.724408"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "25"
-            endingLineNumber = "25"
-            landmarkName = "configureData()"
+            startingLineNumber = "88"
+            endingLineNumber = "88"
+            landmarkName = "createRouteWithStops(stops:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -121,45 +73,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "TrainTimesTodayMainApp/DAO.swift"
-            timestampString = "497258037.697909"
+            filePath = "SharedCode/Context.swift"
+            timestampString = "497343990.755954"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "64"
-            endingLineNumber = "64"
-            landmarkName = "fetchStationsFromNetwork()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TrainTimesTodayMainApp/DAO.swift"
-            timestampString = "497258049.421417"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "71"
-            endingLineNumber = "71"
-            landmarkName = "fetchStationsFromNetwork()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TrainTimesTodayExtension/Service_API.swift"
-            timestampString = "497258553.588952"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
-            landmarkName = "httpGetStationTimes(from:to:completion:)"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
+            landmarkName = "coordinatesFromTrips()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

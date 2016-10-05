@@ -13,8 +13,14 @@ import Presentr
 
 
 
+
+
 class MainController: UIViewController {
    
+   
+   
+   
+   let dao = DAO.sharedInstance
 
    @IBOutlet weak var tripsTableView: UITableView!
    let presenter: Presentr = {
@@ -27,7 +33,7 @@ class MainController: UIViewController {
    @IBOutlet weak var arrivingButton: StationButton!
    
    
-   let tripsDataSource = TripsDataSource()
+   let tripsDataSource: TripsDataSource = TripsDataSource()
 
    override func viewDidLoad() {
       super.viewDidLoad()
@@ -37,74 +43,95 @@ class MainController: UIViewController {
       
       DAO.sharedInstance.configureData()
 
-      self.departingButton.stationType = .departing
-      self.arrivingButton.stationType = .arriving
-      
-      
       self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
       self.navigationController?.navigationBar.shadowImage = UIImage()
       self.navigationController?.navigationBar.isTranslucent = true
-      
-      
-      
+
       self.navigationController?.navigationBar.topItem?.title = "Pick Stations";
 
    }
 
    
-   override func viewWillAppear(_ animated: Bool) {
-      updateUI()
+   
+   
+   
+   
+   
+   func updateUI() {
+      
+      departingButton.name.text = dao.getFromStation().name
+      arrivingButton.name.text = dao.getToStation().name
+      
+
+      fetchTrips()
+
       
       
    }
+   
    
    
    func fetchTrips() {
       
-      Service_API.httpGetStationTimes(from: DAO.sharedInstance.fromStation.abbr, to: DAO.sharedInstance.toStation.abbr) { (trips) in
-         
-         
+      
+      DAO.sharedInstance.fetchTrips { (trips) in
          self.tripsDataSource.dataStore = trips
-         
          self.tripsTableView.reloadData()
       }
-      
-      
-      
    }
    
    
-   func updateUI() {
-  
-      self.departingButton.name.text = DAO.sharedInstance.fromStation.name
-      self.arrivingButton.name.text = DAO.sharedInstance.toStation.name
+   override func viewWillAppear(_ animated: Bool) {
+     
+
+//      updateUI()
+
       
-      fetchTrips()
    }
+   
+
+   
+   
+
    
    
    @IBAction func toStationTapped(_ sender: StationButton) {
       
-      tappedStationButton(withType: sender.stationType)
+      var stationType: StationType?
+      
+      if sender == departingButton {
+         stationType = .departing
+      } else if sender == arrivingButton {
+         stationType = .arriving
+      }
+      
+      tappedStationButton(withType: stationType!)
    }
    
    @IBAction func fromStationTapped(_ sender: StationButton) {
       
-      tappedStationButton(withType: sender.stationType)
+      
+      var stationType: StationType?
+      
+      if sender == departingButton {
+         stationType = .departing
+      } else if sender == arrivingButton {
+         stationType = .arriving
+      }
+      
+      tappedStationButton(withType: stationType!)
    }
    
    
    
-   func tappedStationButton(withType type: ActiveStation) {
+   func tappedStationButton(withType type: StationType) {
       
       let pickerVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "PickStation") as! PickStationViewController
       
+      pickerVC.stationType = type
       pickerVC.delegate = self
       
-      DAO.sharedInstance.activeStation = type
-      
       customPresentViewController(presenter, viewController: pickerVC, animated: true, completion: nil)
-      
    }
 
 
@@ -116,14 +143,21 @@ class MainController: UIViewController {
 
 
 
-extension MainController: StationHandler {
+
+extension MainController: PickStationDelegate {
+ 
    
    
-   
-   func didPickStation(station: StationModel) {
-      DAO.sharedInstance.setActiveStation(station: station)
+   func didTapOnStation(station: Station, stationType: StationType) {
+      
+      
+      
+      dao.setStation(active: stationType, station: station)
+      
       updateUI()
    }
-   
 }
+
+
+
 

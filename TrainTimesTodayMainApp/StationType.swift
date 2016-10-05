@@ -9,7 +9,7 @@
 import Foundation
 
 
-enum ActiveStation {
+public enum StationType {
    
    case departing
    case arriving

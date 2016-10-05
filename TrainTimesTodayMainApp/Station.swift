@@ -7,15 +7,17 @@
 //
 
 import Foundation
+import MapKit
 
-final public class StationModel : NSObject, NSCoding {
+
+final public class Station : NSObject, NSCoding {
    
    
    public init?(coder aDecoder: NSCoder) {
       name = aDecoder.decodeObject(forKey: "name") as! String
       abbr = aDecoder.decodeObject(forKey: "abbr") as! String
-      lat = aDecoder.decodeObject(forKey: "lat") as! Float
-      long = aDecoder.decodeObject(forKey: "long") as! Float
+      lat = aDecoder.decodeObject(forKey: "lat") as! Double
+      long = aDecoder.decodeObject(forKey: "long") as! Double
    }
 
   
@@ -30,13 +32,20 @@ final public class StationModel : NSObject, NSCoding {
    
 
    
+   public var coordinate: CLLocationCoordinate2D {
+
+      get {
+         return CLLocationCoordinate2D(latitude: lat, longitude: long)
+      }
+   }
+   
    
    public var name: String!
    public var abbr: String!
-   public var lat: Float!
-   public var long: Float!
+   public var lat: Double!
+   public var long: Double!
    
-   public init(name: String, abbr: String, lat: Float, long: Float) {
+   public init(name: String, abbr: String, lat: Double, long: Double) {
       
       self.name = name
       self.abbr = abbr

@@ -13,8 +13,8 @@ import SharedCode
 class ABViewController: UIViewController {
    
    
-   var fromStation: StationModel!
-   var toStation: StationModel!
+   
+   
    
    
    
@@ -25,7 +25,7 @@ class ABViewController: UIViewController {
 
    let defaults = UserDefaults(suiteName: "group.AB.TrainTimesApp")!
 
-   let tripsDataSource = TripsDataSource()
+   var tripsDataSource: TripsDataSource?
    
    
    
@@ -48,34 +48,28 @@ class ABViewController: UIViewController {
    func initData() {
       
       
-      
-      if defaults.value(forKey: "fromStation") != nil {
-         fromStation = NSKeyedUnarchiver.unarchiveObject(with: defaults.value(forKey: "fromStation") as! Data) as! StationModel!
-      } else {
-         fromStation = StationModel()
-      }
-      
-      if defaults.value(forKey: "toStation") != nil {
-         toStation = NSKeyedUnarchiver.unarchiveObject(with: defaults.value(forKey: "toStation") as! Data) as! StationModel!
-      } else {
-         toStation = StationModel()
-      }
-      
+//      
+//      if defaults.value(forKey: "fromStation") != nil {
+//         fromStation = NSKeyedUnarchiver.unarchiveObject(with: defaults.value(forKey: "fromStation") as! Data) as! StationModel!
+//      } else {
+//         fromStation = StationModel()
+//      }
+//      
+//      if defaults.value(forKey: "toStation") != nil {
+//         toStation = NSKeyedUnarchiver.unarchiveObject(with: defaults.value(forKey: "toStation") as! Data) as! StationModel!
+//      } else {
+//         toStation = StationModel()
+//      }
+//      
       
    }
    
    
    override func viewDidAppear(_ animated: Bool) {
       
-    
-      
-      Service_API.httpGetStationTimes(from: fromStation.abbr, to: toStation.abbr) { (trips) in
 
-         
-         self.tripsDataSource.dataStore = trips
-         
-         self.tableView.reloadData()
-      }
+      
+      // get trips here
       
    }
    
