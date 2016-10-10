@@ -21,13 +21,13 @@ class StationButton: UIButton {
    
    @IBOutlet weak var name: UILabel!
    
-   @IBInspectable @IBOutlet weak var iconView: UIImageView!
+//   @IBInspectable @IBOutlet weak var iconView: UIImageView!
    
-   @IBInspectable var iconImage: UIImage? {
-      didSet {
-         self.iconView.image = iconImage
-      }
-   }
+//   @IBInspectable var iconImage: UIImage? {
+//      didSet {
+//         self.iconView.image = iconImage
+//      }
+//   }
    override init(frame: CGRect) {
       super.init(frame: frame)
       xibSetup()
@@ -43,7 +43,7 @@ class StationButton: UIButton {
    override func layoutSubviews() {
       
  
-      
+//      
       self.borderLayer?.frame = self.bounds
       self.borderLayer.path = UIBezierPath(roundedRect: self.bounds, cornerRadius: 5).cgPath
    }
@@ -64,7 +64,7 @@ class StationButton: UIButton {
       
       self.borderLayer = CAShapeLayer()
       self.borderLayer.path = UIBezierPath(roundedRect: self.bounds, cornerRadius: 5).cgPath
-      self.borderLayer.strokeColor = UIColor.black.cgColor
+      self.borderLayer.strokeColor = UIColor.white.cgColor
       self.borderLayer.fillColor = UIColor.clear.cgColor
       self.layer.addSublayer(self.borderLayer)
       

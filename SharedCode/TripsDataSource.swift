@@ -10,7 +10,11 @@ public class TripsDataSource: NSObject, UITableViewDataSource {
 
    
    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-      return dataStore?.count ?? 0
+      
+      
+      let count = dataStore?.count
+      
+      return count ?? 0
    }
    
 
@@ -23,10 +27,11 @@ public class TripsDataSource: NSObject, UITableViewDataSource {
       let trip = dataStore?[indexPath.row]
       
       let cell = tableView.dequeueReusableCell(withIdentifier: "TripsCell", for: indexPath) as! TripsCell
+    
       
-      
-      cell.departingLabel.text = trip?.getDepartureTime()
-      cell.arrivingLabel.text = trip?.getArrivalTime()
+      cell.departing.text = trip?.stops.first!.time
+      cell.arriving.text = trip?.stops.last!.time
+
       
       return cell
    }

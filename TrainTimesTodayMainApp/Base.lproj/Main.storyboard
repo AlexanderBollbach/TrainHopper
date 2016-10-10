@@ -17,31 +17,23 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="1Eh-3E-pSi">
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="1Eh-3E-pSi">
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="URY-Zp-aIo" customClass="StationButton" customModule="TrainTimesToday" customModuleProvider="target">
-                                        <color key="backgroundColor" red="0.9842078313" green="0.40271464280000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="image" keyPath="iconImage" value="departing"/>
-                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="fromStationTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1fW-He-8Bo"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZeZ-iT-3C4" customClass="StationButton" customModule="TrainTimesToday" customModuleProvider="target">
-                                        <color key="backgroundColor" red="0.9842078313" green="0.40271464280000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="image" keyPath="iconImage" value="arriving"/>
-                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="toStationTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C4z-p3-X5D"/>
                                         </connections>
@@ -51,37 +43,27 @@
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="From" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TJq-qi-iq8">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="psW-Gl-udl">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ccR-Ab-j3O">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="61" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ccR-Ab-j3O">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TripsCell" id="nqO-6f-kja" customClass="TripsCell" customModule="SharedCode">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nqO-6f-kja" id="UUY-Ks-kHr">
-                                            <frame key="frameInset" width="375" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
                                 <connections>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="tpa-Xn-pQ1"/>
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.18620681386626123" green="0.34024630199630512" blue="0.40513671875000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="TJq-qi-iq8" firstAttribute="centerY" secondItem="psW-Gl-udl" secondAttribute="centerY" id="32O-iH-xIL"/>
                             <constraint firstItem="psW-Gl-udl" firstAttribute="centerX" secondItem="ZeZ-iT-3C4" secondAttribute="centerX" id="5J1-QY-XRh"/>
-                            <constraint firstItem="1Eh-3E-pSi" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="CBE-iQ-fCK"/>
+                            <constraint firstItem="1Eh-3E-pSi" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" id="CBE-iQ-fCK"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ccR-Ab-j3O" secondAttribute="bottom" id="HVt-G2-qxm"/>
                             <constraint firstItem="1Eh-3E-pSi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LCL-Ec-Wkq"/>
                             <constraint firstItem="1Eh-3E-pSi" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1:5" id="OGy-Oh-8sm"/>
@@ -193,9 +175,10 @@
                 <navigationController title="nav" automaticallyAdjustsScrollViewInsets="NO" id="8xy-mc-Peo" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="Gov-bJ-c5v"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="VJE-ct-N9s">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="VJE-ct-N9s">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -225,10 +208,10 @@
             </objects>
             <point key="canvasLocation" x="1364" y="146.17691154422789"/>
         </scene>
-        <!--Item-->
+        <!--MapVC-->
         <scene sceneID="zPN-KF-QWx">
             <objects>
-                <viewController id="cYg-9d-6vf" customClass="MapVC" customModule="TrainTimesToday" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="mapVC" title="MapVC" id="cYg-9d-6vf" customClass="MapVC" customModule="TrainTimesToday" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hn5-II-5OE"/>
                         <viewControllerLayoutGuide type="bottom" id="k4c-rO-wai"/>
@@ -237,15 +220,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ze5-SQ-dnm">
-                                <frame key="frameInset" minX="23" minY="37" width="311" height="235"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ze5-SQ-dnm">
                                 <connections>
                                     <outlet property="delegate" destination="cYg-9d-6vf" id="D3q-vU-Wfn"/>
                                 </connections>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ze5-SQ-dnm" firstAttribute="top" secondItem="hn5-II-5OE" secondAttribute="bottom" id="5fB-dD-FIg"/>
+                            <constraint firstItem="ze5-SQ-dnm" firstAttribute="bottom" secondItem="k4c-rO-wai" secondAttribute="top" id="9gH-pq-K2D"/>
+                            <constraint firstItem="ze5-SQ-dnm" firstAttribute="leading" secondItem="vyU-69-MsC" secondAttribute="leadingMargin" id="ODJ-rq-HDI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ze5-SQ-dnm" secondAttribute="trailing" id="Zz6-Ns-rcT"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="NJn-Qf-Nry"/>
                     <connections>
@@ -257,8 +244,4 @@
             <point key="canvasLocation" x="1928.8" y="866.71664167916049"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="arriving" width="600" height="600"/>
-        <image name="departing" width="600" height="600"/>
-    </resources>
 </document>

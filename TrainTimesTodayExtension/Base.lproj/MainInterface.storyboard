@@ -31,7 +31,6 @@
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
-                                    <outlet property="dataSource" destination="naS-FB-7as" id="53U-2Q-XdJ"/>
                                     <outlet property="delegate" destination="naS-FB-7as" id="ibK-2O-jzC"/>
                                 </connections>
                             </tableView>

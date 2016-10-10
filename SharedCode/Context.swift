@@ -13,7 +13,7 @@ import MapKit
 public class Context {
    
    
-   var stations: [Station]?
+   var stations = [Station]()
    
    var from = Station()
    var to = Station()
@@ -60,13 +60,10 @@ public class Context {
    
    func coordFromAbbr(abbr: String) -> CLLocationCoordinate2D? {
       
-      guard let stationsList = stations else {
-         return nil
-      }
-         
+
       
       
-      for station in stationsList {
+      for station in stations {
          
          if station.abbr == abbr {
             return station.coordinate

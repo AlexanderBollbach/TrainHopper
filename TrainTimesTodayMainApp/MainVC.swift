@@ -39,13 +39,16 @@ class MainController: UIViewController {
       super.viewDidLoad()
       
       
+      let nibCell = UINib(nibName: "TripsCell", bundle: Bundle(identifier: "test.SharedCode"))
+      tripsTableView.register(nibCell, forCellReuseIdentifier: "TripsCell")
+      
       self.tripsTableView.dataSource = tripsDataSource
       
       DAO.sharedInstance.configureData()
 
-      self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-      self.navigationController?.navigationBar.shadowImage = UIImage()
-      self.navigationController?.navigationBar.isTranslucent = true
+//      self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+//      self.navigationController?.navigationBar.shadowImage = UIImage()
+//      self.navigationController?.navigationBar.isTranslucent = true
 
       self.navigationController?.navigationBar.topItem?.title = "Pick Stations";
 
@@ -78,15 +81,6 @@ class MainController: UIViewController {
          self.tripsDataSource.dataStore = trips
          self.tripsTableView.reloadData()
       }
-   }
-   
-   
-   override func viewWillAppear(_ animated: Bool) {
-     
-
-//      updateUI()
-
-      
    }
    
 
