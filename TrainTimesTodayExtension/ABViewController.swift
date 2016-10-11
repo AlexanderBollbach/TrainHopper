@@ -14,13 +14,9 @@ class ABViewController: UIViewController {
    
    
    let tripsDataSource = TripsDataSource()
-
-   
-   
+ 
    let dao = DAO.sharedInstance
-   
-   
-   
+ 
    @IBOutlet weak var tableView: UITableView!
 
    let defaults = UserDefaults(suiteName: "group.AB.TrainTimesApp")!
@@ -44,51 +40,46 @@ class ABViewController: UIViewController {
       
       tableView.dataSource = tripsDataSource
       
-      initData()
   
 
-//      preferredContentSize = CGSize(width: 0, height: 600)
+      preferredContentSize = CGSize(width: 0, height: 600)
       
       
       
    }
    
-   func initData() {
-      
-      
-      
-      if defaults.value(forKey: "fromStation") != nil {
-         fromStation = NSKeyedUnarchiver.unarchiveObject(with: defaults.value(forKey: "fromStation") as! Data) as! Station!
-      } else {
-         fromStation = Station()
-      }
-      
-      if defaults.value(forKey: "toStation") != nil {
-         toStation = NSKeyedUnarchiver.unarchiveObject(with: defaults.value(forKey: "toStation") as! Data) as! Station!
-      } else {
-         toStation = Station()
-      }
-      
-      
-   }
+
    
    
    override func viewDidAppear(_ animated: Bool) {
-      
-
-      
-      // get trips here
-      
-      
+      print("Test")
+   }
+   
+   
+   override func viewWillAppear(_ animated: Bool) {
+ 
       dao.fetchTrips { (trips) in
+        
          self.tripsDataSource.dataStore = trips
-         self.tableView.reloadData()
+ 
+         let numTrips = trips?.count
+         let rowHeight = 44 // static
+         let h = numTrips! * rowHeight
+         
+         self.preferredContentSize = CGSize(width: 0, height: h)
+ 
+         self.viewDidLayoutSubviews()
+         self.view.layoutIfNeeded()
+  
       }
       
    }
    
    
 
+   override func viewDidLayoutSubviews() {
+      self.tableView.reloadData()
+   }
    
    
 

@@ -20,9 +20,7 @@ public class DAO {
       
       
       getStationsFromPList()
-      
-      
-      
+
       if Utilities.keyExists(defaults: defaults, key: "fromStation") {
          context.from = NSKeyedUnarchiver.unarchiveObject(with: defaults.object(forKey: "fromStation") as! Data) as! Station
       } else {
@@ -44,20 +42,7 @@ public class DAO {
       return context.stations
    }
    
-   public func getCurrentTripsStops() -> [Stop]? {
-      
-      return context.trips?.first?.stops
-   }
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
+
 
    
    func getStationsFromPList() {
@@ -70,18 +55,11 @@ public class DAO {
       } else {
          data = Data()
       }
-      
-      
-      
+   
       let stationsFromPlist: [Station] = NSKeyedUnarchiver.unarchiveObject(with: data) as! [Station]
       
-      
       context.stations = stationsFromPlist
-      
-      
-      
-      
-      
+
    }
    
    
@@ -92,15 +70,12 @@ public class DAO {
          
       case .departing:
          context.from = station
-         
          defaults.set(NSKeyedArchiver.archivedData(withRootObject: station), forKey: "fromStation")
          
       case .arriving:
          context.to = station
-         
          defaults.set(NSKeyedArchiver.archivedData(withRootObject: station), forKey: "toStation")
       }
-      
    }
    
    public func fetchTrips(completion: @escaping ([Trip]?) -> ()) {
@@ -112,10 +87,8 @@ public class DAO {
          completion(nil)
          return
       }
-      
-      
+
       Service_API.getTripsForStations(from: from, to: to) { (trips) in
-         
          self.context.trips = trips
          completion(trips)
       }
@@ -140,15 +113,55 @@ public class DAO {
 // Map Support
 extension DAO {
    
-   
    public func getCoordinateList() -> [CLLocationCoordinate2D]? {
-      
       return context.coordinatesFromTrips()
    }
    
-   
+   public func getCurrentTripsStops() -> [Stop]? {
+      
+      return context.trips?.first?.stops
+   }
    
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -189,9 +202,6 @@ extension DAO {
       Service_API.httpGetStations { (stations) in
          
          self.context.stations = stations.sorted { $0.name < $1.name }
-         
-         
-         
          self.defaults.set(NSKeyedArchiver.archivedData(withRootObject: self.context.stations), forKey: "stations")
       }
    }

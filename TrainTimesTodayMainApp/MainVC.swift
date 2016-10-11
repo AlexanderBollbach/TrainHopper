@@ -46,11 +46,12 @@ class MainController: UIViewController {
       
       DAO.sharedInstance.configureData()
 
-//      self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-//      self.navigationController?.navigationBar.shadowImage = UIImage()
-//      self.navigationController?.navigationBar.isTranslucent = true
+      self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+      self.navigationController?.navigationBar.shadowImage = UIImage()
+      self.navigationController?.navigationBar.isTranslucent = true
 
-      self.navigationController?.navigationBar.topItem?.title = "Pick Stations";
+      self.navigationController?.navigationBar.tintColor = .blue
+//      self.navigationController?.navigationBar.topItem?.title = "Pick Stations";
 
    }
 

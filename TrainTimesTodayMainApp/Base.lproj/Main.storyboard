@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11521.1" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="edX-mx-QFZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11521.1" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="8xy-mc-Peo">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11517.1"/>
@@ -51,8 +51,8 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="61" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ccR-Ab-j3O">
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="singleLineEtched" rowHeight="61" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ccR-Ab-j3O">
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="tpa-Xn-pQ1"/>
                                 </connections>
@@ -75,7 +75,14 @@
                             <constraint firstItem="psW-Gl-udl" firstAttribute="top" secondItem="ZeZ-iT-3C4" secondAttribute="bottom" constant="31.5" id="rdn-5y-Ako"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="3e4-Iv-taX"/>
+                    <navigationItem key="navigationItem" title="Pick Stations" id="3e4-Iv-taX">
+                        <barButtonItem key="rightBarButtonItem" title="Map" id="pD7-mG-Y2e">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="cYg-9d-6vf" kind="show" id="qHy-qw-f7V"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="arrivingButton" destination="ZeZ-iT-3C4" id="UrN-6p-G3C"/>
                         <outlet property="departingButton" destination="URY-Zp-aIo" id="OWQ-H0-WEp"/>
@@ -179,6 +186,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -188,25 +198,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pWA-ug-cDK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2303.1999999999998" y="146.17691154422789"/>
-        </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="f5y-0X-6DH">
-            <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="edX-mx-QFZ" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="NKc-eo-EBq">
-                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="8xy-mc-Peo" kind="relationship" relationship="viewControllers" id="O8q-Gj-pAN"/>
-                        <segue destination="cYg-9d-6vf" kind="relationship" relationship="viewControllers" id="yig-eL-d9s"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="rCR-vn-L8r" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1364" y="146.17691154422789"/>
         </scene>
         <!--MapVC-->
         <scene sceneID="zPN-KF-QWx">
@@ -230,8 +221,8 @@
                         <constraints>
                             <constraint firstItem="ze5-SQ-dnm" firstAttribute="top" secondItem="hn5-II-5OE" secondAttribute="bottom" id="5fB-dD-FIg"/>
                             <constraint firstItem="ze5-SQ-dnm" firstAttribute="bottom" secondItem="k4c-rO-wai" secondAttribute="top" id="9gH-pq-K2D"/>
-                            <constraint firstItem="ze5-SQ-dnm" firstAttribute="leading" secondItem="vyU-69-MsC" secondAttribute="leadingMargin" id="ODJ-rq-HDI"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="ze5-SQ-dnm" secondAttribute="trailing" id="Zz6-Ns-rcT"/>
+                            <constraint firstItem="ze5-SQ-dnm" firstAttribute="leading" secondItem="vyU-69-MsC" secondAttribute="leading" id="ODJ-rq-HDI"/>
+                            <constraint firstItem="ze5-SQ-dnm" firstAttribute="trailing" secondItem="vyU-69-MsC" secondAttribute="trailing" id="Zz6-Ns-rcT"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="NJn-Qf-Nry"/>
