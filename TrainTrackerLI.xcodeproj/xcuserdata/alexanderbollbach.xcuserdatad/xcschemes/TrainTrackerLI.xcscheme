@@ -81,9 +81,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "290406D11D331E0B00A76B49"
-            BuildableName = "TrainTrackerLIExtension.appex"
-            BlueprintName = "TrainTrackerLIExtension"
+            BlueprintIdentifier = "290406B81D331E0200A76B49"
+            BuildableName = "TrainTrackerLI.app"
+            BlueprintName = "TrainTrackerLIMainApp"
             ReferencedContainer = "container:TrainTrackerLI.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
