@@ -11,37 +11,36 @@
 		290406C41D331E0200A76B49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 290406C31D331E0200A76B49 /* Assets.xcassets */; };
 		290406C71D331E0200A76B49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 290406C51D331E0200A76B49 /* LaunchScreen.storyboard */; };
 		290406D51D331E0B00A76B49 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 290406D41D331E0B00A76B49 /* NotificationCenter.framework */; };
-		290406DB1D331E0B00A76B49 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 290406D91D331E0B00A76B49 /* MainInterface.storyboard */; };
 		290406DF1D331E0B00A76B49 /* TrainTrackerLIExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 290406D21D331E0B00A76B49 /* TrainTrackerLIExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		290681321D9D8CFC00A826C2 /* StationButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 290681311D9D8CFC00A826C2 /* StationButton.xib */; };
 		290F50E01D9B7564006D31D7 /* StationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290F50DF1D9B7564006D31D7 /* StationCell.swift */; };
 		290F50E21D9B95EE006D31D7 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 290F50E11D9B95EE006D31D7 /* MapKit.framework */; };
-		29174DEC1D46E4560013BB43 /* TrainTimesTodayExtension.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 29174DEA1D46E4530013BB43 /* TrainTimesTodayExtension.entitlements */; };
-		29174DEE1D46E45F0013BB43 /* TrainTimesTodayMainApp.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 29174DED1D46E45F0013BB43 /* TrainTimesTodayMainApp.entitlements */; };
 		29174DEF1D46EAA30013BB43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290406BC1D331E0200A76B49 /* AppDelegate.swift */; };
 		29174DF01D46EAA80013BB43 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290406BE1D331E0200A76B49 /* MainVC.swift */; };
-		2922A10D1DA3633600462DDF /* TripsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2922A10C1DA3633600462DDF /* TripsDataSource.swift */; };
-		294A0E1F1DA9D191000C6072 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294A0E1E1DA9D191000C6072 /* Utilities.swift */; };
 		2993AD781DA4522800326076 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2993AD771DA4522800326076 /* MapVC.swift */; };
 		299A987C1D99025D003CD8A7 /* StationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299A987B1D99025D003CD8A7 /* StationButton.swift */; };
-		29B392041DAAD25A009206D7 /* StationCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B392031DAAD25A009206D7 /* StationCache.swift */; };
-		29B392061DAADDA7009206D7 /* StationsCache.plist in Resources */ = {isa = PBXBuildFile; fileRef = 29B392051DAADDA7009206D7 /* StationsCache.plist */; };
-		29B5E1D71DA4A46A0014660F /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B5E1D61DA4A46A0014660F /* Context.swift */; };
-		29B5E1DA1DA4A52D0014660F /* Stop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B5E1D91DA4A52D0014660F /* Stop.swift */; };
-		29B5E1DB1DA4A5660014660F /* DAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F1A5DB1D72B27A0048CED7 /* DAO.swift */; };
-		29B5E1DC1DA4AF3C0014660F /* StationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294826A61D9F919C00C915FE /* StationType.swift */; };
-		29B5E1DE1DA4B6320014660F /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B5E1DD1DA4B6320014660F /* Trip.swift */; };
-		29BAFD6F1DA9AF4A005AC3B6 /* TripsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2922A1031DA357C300462DDF /* TripsCell.swift */; };
-		29BAFD701DA9AF4F005AC3B6 /* TripsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29BAFD681DA95A98005AC3B6 /* TripsCell.xib */; };
-		29BC93B51D47132600541481 /* ABViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2949592B1D445E0B00C854DB /* ABViewController.swift */; };
+		29A96B2D1DAEB6E2005C1041 /* ABCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A96B271DAEB6E2005C1041 /* ABCell.swift */; };
+		29A96B2E1DAEB6E2005C1041 /* ABViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A96B281DAEB6E2005C1041 /* ABViewController.swift */; };
+		29A96B2F1DAEB6E2005C1041 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 29A96B291DAEB6E2005C1041 /* Info.plist */; };
+		29A96B301DAEB6E2005C1041 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29A96B2A1DAEB6E2005C1041 /* MainInterface.storyboard */; };
+		29A96B311DAEB6E2005C1041 /* Service_API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A96B2B1DAEB6E2005C1041 /* Service_API.swift */; };
+		29A96B411DAEB790005C1041 /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A96B341DAEB790005C1041 /* Context.swift */; };
+		29A96B421DAEB790005C1041 /* DAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A96B351DAEB790005C1041 /* DAO.swift */; };
+		29A96B431DAEB790005C1041 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 29A96B361DAEB790005C1041 /* Info.plist */; };
+		29A96B441DAEB790005C1041 /* Service_API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A96B371DAEB790005C1041 /* Service_API.swift */; };
+		29A96B451DAEB790005C1041 /* SharedCode.h in Headers */ = {isa = PBXBuildFile; fileRef = 29A96B381DAEB790005C1041 /* SharedCode.h */; };
+		29A96B461DAEB790005C1041 /* StationCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A96B391DAEB790005C1041 /* StationCache.swift */; };
+		29A96B471DAEB790005C1041 /* StationsCache.plist in Resources */ = {isa = PBXBuildFile; fileRef = 29A96B3A1DAEB790005C1041 /* StationsCache.plist */; };
+		29A96B481DAEB790005C1041 /* StationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A96B3B1DAEB790005C1041 /* StationType.swift */; };
+		29A96B491DAEB790005C1041 /* Stop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A96B3C1DAEB790005C1041 /* Stop.swift */; };
+		29A96B4A1DAEB790005C1041 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A96B3D1DAEB790005C1041 /* Trip.swift */; };
+		29A96B4B1DAEB790005C1041 /* TripsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29A96B3E1DAEB790005C1041 /* TripsCell.xib */; };
+		29A96B4C1DAEB790005C1041 /* TripsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A96B3F1DAEB790005C1041 /* TripsDataSource.swift */; };
+		29A96B4D1DAEB790005C1041 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A96B401DAEB790005C1041 /* Utilities.swift */; };
 		29BF2D9C1D52AF1000422425 /* PickStationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BF2D9B1D52AF1000422425 /* PickStationVC.swift */; };
-		29C8B7FD1DA1EDCE00034CEB /* SharedCode.h in Headers */ = {isa = PBXBuildFile; fileRef = 29C8B7FB1DA1EDCE00034CEB /* SharedCode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		29C8B8001DA1EDCE00034CEB /* SharedCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29C8B7F91DA1EDCE00034CEB /* SharedCode.framework */; };
 		29C8B8011DA1EDCE00034CEB /* SharedCode.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 29C8B7F91DA1EDCE00034CEB /* SharedCode.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		29C8B8051DA1EE7100034CEB /* Service_API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F7C5871D446C53006DD03B /* Service_API.swift */; };
 		29C8B8081DA1EFD500034CEB /* SharedCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29C8B7F91DA1EDCE00034CEB /* SharedCode.framework */; };
-		29C8B80D1DA2053600034CEB /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299A98771D98F2C2003CD8A7 /* Station.swift */; };
-		3DCB61EC37204D1EF80B0181 /* Pods_TrainTimesTodayMainApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F3D7CB1CDD1EBF585D15E03 /* Pods_TrainTimesTodayMainApp.framework */; };
 		94FDB708DD2B8F0CC883B357 /* Pods_TrainTimesTodayExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07C88341F5D7A374C1B82B3C /* Pods_TrainTimesTodayExtension.framework */; };
 		B631176CF0B4440BE457F5FB /* Pods_SharedCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9774E16CD80D2A674FAD42C9 /* Pods_SharedCode.framework */; };
 /* End PBXBuildFile section */
@@ -100,34 +99,34 @@
 		290406C81D331E0200A76B49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		290406D21D331E0B00A76B49 /* TrainTrackerLIExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TrainTrackerLIExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		290406D41D331E0B00A76B49 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
-		290406DA1D331E0B00A76B49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
-		290406DC1D331E0B00A76B49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../TrainTimesTodayExtension/Info.plist; sourceTree = "<group>"; };
 		290681311D9D8CFC00A826C2 /* StationButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StationButton.xib; sourceTree = "<group>"; };
 		290F50DF1D9B7564006D31D7 /* StationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StationCell.swift; sourceTree = "<group>"; };
 		290F50E11D9B95EE006D31D7 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		29174DEA1D46E4530013BB43 /* TrainTimesTodayExtension.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = TrainTimesTodayExtension.entitlements; path = TrainTimesTodayExtension/TrainTimesTodayExtension.entitlements; sourceTree = SOURCE_ROOT; };
-		29174DED1D46E45F0013BB43 /* TrainTimesTodayMainApp.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = TrainTimesTodayMainApp.entitlements; path = TrainTimesTodayMainApp/TrainTimesTodayMainApp.entitlements; sourceTree = SOURCE_ROOT; };
-		2922A1031DA357C300462DDF /* TripsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TripsCell.swift; path = ../TrainTimesTodayMainApp/TripsCell.swift; sourceTree = "<group>"; };
-		2922A10C1DA3633600462DDF /* TripsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripsDataSource.swift; sourceTree = "<group>"; };
-		294826A61D9F919C00C915FE /* StationType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StationType.swift; path = ../TrainTimesTodayMainApp/StationType.swift; sourceTree = "<group>"; };
-		2949592B1D445E0B00C854DB /* ABViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ABViewController.swift; path = ../TrainTimesTodayExtension/ABViewController.swift; sourceTree = "<group>"; };
-		294A0E1E1DA9D191000C6072 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		2993AD771DA4522800326076 /* MapVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
-		299A98771D98F2C2003CD8A7 /* Station.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Station.swift; path = ../TrainTimesTodayMainApp/Station.swift; sourceTree = "<group>"; };
 		299A987B1D99025D003CD8A7 /* StationButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StationButton.swift; sourceTree = "<group>"; };
-		29B392031DAAD25A009206D7 /* StationCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StationCache.swift; sourceTree = "<group>"; };
-		29B392051DAADDA7009206D7 /* StationsCache.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = StationsCache.plist; sourceTree = "<group>"; };
-		29B5E1D61DA4A46A0014660F /* Context.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Context.swift; sourceTree = "<group>"; };
-		29B5E1D91DA4A52D0014660F /* Stop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stop.swift; sourceTree = "<group>"; };
-		29B5E1DD1DA4B6320014660F /* Trip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
-		29BAFD681DA95A98005AC3B6 /* TripsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TripsCell.xib; sourceTree = "<group>"; };
+		29A96B1F1DAEB664005C1041 /* TrainTimesTodayMainApp.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = TrainTimesTodayMainApp.entitlements; sourceTree = "<group>"; };
+		29A96B271DAEB6E2005C1041 /* ABCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ABCell.swift; sourceTree = "<group>"; };
+		29A96B281DAEB6E2005C1041 /* ABViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ABViewController.swift; sourceTree = "<group>"; };
+		29A96B291DAEB6E2005C1041 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29A96B2A1DAEB6E2005C1041 /* MainInterface.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
+		29A96B2B1DAEB6E2005C1041 /* Service_API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service_API.swift; sourceTree = "<group>"; };
+		29A96B2C1DAEB6E2005C1041 /* TrainTimesTodayExtension.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = TrainTimesTodayExtension.entitlements; sourceTree = "<group>"; };
+		29A96B341DAEB790005C1041 /* Context.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Context.swift; sourceTree = "<group>"; };
+		29A96B351DAEB790005C1041 /* DAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DAO.swift; sourceTree = "<group>"; };
+		29A96B361DAEB790005C1041 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29A96B371DAEB790005C1041 /* Service_API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service_API.swift; sourceTree = "<group>"; };
+		29A96B381DAEB790005C1041 /* SharedCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SharedCode.h; sourceTree = "<group>"; };
+		29A96B391DAEB790005C1041 /* StationCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StationCache.swift; sourceTree = "<group>"; };
+		29A96B3A1DAEB790005C1041 /* StationsCache.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = StationsCache.plist; sourceTree = "<group>"; };
+		29A96B3B1DAEB790005C1041 /* StationType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StationType.swift; sourceTree = "<group>"; };
+		29A96B3C1DAEB790005C1041 /* Stop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stop.swift; sourceTree = "<group>"; };
+		29A96B3D1DAEB790005C1041 /* Trip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
+		29A96B3E1DAEB790005C1041 /* TripsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TripsCell.xib; sourceTree = "<group>"; };
+		29A96B3F1DAEB790005C1041 /* TripsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripsDataSource.swift; sourceTree = "<group>"; };
+		29A96B401DAEB790005C1041 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		29BF2D9B1D52AF1000422425 /* PickStationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickStationVC.swift; sourceTree = "<group>"; };
 		29C8B7F91DA1EDCE00034CEB /* SharedCode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SharedCode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		29C8B7FB1DA1EDCE00034CEB /* SharedCode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SharedCode.h; sourceTree = "<group>"; };
-		29C8B7FC1DA1EDCE00034CEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		29C8B8061DA1EF6300034CEB /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../../../../Library/Developer/Xcode/DerivedData/TrainTimesToday-ghczrqxqugwfxgdgndiobfdsozij/Build/Products/Release-iphoneos/SwiftyJSON/SwiftyJSON.framework"; sourceTree = "<group>"; };
-		29F1A5DB1D72B27A0048CED7 /* DAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DAO.swift; path = ../TrainTimesTodayMainApp/DAO.swift; sourceTree = "<group>"; };
-		29F7C5871D446C53006DD03B /* Service_API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Service_API.swift; path = ../TrainTimesTodayExtension/Service_API.swift; sourceTree = "<group>"; };
 		29F7C58A1D457534006DD03B /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../../Library/Developer/Xcode/DerivedData/TestAppExtension-agapxgrcjyhlrmdkjoedvmmjetdq/Build/Products/Debug-iphoneos/SwiftyJSON.framework"; sourceTree = "<group>"; };
 		4F3D7CB1CDD1EBF585D15E03 /* Pods_TrainTimesTodayMainApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrainTimesTodayMainApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		71BEFD28B08F22BA59EFA2E2 /* Pods-TrainTimesTodayMainApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrainTimesTodayMainApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TrainTimesTodayMainApp/Pods-TrainTimesTodayMainApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -143,7 +142,6 @@
 			files = (
 				290F50E21D9B95EE006D31D7 /* MapKit.framework in Frameworks */,
 				29C8B8001DA1EDCE00034CEB /* SharedCode.framework in Frameworks */,
-				3DCB61EC37204D1EF80B0181 /* Pods_TrainTimesTodayMainApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,8 +169,8 @@
 		290406B01D331E0200A76B49 = {
 			isa = PBXGroup;
 			children = (
-				290406BB1D331E0200A76B49 /* TrainTimesTodayMainApp */,
-				290406D61D331E0B00A76B49 /* TrainTimesTodayExtension */,
+				290406BB1D331E0200A76B49 /* TrainTrackerLI_MainAppStuff */,
+				290406D61D331E0B00A76B49 /* TrainTrackerLI_ExtensionStuff */,
 				29C8B7FA1DA1EDCE00034CEB /* SharedCode */,
 				290406D31D331E0B00A76B49 /* Frameworks */,
 				290406BA1D331E0200A76B49 /* Products */,
@@ -190,17 +188,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		290406BB1D331E0200A76B49 /* TrainTimesTodayMainApp */ = {
+		290406BB1D331E0200A76B49 /* TrainTrackerLI_MainAppStuff */ = {
 			isa = PBXGroup;
 			children = (
 				2993AD761DA4520B00326076 /* VCs */,
-				2922A1071DA359CD00462DDF /* Protocols and Types */,
 				2922A1061DA3599600462DDF /* Views */,
-				2922A1051DA3596D00462DDF /* Data */,
 				290406BC1D331E0200A76B49 /* AppDelegate.swift */,
 				2970EF2A1D60E57C00A823A3 /* extras */,
 			);
-			path = TrainTimesTodayMainApp;
+			path = TrainTrackerLI_MainAppStuff;
 			sourceTree = "<group>";
 		};
 		290406D31D331E0B00A76B49 /* Frameworks */ = {
@@ -217,22 +213,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		290406D61D331E0B00A76B49 /* TrainTimesTodayExtension */ = {
+		290406D61D331E0B00A76B49 /* TrainTrackerLI_ExtensionStuff */ = {
 			isa = PBXGroup;
 			children = (
-				2927C65D1D9B148A00228D0F /* extras */,
-				290406D91D331E0B00A76B49 /* MainInterface.storyboard */,
-				2949592B1D445E0B00C854DB /* ABViewController.swift */,
+				29A96B271DAEB6E2005C1041 /* ABCell.swift */,
+				29A96B281DAEB6E2005C1041 /* ABViewController.swift */,
+				29A96B291DAEB6E2005C1041 /* Info.plist */,
+				29A96B2A1DAEB6E2005C1041 /* MainInterface.storyboard */,
+				29A96B2B1DAEB6E2005C1041 /* Service_API.swift */,
+				29A96B2C1DAEB6E2005C1041 /* TrainTimesTodayExtension.entitlements */,
 			);
-			name = TrainTimesTodayExtension;
-			path = TrainTimesTodayMainApp;
-			sourceTree = "<group>";
-		};
-		2922A1051DA3596D00462DDF /* Data */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Data;
+			path = TrainTrackerLI_ExtensionStuff;
 			sourceTree = "<group>";
 		};
 		2922A1061DA3599600462DDF /* Views */ = {
@@ -245,29 +236,13 @@
 			name = Views;
 			sourceTree = "<group>";
 		};
-		2922A1071DA359CD00462DDF /* Protocols and Types */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "Protocols and Types";
-			sourceTree = "<group>";
-		};
-		2927C65D1D9B148A00228D0F /* extras */ = {
-			isa = PBXGroup;
-			children = (
-				290406DC1D331E0B00A76B49 /* Info.plist */,
-				29174DEA1D46E4530013BB43 /* TrainTimesTodayExtension.entitlements */,
-			);
-			name = extras;
-			sourceTree = "<group>";
-		};
 		2970EF2A1D60E57C00A823A3 /* extras */ = {
 			isa = PBXGroup;
 			children = (
 				290406C31D331E0200A76B49 /* Assets.xcassets */,
 				290406C81D331E0200A76B49 /* Info.plist */,
 				290406C51D331E0200A76B49 /* LaunchScreen.storyboard */,
-				29174DED1D46E45F0013BB43 /* TrainTimesTodayMainApp.entitlements */,
+				29A96B1F1DAEB664005C1041 /* TrainTimesTodayMainApp.entitlements */,
 			);
 			name = extras;
 			sourceTree = "<group>";
@@ -283,40 +258,22 @@
 			name = VCs;
 			sourceTree = "<group>";
 		};
-		29B5E1D51DA4A4610014660F /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				29F1A5DB1D72B27A0048CED7 /* DAO.swift */,
-				29B392031DAAD25A009206D7 /* StationCache.swift */,
-				29B5E1D61DA4A46A0014660F /* Context.swift */,
-				299A98771D98F2C2003CD8A7 /* Station.swift */,
-				29B5E1DD1DA4B6320014660F /* Trip.swift */,
-				29B5E1D91DA4A52D0014660F /* Stop.swift */,
-				294A0E1E1DA9D191000C6072 /* Utilities.swift */,
-			);
-			name = Model;
-			sourceTree = "<group>";
-		};
-		29B5E1D81DA4A48A0014660F /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				2922A1031DA357C300462DDF /* TripsCell.swift */,
-				29BAFD681DA95A98005AC3B6 /* TripsCell.xib */,
-			);
-			name = Views;
-			sourceTree = "<group>";
-		};
 		29C8B7FA1DA1EDCE00034CEB /* SharedCode */ = {
 			isa = PBXGroup;
 			children = (
-				29B392051DAADDA7009206D7 /* StationsCache.plist */,
-				294826A61D9F919C00C915FE /* StationType.swift */,
-				29C8B7FB1DA1EDCE00034CEB /* SharedCode.h */,
-				29B5E1D81DA4A48A0014660F /* Views */,
-				29B5E1D51DA4A4610014660F /* Model */,
-				29F7C5871D446C53006DD03B /* Service_API.swift */,
-				2922A10C1DA3633600462DDF /* TripsDataSource.swift */,
-				29C8B7FC1DA1EDCE00034CEB /* Info.plist */,
+				29A96B341DAEB790005C1041 /* Context.swift */,
+				29A96B351DAEB790005C1041 /* DAO.swift */,
+				29A96B361DAEB790005C1041 /* Info.plist */,
+				29A96B371DAEB790005C1041 /* Service_API.swift */,
+				29A96B381DAEB790005C1041 /* SharedCode.h */,
+				29A96B391DAEB790005C1041 /* StationCache.swift */,
+				29A96B3A1DAEB790005C1041 /* StationsCache.plist */,
+				29A96B3B1DAEB790005C1041 /* StationType.swift */,
+				29A96B3C1DAEB790005C1041 /* Stop.swift */,
+				29A96B3D1DAEB790005C1041 /* Trip.swift */,
+				29A96B3E1DAEB790005C1041 /* TripsCell.xib */,
+				29A96B3F1DAEB790005C1041 /* TripsDataSource.swift */,
+				29A96B401DAEB790005C1041 /* Utilities.swift */,
 			);
 			path = SharedCode;
 			sourceTree = "<group>";
@@ -339,7 +296,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29C8B7FD1DA1EDCE00034CEB /* SharedCode.h in Headers */,
+				29A96B451DAEB790005C1041 /* SharedCode.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,7 +392,7 @@
 					290406D11D331E0B00A76B49 = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = 6UUR9483U2;
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 0810;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
@@ -445,6 +402,7 @@
 					29C8B7F81DA1EDCE00034CEB = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 6UUR9483U2;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -478,7 +436,6 @@
 				290681321D9D8CFC00A826C2 /* StationButton.xib in Resources */,
 				290406C41D331E0200A76B49 /* Assets.xcassets in Resources */,
 				290406C71D331E0200A76B49 /* LaunchScreen.storyboard in Resources */,
-				29174DEE1D46E45F0013BB43 /* TrainTimesTodayMainApp.entitlements in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -486,8 +443,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				290406DB1D331E0B00A76B49 /* MainInterface.storyboard in Resources */,
-				29174DEC1D46E4560013BB43 /* TrainTimesTodayExtension.entitlements in Resources */,
+				29A96B2F1DAEB6E2005C1041 /* Info.plist in Resources */,
+				29A96B301DAEB6E2005C1041 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -495,8 +452,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29B392061DAADDA7009206D7 /* StationsCache.plist in Resources */,
-				29BAFD701DA9AF4F005AC3B6 /* TripsCell.xib in Resources */,
+				29A96B471DAEB790005C1041 /* StationsCache.plist in Resources */,
+				29A96B4B1DAEB790005C1041 /* TripsCell.xib in Resources */,
+				29A96B431DAEB790005C1041 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -628,7 +586,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29BC93B51D47132600541481 /* ABViewController.swift in Sources */,
+				29A96B311DAEB6E2005C1041 /* Service_API.swift in Sources */,
+				29A96B2D1DAEB6E2005C1041 /* ABCell.swift in Sources */,
+				29A96B2E1DAEB6E2005C1041 /* ABViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -636,17 +596,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29B5E1DB1DA4A5660014660F /* DAO.swift in Sources */,
-				29B5E1DA1DA4A52D0014660F /* Stop.swift in Sources */,
-				29C8B8051DA1EE7100034CEB /* Service_API.swift in Sources */,
-				29B5E1DE1DA4B6320014660F /* Trip.swift in Sources */,
-				2922A10D1DA3633600462DDF /* TripsDataSource.swift in Sources */,
-				29C8B80D1DA2053600034CEB /* Station.swift in Sources */,
-				29B392041DAAD25A009206D7 /* StationCache.swift in Sources */,
-				29B5E1DC1DA4AF3C0014660F /* StationType.swift in Sources */,
-				29BAFD6F1DA9AF4A005AC3B6 /* TripsCell.swift in Sources */,
-				294A0E1F1DA9D191000C6072 /* Utilities.swift in Sources */,
-				29B5E1D71DA4A46A0014660F /* Context.swift in Sources */,
+				29A96B441DAEB790005C1041 /* Service_API.swift in Sources */,
+				29A96B421DAEB790005C1041 /* DAO.swift in Sources */,
+				29A96B411DAEB790005C1041 /* Context.swift in Sources */,
+				29A96B481DAEB790005C1041 /* StationType.swift in Sources */,
+				29A96B461DAEB790005C1041 /* StationCache.swift in Sources */,
+				29A96B4C1DAEB790005C1041 /* TripsDataSource.swift in Sources */,
+				29A96B4D1DAEB790005C1041 /* Utilities.swift in Sources */,
+				29A96B4A1DAEB790005C1041 /* Trip.swift in Sources */,
+				29A96B491DAEB790005C1041 /* Stop.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -680,15 +638,6 @@
 				290406C61D331E0200A76B49 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		290406D91D331E0B00A76B49 /* MainInterface.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				290406DA1D331E0B00A76B49 /* Base */,
-			);
-			name = MainInterface.storyboard;
-			path = ../TrainTimesTodayExtension;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -746,7 +695,7 @@
 				CODE_SIGN_ENTITLEMENTS = TrainTimesTodayMainApp/TrainTimesTodayMainApp.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_OPTIMIZATION_LEVEL = 0;
-				INFOPLIST_FILE = "$(SRCROOT)/TrainTimesTodayMainApp/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/TrainTrackerLI_MainAppStuff/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "-6UUR9483U2.TrainTrackerLI";
@@ -765,7 +714,7 @@
 				CODE_SIGN_ENTITLEMENTS = TrainTimesTodayExtension/TrainTimesTodayExtension.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_OPTIMIZATION_LEVEL = 0;
-				INFOPLIST_FILE = "$(SRCROOT)/TrainTimesTodayExtension/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/TrainTrackerLI_ExtensionStuff/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "-6UUR9483U2.TrainTrackerLI.Extension";
@@ -784,6 +733,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -804,6 +754,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos10.1;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
