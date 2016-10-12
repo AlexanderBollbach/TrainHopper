@@ -23,6 +23,9 @@ class MapVC: UIViewController {
    
    override func viewDidLoad() {
       
+      
+      navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+
 
       
    }

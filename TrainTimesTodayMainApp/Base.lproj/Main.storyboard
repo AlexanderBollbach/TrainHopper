@@ -51,8 +51,9 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="singleLineEtched" rowHeight="61" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ccR-Ab-j3O">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="61" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ccR-Ab-j3O">
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="separatorColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="tpa-Xn-pQ1"/>
                                 </connections>
@@ -66,8 +67,8 @@
                             <constraint firstItem="1Eh-3E-pSi" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" id="CBE-iQ-fCK"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ccR-Ab-j3O" secondAttribute="bottom" id="HVt-G2-qxm"/>
                             <constraint firstItem="1Eh-3E-pSi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LCL-Ec-Wkq"/>
-                            <constraint firstItem="1Eh-3E-pSi" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1:5" id="OGy-Oh-8sm"/>
-                            <constraint firstItem="1Eh-3E-pSi" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="SrI-1P-FQE"/>
+                            <constraint firstItem="1Eh-3E-pSi" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1:6" id="OGy-Oh-8sm"/>
+                            <constraint firstItem="1Eh-3E-pSi" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="SrI-1P-FQE"/>
                             <constraint firstItem="ccR-Ab-j3O" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="akp-Gc-hgQ"/>
                             <constraint firstItem="ccR-Ab-j3O" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="edJ-bH-l5c"/>
                             <constraint firstItem="ccR-Ab-j3O" firstAttribute="top" secondItem="TJq-qi-iq8" secondAttribute="bottom" constant="10" id="fPW-uo-GvH"/>
@@ -185,7 +186,8 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="VJE-ct-N9s">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.59125328920701881" green="0.77333084248937156" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         </textAttributes>

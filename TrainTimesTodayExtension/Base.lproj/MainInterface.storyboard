@@ -17,34 +17,7 @@
                     <view key="view" contentMode="scaleToFill" id="d7b-ux-gJX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZOP-PP-jZ9">
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TripsCell" id="H89-Yo-MYZ" customClass="TripsCell" customModule="SharedCode">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="H89-Yo-MYZ" id="6hY-TP-Ngk">
-                                            <frame key="frameInset" width="375" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                                <connections>
-                                    <outlet property="delegate" destination="naS-FB-7as" id="ibK-2O-jzC"/>
-                                </connections>
-                            </tableView>
-                        </subviews>
-                        <constraints>
-                            <constraint firstItem="ZOP-PP-jZ9" firstAttribute="centerX" secondItem="d7b-ux-gJX" secondAttribute="centerX" id="1Ta-J2-Xwn"/>
-                            <constraint firstItem="OhW-it-BPc" firstAttribute="top" secondItem="ZOP-PP-jZ9" secondAttribute="bottom" id="UWI-EK-umr"/>
-                            <constraint firstItem="ZOP-PP-jZ9" firstAttribute="width" secondItem="d7b-ux-gJX" secondAttribute="width" id="ZSb-f1-Dbz"/>
-                            <constraint firstItem="ZOP-PP-jZ9" firstAttribute="top" secondItem="1PG-Y3-t8J" secondAttribute="bottom" id="tEa-5O-R3z"/>
-                        </constraints>
                     </view>
-                    <connections>
-                        <outlet property="tableView" destination="ZOP-PP-jZ9" id="erM-Ux-VbY"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B0a-Tp-HGY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

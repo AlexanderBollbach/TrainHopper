@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "290406B81D331E0200A76B49"
-               BuildableName = "TrainTimesToday.app"
-               BlueprintName = "TrainTimesTodayMainApp"
-               ReferencedContainer = "container:TrainTimesToday.xcodeproj">
+               BlueprintIdentifier = "29C8B7F81DA1EDCE00034CEB"
+               BuildableName = "SharedCode.framework"
+               BlueprintName = "SharedCode"
+               ReferencedContainer = "container:TrainTrackerLI.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -29,15 +29,6 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "290406B81D331E0200A76B49"
-            BuildableName = "TrainTimesToday.app"
-            BlueprintName = "TrainTimesTodayMainApp"
-            ReferencedContainer = "container:TrainTimesToday.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -51,16 +42,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "290406B81D331E0200A76B49"
-            BuildableName = "TrainTimesToday.app"
-            BlueprintName = "TrainTimesTodayMainApp"
-            ReferencedContainer = "container:TrainTimesToday.xcodeproj">
+            BlueprintIdentifier = "29C8B7F81DA1EDCE00034CEB"
+            BuildableName = "SharedCode.framework"
+            BlueprintName = "SharedCode"
+            ReferencedContainer = "container:TrainTrackerLI.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -70,16 +60,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "290406B81D331E0200A76B49"
-            BuildableName = "TrainTimesToday.app"
-            BlueprintName = "TrainTimesTodayMainApp"
-            ReferencedContainer = "container:TrainTimesToday.xcodeproj">
+            BlueprintIdentifier = "29C8B7F81DA1EDCE00034CEB"
+            BuildableName = "SharedCode.framework"
+            BlueprintName = "SharedCode"
+            ReferencedContainer = "container:TrainTrackerLI.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Release">

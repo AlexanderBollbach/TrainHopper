@@ -45,12 +45,15 @@ class MainController: UIViewController {
       self.tripsTableView.dataSource = tripsDataSource
       
       DAO.sharedInstance.configureData()
+      
+      
+      updateUI()
 
-      self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-      self.navigationController?.navigationBar.shadowImage = UIImage()
-      self.navigationController?.navigationBar.isTranslucent = true
+//      self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+//      self.navigationController?.navigationBar.shadowImage = UIImage()
+//      self.navigationController?.navigationBar.isTranslucent = true
 
-      self.navigationController?.navigationBar.tintColor = .blue
+//      self.navigationController?.navigationBar.tintColor = .blue
 //      self.navigationController?.navigationBar.topItem?.title = "Pick Stations";
 
    }

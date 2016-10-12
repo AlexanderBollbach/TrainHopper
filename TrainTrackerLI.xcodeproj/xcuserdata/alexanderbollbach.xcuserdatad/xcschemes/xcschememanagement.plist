@@ -6,16 +6,22 @@
 	<dict>
 		<key>SharedCode.xcscheme</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
-			<integer>6</integer>
+			<integer>4</integer>
 		</dict>
-		<key>TrainTimesTodayExtension.xcscheme</key>
+		<key>TrainTrackerLI.xcscheme</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>3</integer>
 		</dict>
-		<key>TrainTimesTodayMainApp.xcscheme</key>
+		<key>TrainTrackerLIExtension.xcscheme</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>

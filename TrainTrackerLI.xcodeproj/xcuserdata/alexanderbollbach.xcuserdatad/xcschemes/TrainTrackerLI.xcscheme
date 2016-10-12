@@ -16,9 +16,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "290406D11D331E0B00A76B49"
-               BuildableName = "TrainTimesTodayExtension.appex"
-               BlueprintName = "TrainTimesTodayExtension"
-               ReferencedContainer = "container:TrainTimesToday.xcodeproj">
+               BuildableName = "TrainTrackerLIExtension.appex"
+               BlueprintName = "TrainTrackerLIExtension"
+               ReferencedContainer = "container:TrainTrackerLI.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -30,9 +30,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "290406B81D331E0200A76B49"
-               BuildableName = "TrainTimesToday.app"
-               BlueprintName = "TrainTimesTodayMainApp"
-               ReferencedContainer = "container:TrainTimesToday.xcodeproj">
+               BuildableName = "TrainTrackerLI.app"
+               BlueprintName = "TrainTrackerLIMainApp"
+               ReferencedContainer = "container:TrainTrackerLI.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -48,9 +48,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "290406D11D331E0B00A76B49"
-            BuildableName = "TrainTimesTodayExtension.appex"
-            BlueprintName = "TrainTimesTodayExtension"
-            ReferencedContainer = "container:TrainTimesToday.xcodeproj">
+            BuildableName = "TrainTrackerLIExtension.appex"
+            BlueprintName = "TrainTrackerLIExtension"
+            ReferencedContainer = "container:TrainTrackerLI.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -67,16 +67,26 @@
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES"
       launchAutomaticallySubstyle = "2">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <RemoteRunnable
+         runnableDebuggingMode = "2"
+         BundleIdentifier = "com.apple.springboard">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "290406B81D331E0200A76B49"
-            BuildableName = "TrainTimesToday.app"
-            BlueprintName = "TrainTimesTodayMainApp"
-            ReferencedContainer = "container:TrainTimesToday.xcodeproj">
+            BlueprintIdentifier = "290406D11D331E0B00A76B49"
+            BuildableName = "TrainTrackerLIExtension.appex"
+            BlueprintName = "TrainTrackerLIExtension"
+            ReferencedContainer = "container:TrainTrackerLI.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </RemoteRunnable>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "290406D11D331E0B00A76B49"
+            BuildableName = "TrainTrackerLIExtension.appex"
+            BlueprintName = "TrainTrackerLIExtension"
+            ReferencedContainer = "container:TrainTrackerLI.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -92,9 +102,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "290406B81D331E0200A76B49"
-            BuildableName = "TrainTimesToday.app"
-            BlueprintName = "TrainTimesTodayMainApp"
-            ReferencedContainer = "container:TrainTimesToday.xcodeproj">
+            BuildableName = "TrainTrackerLI.app"
+            BlueprintName = "TrainTrackerLIMainApp"
+            ReferencedContainer = "container:TrainTrackerLI.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

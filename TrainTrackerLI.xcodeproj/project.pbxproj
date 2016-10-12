@@ -12,7 +12,7 @@
 		290406C71D331E0200A76B49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 290406C51D331E0200A76B49 /* LaunchScreen.storyboard */; };
 		290406D51D331E0B00A76B49 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 290406D41D331E0B00A76B49 /* NotificationCenter.framework */; };
 		290406DB1D331E0B00A76B49 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 290406D91D331E0B00A76B49 /* MainInterface.storyboard */; };
-		290406DF1D331E0B00A76B49 /* TrainTimesTodayExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 290406D21D331E0B00A76B49 /* TrainTimesTodayExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		290406DF1D331E0B00A76B49 /* TrainTrackerLIExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 290406D21D331E0B00A76B49 /* TrainTrackerLIExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		290681321D9D8CFC00A826C2 /* StationButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 290681311D9D8CFC00A826C2 /* StationButton.xib */; };
 		290F50E01D9B7564006D31D7 /* StationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290F50DF1D9B7564006D31D7 /* StationCell.swift */; };
 		290F50E21D9B95EE006D31D7 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 290F50E11D9B95EE006D31D7 /* MapKit.framework */; };
@@ -70,7 +70,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				290406DF1D331E0B00A76B49 /* TrainTimesTodayExtension.appex in Embed App Extensions */,
+				290406DF1D331E0B00A76B49 /* TrainTrackerLIExtension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -91,14 +91,14 @@
 /* Begin PBXFileReference section */
 		07C88341F5D7A374C1B82B3C /* Pods_TrainTimesTodayExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrainTimesTodayExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1414D9DE263A9A2F889298CA /* Pods-SharedCode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SharedCode.release.xcconfig"; path = "Pods/Target Support Files/Pods-SharedCode/Pods-SharedCode.release.xcconfig"; sourceTree = "<group>"; };
-		290406B91D331E0200A76B49 /* TrainTimesToday.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrainTimesToday.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		290406B91D331E0200A76B49 /* TrainTrackerLI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrainTrackerLI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		290406BC1D331E0200A76B49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		290406BE1D331E0200A76B49 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		290406C11D331E0200A76B49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		290406C31D331E0200A76B49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		290406C61D331E0200A76B49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		290406C81D331E0200A76B49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		290406D21D331E0B00A76B49 /* TrainTimesTodayExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TrainTimesTodayExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		290406D21D331E0B00A76B49 /* TrainTrackerLIExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TrainTrackerLIExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		290406D41D331E0B00A76B49 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		290406DA1D331E0B00A76B49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		290406DC1D331E0B00A76B49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../TrainTimesTodayExtension/Info.plist; sourceTree = "<group>"; };
@@ -183,8 +183,8 @@
 		290406BA1D331E0200A76B49 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				290406B91D331E0200A76B49 /* TrainTimesToday.app */,
-				290406D21D331E0B00A76B49 /* TrainTimesTodayExtension.appex */,
+				290406B91D331E0200A76B49 /* TrainTrackerLI.app */,
+				290406D21D331E0B00A76B49 /* TrainTrackerLIExtension.appex */,
 				29C8B7F91DA1EDCE00034CEB /* SharedCode.framework */,
 			);
 			name = Products;
@@ -346,9 +346,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		290406B81D331E0200A76B49 /* TrainTimesTodayMainApp */ = {
+		290406B81D331E0200A76B49 /* TrainTrackerLIMainApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 290406CB1D331E0200A76B49 /* Build configuration list for PBXNativeTarget "TrainTimesTodayMainApp" */;
+			buildConfigurationList = 290406CB1D331E0200A76B49 /* Build configuration list for PBXNativeTarget "TrainTrackerLIMainApp" */;
 			buildPhases = (
 				626A1382368BA6550409ED7A /* [CP] Check Pods Manifest.lock */,
 				290406B51D331E0200A76B49 /* Sources */,
@@ -365,14 +365,14 @@
 				290406DE1D331E0B00A76B49 /* PBXTargetDependency */,
 				29C8B7FF1DA1EDCE00034CEB /* PBXTargetDependency */,
 			);
-			name = TrainTimesTodayMainApp;
+			name = TrainTrackerLIMainApp;
 			productName = TestAppExtension;
-			productReference = 290406B91D331E0200A76B49 /* TrainTimesToday.app */;
+			productReference = 290406B91D331E0200A76B49 /* TrainTrackerLI.app */;
 			productType = "com.apple.product-type.application";
 		};
-		290406D11D331E0B00A76B49 /* TrainTimesTodayExtension */ = {
+		290406D11D331E0B00A76B49 /* TrainTrackerLIExtension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 290406E01D331E0B00A76B49 /* Build configuration list for PBXNativeTarget "TrainTimesTodayExtension" */;
+			buildConfigurationList = 290406E01D331E0B00A76B49 /* Build configuration list for PBXNativeTarget "TrainTrackerLIExtension" */;
 			buildPhases = (
 				2841E17410DF1E132BB2BBC9 /* [CP] Check Pods Manifest.lock */,
 				290406CE1D331E0B00A76B49 /* Sources */,
@@ -384,9 +384,9 @@
 			);
 			dependencies = (
 			);
-			name = TrainTimesTodayExtension;
+			name = TrainTrackerLIExtension;
 			productName = TestToday;
-			productReference = 290406D21D331E0B00A76B49 /* TrainTimesTodayExtension.appex */;
+			productReference = 290406D21D331E0B00A76B49 /* TrainTrackerLIExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 		29C8B7F81DA1EDCE00034CEB /* SharedCode */ = {
@@ -449,7 +449,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 290406B41D331E0200A76B49 /* Build configuration list for PBXProject "TrainTimesToday" */;
+			buildConfigurationList = 290406B41D331E0200A76B49 /* Build configuration list for PBXProject "TrainTrackerLI" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -462,8 +462,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				290406B81D331E0200A76B49 /* TrainTimesTodayMainApp */,
-				290406D11D331E0B00A76B49 /* TrainTimesTodayExtension */,
+				290406B81D331E0200A76B49 /* TrainTrackerLIMainApp */,
+				290406D11D331E0B00A76B49 /* TrainTrackerLIExtension */,
 				29C8B7F81DA1EDCE00034CEB /* SharedCode */,
 			);
 		};
@@ -655,7 +655,7 @@
 /* Begin PBXTargetDependency section */
 		290406DE1D331E0B00A76B49 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 290406D11D331E0B00A76B49 /* TrainTimesTodayExtension */;
+			target = 290406D11D331E0B00A76B49 /* TrainTrackerLIExtension */;
 			targetProxy = 290406DD1D331E0B00A76B49 /* PBXContainerItemProxy */;
 		};
 		29C8B7FF1DA1EDCE00034CEB /* PBXTargetDependency */ = {
@@ -741,14 +741,16 @@
 			baseConfigurationReference = F8BFD5DD54EA2FEBFD6EE3B8 /* Pods-TrainTimesTodayMainApp.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = TrainTimesTodayMainApp/TrainTimesTodayMainApp.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_OPTIMIZATION_LEVEL = 0;
 				INFOPLIST_FILE = "$(SRCROOT)/TrainTimesTodayMainApp/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "-6UUR9483U2.TrainTimesToday";
-				PRODUCT_NAME = TrainTimesToday;
+				PRODUCT_BUNDLE_IDENTIFIER = "-6UUR9483U2.TrainTrackerLI";
+				PRODUCT_NAME = TrainTrackerLI;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
@@ -766,7 +768,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/TrainTimesTodayExtension/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "-6UUR9483U2.TrainTimesToday.Extension";
+				PRODUCT_BUNDLE_IDENTIFIER = "-6UUR9483U2.TrainTrackerLI.Extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -812,7 +814,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		290406B41D331E0200A76B49 /* Build configuration list for PBXProject "TrainTimesToday" */ = {
+		290406B41D331E0200A76B49 /* Build configuration list for PBXProject "TrainTrackerLI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				290406CA1D331E0200A76B49 /* Release */,
@@ -820,7 +822,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		290406CB1D331E0200A76B49 /* Build configuration list for PBXNativeTarget "TrainTimesTodayMainApp" */ = {
+		290406CB1D331E0200A76B49 /* Build configuration list for PBXNativeTarget "TrainTrackerLIMainApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				290406CD1D331E0200A76B49 /* Release */,
@@ -828,7 +830,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		290406E01D331E0B00A76B49 /* Build configuration list for PBXNativeTarget "TrainTimesTodayExtension" */ = {
+		290406E01D331E0B00A76B49 /* Build configuration list for PBXNativeTarget "TrainTrackerLIExtension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				290406E21D331E0B00A76B49 /* Release */,
