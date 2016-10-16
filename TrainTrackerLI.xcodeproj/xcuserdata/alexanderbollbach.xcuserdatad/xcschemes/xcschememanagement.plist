@@ -9,21 +9,17 @@
 			<key>isShown</key>
 			<true/>
 			<key>orderHint</key>
-			<integer>4</integer>
+			<integer>1</integer>
 		</dict>
-		<key>TrainTrackerLI.xcscheme</key>
+		<key>TrainTrackerLIMainApp.xcscheme</key>
 		<dict>
-			<key>isShown</key>
-			<true/>
-			<key>orderHint</key>
-			<integer>3</integer>
-		</dict>
-		<key>TrainTrackerLIExtension.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<true/>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+		<key>TrainTrackerLIWidget.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>9</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
@@ -34,6 +30,11 @@
 			<true/>
 		</dict>
 		<key>290406D11D331E0B00A76B49</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>29B4A5421DB182FC0057607C</key>
 		<dict>
 			<key>primary</key>
 			<true/>

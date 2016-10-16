@@ -16,6 +16,15 @@ public class DAO {
    let defaults = UserDefaults(suiteName: "group.AB.TrainTimesApp")!
    public static let sharedInstance = DAO()
    
+   public var inCountDownMode: Bool {
+      set {
+         defaults.set(newValue, forKey: "inCountDownMode")
+      }
+      get {
+         return defaults.bool(forKey: "inCountDownMode")
+      }
+   }
+   
    public func configureData() {
       
       

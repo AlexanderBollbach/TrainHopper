@@ -5,6 +5,7 @@ use_frameworks!
 def available_pods
 pod 'SwiftyJSON', '3.0.0'
 pod 'MMWormhole', '~> 2.0.0'
+pod 'SimpleButton', :git => 'https://github.com/aloco/SimpleButton.git', :branch => 'swift-3.0'
 end
 
 target ‘TrainTrackerLIMainApp’ do
@@ -17,7 +18,7 @@ target 'SharedCode' do
 pod 'SwiftyJSON', '3.0.0'
 end
 
-target ‘TrainTrackerLIExtension' do
+target 'TrainTrackerLIExtension' do
 available_pods
 end
 

@@ -27,7 +27,13 @@ public struct Trip {
    }
    
    
-   
+   public func getFirstStopTime() -> String {
+      
+      let stop = stops.first!
+      
+      return stop.time
+      
+   }
    
    
    

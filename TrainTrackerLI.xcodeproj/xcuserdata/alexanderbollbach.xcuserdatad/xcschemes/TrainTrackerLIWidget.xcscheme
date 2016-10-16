@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0810"
+   LastUpgradeVersion = "0800"
    wasCreatedForAppExtension = "YES"
    version = "2.0">
    <BuildAction
@@ -15,9 +15,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "290406D11D331E0B00A76B49"
-               BuildableName = "TrainTrackerLIExtension.appex"
-               BlueprintName = "TrainTrackerLIExtension"
+               BlueprintIdentifier = "29B4A5421DB182FC0057607C"
+               BuildableName = "TrainTrackerLIWidget.appex"
+               BlueprintName = "TrainTrackerLIWidget"
                ReferencedContainer = "container:TrainTrackerLI.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -47,9 +47,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "290406D11D331E0B00A76B49"
-            BuildableName = "TrainTrackerLIExtension.appex"
-            BlueprintName = "TrainTrackerLIExtension"
+            BlueprintIdentifier = "29B4A5421DB182FC0057607C"
+            BuildableName = "TrainTrackerLIWidget.appex"
+            BlueprintName = "TrainTrackerLIWidget"
             ReferencedContainer = "container:TrainTrackerLI.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -67,18 +67,8 @@
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES"
       launchAutomaticallySubstyle = "2">
-      <RemoteRunnable
-         runnableDebuggingMode = "2"
-         BundleIdentifier = "com.apple.springboard">
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "290406D11D331E0B00A76B49"
-            BuildableName = "TrainTrackerLIExtension.appex"
-            BlueprintName = "TrainTrackerLIExtension"
-            ReferencedContainer = "container:TrainTrackerLI.xcodeproj">
-         </BuildableReference>
-      </RemoteRunnable>
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "290406B81D331E0200A76B49"
@@ -86,7 +76,7 @@
             BlueprintName = "TrainTrackerLIMainApp"
             ReferencedContainer = "container:TrainTrackerLI.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>

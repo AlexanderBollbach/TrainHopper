@@ -10,17 +10,14 @@
 		290406C21D331E0200A76B49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 290406C01D331E0200A76B49 /* Main.storyboard */; };
 		290406C41D331E0200A76B49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 290406C31D331E0200A76B49 /* Assets.xcassets */; };
 		290406C71D331E0200A76B49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 290406C51D331E0200A76B49 /* LaunchScreen.storyboard */; };
-		290406D51D331E0B00A76B49 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 290406D41D331E0B00A76B49 /* NotificationCenter.framework */; };
-		290406DF1D331E0B00A76B49 /* TrainTrackerLIExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 290406D21D331E0B00A76B49 /* TrainTrackerLIExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		290681321D9D8CFC00A826C2 /* StationButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 290681311D9D8CFC00A826C2 /* StationButton.xib */; };
 		290F50E01D9B7564006D31D7 /* StationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290F50DF1D9B7564006D31D7 /* StationCell.swift */; };
 		290F50E21D9B95EE006D31D7 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 290F50E11D9B95EE006D31D7 /* MapKit.framework */; };
 		29174DEF1D46EAA30013BB43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290406BC1D331E0200A76B49 /* AppDelegate.swift */; };
 		29174DF01D46EAA80013BB43 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290406BE1D331E0200A76B49 /* MainVC.swift */; };
+		296502091DB310480050CFE1 /* ThemeColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296502081DB310480050CFE1 /* ThemeColors.swift */; };
+		2965020B1DB311F80050CFE1 /* ABSimpleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2965020A1DB311F80050CFE1 /* ABSimpleButton.swift */; };
 		2993AD781DA4522800326076 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2993AD771DA4522800326076 /* MapVC.swift */; };
 		299A987C1D99025D003CD8A7 /* StationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299A987B1D99025D003CD8A7 /* StationButton.swift */; };
-		29A96B2E1DAEB6E2005C1041 /* ABViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A96B281DAEB6E2005C1041 /* ABViewController.swift */; };
-		29A96B301DAEB6E2005C1041 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29A96B2A1DAEB6E2005C1041 /* MainInterface.storyboard */; };
 		29A96B411DAEB790005C1041 /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A96B341DAEB790005C1041 /* Context.swift */; };
 		29A96B421DAEB790005C1041 /* DAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A96B351DAEB790005C1041 /* DAO.swift */; };
 		29A96B441DAEB790005C1041 /* Service_API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A96B371DAEB790005C1041 /* Service_API.swift */; };
@@ -34,22 +31,28 @@
 		29A96B4E1DAEBBCE005C1041 /* SharedCode.h in Headers */ = {isa = PBXBuildFile; fileRef = 29A96B381DAEB790005C1041 /* SharedCode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		29A96B501DAEBC8A005C1041 /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A96B4F1DAEBC8A005C1041 /* Station.swift */; };
 		29A96B521DAEBD74005C1041 /* TripsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A96B511DAEBD74005C1041 /* TripsCell.swift */; };
+		29B4A5061DB155D20057607C /* CustomButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B4A5041DB155D20057607C /* CustomButtons.swift */; };
+		29B4A5071DB155D20057607C /* DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B4A5051DB155D20057607C /* DesignableButton.swift */; };
+		29B4A50A1DB15A470057607C /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B4A5091DB15A470057607C /* UIColorExtensions.swift */; };
+		29B4A5441DB182FC0057607C /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 290406D41D331E0B00A76B49 /* NotificationCenter.framework */; };
+		29B4A5471DB182FC0057607C /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B4A5461DB182FC0057607C /* TodayViewController.swift */; };
+		29B4A54A1DB182FC0057607C /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29B4A5481DB182FC0057607C /* MainInterface.storyboard */; };
+		29B4A54E1DB182FC0057607C /* TrainTrackerLIWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 29B4A5431DB182FC0057607C /* TrainTrackerLIWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		29B4A5711DB1F02E0057607C /* CountDownVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B4A5701DB1F02E0057607C /* CountDownVC.swift */; };
 		29BF2D9C1D52AF1000422425 /* PickStationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BF2D9B1D52AF1000422425 /* PickStationVC.swift */; };
 		29C8B8001DA1EDCE00034CEB /* SharedCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29C8B7F91DA1EDCE00034CEB /* SharedCode.framework */; };
 		29C8B8011DA1EDCE00034CEB /* SharedCode.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 29C8B7F91DA1EDCE00034CEB /* SharedCode.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		29C8B8081DA1EFD500034CEB /* SharedCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29C8B7F91DA1EDCE00034CEB /* SharedCode.framework */; };
-		7653D7103B1AF2E6D62B550A /* Pods_TrainTrackerLIExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7BC0B026E6D8274C657BDB7 /* Pods_TrainTrackerLIExtension.framework */; };
-		7EF10D4B781910879566608D /* Pods_SharedCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E667E204E2A2CC968CE19990 /* Pods_SharedCode.framework */; };
-		979D0A9C57AE28B238F040A0 /* Pods_TrainTrackerLIMainApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C110023D4654897081045F35 /* Pods_TrainTrackerLIMainApp.framework */; };
+		776F76FC984B997940701363 /* Pods_SharedCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7461BF0F889001538349AB2B /* Pods_SharedCode.framework */; };
+		C8226F45FD8177382227E234 /* Pods_TrainTrackerLIMainApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E34BEFB792DE463A8284CFE6 /* Pods_TrainTrackerLIMainApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		290406DD1D331E0B00A76B49 /* PBXContainerItemProxy */ = {
+		29B4A54C1DB182FC0057607C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 290406B11D331E0200A76B49 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 290406D11D331E0B00A76B49;
-			remoteInfo = TestToday;
+			remoteGlobalIDString = 29B4A5421DB182FC0057607C;
+			remoteInfo = TrainTrackerLIWidget;
 		};
 		29C8B7FE1DA1EDCE00034CEB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -67,7 +70,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				290406DF1D331E0B00A76B49 /* TrainTrackerLIExtension.appex in Embed App Extensions */,
+				29B4A54E1DB182FC0057607C /* TrainTrackerLIWidget.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -93,16 +96,13 @@
 		290406C31D331E0200A76B49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		290406C61D331E0200A76B49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		290406C81D331E0200A76B49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		290406D21D331E0B00A76B49 /* TrainTrackerLIExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TrainTrackerLIExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		290406D41D331E0B00A76B49 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
-		290681311D9D8CFC00A826C2 /* StationButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StationButton.xib; sourceTree = "<group>"; };
 		290F50DF1D9B7564006D31D7 /* StationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StationCell.swift; sourceTree = "<group>"; };
 		290F50E11D9B95EE006D31D7 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		296502081DB310480050CFE1 /* ThemeColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeColors.swift; sourceTree = "<group>"; };
+		2965020A1DB311F80050CFE1 /* ABSimpleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ABSimpleButton.swift; sourceTree = "<group>"; };
 		2993AD771DA4522800326076 /* MapVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
 		299A987B1D99025D003CD8A7 /* StationButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StationButton.swift; sourceTree = "<group>"; };
-		29A96B281DAEB6E2005C1041 /* ABViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ABViewController.swift; sourceTree = "<group>"; };
-		29A96B291DAEB6E2005C1041 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		29A96B2A1DAEB6E2005C1041 /* MainInterface.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
 		29A96B341DAEB790005C1041 /* Context.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Context.swift; sourceTree = "<group>"; };
 		29A96B351DAEB790005C1041 /* DAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DAO.swift; sourceTree = "<group>"; };
 		29A96B361DAEB790005C1041 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -117,16 +117,25 @@
 		29A96B401DAEB790005C1041 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		29A96B4F1DAEBC8A005C1041 /* Station.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
 		29A96B511DAEBD74005C1041 /* TripsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripsCell.swift; sourceTree = "<group>"; };
+		29B4A5041DB155D20057607C /* CustomButtons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButtons.swift; sourceTree = "<group>"; };
+		29B4A5051DB155D20057607C /* DesignableButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableButton.swift; sourceTree = "<group>"; };
+		29B4A5091DB15A470057607C /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
+		29B4A5431DB182FC0057607C /* TrainTrackerLIWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TrainTrackerLIWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		29B4A5461DB182FC0057607C /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		29B4A5491DB182FC0057607C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		29B4A54B1DB182FC0057607C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29B4A5511DB1B91E0057607C /* TrainTrackerLIWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TrainTrackerLIWidget.entitlements; sourceTree = "<group>"; };
+		29B4A5701DB1F02E0057607C /* CountDownVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountDownVC.swift; sourceTree = "<group>"; };
 		29BF2D9B1D52AF1000422425 /* PickStationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickStationVC.swift; sourceTree = "<group>"; };
 		29C8B7F91DA1EDCE00034CEB /* SharedCode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SharedCode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		29C8B8061DA1EF6300034CEB /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../../../../Library/Developer/Xcode/DerivedData/TrainTimesToday-ghczrqxqugwfxgdgndiobfdsozij/Build/Products/Release-iphoneos/SwiftyJSON/SwiftyJSON.framework"; sourceTree = "<group>"; };
 		29F7C58A1D457534006DD03B /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../../Library/Developer/Xcode/DerivedData/TestAppExtension-agapxgrcjyhlrmdkjoedvmmjetdq/Build/Products/Debug-iphoneos/SwiftyJSON.framework"; sourceTree = "<group>"; };
-		505AB10D08895C94DF86E7FE /* Pods-TrainTrackerLIExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrainTrackerLIExtension.release.xcconfig"; path = "Pods/Target Support Files/Pods-TrainTrackerLIExtension/Pods-TrainTrackerLIExtension.release.xcconfig"; sourceTree = "<group>"; };
-		7256537E81B0D58982C65744 /* Pods-TrainTrackerLIMainApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrainTrackerLIMainApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-TrainTrackerLIMainApp/Pods-TrainTrackerLIMainApp.release.xcconfig"; sourceTree = "<group>"; };
-		A7BC0B026E6D8274C657BDB7 /* Pods_TrainTrackerLIExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrainTrackerLIExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C110023D4654897081045F35 /* Pods_TrainTrackerLIMainApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrainTrackerLIMainApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E667E204E2A2CC968CE19990 /* Pods_SharedCode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SharedCode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EB0DD44B93293530F76460AA /* Pods-SharedCode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SharedCode.release.xcconfig"; path = "Pods/Target Support Files/Pods-SharedCode/Pods-SharedCode.release.xcconfig"; sourceTree = "<group>"; };
+		2CCDD8FB1EDE25A398E2AE47 /* Pods-SharedCode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SharedCode.release.xcconfig"; path = "Pods/Target Support Files/Pods-SharedCode/Pods-SharedCode.release.xcconfig"; sourceTree = "<group>"; };
+		7461BF0F889001538349AB2B /* Pods_SharedCode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SharedCode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DC544F4E49F536FDA64B8F1 /* Pods-TrainTrackerLIMainApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrainTrackerLIMainApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-TrainTrackerLIMainApp/Pods-TrainTrackerLIMainApp.release.xcconfig"; sourceTree = "<group>"; };
+		A5A763406E8E7655592AE609 /* Pods-TrainTrackerLIExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrainTrackerLIExtension.release.xcconfig"; path = "Pods/Target Support Files/Pods-TrainTrackerLIExtension/Pods-TrainTrackerLIExtension.release.xcconfig"; sourceTree = "<group>"; };
+		E17533CE2960CEFD4EC0534E /* Pods_TrainTrackerLIExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrainTrackerLIExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E34BEFB792DE463A8284CFE6 /* Pods_TrainTrackerLIMainApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrainTrackerLIMainApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,17 +145,15 @@
 			files = (
 				290F50E21D9B95EE006D31D7 /* MapKit.framework in Frameworks */,
 				29C8B8001DA1EDCE00034CEB /* SharedCode.framework in Frameworks */,
-				979D0A9C57AE28B238F040A0 /* Pods_TrainTrackerLIMainApp.framework in Frameworks */,
+				C8226F45FD8177382227E234 /* Pods_TrainTrackerLIMainApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		290406CF1D331E0B00A76B49 /* Frameworks */ = {
+		29B4A5401DB182FC0057607C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29C8B8081DA1EFD500034CEB /* SharedCode.framework in Frameworks */,
-				290406D51D331E0B00A76B49 /* NotificationCenter.framework in Frameworks */,
-				7653D7103B1AF2E6D62B550A /* Pods_TrainTrackerLIExtension.framework in Frameworks */,
+				29B4A5441DB182FC0057607C /* NotificationCenter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,7 +161,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7EF10D4B781910879566608D /* Pods_SharedCode.framework in Frameworks */,
+				776F76FC984B997940701363 /* Pods_SharedCode.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,11 +172,11 @@
 			isa = PBXGroup;
 			children = (
 				290406BB1D331E0200A76B49 /* TrainTrackerLI_MainAppStuff */,
-				290406D61D331E0B00A76B49 /* TrainTrackerLI_ExtensionStuff */,
 				29C8B7FA1DA1EDCE00034CEB /* SharedCode */,
+				29B4A5451DB182FC0057607C /* TrainTrackerLIWidget */,
 				290406D31D331E0B00A76B49 /* Frameworks */,
 				290406BA1D331E0200A76B49 /* Products */,
-				46A2A47336DF1DAAC9959F47 /* Pods */,
+				DFE4C9B7FBE69A9519B5616C /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -177,8 +184,8 @@
 			isa = PBXGroup;
 			children = (
 				290406B91D331E0200A76B49 /* TrainTrackerLI.app */,
-				290406D21D331E0B00A76B49 /* TrainTrackerLIExtension.appex */,
 				29C8B7F91DA1EDCE00034CEB /* SharedCode.framework */,
+				29B4A5431DB182FC0057607C /* TrainTrackerLIWidget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -186,7 +193,10 @@
 		290406BB1D331E0200A76B49 /* TrainTrackerLI_MainAppStuff */ = {
 			isa = PBXGroup;
 			children = (
+				296502081DB310480050CFE1 /* ThemeColors.swift */,
+				29B4A5091DB15A470057607C /* UIColorExtensions.swift */,
 				290406BC1D331E0200A76B49 /* AppDelegate.swift */,
+				290406C01D331E0200A76B49 /* Main.storyboard */,
 				2993AD761DA4520B00326076 /* VCs */,
 				2922A1061DA3599600462DDF /* Views */,
 				2970EF2A1D60E57C00A823A3 /* extras */,
@@ -201,28 +211,18 @@
 				290F50E11D9B95EE006D31D7 /* MapKit.framework */,
 				29F7C58A1D457534006DD03B /* SwiftyJSON.framework */,
 				290406D41D331E0B00A76B49 /* NotificationCenter.framework */,
-				E667E204E2A2CC968CE19990 /* Pods_SharedCode.framework */,
-				A7BC0B026E6D8274C657BDB7 /* Pods_TrainTrackerLIExtension.framework */,
-				C110023D4654897081045F35 /* Pods_TrainTrackerLIMainApp.framework */,
+				7461BF0F889001538349AB2B /* Pods_SharedCode.framework */,
+				E17533CE2960CEFD4EC0534E /* Pods_TrainTrackerLIExtension.framework */,
+				E34BEFB792DE463A8284CFE6 /* Pods_TrainTrackerLIMainApp.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		290406D61D331E0B00A76B49 /* TrainTrackerLI_ExtensionStuff */ = {
-			isa = PBXGroup;
-			children = (
-				29A96B281DAEB6E2005C1041 /* ABViewController.swift */,
-				29A96B291DAEB6E2005C1041 /* Info.plist */,
-				29A96B2A1DAEB6E2005C1041 /* MainInterface.storyboard */,
-			);
-			path = TrainTrackerLI_ExtensionStuff;
 			sourceTree = "<group>";
 		};
 		2922A1061DA3599600462DDF /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				29B4A5081DB155D70057607C /* customSimpleButtons */,
 				299A987B1D99025D003CD8A7 /* StationButton.swift */,
-				290681311D9D8CFC00A826C2 /* StationButton.xib */,
 				290F50DF1D9B7564006D31D7 /* StationCell.swift */,
 			);
 			name = Views;
@@ -241,12 +241,33 @@
 		2993AD761DA4520B00326076 /* VCs */ = {
 			isa = PBXGroup;
 			children = (
-				290406C01D331E0200A76B49 /* Main.storyboard */,
 				290406BE1D331E0200A76B49 /* MainVC.swift */,
 				29BF2D9B1D52AF1000422425 /* PickStationVC.swift */,
 				2993AD771DA4522800326076 /* MapVC.swift */,
+				29B4A5701DB1F02E0057607C /* CountDownVC.swift */,
 			);
 			name = VCs;
+			sourceTree = "<group>";
+		};
+		29B4A5081DB155D70057607C /* customSimpleButtons */ = {
+			isa = PBXGroup;
+			children = (
+				29B4A5041DB155D20057607C /* CustomButtons.swift */,
+				29B4A5051DB155D20057607C /* DesignableButton.swift */,
+				2965020A1DB311F80050CFE1 /* ABSimpleButton.swift */,
+			);
+			name = customSimpleButtons;
+			sourceTree = "<group>";
+		};
+		29B4A5451DB182FC0057607C /* TrainTrackerLIWidget */ = {
+			isa = PBXGroup;
+			children = (
+				29B4A5511DB1B91E0057607C /* TrainTrackerLIWidget.entitlements */,
+				29B4A5461DB182FC0057607C /* TodayViewController.swift */,
+				29B4A5481DB182FC0057607C /* MainInterface.storyboard */,
+				29B4A54B1DB182FC0057607C /* Info.plist */,
+			);
+			path = TrainTrackerLIWidget;
 			sourceTree = "<group>";
 		};
 		29C8B7FA1DA1EDCE00034CEB /* SharedCode */ = {
@@ -270,12 +291,12 @@
 			path = SharedCode;
 			sourceTree = "<group>";
 		};
-		46A2A47336DF1DAAC9959F47 /* Pods */ = {
+		DFE4C9B7FBE69A9519B5616C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				EB0DD44B93293530F76460AA /* Pods-SharedCode.release.xcconfig */,
-				505AB10D08895C94DF86E7FE /* Pods-TrainTrackerLIExtension.release.xcconfig */,
-				7256537E81B0D58982C65744 /* Pods-TrainTrackerLIMainApp.release.xcconfig */,
+				2CCDD8FB1EDE25A398E2AE47 /* Pods-SharedCode.release.xcconfig */,
+				A5A763406E8E7655592AE609 /* Pods-TrainTrackerLIExtension.release.xcconfig */,
+				9DC544F4E49F536FDA64B8F1 /* Pods-TrainTrackerLIMainApp.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -298,55 +319,53 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 290406CB1D331E0200A76B49 /* Build configuration list for PBXNativeTarget "TrainTrackerLIMainApp" */;
 			buildPhases = (
-				AD7FC3268C7F899C3BB1418E /* [CP] Check Pods Manifest.lock */,
+				D745E80EB86F310737A0AA44 /* [CP] Check Pods Manifest.lock */,
 				290406B51D331E0200A76B49 /* Sources */,
 				290406B61D331E0200A76B49 /* Frameworks */,
 				290406B71D331E0200A76B49 /* Resources */,
 				290406E31D331E0B00A76B49 /* Embed App Extensions */,
 				29C8B8041DA1EDCE00034CEB /* Embed Frameworks */,
-				C5F2B7E7832046E806B2E445 /* [CP] Embed Pods Frameworks */,
-				261B01597705132B8C3443C9 /* [CP] Copy Pods Resources */,
+				5850B54DE2D6C13F133C3597 /* [CP] Embed Pods Frameworks */,
+				46DAA55AEE92ED7940C8FF14 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				290406DE1D331E0B00A76B49 /* PBXTargetDependency */,
 				29C8B7FF1DA1EDCE00034CEB /* PBXTargetDependency */,
+				29B4A54D1DB182FC0057607C /* PBXTargetDependency */,
 			);
 			name = TrainTrackerLIMainApp;
 			productName = TestAppExtension;
 			productReference = 290406B91D331E0200A76B49 /* TrainTrackerLI.app */;
 			productType = "com.apple.product-type.application";
 		};
-		290406D11D331E0B00A76B49 /* TrainTrackerLIExtension */ = {
+		29B4A5421DB182FC0057607C /* TrainTrackerLIWidget */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 290406E01D331E0B00A76B49 /* Build configuration list for PBXNativeTarget "TrainTrackerLIExtension" */;
+			buildConfigurationList = 29B4A54F1DB182FC0057607C /* Build configuration list for PBXNativeTarget "TrainTrackerLIWidget" */;
 			buildPhases = (
-				70A6AA4BB1D57F1EECC761BF /* [CP] Check Pods Manifest.lock */,
-				290406CE1D331E0B00A76B49 /* Sources */,
-				290406CF1D331E0B00A76B49 /* Frameworks */,
-				290406D01D331E0B00A76B49 /* Resources */,
-				18EF8A0F3CE196D7B1D298C1 /* [CP] Copy Pods Resources */,
+				29B4A53F1DB182FC0057607C /* Sources */,
+				29B4A5401DB182FC0057607C /* Frameworks */,
+				29B4A5411DB182FC0057607C /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = TrainTrackerLIExtension;
-			productName = TestToday;
-			productReference = 290406D21D331E0B00A76B49 /* TrainTrackerLIExtension.appex */;
+			name = TrainTrackerLIWidget;
+			productName = TrainTrackerLIWidget;
+			productReference = 29B4A5431DB182FC0057607C /* TrainTrackerLIWidget.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 		29C8B7F81DA1EDCE00034CEB /* SharedCode */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 29C8B8021DA1EDCE00034CEB /* Build configuration list for PBXNativeTarget "SharedCode" */;
 			buildPhases = (
-				C8B13F020DEE571A0740D4EA /* [CP] Check Pods Manifest.lock */,
+				5CFD48B52D487B6113CC73B8 /* [CP] Check Pods Manifest.lock */,
 				29C8B7F41DA1EDCE00034CEB /* Sources */,
 				29C8B7F51DA1EDCE00034CEB /* Frameworks */,
 				29C8B7F61DA1EDCE00034CEB /* Headers */,
 				29C8B7F71DA1EDCE00034CEB /* Resources */,
-				A1A3A1853950C3E35F8DAC75 /* [CP] Copy Pods Resources */,
+				F40348009D18E37B7707D480 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -363,8 +382,8 @@
 		290406B11D331E0200A76B49 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0810;
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = alexanderbollbach;
 				TargetAttributes = {
 					290406B81D331E0200A76B49 = {
@@ -380,10 +399,10 @@
 							};
 						};
 					};
-					290406D11D331E0B00A76B49 = {
-						CreatedOnToolsVersion = 7.3;
+					29B4A5421DB182FC0057607C = {
+						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 6UUR9483U2;
-						LastSwiftMigration = 0810;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
@@ -412,8 +431,8 @@
 			projectRoot = "";
 			targets = (
 				290406B81D331E0200A76B49 /* TrainTrackerLIMainApp */,
-				290406D11D331E0B00A76B49 /* TrainTrackerLIExtension */,
 				29C8B7F81DA1EDCE00034CEB /* SharedCode */,
+				29B4A5421DB182FC0057607C /* TrainTrackerLIWidget */,
 			);
 		};
 /* End PBXProject section */
@@ -424,17 +443,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				290406C21D331E0200A76B49 /* Main.storyboard in Resources */,
-				290681321D9D8CFC00A826C2 /* StationButton.xib in Resources */,
 				290406C41D331E0200A76B49 /* Assets.xcassets in Resources */,
 				290406C71D331E0200A76B49 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		290406D01D331E0B00A76B49 /* Resources */ = {
+		29B4A5411DB182FC0057607C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29A96B301DAEB6E2005C1041 /* MainInterface.storyboard in Resources */,
+				29B4A54A1DB182FC0057607C /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,22 +468,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		18EF8A0F3CE196D7B1D298C1 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TrainTrackerLIExtension/Pods-TrainTrackerLIExtension-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		261B01597705132B8C3443C9 /* [CP] Copy Pods Resources */ = {
+		46DAA55AEE92ED7940C8FF14 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -480,52 +483,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TrainTrackerLIMainApp/Pods-TrainTrackerLIMainApp-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		70A6AA4BB1D57F1EECC761BF /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		A1A3A1853950C3E35F8DAC75 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SharedCode/Pods-SharedCode-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		AD7FC3268C7F899C3BB1418E /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		C5F2B7E7832046E806B2E445 /* [CP] Embed Pods Frameworks */ = {
+		5850B54DE2D6C13F133C3597 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -540,7 +498,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TrainTrackerLIMainApp/Pods-TrainTrackerLIMainApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C8B13F020DEE571A0740D4EA /* [CP] Check Pods Manifest.lock */ = {
+		5CFD48B52D487B6113CC73B8 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -555,6 +513,36 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		D745E80EB86F310737A0AA44 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F40348009D18E37B7707D480 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SharedCode/Pods-SharedCode-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -562,20 +550,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29B4A50A1DB15A470057607C /* UIColorExtensions.swift in Sources */,
 				29BF2D9C1D52AF1000422425 /* PickStationVC.swift in Sources */,
 				29174DF01D46EAA80013BB43 /* MainVC.swift in Sources */,
+				29B4A5061DB155D20057607C /* CustomButtons.swift in Sources */,
+				29B4A5711DB1F02E0057607C /* CountDownVC.swift in Sources */,
+				29B4A5071DB155D20057607C /* DesignableButton.swift in Sources */,
 				29174DEF1D46EAA30013BB43 /* AppDelegate.swift in Sources */,
 				290F50E01D9B7564006D31D7 /* StationCell.swift in Sources */,
+				2965020B1DB311F80050CFE1 /* ABSimpleButton.swift in Sources */,
+				296502091DB310480050CFE1 /* ThemeColors.swift in Sources */,
 				2993AD781DA4522800326076 /* MapVC.swift in Sources */,
 				299A987C1D99025D003CD8A7 /* StationButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		290406CE1D331E0B00A76B49 /* Sources */ = {
+		29B4A53F1DB182FC0057607C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29A96B2E1DAEB6E2005C1041 /* ABViewController.swift in Sources */,
+				29B4A5471DB182FC0057607C /* TodayViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -599,10 +593,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		290406DE1D331E0B00A76B49 /* PBXTargetDependency */ = {
+		29B4A54D1DB182FC0057607C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 290406D11D331E0B00A76B49 /* TrainTrackerLIExtension */;
-			targetProxy = 290406DD1D331E0B00A76B49 /* PBXContainerItemProxy */;
+			target = 29B4A5421DB182FC0057607C /* TrainTrackerLIWidget */;
+			targetProxy = 29B4A54C1DB182FC0057607C /* PBXContainerItemProxy */;
 		};
 		29C8B7FF1DA1EDCE00034CEB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -626,6 +620,14 @@
 				290406C61D331E0200A76B49 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		29B4A5481DB182FC0057607C /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				29B4A5491DB182FC0057607C /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -668,19 +670,20 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		290406CD1D331E0200A76B49 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7256537E81B0D58982C65744 /* Pods-TrainTrackerLIMainApp.release.xcconfig */;
+			baseConfigurationReference = 9DC544F4E49F536FDA64B8F1 /* Pods-TrainTrackerLIMainApp.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = TrainTrackerLI_MainAppStuff/MainAppEntitlements.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 6UUR9483U2;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				INFOPLIST_FILE = "$(SRCROOT)/TrainTrackerLI_MainAppStuff/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -692,31 +695,27 @@
 			};
 			name = Release;
 		};
-		290406E21D331E0B00A76B49 /* Release */ = {
+		29B4A5501DB182FC0057607C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 505AB10D08895C94DF86E7FE /* Pods-TrainTrackerLIExtension.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = TrainTrackerLI_ExtensionStuff/extensionEntitlements.entitlements;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_ENTITLEMENTS = TrainTrackerLIWidget/TrainTrackerLIWidget.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				GCC_OPTIMIZATION_LEVEL = 0;
-				INFOPLIST_FILE = "$(SRCROOT)/TrainTrackerLI_ExtensionStuff/Info.plist";
+				DEVELOPMENT_TEAM = 6UUR9483U2;
+				INFOPLIST_FILE = TrainTrackerLIWidget/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "-6UUR9483U2.TrainTrackerLI.Extension";
+				PRODUCT_BUNDLE_IDENTIFIER = "-6UUR9483U2.TrainTrackerLI.TrainTrackerLIWidget";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		29C8B8031DA1EDCE00034CEB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EB0DD44B93293530F76460AA /* Pods-SharedCode.release.xcconfig */;
+			baseConfigurationReference = 2CCDD8FB1EDE25A398E2AE47 /* Pods-SharedCode.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				APPLICATION_EXTENSION_API_ONLY = YES;
@@ -724,7 +723,7 @@
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 6UUR9483U2;
@@ -739,9 +738,9 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = test.SharedCode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos10.1;
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -768,10 +767,10 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		290406E01D331E0B00A76B49 /* Build configuration list for PBXNativeTarget "TrainTrackerLIExtension" */ = {
+		29B4A54F1DB182FC0057607C /* Build configuration list for PBXNativeTarget "TrainTrackerLIWidget" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				290406E21D331E0B00A76B49 /* Release */,
+				29B4A5501DB182FC0057607C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

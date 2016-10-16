@@ -19,18 +19,21 @@ class MainController: UIViewController {
    
    
    
-   
+   let storyBoard = UIStoryboard(name: "Main", bundle:nil)
+
    let dao = DAO.sharedInstance
 
    @IBOutlet weak var tripsTableView: UITableView!
+   
+   
    let presenter: Presentr = {
       let presenter = Presentr(presentationType: .popup)
       presenter.transitionType = .coverVertical // Optional
       return presenter
    }()
    
-   @IBOutlet weak var departingButton: StationButton!
-   @IBOutlet weak var arrivingButton: StationButton!
+   @IBOutlet weak var departingButton: DesignableButton!
+   @IBOutlet weak var arrivingButton: DesignableButton!
    
    
    let tripsDataSource: TripsDataSource = TripsDataSource()
@@ -49,38 +52,29 @@ class MainController: UIViewController {
       
       updateUI()
 
-//      self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-//      self.navigationController?.navigationBar.shadowImage = UIImage()
-//      self.navigationController?.navigationBar.isTranslucent = true
-
-//      self.navigationController?.navigationBar.tintColor = .blue
-//      self.navigationController?.navigationBar.topItem?.title = "Pick Stations";
+      self.navigationController?.navigationBar.barStyle = .black
+      
+      
+//      tripsTableView.allowsSelection = false
 
    }
 
-   
-   
-   
-   
-   
-   
+ 
    func updateUI() {
-      
-      departingButton.name.text = dao.getFromStation().name
-      arrivingButton.name.text = dao.getToStation().name
-      
+   
+      let from = dao.getFromStation().name
+      let to = dao.getToStation().name
+      departingButton.setTitle(from, for: .normal)
+      arrivingButton.setTitle(to, for: .normal)
 
       fetchTrips()
-
-      
-      
+ 
    }
    
-   
+ 
    
    func fetchTrips() {
-      
-      
+
       DAO.sharedInstance.fetchTrips { (trips) in
          self.tripsDataSource.dataStore = trips
          self.tripsTableView.reloadData()
@@ -88,11 +82,6 @@ class MainController: UIViewController {
    }
    
 
-   
-   
-
-   
-   
    @IBAction func toStationTapped(_ sender: StationButton) {
       
       var stationType: StationType?
@@ -147,15 +136,30 @@ extension MainController: PickStationDelegate {
    
    
    func didTapOnStation(station: Station, stationType: StationType) {
-      
-      
-      
+ 
       dao.setStation(active: stationType, station: station)
-      
       updateUI()
    }
 }
 
 
+
+extension MainController : UITableViewDelegate {
+   
+   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+      
+      let countDownVC = storyBoard.instantiateViewController(withIdentifier: "CountDownVC") as! CountDownVC
+      
+      let trip = tripsDataSource.dataStore![indexPath.row]
+      
+      let thisDepartureTime = trip.getFirstStopTime()
+      
+      countDownVC.time = thisDepartureTime
+
+      self.navigationController?.pushViewController(countDownVC, animated: true)
+   }
+   
+   
+}
 
 

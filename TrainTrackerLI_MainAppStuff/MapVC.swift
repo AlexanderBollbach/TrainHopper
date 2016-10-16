@@ -19,15 +19,11 @@ class MapVC: UIViewController {
    
    @IBOutlet weak var mapView: MKMapView!
    
-   
-   
    override func viewDidLoad() {
       
       
       navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
-
-
-      
+   
    }
    
    
@@ -40,10 +36,7 @@ class MapVC: UIViewController {
       
       let fromStationCoor = fromStation.coordinate
       let toStationCoor = toStation.coordinate
-//
-//      
-//      // anotations
-//      
+
       mapView.removeAnnotations(mapView.annotations)
 
       let from = MKPointAnnotation()
@@ -66,11 +59,17 @@ class MapVC: UIViewController {
       
       
 
-      mapView.showAnnotations(mapView.annotations, animated: true)
+     
 //
       
    }
    
+   
+   
+   // THIS doesn't let user zoom or anything!
+   func mapViewDidFinishLoadingMap(_ mapView: MKMapView) {
+       mapView.showAnnotations(mapView.annotations, animated: false)
+   }
    
    func addAnotationsFromCoordList(coords: [CLLocationCoordinate2D]) {
       
@@ -96,7 +95,7 @@ class MapVC: UIViewController {
       
     
       
-      addAnotationsFromCoordList(coords: coordinates)
+//      addAnotationsFromCoordList(coords: coordinates)
       
       
       
@@ -104,13 +103,10 @@ class MapVC: UIViewController {
       
 
       let geodesicPolyline = MKGeodesicPolyline(coordinates: coordinates, count: coordinates.count)
-//
-//      
+     
       self.mapView.add(geodesicPolyline)
-//
-      
-      
-      
+
+   
    }
    
    
