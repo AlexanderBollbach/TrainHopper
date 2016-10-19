@@ -28,22 +28,54 @@ public class Service_API {
       let request = URLRequest(url: URL(string: urlString)!)
       let session = URLSession.shared
       
+      let formatter = DateFormatter()
+      
+      
       let task = session.dataTask(with: request) { (data, response, error) -> Void in
          
     
          
          let jsonSw = JSON(data: data!)
-         let trips = jsonSw["TRIPS"]
    
          var tripsModel = [Trip]()
          
-         for (_,subJson) : (String, JSON) in trips {
+         let nowDate = Date()
+
+         
+         for (_,tripJSON) : (String, JSON) in jsonSw["TRIPS"] {
    
             
-            var trip = Trip()
+            
+            // compare date of departures in each "trip" to now and check if it is in the past
+            formatter.dateFormat = "yyyyMMdd"
+            let thisDate = formatter.date(from: tripJSON["ROUTE_DATE"].stringValue)!
+            
+            
+            formatter.dateFormat = "h:mm a"
+            let firstStopTimeString = tripJSON["LEGS"].arrayValue[0]["STOPS"][0]["TIME"].stringValue
+            let thisTripTimeDate = formatter.date(from: firstStopTimeString)!
+            
+            
+            
+            // add first stops time to thisDate
+            var thisDateComponents = NSCalendar.current.dateComponents([.year, .month, .day, .hour, .minute, .second], from: thisDate)
+            var thisTripTimeComponents = NSCalendar.current.dateComponents([.hour, .minute, .second], from: thisTripTimeDate)
+            
+            thisDateComponents.hour = thisTripTimeComponents.hour
+            thisDateComponents.minute = thisTripTimeComponents.minute
+            thisDateComponents.second = thisTripTimeComponents.second
+            
+            
+            let completeThisDate = NSCalendar.current.date(from: thisDateComponents)!
+            
 
-            for leg in subJson["LEGS"].array! {
-        
+            var trip = Trip(date: completeThisDate)
+            
+            if completeThisDate.compare(nowDate) == ComparisonResult.orderedAscending {
+               continue
+            }
+
+            for leg in tripJSON["LEGS"].arrayValue {
                for stop in leg["STOPS"].arrayValue {
        
                   trip.addStop(stop: Stop(time: stop["TIME"].stringValue, station: stop["STATION"].stringValue))

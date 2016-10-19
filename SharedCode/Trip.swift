@@ -13,10 +13,13 @@ import MapKit
 public struct Trip {
    
    
+   var date: Date!
    var stops = [Stop]()
    
    
-   
+   init(date: Date) {
+      self.date = date
+   }
    
    
    mutating func addStop(stop: Stop) {
@@ -47,42 +50,6 @@ public struct Trip {
       
       return stops.last!.time
    }
-   
-   
 
-   
-   
-   //
-   //
-   //   func getCoordinatesFromCurrentRoute() -> [CLLocationCoordinate2D] {
-   //
-   //
-   //
-   //
-   //      var coordinates = [CLLocationCoordinate2D]()
-   //
-   //
-   //      let firstTrip = currentTrips?.first!
-   //
-   //      let theStops = firstTrip?.trips
-   //
-   //
-   //
-   //      for stop in theStops {
-   //
-   //
-   //         coordinates.append(stop)
-   //
-   //      }
-   //
-   //
-   //
-   //      return coordinates
-   //
-   //
-   //
-   //
-   //   }
-   //
    
 }

@@ -16,6 +16,9 @@
 		29174DF01D46EAA80013BB43 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290406BE1D331E0200A76B49 /* MainVC.swift */; };
 		296502091DB310480050CFE1 /* ThemeColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296502081DB310480050CFE1 /* ThemeColors.swift */; };
 		2965020B1DB311F80050CFE1 /* ABSimpleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2965020A1DB311F80050CFE1 /* ABSimpleButton.swift */; };
+		2965020D1DB5C14E0050CFE1 /* CountdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2965020C1DB5C14E0050CFE1 /* CountdownView.swift */; };
+		2965020F1DB5C15D0050CFE1 /* CountdownView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2965020E1DB5C15D0050CFE1 /* CountdownView.xib */; };
+		296502101DB5CDCC0050CFE1 /* SharedCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29C8B7F91DA1EDCE00034CEB /* SharedCode.framework */; };
 		2993AD781DA4522800326076 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2993AD771DA4522800326076 /* MapVC.swift */; };
 		299A987C1D99025D003CD8A7 /* StationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299A987B1D99025D003CD8A7 /* StationButton.swift */; };
 		29A96B411DAEB790005C1041 /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A96B341DAEB790005C1041 /* Context.swift */; };
@@ -101,6 +104,8 @@
 		290F50E11D9B95EE006D31D7 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		296502081DB310480050CFE1 /* ThemeColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeColors.swift; sourceTree = "<group>"; };
 		2965020A1DB311F80050CFE1 /* ABSimpleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ABSimpleButton.swift; sourceTree = "<group>"; };
+		2965020C1DB5C14E0050CFE1 /* CountdownView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountdownView.swift; sourceTree = "<group>"; };
+		2965020E1DB5C15D0050CFE1 /* CountdownView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CountdownView.xib; sourceTree = "<group>"; };
 		2993AD771DA4522800326076 /* MapVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
 		299A987B1D99025D003CD8A7 /* StationButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StationButton.swift; sourceTree = "<group>"; };
 		29A96B341DAEB790005C1041 /* Context.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Context.swift; sourceTree = "<group>"; };
@@ -153,6 +158,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				296502101DB5CDCC0050CFE1 /* SharedCode.framework in Frameworks */,
 				29B4A5441DB182FC0057607C /* NotificationCenter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,6 +268,8 @@
 		29B4A5451DB182FC0057607C /* TrainTrackerLIWidget */ = {
 			isa = PBXGroup;
 			children = (
+				2965020C1DB5C14E0050CFE1 /* CountdownView.swift */,
+				2965020E1DB5C15D0050CFE1 /* CountdownView.xib */,
 				29B4A5511DB1B91E0057607C /* TrainTrackerLIWidget.entitlements */,
 				29B4A5461DB182FC0057607C /* TodayViewController.swift */,
 				29B4A5481DB182FC0057607C /* MainInterface.storyboard */,
@@ -452,6 +460,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2965020F1DB5C15D0050CFE1 /* CountdownView.xib in Resources */,
 				29B4A54A1DB182FC0057607C /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -569,6 +578,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2965020D1DB5C14E0050CFE1 /* CountdownView.swift in Sources */,
 				29B4A5471DB182FC0057607C /* TodayViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -709,6 +719,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "-6UUR9483U2.TrainTrackerLI.TrainTrackerLIWidget";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -740,7 +751,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";

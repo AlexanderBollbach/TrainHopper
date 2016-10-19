@@ -21,12 +21,19 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="O2F-c0-ZkQ">
                                 <color key="backgroundColor" red="0.0" green="0.02974798365" blue="0.21470703129999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iLq-Bn-vmY" userLabel="countdownView" customClass="CountdownView" customModule="TrainTrackerLIWidget" customModuleProvider="target">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <constraints>
+                            <constraint firstItem="iLq-Bn-vmY" firstAttribute="height" secondItem="S3S-Oj-5AN" secondAttribute="height" id="4DN-cp-JcH"/>
                             <constraint firstItem="O2F-c0-ZkQ" firstAttribute="centerX" secondItem="S3S-Oj-5AN" secondAttribute="centerX" id="KBQ-9h-HSx"/>
                             <constraint firstItem="O2F-c0-ZkQ" firstAttribute="height" secondItem="S3S-Oj-5AN" secondAttribute="height" id="bhI-OT-SaL"/>
                             <constraint firstItem="O2F-c0-ZkQ" firstAttribute="centerY" secondItem="S3S-Oj-5AN" secondAttribute="centerY" id="d0H-C0-5Xv"/>
+                            <constraint firstItem="iLq-Bn-vmY" firstAttribute="width" secondItem="S3S-Oj-5AN" secondAttribute="width" id="eIc-3x-gWR"/>
+                            <constraint firstItem="iLq-Bn-vmY" firstAttribute="centerY" secondItem="S3S-Oj-5AN" secondAttribute="centerY" id="oCo-5s-ddv"/>
                             <constraint firstItem="O2F-c0-ZkQ" firstAttribute="width" secondItem="S3S-Oj-5AN" secondAttribute="width" id="qQ4-nE-sGy"/>
+                            <constraint firstItem="iLq-Bn-vmY" firstAttribute="centerX" secondItem="S3S-Oj-5AN" secondAttribute="centerX" id="xjV-3f-blf"/>
                         </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
@@ -36,6 +43,7 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="37"/>
                     <connections>
+                        <outlet property="countdownView" destination="iLq-Bn-vmY" id="s58-Mb-ho7"/>
                         <outlet property="tableview" destination="O2F-c0-ZkQ" id="M3G-i0-RU5"/>
                     </connections>
                 </viewController>

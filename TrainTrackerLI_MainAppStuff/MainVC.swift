@@ -55,7 +55,6 @@ class MainController: UIViewController {
       self.navigationController?.navigationBar.barStyle = .black
       
       
-//      tripsTableView.allowsSelection = false
 
    }
 
@@ -155,6 +154,8 @@ extension MainController : UITableViewDelegate {
       let thisDepartureTime = trip.getFirstStopTime()
       
       countDownVC.time = thisDepartureTime
+      
+      dao.setDepartureTime(time: thisDepartureTime)
 
       self.navigationController?.pushViewController(countDownVC, animated: true)
    }

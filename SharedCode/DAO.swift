@@ -72,7 +72,16 @@ public class DAO {
    }
    
    
+   public func getDepartureTime () -> String {
+      
+      return defaults.string(forKey: "departureTime")!
+   }
    
+   public func setDepartureTime(time: String) {
+      
+      defaults.set(time, forKey: "departureTime")
+      
+   }
    public func setStation(active: StationType, station: Station) {
       
       switch active {
