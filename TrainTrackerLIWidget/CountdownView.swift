@@ -14,6 +14,8 @@ class CountdownView: UIView {
    
    var contentView: UIView!
    
+   @IBOutlet weak var backButton: UIButton!
+   
    @IBOutlet weak var countDownLabel: UILabel!
    var nibName: String {
       return String(describing: type(of: self))

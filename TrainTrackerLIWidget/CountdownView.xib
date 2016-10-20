@@ -8,6 +8,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CountdownView" customModule="TrainTrackerLIWidget" customModuleProvider="target">
             <connections>
+                <outlet property="backButton" destination="lIN-ib-w4U" id="4qR-Ra-kAV"/>
                 <outlet property="countDownLabel" destination="1hS-sE-PAe" id="YGq-l8-hFj"/>
             </connections>
         </placeholder>
@@ -21,13 +22,24 @@
                         <constraint firstAttribute="height" constant="75" id="cIH-Yl-GUx"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lIN-ib-w4U">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="34" id="8OL-Mw-LRW"/>
+                        <constraint firstAttribute="height" constant="30" id="tYm-pd-bb4"/>
+                    </constraints>
+                    <state key="normal" title="Back">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
             </subviews>
-            <color key="backgroundColor" red="0.59125328919999998" green="0.77333084249999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="1hS-sE-PAe" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="OlI-uA-gvM"/>
+                <constraint firstItem="lIN-ib-w4U" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="14" id="dxz-6a-PRp"/>
+                <constraint firstItem="lIN-ib-w4U" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="gnm-Kc-AtZ"/>
                 <constraint firstItem="1hS-sE-PAe" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="h6C-67-bUB"/>
                 <constraint firstItem="1hS-sE-PAe" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="hMP-SK-7D1"/>
             </constraints>

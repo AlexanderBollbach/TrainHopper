@@ -21,8 +21,22 @@ class TodayViewController: UIViewController, NCWidgetProviding {
    
    var dataSource = TripsDataSource()
    
+   
+   func backButtonTapped() {
+      
+      dismissCountdown()
+      DAO.sharedInstance.inCountDownMode = false
+   }
+   
+   
+   
    override func viewDidLoad() {
       super.viewDidLoad()
+      
+      countdownView.backButton.addTarget(self, action: #selector(self.backButtonTapped), for: .touchUpInside)
+      
+      
+      
       
       countdownView.isHidden = true
       
@@ -34,7 +48,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
       let nibCell = UINib(nibName: "TripsCell", bundle: Bundle(identifier: "test.SharedCode"))
       tableview.register(nibCell, forCellReuseIdentifier: "TripsCell")
       
-      DAO.sharedInstance.configureData()
+      dao.configureData()
       
       
       self.extensionContext?.widgetLargestAvailableDisplayMode = NCWidgetDisplayMode.expanded
@@ -49,22 +63,13 @@ class TodayViewController: UIViewController, NCWidgetProviding {
    
 
    private func widgetPerformUpdate(completionHandler: ((NCUpdateResult) -> Void)) {
-      // Perform any setup necessary in order to update the view.
-      
-      // If an error is encountered, use NCUpdateResult.Failed
-      // If there's no update required, use NCUpdateResult.NoData
-      // If there's an update, use NCUpdateResult.NewData
-      
+
       completionHandler(NCUpdateResult.newData)
    }
    
    override func viewWillAppear(_ animated: Bool) {
-      
-      
-      print(self.tableview.isHidden)
-      
+
       if DAO.sharedInstance.inCountDownMode {
-         
          showCountdown()
       } else {
          dismissCountdown()
@@ -97,5 +102,32 @@ class TodayViewController: UIViewController, NCWidgetProviding {
          self.preferredContentSize = CGSize(width: maxSize.width, height: tableview.contentSize.height)
       }
    }
+   
+}
+
+
+
+
+extension TodayViewController : UITableViewDelegate {
+   
+   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+      
+
+      
+      let trip = dataSource.dataStore![indexPath.row]
+      
+      let thisDepartureTime = trip.getFirstStopTime()
+      
+     
+      
+      dao.setDepartureTime(time: thisDepartureTime)
+      
+      DAO.sharedInstance.inCountDownMode = true
+      
+      time = dao.getDepartureTime()
+      showCountdown()
+      
+   }
+   
    
 }
