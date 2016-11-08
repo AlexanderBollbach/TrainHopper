@@ -19,6 +19,8 @@
 		2965020D1DB5C14E0050CFE1 /* CountdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2965020C1DB5C14E0050CFE1 /* CountdownView.swift */; };
 		2965020F1DB5C15D0050CFE1 /* CountdownView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2965020E1DB5C15D0050CFE1 /* CountdownView.xib */; };
 		296502101DB5CDCC0050CFE1 /* SharedCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29C8B7F91DA1EDCE00034CEB /* SharedCode.framework */; };
+		298387481DD140050024300E /* StationHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298387471DD140050024300E /* StationHeaderView.swift */; };
+		2983874A1DD140330024300E /* StationHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 298387491DD140330024300E /* StationHeaderView.xib */; };
 		2993AD781DA4522800326076 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2993AD771DA4522800326076 /* MapVC.swift */; };
 		299A987C1D99025D003CD8A7 /* StationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299A987B1D99025D003CD8A7 /* StationButton.swift */; };
 		29A96B411DAEB790005C1041 /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A96B341DAEB790005C1041 /* Context.swift */; };
@@ -106,6 +108,8 @@
 		2965020A1DB311F80050CFE1 /* ABSimpleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ABSimpleButton.swift; sourceTree = "<group>"; };
 		2965020C1DB5C14E0050CFE1 /* CountdownView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountdownView.swift; sourceTree = "<group>"; };
 		2965020E1DB5C15D0050CFE1 /* CountdownView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CountdownView.xib; sourceTree = "<group>"; };
+		298387471DD140050024300E /* StationHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StationHeaderView.swift; sourceTree = "<group>"; };
+		298387491DD140330024300E /* StationHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StationHeaderView.xib; sourceTree = "<group>"; };
 		2993AD771DA4522800326076 /* MapVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
 		299A987B1D99025D003CD8A7 /* StationButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StationButton.swift; sourceTree = "<group>"; };
 		29A96B341DAEB790005C1041 /* Context.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Context.swift; sourceTree = "<group>"; };
@@ -268,6 +272,8 @@
 		29B4A5451DB182FC0057607C /* TrainTrackerLIWidget */ = {
 			isa = PBXGroup;
 			children = (
+				298387471DD140050024300E /* StationHeaderView.swift */,
+				298387491DD140330024300E /* StationHeaderView.xib */,
 				2965020C1DB5C14E0050CFE1 /* CountdownView.swift */,
 				2965020E1DB5C15D0050CFE1 /* CountdownView.xib */,
 				29B4A5511DB1B91E0057607C /* TrainTrackerLIWidget.entitlements */,
@@ -398,6 +404,7 @@
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = 6UUR9483U2;
 						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
@@ -460,6 +467,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2983874A1DD140330024300E /* StationHeaderView.xib in Resources */,
 				2965020F1DB5C15D0050CFE1 /* CountdownView.xib in Resources */,
 				29B4A54A1DB182FC0057607C /* MainInterface.storyboard in Resources */,
 			);
@@ -578,6 +586,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				298387481DD140050024300E /* StationHeaderView.swift in Sources */,
 				2965020D1DB5C14E0050CFE1 /* CountdownView.swift in Sources */,
 				29B4A5471DB182FC0057607C /* TodayViewController.swift in Sources */,
 			);
@@ -693,6 +702,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = TrainTrackerLI_MainAppStuff/MainAppEntitlements.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 6UUR9483U2;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				INFOPLIST_FILE = "$(SRCROOT)/TrainTrackerLI_MainAppStuff/Info.plist";
