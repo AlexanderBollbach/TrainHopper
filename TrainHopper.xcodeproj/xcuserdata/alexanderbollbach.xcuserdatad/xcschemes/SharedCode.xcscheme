@@ -17,7 +17,7 @@
                BlueprintIdentifier = "29C8B7F81DA1EDCE00034CEB"
                BuildableName = "SharedCode.framework"
                BlueprintName = "SharedCode"
-               ReferencedContainer = "container:TrainTrackerLI.xcodeproj">
+               ReferencedContainer = "container:TrainHopper.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -48,7 +48,7 @@
             BlueprintIdentifier = "29C8B7F81DA1EDCE00034CEB"
             BuildableName = "SharedCode.framework"
             BlueprintName = "SharedCode"
-            ReferencedContainer = "container:TrainTrackerLI.xcodeproj">
+            ReferencedContainer = "container:TrainHopper.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -66,7 +66,7 @@
             BlueprintIdentifier = "29C8B7F81DA1EDCE00034CEB"
             BuildableName = "SharedCode.framework"
             BlueprintName = "SharedCode"
-            ReferencedContainer = "container:TrainTrackerLI.xcodeproj">
+            ReferencedContainer = "container:TrainHopper.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

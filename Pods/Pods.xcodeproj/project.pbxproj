@@ -7,57 +7,57 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		052870E588CC5E025C9CBA01D8F0A2F6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DA24BE23AC14FEFB14D3D531FC4CAD0 /* Foundation.framework */; };
-		17948E9CBF90CB7B7DA2EEBE36DF79BA /* SimpleButtonStateChangeValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3284A67CEA24EA35DEF58A72CB3FC70A /* SimpleButtonStateChangeValue.swift */; };
-		197A52ADC887DEA69F9CD32F66DC8AAB /* CoverVerticalFromTopAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE9FB2F2F2F1535E21E539235D93A40 /* CoverVerticalFromTopAnimation.swift */; };
-		1B4ED9CAD24DEEA6FE3E08954C5FDC42 /* Pods-TrainTrackerLIMainApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 02B79B4C34ABBB6ABDEB7AE7A36DC946 /* Pods-TrainTrackerLIMainApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1471880D8B4DE9F12A770858506F8C5D /* Presentr+Equatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C01CCF2299E73CE58DB76E92DB4FDF0 /* Presentr+Equatable.swift */; };
+		15BA837213FA0FA9C946E75325DB71D7 /* SimpleButtonStateChangeValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3284A67CEA24EA35DEF58A72CB3FC70A /* SimpleButtonStateChangeValue.swift */; };
+		164914949339F8711761813BD127D8DA /* Pods-TrainHopperMainApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C640E9C6C951539A330990DD52720DC /* Pods-TrainHopperMainApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1747CF7B647B0ACFF1CE30A7BDBD367B /* Presentr-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 00E4F8A3B5BB037BC834D5A287B17E6B /* Presentr-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B3393A3F78BEA1082C5D05B6F238A60 /* SimpleButtonControlState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5211F88018BFD80380EBD74EC8191B65 /* SimpleButtonControlState.swift */; };
+		1BE106402125F685963BBA1E707DA398 /* PresentrAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1F3C375C53BB789552D2F7E5695913 /* PresentrAnimation.swift */; };
 		1F812A95D45B384D5F672EA4FDC9CEBD /* MMWormholeCoordinatedFileTransiting.m in Sources */ = {isa = PBXBuildFile; fileRef = B46019CA3131AD4C44714EFFD276638D /* MMWormholeCoordinatedFileTransiting.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		207E12713F1A60042A72A08CF5E6F3C3 /* Pods-SharedCode-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 909F2430BAB78E652D08D108D4390379 /* Pods-SharedCode-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		21EC83EEEA2CFF32D39CE19F1F9D15BD /* Presentr-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 00E4F8A3B5BB037BC834D5A287B17E6B /* Presentr-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		207E12713F1A60042A72A08CF5E6F3C3 /* Pods-SharedCode-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 969B1566D1B768C29398969C824EE3CE /* Pods-SharedCode-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23EF25B8C489E64BBBE4B7F90F3D28BF /* Alert.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA32BA47B7E12B4C3549E8666E6121A2 /* Alert.xib */; };
+		271C017960665B5C501B48DF5F3574DE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DA24BE23AC14FEFB14D3D531FC4CAD0 /* Foundation.framework */; };
 		2952EC4B4F91D4C930FE7477560EBE02 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DA24BE23AC14FEFB14D3D531FC4CAD0 /* Foundation.framework */; };
 		33618BBEB40ED0B04402BD45D0A12D96 /* MMWormholeSessionMessageTransiting.h in Headers */ = {isa = PBXBuildFile; fileRef = D259AB88E3FA29D4F40DEAD9457AC849 /* MMWormholeSessionMessageTransiting.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3B56BA6C160AE313801CE57A99859B84 /* ModalSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C059F467302BF43E295B2FA7381E4A /* ModalSize.swift */; };
-		3DD53F28D412641A6B2DA432CC4E0264 /* SourceSansPro-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3A97C7440A59BE748727235D1CD369F3 /* SourceSansPro-Regular.ttf */; };
-		3EFB25C3B517C9CE831B5C9D78153578 /* SimpleButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B51000BF4E4179503BC16E7B7B54D79 /* SimpleButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3DC9E50B1BBF12C1A828C58BCC98226C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DA24BE23AC14FEFB14D3D531FC4CAD0 /* Foundation.framework */; };
+		3EC386CB73B4559F9E0206954917D49A /* Pods-TrainHopperWidget-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D81AAD6A69C8E79714AD2A5FE2423469 /* Pods-TrainHopperWidget-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3EC425CFEB3C187873589BDE385E120F /* Presentr-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD650C391DFC63A390046EFFDA4F7BF /* Presentr-dummy.m */; };
 		45D865CB1822646EFC53BFA48FC4A0B4 /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF3B1598234AEC6BA60EC23B764B4E8A /* WatchConnectivity.framework */; };
-		488A0806123D7F6D35E65486BD18D956 /* Pods-TrainTrackerLIMainApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 86A61313C294F9F99C87F3B51C81E891 /* Pods-TrainTrackerLIMainApp-dummy.m */; };
-		48DB220535908A7C9FA483EA2E5AF483 /* PresentationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E828DD1FBA066A78B2E764C908EF0A /* PresentationType.swift */; };
 		4A08908A4095F87DD84584F9124616CD /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FF68187AABBA1A940E3D13345537F6A /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4A4280DAA38818A454D5DC77CD85000F /* PresentrController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A996376B8075F41FD323F83C885A80A9 /* PresentrController.swift */; };
-		4B6089078CEF896180C1DE853201DD97 /* TransitionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D047A41B94A3A6848609911ECC2AA07 /* TransitionType.swift */; };
-		56DF7D8FC96FCAB2356050D5DADF5CB6 /* Presentr+Equatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C01CCF2299E73CE58DB76E92DB4FDF0 /* Presentr+Equatable.swift */; };
+		4C754A3F56647E2CEE8521784F905A4E /* Pods-TrainHopperMainApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 228F73AEA922E15C1B34C7A0C5920465 /* Pods-TrainHopperMainApp-dummy.m */; };
+		55EFBCD897325FCF0079C8D6D2AFAD22 /* SimpleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAA6F05A974B943215B375FE32B5CE3 /* SimpleButton.swift */; };
 		5716A59EE4EAEF8945A1D8A1684AEE17 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6938A488BBC1E86C1F237D4FF4DE8B7 /* SwiftyJSON.swift */; };
-		627A3ABA2D5D4BD94844C0AB529E57D5 /* PresentrAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1F3C375C53BB789552D2F7E5695913 /* PresentrAnimation.swift */; };
+		5C5ADA076C1134339253772BE9F3C31D /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 253245A8880510050ABFBE8BD8266505 /* Montserrat-Regular.ttf */; };
 		64EFFD28CE03D338816716C8C78AF78D /* MMWormholeSessionFileTransiting.m in Sources */ = {isa = PBXBuildFile; fileRef = D9DDE0619D53D2F97E23F1257A758CB5 /* MMWormholeSessionFileTransiting.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		654A79CEA76C0FAAF0804D84778E6DE7 /* Presentr.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3323FB7E22430CABB75BD2A6E3C8DED /* Presentr.swift */; };
 		762F18A4394FA15213070BDF993A2B48 /* MMWormholeFileTransiting.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D6AD76A2E7A2D17DD734CECC2B3353C /* MMWormholeFileTransiting.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7B79877B10AA12C8A70B7854AB83187F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DA24BE23AC14FEFB14D3D531FC4CAD0 /* Foundation.framework */; };
+		7F5C4DAB1C1DD232AB3D509807D104E6 /* PresentrController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A996376B8075F41FD323F83C885A80A9 /* PresentrController.swift */; };
 		84B37CAEC1716055BEA3DA3795BC8A3C /* MMWormholeCoordinatedFileTransiting.h in Headers */ = {isa = PBXBuildFile; fileRef = 377484985CFE208B1EA0F2F1FE240CC0 /* MMWormholeCoordinatedFileTransiting.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		87EAF37C261ED7C7AC2CF3A0E1245734 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DA24BE23AC14FEFB14D3D531FC4CAD0 /* Foundation.framework */; };
 		8CA202DE2B82A4FA9F6433D0034EA12E /* MMWormholeSession.h in Headers */ = {isa = PBXBuildFile; fileRef = 4523CCD891F01B5FE5487CA9281A0B42 /* MMWormholeSession.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		928281D1F20C4180E4BBC145149A3948 /* Pods-SharedCode-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 33EE9F779A6815B707CEA55E7FE60C96 /* Pods-SharedCode-dummy.m */; };
+		928281D1F20C4180E4BBC145149A3948 /* Pods-SharedCode-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FCF1DDE3CE9731BE719379D7CFD9145 /* Pods-SharedCode-dummy.m */; };
+		95F870C5DC68F1AFB828FBF466FD32F6 /* CoverVerticalFromTopAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE9FB2F2F2F1535E21E539235D93A40 /* CoverVerticalFromTopAnimation.swift */; };
 		97BD31BB166AC5135ED7232E94EFF9C8 /* MMWormholeSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AA2F9A0BAC16CA5688968974D849928 /* MMWormholeSession.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		A6C7F8D036C5C62DBA536EAB77F44794 /* CoverHorizontalAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E59344E6A596A0AB7F34D8B3401F82 /* CoverHorizontalAnimation.swift */; };
-		A93E581C490795609EEC23011803CE42 /* Alert.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA32BA47B7E12B4C3549E8666E6121A2 /* Alert.xib */; };
+		AE685B24A74D94634C8AFC3B2F60F27A /* SimpleButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B0B2D3620E70BFD5C71035076F0F57 /* SimpleButton-dummy.m */; };
 		B07198FCDB0B6AA461872F1299CD9FCB /* MMWormholeFileTransiting.m in Sources */ = {isa = PBXBuildFile; fileRef = 736FCAD5F9A474A3CE0131124188A9F2 /* MMWormholeFileTransiting.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		B8E60760FF0E4F33DA336881A9EB2D89 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DA24BE23AC14FEFB14D3D531FC4CAD0 /* Foundation.framework */; };
-		B8F1E3985FB742ED0ACEDF5EC9BBF89D /* SimpleButtonControlState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5211F88018BFD80380EBD74EC8191B65 /* SimpleButtonControlState.swift */; };
-		CB89EAB25B059534E4D8863EA73AA06D /* Pods-TrainTrackerLIExtension-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F68D39738549B9D39F3C291C36B6A5DD /* Pods-TrainTrackerLIExtension-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C4D4C1546C0CCA7A4CA0CBD41B2FCE14 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DA24BE23AC14FEFB14D3D531FC4CAD0 /* Foundation.framework */; };
 		CC31FA025B3936FEC27592CC01AC4A5F /* MMWormholeSessionFileTransiting.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C5987955A145BC2B7DE9F9B88034811 /* MMWormholeSessionFileTransiting.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CCA3E5F402CB210B69551F68FC310517 /* SimpleButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B0B2D3620E70BFD5C71035076F0F57 /* SimpleButton-dummy.m */; };
+		CC816A838D6BB7E50101EF2FF5B24F3F /* ModalSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C059F467302BF43E295B2FA7381E4A /* ModalSize.swift */; };
 		CD950B25309BFA15E20AD528F8EC7CBA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DA24BE23AC14FEFB14D3D531FC4CAD0 /* Foundation.framework */; };
-		CDAB9011E2B8E1F58BC11C1B6C3B3829 /* Pods-TrainTrackerLIExtension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B5BE76CA7F42CD7FF0018F2973761B1 /* Pods-TrainTrackerLIExtension-dummy.m */; };
 		D06E287165536614B66FA045D8A5D99A /* MMWormholeTransiting.h in Headers */ = {isa = PBXBuildFile; fileRef = 87D6287A6B29E2D7CBCBDD5D293B89E2 /* MMWormholeTransiting.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D4F8C67A68C15AD4D4D32DA902E85C70 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DA24BE23AC14FEFB14D3D531FC4CAD0 /* Foundation.framework */; };
-		DE6F2F6F62A830AD9FBE97CDC5997842 /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36512F1A4421EFF02490F1B9E8B22BB1 /* AlertViewController.swift */; };
+		D1DC09F7BFC17E6F98D0C1EEFBDBD2B5 /* CoverHorizontalAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E59344E6A596A0AB7F34D8B3401F82 /* CoverHorizontalAnimation.swift */; };
+		D6072EBD13895C7C21B58DDFA9F9A0E5 /* SourceSansPro-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3A97C7440A59BE748727235D1CD369F3 /* SourceSansPro-Regular.ttf */; };
+		D9B5CBE0B17BDF0BE1DF0013ED7DCE36 /* SimpleButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B51000BF4E4179503BC16E7B7B54D79 /* SimpleButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DA43CE93815F59992EC200143BE3777F /* PresentationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E828DD1FBA066A78B2E764C908EF0A /* PresentationType.swift */; };
 		DE9D89BFECB559F825F1BC2506FB1695 /* MMWormhole.h in Headers */ = {isa = PBXBuildFile; fileRef = 93323C15FD07117241888AE0EA4CE5EF /* MMWormhole.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DFEEABC8C678127F23965CE3AE4B9F67 /* MMWormholeSessionContextTransiting.h in Headers */ = {isa = PBXBuildFile; fileRef = 96D5F2E3351B6B07786E2FE8FAE809F8 /* MMWormholeSessionContextTransiting.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E166EFE1A08F4455B15860A3155E2B73 /* Presentr-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD650C391DFC63A390046EFFDA4F7BF /* Presentr-dummy.m */; };
-		E393936B1F0FC44EB0DC1BD8A96C6104 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 253245A8880510050ABFBE8BD8266505 /* Montserrat-Regular.ttf */; };
-		E5D50AA36D46DA8F84959D2B2579A396 /* Presentr.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3323FB7E22430CABB75BD2A6E3C8DED /* Presentr.swift */; };
-		F15E2901BB0FA43CABC3AB700C9869D3 /* ModalCenterPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FA8C8592398B0A88F6F823FC7AB239 /* ModalCenterPosition.swift */; };
+		E51CA77138D1D4631FA78B849FD4DCAA /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36512F1A4421EFF02490F1B9E8B22BB1 /* AlertViewController.swift */; };
+		F0A4EDD8D3F2E2E94895CF44B97744FC /* ModalCenterPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FA8C8592398B0A88F6F823FC7AB239 /* ModalCenterPosition.swift */; };
 		F282E18AB7B7C15A6720E35FEB5B8502 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DA24BE23AC14FEFB14D3D531FC4CAD0 /* Foundation.framework */; };
 		F28EF7D3C012AC50EDDE43EA5040B279 /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 71B6326ABA877B6E2171F2431C665959 /* SwiftyJSON-dummy.m */; };
+		F3ACECC32B7218538CE6FDEBD1FB3FA6 /* Pods-TrainHopperWidget-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A36FC10B49C0925CBD07F5E0D6A462CF /* Pods-TrainHopperWidget-dummy.m */; };
+		F3CACE28A6853DF69257F5901DBE5242 /* TransitionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D047A41B94A3A6848609911ECC2AA07 /* TransitionType.swift */; };
 		F3E82A13FF8E6373C29FCB6C70B9CA14 /* MMWormholeSessionContextTransiting.m in Sources */ = {isa = PBXBuildFile; fileRef = 6483860E677F647F38AD8FC3BC31B95D /* MMWormholeSessionContextTransiting.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		F86EEAFBBB840463A8F36CB6B456FB27 /* SimpleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAA6F05A974B943215B375FE32B5CE3 /* SimpleButton.swift */; };
 		F8D371C19203C82CAE29F749C845484A /* MMWormhole.m in Sources */ = {isa = PBXBuildFile; fileRef = 06FB8F64C3E6AF44E435CEC4CDA0240B /* MMWormhole.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		FC0CF3F2978060186204610D8D21DB9C /* MMWormhole-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 90BA7654E33694DD3591B2DE6AFF7748 /* MMWormhole-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FD8C3A12053BBFE6526E99CF6FD0B9C0 /* MMWormhole-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A50C2CE2FDEDFE74304C72303C35F423 /* MMWormhole-dummy.m */; };
@@ -65,35 +65,21 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2D4B8C198777E17538806351EEB9C985 /* PBXContainerItemProxy */ = {
+		2B96AD74CA0522D0DFB50595461318C5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = DA2550D7D94491C4B4EA8F3435FEEC4B;
 			remoteInfo = MMWormhole;
 		};
-		2D810B1352DD2094518463127A9E7C23 /* PBXContainerItemProxy */ = {
+		5693885AD23D3669D00AF835BB863B94 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = C320C9070D08D91766DD70B2E3928FDF;
-			remoteInfo = SwiftyJSON;
+			remoteGlobalIDString = 25DC7C766E111847578FE2E4E3CF5AA2;
+			remoteInfo = Presentr;
 		};
-		6D96C8CD8FEE6B3CC2A38BF50E32A95E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C320C9070D08D91766DD70B2E3928FDF;
-			remoteInfo = SwiftyJSON;
-		};
-		6F5DA1A5AB5040C4FA492A863AFEEED2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D59BE930E11583486B5DFD3A9708C7A7;
-			remoteInfo = SimpleButton;
-		};
-		8009CC7ADC2D638C5F79D2B36D8D644D /* PBXContainerItemProxy */ = {
+		95928EFDB95BC07CBDA0C80228BEB72E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
@@ -107,126 +93,140 @@
 			remoteGlobalIDString = C320C9070D08D91766DD70B2E3928FDF;
 			remoteInfo = SwiftyJSON;
 		};
-		ACAE6741C814837B2032BEC3EA2BBBDB /* PBXContainerItemProxy */ = {
+		9DE32E6C3D753234999D808257AB1454 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = D59BE930E11583486B5DFD3A9708C7A7;
+			remoteGlobalIDString = C320C9070D08D91766DD70B2E3928FDF;
+			remoteInfo = SwiftyJSON;
+		};
+		B01A49E405F2E85435F15BF4281A8A40 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C320C9070D08D91766DD70B2E3928FDF;
+			remoteInfo = SwiftyJSON;
+		};
+		C2CF11B8414E5615BD3ACEC2ADD4EC6F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B3D9C70AEB5DC70389AE82B74E455FC3;
 			remoteInfo = SimpleButton;
 		};
-		CD1B9747270AD9A23E27F4222C5D6BDA /* PBXContainerItemProxy */ = {
+		F8EFE9CDB16C9E519574DAC1E1A152A0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = D4FDD27151731821150A04BDF69B285C;
-			remoteInfo = Presentr;
+			remoteGlobalIDString = B3D9C70AEB5DC70389AE82B74E455FC3;
+			remoteInfo = SimpleButton;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		00E4F8A3B5BB037BC834D5A287B17E6B /* Presentr-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Presentr-umbrella.h"; sourceTree = "<group>"; };
-		0157FC6D6DB838E9D33A92C807A2E9C7 /* Pods-TrainTrackerLIMainApp-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TrainTrackerLIMainApp-resources.sh"; sourceTree = "<group>"; };
-		01C4A7EB4CCE7EB626CBC37C2AF1FCF9 /* Pods-SharedCode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SharedCode.release.xcconfig"; sourceTree = "<group>"; };
-		020599637DFAE4102C14F46FF4082EC9 /* Pods-TrainTrackerLIMainApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TrainTrackerLIMainApp-frameworks.sh"; sourceTree = "<group>"; };
-		02B79B4C34ABBB6ABDEB7AE7A36DC946 /* Pods-TrainTrackerLIMainApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TrainTrackerLIMainApp-umbrella.h"; sourceTree = "<group>"; };
 		06FB8F64C3E6AF44E435CEC4CDA0240B /* MMWormhole.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMWormhole.m; path = Source/MMWormhole.m; sourceTree = "<group>"; };
 		0C5987955A145BC2B7DE9F9B88034811 /* MMWormholeSessionFileTransiting.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMWormholeSessionFileTransiting.h; path = Source/MMWormholeSessionFileTransiting.h; sourceTree = "<group>"; };
-		0CC5662F56FDB6DDE653D3EFE4BC98A9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0D6AD76A2E7A2D17DD734CECC2B3353C /* MMWormholeFileTransiting.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMWormholeFileTransiting.h; path = Source/MMWormholeFileTransiting.h; sourceTree = "<group>"; };
-		134942B1C13A7FA808CBFAD318183CFA /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		19F875020DC95F58793EAECC9F7DAC21 /* Presentr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Presentr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1CC5FFC77EDDBFFDF7BDF8649C9CBD58 /* Pods-TrainTrackerLIExtension-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TrainTrackerLIExtension-resources.sh"; sourceTree = "<group>"; };
-		1E65011E88BAC30004F2FEC5B998B1DB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F6F6616F3F0EEE900B6C23B03858348 /* Pods-TrainHopperWidget.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TrainHopperWidget.release.xcconfig"; sourceTree = "<group>"; };
+		18B2A45A38EDC0E34B7AA13C4BA5C48A /* Pods-SharedCode-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SharedCode-acknowledgements.plist"; sourceTree = "<group>"; };
+		1A9E7F3FB7B9ABD75DD93C6C132E3B50 /* Pods-TrainHopperMainApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TrainHopperMainApp-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1BA223382EFA8128DB2FE688C1B475CB /* Pods_SharedCode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SharedCode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DE1C6C9BD6A44E6C746E5D79F1720E5 /* Pods-TrainHopperMainApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TrainHopperMainApp.release.xcconfig"; sourceTree = "<group>"; };
+		228F73AEA922E15C1B34C7A0C5920465 /* Pods-TrainHopperMainApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TrainHopperMainApp-dummy.m"; sourceTree = "<group>"; };
 		24E07E745303D956B200AD6A1FE37D86 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
 		253245A8880510050ABFBE8BD8266505 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = "Montserrat-Regular.ttf"; path = "Presentr/Montserrat-Regular.ttf"; sourceTree = "<group>"; };
-		2CD06965D18F3D434806A0FB66A704C4 /* Pods-TrainTrackerLIExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TrainTrackerLIExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		28A238F06972A1E474678F0E757B3F33 /* Pods-TrainHopperMainApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TrainHopperMainApp.debug.xcconfig"; sourceTree = "<group>"; };
 		2EAA6F05A974B943215B375FE32B5CE3 /* SimpleButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SimpleButton.swift; path = SimpleButton/SimpleButton.swift; sourceTree = "<group>"; };
 		2FF68187AABBA1A940E3D13345537F6A /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
 		3284A67CEA24EA35DEF58A72CB3FC70A /* SimpleButtonStateChangeValue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SimpleButtonStateChangeValue.swift; path = SimpleButton/SimpleButtonStateChangeValue.swift; sourceTree = "<group>"; };
-		33EE9F779A6815B707CEA55E7FE60C96 /* Pods-SharedCode-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SharedCode-dummy.m"; sourceTree = "<group>"; };
+		3586BDC0B7C955B5D342AF735FC1410B /* Pods-TrainHopperWidget-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TrainHopperWidget-resources.sh"; sourceTree = "<group>"; };
 		36512F1A4421EFF02490F1B9E8B22BB1 /* AlertViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlertViewController.swift; path = Presentr/AlertViewController.swift; sourceTree = "<group>"; };
 		3696291FEBE50FF91FEA3D451A66D60F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		377484985CFE208B1EA0F2F1FE240CC0 /* MMWormholeCoordinatedFileTransiting.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMWormholeCoordinatedFileTransiting.h; path = Source/MMWormholeCoordinatedFileTransiting.h; sourceTree = "<group>"; };
 		3A97C7440A59BE748727235D1CD369F3 /* SourceSansPro-Regular.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = "SourceSansPro-Regular.ttf"; path = "Presentr/SourceSansPro-Regular.ttf"; sourceTree = "<group>"; };
-		3AF0FCB8A87B29A3102F8F240A290A6D /* Pods-SharedCode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SharedCode.debug.xcconfig"; sourceTree = "<group>"; };
-		3B5BE76CA7F42CD7FF0018F2973761B1 /* Pods-TrainTrackerLIExtension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TrainTrackerLIExtension-dummy.m"; sourceTree = "<group>"; };
-		3DE0060D1E66A7BEB0C5A0E1B5A76E92 /* Pods-TrainTrackerLIExtension-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TrainTrackerLIExtension-acknowledgements.plist"; sourceTree = "<group>"; };
+		3BECE152EC6D5EA9090EA0814FAB97FA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		42C059F467302BF43E295B2FA7381E4A /* ModalSize.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ModalSize.swift; path = Presentr/ModalSize.swift; sourceTree = "<group>"; };
-		42E8233282A49191640A68B3EA35A305 /* Pods-SharedCode.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SharedCode.modulemap"; sourceTree = "<group>"; };
 		4523CCD891F01B5FE5487CA9281A0B42 /* MMWormholeSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMWormholeSession.h; path = Source/MMWormholeSession.h; sourceTree = "<group>"; };
-		49A8C67B4A2EDDB632C35DBA8EFD5E32 /* Pods-TrainTrackerLIExtension-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TrainTrackerLIExtension-acknowledgements.markdown"; sourceTree = "<group>"; };
+		48C1B01E7ED260FD223891073E0488DF /* Pods-TrainHopperWidget-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TrainHopperWidget-acknowledgements.plist"; sourceTree = "<group>"; };
 		4A1FB6E7A365C84B1B1CDFD599359A3C /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
+		4BA537C75A58221C85184DCA7405776B /* Pods-TrainHopperWidget-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TrainHopperWidget-acknowledgements.markdown"; sourceTree = "<group>"; };
 		4C01CCF2299E73CE58DB76E92DB4FDF0 /* Presentr+Equatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Presentr+Equatable.swift"; path = "Presentr/Presentr+Equatable.swift"; sourceTree = "<group>"; };
+		4D6C603A39515A8F36989629C01E7B15 /* Pods-SharedCode-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SharedCode-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4DBBF1C10FFB59C1B1C93F14419B9CA7 /* Pods-TrainHopperWidget.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-TrainHopperWidget.modulemap"; sourceTree = "<group>"; };
+		5052F9E56C83C3158296FD70FEBDE4DC /* Pods-SharedCode.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SharedCode.modulemap"; sourceTree = "<group>"; };
 		50E828DD1FBA066A78B2E764C908EF0A /* PresentationType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PresentationType.swift; path = Presentr/PresentationType.swift; sourceTree = "<group>"; };
 		5211F88018BFD80380EBD74EC8191B65 /* SimpleButtonControlState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SimpleButtonControlState.swift; path = SimpleButton/SimpleButtonControlState.swift; sourceTree = "<group>"; };
 		5418F76F9901311AFD0ECD7C4BED8326 /* MMWormhole-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MMWormhole-prefix.pch"; sourceTree = "<group>"; };
+		54BF4D22B9FC7B0892F1DBA52C3C72D9 /* Pods-TrainHopperMainApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-TrainHopperMainApp.modulemap"; sourceTree = "<group>"; };
 		5B51000BF4E4179503BC16E7B7B54D79 /* SimpleButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SimpleButton-umbrella.h"; sourceTree = "<group>"; };
 		5D047A41B94A3A6848609911ECC2AA07 /* TransitionType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransitionType.swift; path = Presentr/TransitionType.swift; sourceTree = "<group>"; };
 		5D1F3C375C53BB789552D2F7E5695913 /* PresentrAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PresentrAnimation.swift; path = Presentr/PresentrAnimation.swift; sourceTree = "<group>"; };
+		5F83B5A6F28AF744E398A1A004CE7425 /* Presentr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Presentr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6483860E677F647F38AD8FC3BC31B95D /* MMWormholeSessionContextTransiting.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMWormholeSessionContextTransiting.m; path = Source/MMWormholeSessionContextTransiting.m; sourceTree = "<group>"; };
+		6596540822F9F2D8B6532C16C9E5BBA5 /* Pods-TrainHopperWidget.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TrainHopperWidget.debug.xcconfig"; sourceTree = "<group>"; };
 		6DA24BE23AC14FEFB14D3D531FC4CAD0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		70FA8C8592398B0A88F6F823FC7AB239 /* ModalCenterPosition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ModalCenterPosition.swift; path = Presentr/ModalCenterPosition.swift; sourceTree = "<group>"; };
 		71B6326ABA877B6E2171F2431C665959 /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
 		736FCAD5F9A474A3CE0131124188A9F2 /* MMWormholeFileTransiting.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMWormholeFileTransiting.m; path = Source/MMWormholeFileTransiting.m; sourceTree = "<group>"; };
-		76BF4C95AB2AF2646334FD13448352EA /* Pods_TrainTrackerLIExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrainTrackerLIExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		77DBEF89375100438E0435CCF7CC74C9 /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
 		79C6E44E82F220D9DD14536F0D0D9788 /* SimpleButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SimpleButton.modulemap; sourceTree = "<group>"; };
-		7F14D3194C17C322D9067599D375CAB4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		847BA26354528BB16F921779CFCE7CB0 /* Pods-TrainTrackerLIMainApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TrainTrackerLIMainApp-acknowledgements.plist"; sourceTree = "<group>"; };
-		86A61313C294F9F99C87F3B51C81E891 /* Pods-TrainTrackerLIMainApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TrainTrackerLIMainApp-dummy.m"; sourceTree = "<group>"; };
+		7E597E022A1642CDA76E748898BBB9B2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		87D6287A6B29E2D7CBCBDD5D293B89E2 /* MMWormholeTransiting.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMWormholeTransiting.h; path = Source/MMWormholeTransiting.h; sourceTree = "<group>"; };
 		897C5AF7C8C2534DF75FEEADBD7C27A0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		89C9F2B36B3EA64353D67BD35B9FFA3D /* Pods-SharedCode-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SharedCode-resources.sh"; sourceTree = "<group>"; };
+		8A112CDB8485A341986413D2C08D9A0C /* Pods-TrainHopperMainApp-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TrainHopperMainApp-resources.sh"; sourceTree = "<group>"; };
 		8CD020D767DD2A1CADE718ADEB3161BB /* SimpleButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SimpleButton-prefix.pch"; sourceTree = "<group>"; };
 		908F37A86259317E0EC467E79C59C98F /* Presentr-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Presentr-prefix.pch"; sourceTree = "<group>"; };
-		909F2430BAB78E652D08D108D4390379 /* Pods-SharedCode-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SharedCode-umbrella.h"; sourceTree = "<group>"; };
 		90BA7654E33694DD3591B2DE6AFF7748 /* MMWormhole-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MMWormhole-umbrella.h"; sourceTree = "<group>"; };
-		90FE8B9E2A0B8B8C49F8BBA3D6FFC7E4 /* Pods_TrainTrackerLIMainApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrainTrackerLIMainApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		91D72C554B094F30F8FC1B402F78896E /* Pods-TrainHopperMainApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TrainHopperMainApp-frameworks.sh"; sourceTree = "<group>"; };
+		91DFFAD6C699CC2E5817356534865E5F /* Pods-TrainHopperMainApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TrainHopperMainApp-acknowledgements.plist"; sourceTree = "<group>"; };
 		93323C15FD07117241888AE0EA4CE5EF /* MMWormhole.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMWormhole.h; path = Source/MMWormhole.h; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		93BE27B477873128ABDA12213566EB75 /* Pods-TrainTrackerLIMainApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TrainTrackerLIMainApp.release.xcconfig"; sourceTree = "<group>"; };
 		93E59344E6A596A0AB7F34D8B3401F82 /* CoverHorizontalAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoverHorizontalAnimation.swift; path = Presentr/CoverHorizontalAnimation.swift; sourceTree = "<group>"; };
+		969B1566D1B768C29398969C824EE3CE /* Pods-SharedCode-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SharedCode-umbrella.h"; sourceTree = "<group>"; };
 		96D5F2E3351B6B07786E2FE8FAE809F8 /* MMWormholeSessionContextTransiting.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMWormholeSessionContextTransiting.h; path = Source/MMWormholeSessionContextTransiting.h; sourceTree = "<group>"; };
-		98A1F17B99D623BB4D88A65D2F35F7CD /* Pods-TrainTrackerLIExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TrainTrackerLIExtension.release.xcconfig"; sourceTree = "<group>"; };
+		9719347051C55957683AF68622A023E8 /* Pods-SharedCode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SharedCode.release.xcconfig"; sourceTree = "<group>"; };
 		9903A435DD2A90D9F1B677EB4AE865B1 /* Presentr.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Presentr.xcconfig; sourceTree = "<group>"; };
 		993E0561240033C3DF4DB5FA0F7D1894 /* MMWormholeSessionMessageTransiting.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMWormholeSessionMessageTransiting.m; path = Source/MMWormholeSessionMessageTransiting.m; sourceTree = "<group>"; };
 		99B67393FCDC720DE8B9DB42E6B9354C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9AA2F9A0BAC16CA5688968974D849928 /* MMWormholeSession.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMWormholeSession.m; path = Source/MMWormholeSession.m; sourceTree = "<group>"; };
-		9AE29EE6892C50AC0AF731466DF1FEDC /* Pods-TrainTrackerLIExtension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-TrainTrackerLIExtension.modulemap"; sourceTree = "<group>"; };
+		9B786218888CEB515C814D2E9550EC04 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C640E9C6C951539A330990DD52720DC /* Pods-TrainHopperMainApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TrainHopperMainApp-umbrella.h"; sourceTree = "<group>"; };
 		9DE9FB2F2F2F1535E21E539235D93A40 /* CoverVerticalFromTopAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoverVerticalFromTopAnimation.swift; path = Presentr/CoverVerticalFromTopAnimation.swift; sourceTree = "<group>"; };
-		9F568E5308EB2EEDB7F17FFFA2400994 /* SimpleButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SimpleButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FCF1DDE3CE9731BE719379D7CFD9145 /* Pods-SharedCode-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SharedCode-dummy.m"; sourceTree = "<group>"; };
+		A26A36CA962BD3E29D414FC070B99759 /* Pods_TrainHopperMainApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrainHopperMainApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A36FC10B49C0925CBD07F5E0D6A462CF /* Pods-TrainHopperWidget-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TrainHopperWidget-dummy.m"; sourceTree = "<group>"; };
 		A484AF40A05D82F6BCEACF1C467E2BF7 /* MMWormhole.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MMWormhole.xcconfig; sourceTree = "<group>"; };
 		A50C2CE2FDEDFE74304C72303C35F423 /* MMWormhole-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MMWormhole-dummy.m"; sourceTree = "<group>"; };
 		A996376B8075F41FD323F83C885A80A9 /* PresentrController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PresentrController.swift; path = Presentr/PresentrController.swift; sourceTree = "<group>"; };
-		ABDC745A83F284BDEFA1108E8DF82022 /* Pods-TrainTrackerLIMainApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-TrainTrackerLIMainApp.modulemap"; sourceTree = "<group>"; };
+		A9BEA324BEE0A48519D4EEDC703C75E2 /* SimpleButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SimpleButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B46019CA3131AD4C44714EFFD276638D /* MMWormholeCoordinatedFileTransiting.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMWormholeCoordinatedFileTransiting.m; path = Source/MMWormholeCoordinatedFileTransiting.m; sourceTree = "<group>"; };
 		B57288AF21FEFDF46231B82EEDB9595B /* SimpleButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SimpleButton.xcconfig; sourceTree = "<group>"; };
-		BFE795C52C604C190487E77A53B5B022 /* Pods-TrainTrackerLIMainApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TrainTrackerLIMainApp.debug.xcconfig"; sourceTree = "<group>"; };
+		B5B84D28F0A3999028A1B26AF7739143 /* Pods_TrainHopperWidget.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrainHopperWidget.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5F24B7743EAA2D12AB01980F843F23B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C6938A488BBC1E86C1F237D4FF4DE8B7 /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
 		CA32BA47B7E12B4C3549E8666E6121A2 /* Alert.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = Alert.xib; path = Presentr/Alert.xib; sourceTree = "<group>"; };
 		CF3B1598234AEC6BA60EC23B764B4E8A /* WatchConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchConnectivity.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/WatchConnectivity.framework; sourceTree = DEVELOPER_DIR; };
 		CF575DE81B57834893626AD7883D29E7 /* Presentr.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Presentr.modulemap; sourceTree = "<group>"; };
+		D00630D607310E38EF4BA54C71C76E59 /* Pods-SharedCode-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SharedCode-resources.sh"; sourceTree = "<group>"; };
 		D259AB88E3FA29D4F40DEAD9457AC849 /* MMWormholeSessionMessageTransiting.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMWormholeSessionMessageTransiting.h; path = Source/MMWormholeSessionMessageTransiting.h; sourceTree = "<group>"; };
 		D3323FB7E22430CABB75BD2A6E3C8DED /* Presentr.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Presentr.swift; path = Presentr/Presentr.swift; sourceTree = "<group>"; };
 		D4B0B2D3620E70BFD5C71035076F0F57 /* SimpleButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SimpleButton-dummy.m"; sourceTree = "<group>"; };
-		D4D18A8686A04E5DE9F2DFFA9C143E2A /* Pods-SharedCode-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SharedCode-acknowledgements.plist"; sourceTree = "<group>"; };
+		D55DF941B2369CAB4663549B1A867528 /* Pods-SharedCode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SharedCode.debug.xcconfig"; sourceTree = "<group>"; };
+		D81AAD6A69C8E79714AD2A5FE2423469 /* Pods-TrainHopperWidget-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TrainHopperWidget-umbrella.h"; sourceTree = "<group>"; };
 		D9DDE0619D53D2F97E23F1257A758CB5 /* MMWormholeSessionFileTransiting.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMWormholeSessionFileTransiting.m; path = Source/MMWormholeSessionFileTransiting.m; sourceTree = "<group>"; };
-		E3670224545C7217CEA40C35252BE070 /* MMWormhole.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MMWormhole.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E5D5D4CC6145CA3FE0517953FEB62517 /* Pods-SharedCode-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SharedCode-acknowledgements.markdown"; sourceTree = "<group>"; };
+		ECCAE62A3FD3223C37D424B6DEAE5532 /* MMWormhole.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MMWormhole.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE892D3ED66F370A54A5FB3584E83F0A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F0A335E04FC0016036D3082DA53F8182 /* Pods_SharedCode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SharedCode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F68D39738549B9D39F3C291C36B6A5DD /* Pods-TrainTrackerLIExtension-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TrainTrackerLIExtension-umbrella.h"; sourceTree = "<group>"; };
 		F809D783EA6FD1A9CD873BD1E10AE395 /* MMWormhole.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = MMWormhole.modulemap; sourceTree = "<group>"; };
 		FCD650C391DFC63A390046EFFDA4F7BF /* Presentr-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Presentr-dummy.m"; sourceTree = "<group>"; };
-		FE7D751218C2981FF140575266D0FDCA /* Pods-TrainTrackerLIMainApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TrainTrackerLIMainApp-acknowledgements.markdown"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0926C90B7F9DDC431242EC09773744F6 /* Frameworks */ = {
+		0D3EF80DE1EC736BA53569F76232CA6F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B8E60760FF0E4F33DA336881A9EB2D89 /* Foundation.framework in Frameworks */,
+				87EAF37C261ED7C7AC2CF3A0E1245734 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,27 +247,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		36610D0E1A38189EE506794B98E73BE5 /* Frameworks */ = {
+		25DBAFD7E2495400F9A8B7A29005C7E4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B79877B10AA12C8A70B7854AB83187F /* Foundation.framework in Frameworks */,
+				271C017960665B5C501B48DF5F3574DE /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		66DB4A44A1C116471C3C314473EC876A /* Frameworks */ = {
+		B0C190A9ABB585BC539B2207E2B2835D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4F8C67A68C15AD4D4D32DA902E85C70 /* Foundation.framework in Frameworks */,
+				C4D4C1546C0CCA7A4CA0CBD41B2FCE14 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7A4C6E2C2BAF906E590C25D066839A45 /* Frameworks */ = {
+		E941D276077F09BBD74C16880C1F033B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				052870E588CC5E025C9CBA01D8F0A2F6 /* Foundation.framework in Frameworks */,
+				3DC9E50B1BBF12C1A828C58BCC98226C /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,22 +282,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		18C9777EA6FB5F3A0E235A4E5A415F46 /* Pods-TrainTrackerLIMainApp */ = {
+		2AD76359AB354EDE0A577593B7EB2F9C /* Pods-TrainHopperWidget */ = {
 			isa = PBXGroup;
 			children = (
-				1E65011E88BAC30004F2FEC5B998B1DB /* Info.plist */,
-				ABDC745A83F284BDEFA1108E8DF82022 /* Pods-TrainTrackerLIMainApp.modulemap */,
-				FE7D751218C2981FF140575266D0FDCA /* Pods-TrainTrackerLIMainApp-acknowledgements.markdown */,
-				847BA26354528BB16F921779CFCE7CB0 /* Pods-TrainTrackerLIMainApp-acknowledgements.plist */,
-				86A61313C294F9F99C87F3B51C81E891 /* Pods-TrainTrackerLIMainApp-dummy.m */,
-				020599637DFAE4102C14F46FF4082EC9 /* Pods-TrainTrackerLIMainApp-frameworks.sh */,
-				0157FC6D6DB838E9D33A92C807A2E9C7 /* Pods-TrainTrackerLIMainApp-resources.sh */,
-				02B79B4C34ABBB6ABDEB7AE7A36DC946 /* Pods-TrainTrackerLIMainApp-umbrella.h */,
-				BFE795C52C604C190487E77A53B5B022 /* Pods-TrainTrackerLIMainApp.debug.xcconfig */,
-				93BE27B477873128ABDA12213566EB75 /* Pods-TrainTrackerLIMainApp.release.xcconfig */,
+				3BECE152EC6D5EA9090EA0814FAB97FA /* Info.plist */,
+				4DBBF1C10FFB59C1B1C93F14419B9CA7 /* Pods-TrainHopperWidget.modulemap */,
+				4BA537C75A58221C85184DCA7405776B /* Pods-TrainHopperWidget-acknowledgements.markdown */,
+				48C1B01E7ED260FD223891073E0488DF /* Pods-TrainHopperWidget-acknowledgements.plist */,
+				A36FC10B49C0925CBD07F5E0D6A462CF /* Pods-TrainHopperWidget-dummy.m */,
+				3586BDC0B7C955B5D342AF735FC1410B /* Pods-TrainHopperWidget-resources.sh */,
+				D81AAD6A69C8E79714AD2A5FE2423469 /* Pods-TrainHopperWidget-umbrella.h */,
+				6596540822F9F2D8B6532C16C9E5BBA5 /* Pods-TrainHopperWidget.debug.xcconfig */,
+				0F6F6616F3F0EEE900B6C23B03858348 /* Pods-TrainHopperWidget.release.xcconfig */,
 			);
-			name = "Pods-TrainTrackerLIMainApp";
-			path = "Target Support Files/Pods-TrainTrackerLIMainApp";
+			name = "Pods-TrainHopperWidget";
+			path = "Target Support Files/Pods-TrainHopperWidget";
 			sourceTree = "<group>";
 		};
 		30869E6C2BC2FA2A6B389A4C2D027AD3 /* SwiftyJSON */ = {
@@ -353,20 +352,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		55E8AF525ACCAFB9BBE55DFFB7C154BB /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				E3670224545C7217CEA40C35252BE070 /* MMWormhole.framework */,
-				F0A335E04FC0016036D3082DA53F8182 /* Pods_SharedCode.framework */,
-				76BF4C95AB2AF2646334FD13448352EA /* Pods_TrainTrackerLIExtension.framework */,
-				90FE8B9E2A0B8B8C49F8BBA3D6FFC7E4 /* Pods_TrainTrackerLIMainApp.framework */,
-				19F875020DC95F58793EAECC9F7DAC21 /* Presentr.framework */,
-				9F568E5308EB2EEDB7F17FFFA2400994 /* SimpleButton.framework */,
-				134942B1C13A7FA808CBFAD318183CFA /* SwiftyJSON.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		64F4ECC4F764F9C1FD48D04EA102F39D /* Presentr */ = {
 			isa = PBXGroup;
 			children = (
@@ -401,6 +386,23 @@
 			path = "../Target Support Files/SwiftyJSON";
 			sourceTree = "<group>";
 		};
+		70DC8FE68CB5C7B93E53C3C68FA9466C /* Pods-SharedCode */ = {
+			isa = PBXGroup;
+			children = (
+				7E597E022A1642CDA76E748898BBB9B2 /* Info.plist */,
+				5052F9E56C83C3158296FD70FEBDE4DC /* Pods-SharedCode.modulemap */,
+				4D6C603A39515A8F36989629C01E7B15 /* Pods-SharedCode-acknowledgements.markdown */,
+				18B2A45A38EDC0E34B7AA13C4BA5C48A /* Pods-SharedCode-acknowledgements.plist */,
+				9FCF1DDE3CE9731BE719379D7CFD9145 /* Pods-SharedCode-dummy.m */,
+				D00630D607310E38EF4BA54C71C76E59 /* Pods-SharedCode-resources.sh */,
+				969B1566D1B768C29398969C824EE3CE /* Pods-SharedCode-umbrella.h */,
+				D55DF941B2369CAB4663549B1A867528 /* Pods-SharedCode.debug.xcconfig */,
+				9719347051C55957683AF68622A023E8 /* Pods-SharedCode.release.xcconfig */,
+			);
+			name = "Pods-SharedCode";
+			path = "Target Support Files/Pods-SharedCode";
+			sourceTree = "<group>";
+		};
 		715BC8C6BED2F5F7229180ED7753F5A5 /* SimpleButton */ = {
 			isa = PBXGroup;
 			children = (
@@ -410,6 +412,34 @@
 				3C006418BC316DC9D5DE630C6EBBFDF0 /* Support Files */,
 			);
 			path = SimpleButton;
+			sourceTree = "<group>";
+		};
+		71A59E474AD9E4C9561AF8B24ABEDF1F /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				70DC8FE68CB5C7B93E53C3C68FA9466C /* Pods-SharedCode */,
+				74475111277C6677AF928E48E074346D /* Pods-TrainHopperMainApp */,
+				2AD76359AB354EDE0A577593B7EB2F9C /* Pods-TrainHopperWidget */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		74475111277C6677AF928E48E074346D /* Pods-TrainHopperMainApp */ = {
+			isa = PBXGroup;
+			children = (
+				B5F24B7743EAA2D12AB01980F843F23B /* Info.plist */,
+				54BF4D22B9FC7B0892F1DBA52C3C72D9 /* Pods-TrainHopperMainApp.modulemap */,
+				1A9E7F3FB7B9ABD75DD93C6C132E3B50 /* Pods-TrainHopperMainApp-acknowledgements.markdown */,
+				91DFFAD6C699CC2E5817356534865E5F /* Pods-TrainHopperMainApp-acknowledgements.plist */,
+				228F73AEA922E15C1B34C7A0C5920465 /* Pods-TrainHopperMainApp-dummy.m */,
+				91D72C554B094F30F8FC1B402F78896E /* Pods-TrainHopperMainApp-frameworks.sh */,
+				8A112CDB8485A341986413D2C08D9A0C /* Pods-TrainHopperMainApp-resources.sh */,
+				9C640E9C6C951539A330990DD52720DC /* Pods-TrainHopperMainApp-umbrella.h */,
+				28A238F06972A1E474678F0E757B3F33 /* Pods-TrainHopperMainApp.debug.xcconfig */,
+				1DE1C6C9BD6A44E6C746E5D79F1720E5 /* Pods-TrainHopperMainApp.release.xcconfig */,
+			);
+			name = "Pods-TrainHopperMainApp";
+			path = "Target Support Files/Pods-TrainHopperMainApp";
 			sourceTree = "<group>";
 		};
 		786E3C273AE5456279556D5D323BD933 /* Pods */ = {
@@ -429,8 +459,8 @@
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
 				786E3C273AE5456279556D5D323BD933 /* Pods */,
-				55E8AF525ACCAFB9BBE55DFFB7C154BB /* Products */,
-				C55049AB07D9FB5FCCEF3E59B1BFD850 /* Targets Support Files */,
+				F9C67DAC3A1ACFD029339BD34E7806D8 /* Products */,
+				71A59E474AD9E4C9561AF8B24ABEDF1F /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -490,66 +520,28 @@
 			path = MMWormhole;
 			sourceTree = "<group>";
 		};
-		C55049AB07D9FB5FCCEF3E59B1BFD850 /* Targets Support Files */ = {
+		F9C67DAC3A1ACFD029339BD34E7806D8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F5D1A6D1240B0A6B1676AB6B5DF0E6A4 /* Pods-SharedCode */,
-				C86E68D5209E94173356E2B79B497413 /* Pods-TrainTrackerLIExtension */,
-				18C9777EA6FB5F3A0E235A4E5A415F46 /* Pods-TrainTrackerLIMainApp */,
+				ECCAE62A3FD3223C37D424B6DEAE5532 /* MMWormhole.framework */,
+				1BA223382EFA8128DB2FE688C1B475CB /* Pods_SharedCode.framework */,
+				A26A36CA962BD3E29D414FC070B99759 /* Pods_TrainHopperMainApp.framework */,
+				B5B84D28F0A3999028A1B26AF7739143 /* Pods_TrainHopperWidget.framework */,
+				5F83B5A6F28AF744E398A1A004CE7425 /* Presentr.framework */,
+				A9BEA324BEE0A48519D4EEDC703C75E2 /* SimpleButton.framework */,
+				9B786218888CEB515C814D2E9550EC04 /* SwiftyJSON.framework */,
 			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		C86E68D5209E94173356E2B79B497413 /* Pods-TrainTrackerLIExtension */ = {
-			isa = PBXGroup;
-			children = (
-				0CC5662F56FDB6DDE653D3EFE4BC98A9 /* Info.plist */,
-				9AE29EE6892C50AC0AF731466DF1FEDC /* Pods-TrainTrackerLIExtension.modulemap */,
-				49A8C67B4A2EDDB632C35DBA8EFD5E32 /* Pods-TrainTrackerLIExtension-acknowledgements.markdown */,
-				3DE0060D1E66A7BEB0C5A0E1B5A76E92 /* Pods-TrainTrackerLIExtension-acknowledgements.plist */,
-				3B5BE76CA7F42CD7FF0018F2973761B1 /* Pods-TrainTrackerLIExtension-dummy.m */,
-				1CC5FFC77EDDBFFDF7BDF8649C9CBD58 /* Pods-TrainTrackerLIExtension-resources.sh */,
-				F68D39738549B9D39F3C291C36B6A5DD /* Pods-TrainTrackerLIExtension-umbrella.h */,
-				2CD06965D18F3D434806A0FB66A704C4 /* Pods-TrainTrackerLIExtension.debug.xcconfig */,
-				98A1F17B99D623BB4D88A65D2F35F7CD /* Pods-TrainTrackerLIExtension.release.xcconfig */,
-			);
-			name = "Pods-TrainTrackerLIExtension";
-			path = "Target Support Files/Pods-TrainTrackerLIExtension";
-			sourceTree = "<group>";
-		};
-		F5D1A6D1240B0A6B1676AB6B5DF0E6A4 /* Pods-SharedCode */ = {
-			isa = PBXGroup;
-			children = (
-				7F14D3194C17C322D9067599D375CAB4 /* Info.plist */,
-				42E8233282A49191640A68B3EA35A305 /* Pods-SharedCode.modulemap */,
-				E5D5D4CC6145CA3FE0517953FEB62517 /* Pods-SharedCode-acknowledgements.markdown */,
-				D4D18A8686A04E5DE9F2DFFA9C143E2A /* Pods-SharedCode-acknowledgements.plist */,
-				33EE9F779A6815B707CEA55E7FE60C96 /* Pods-SharedCode-dummy.m */,
-				89C9F2B36B3EA64353D67BD35B9FFA3D /* Pods-SharedCode-resources.sh */,
-				909F2430BAB78E652D08D108D4390379 /* Pods-SharedCode-umbrella.h */,
-				3AF0FCB8A87B29A3102F8F240A290A6D /* Pods-SharedCode.debug.xcconfig */,
-				01C4A7EB4CCE7EB626CBC37C2AF1FCF9 /* Pods-SharedCode.release.xcconfig */,
-			);
-			name = "Pods-SharedCode";
-			path = "Target Support Files/Pods-SharedCode";
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		0932DEFC5770D33C65B2F70C7E47533C /* Headers */ = {
+		18F59F1369BB7D3FEAA503B10C5B94EB /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB89EAB25B059534E4D8863EA73AA06D /* Pods-TrainTrackerLIExtension-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		33625D2B77925C3E0A5F3F1DB2867A78 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1B4ED9CAD24DEEA6FE3E08954C5FDC42 /* Pods-TrainTrackerLIMainApp-umbrella.h in Headers */,
+				3EC386CB73B4559F9E0206954917D49A /* Pods-TrainHopperWidget-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -561,11 +553,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6C7D7DE0116C1A16861742595B0F0D7D /* Headers */ = {
+		522291FD734F6EDF504A03E21C538286 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3EFB25C3B517C9CE831B5C9D78153578 /* SimpleButton-umbrella.h in Headers */,
+				1747CF7B647B0ACFF1CE30A7BDBD367B /* Presentr-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79403F78B34A00175B6B8748EB87C2F8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9B5CBE0B17BDF0BE1DF0013ED7DCE36 /* SimpleButton-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -585,11 +585,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C7919842685FD2F7E6376A27CCB96858 /* Headers */ = {
+		ACCB296B8E8B17D6B42179FDB9DE2A9A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21EC83EEEA2CFF32D39CE19F1F9D15BD /* Presentr-umbrella.h in Headers */,
+				164914949339F8711761813BD127D8DA /* Pods-TrainHopperMainApp-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -604,24 +604,39 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		7766B265DEDC1FA6952364F1881011BE /* Pods-TrainTrackerLIExtension */ = {
+		25DC7C766E111847578FE2E4E3CF5AA2 /* Presentr */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B7A57DE0FFEC6B5D6D9DC4283D23D478 /* Build configuration list for PBXNativeTarget "Pods-TrainTrackerLIExtension" */;
+			buildConfigurationList = E0F5A077A344D9274C64524D037BDFCB /* Build configuration list for PBXNativeTarget "Presentr" */;
 			buildPhases = (
-				3478D6A1E9EE20EE1A90B56C156738E2 /* Sources */,
-				0926C90B7F9DDC431242EC09773744F6 /* Frameworks */,
-				0932DEFC5770D33C65B2F70C7E47533C /* Headers */,
+				65AF3CA0D41F2699C457C51EF741C22D /* Sources */,
+				25DBAFD7E2495400F9A8B7A29005C7E4 /* Frameworks */,
+				1C8EDD506DA43525DB9861389061BB98 /* Resources */,
+				522291FD734F6EDF504A03E21C538286 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				A5E9A7888EF2B9B04FF27D5B64319FD9 /* PBXTargetDependency */,
-				108100F42B0C8C1EF1DBBEA9C587E0BB /* PBXTargetDependency */,
-				BC096FEB1B4113FFA15B71D6F3A49AF2 /* PBXTargetDependency */,
 			);
-			name = "Pods-TrainTrackerLIExtension";
-			productName = "Pods-TrainTrackerLIExtension";
-			productReference = 76BF4C95AB2AF2646334FD13448352EA /* Pods_TrainTrackerLIExtension.framework */;
+			name = Presentr;
+			productName = Presentr;
+			productReference = 5F83B5A6F28AF744E398A1A004CE7425 /* Presentr.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B3D9C70AEB5DC70389AE82B74E455FC3 /* SimpleButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2293E259782EA39979EB7DA2F8A3013 /* Build configuration list for PBXNativeTarget "SimpleButton" */;
+			buildPhases = (
+				97EBDB42BA68C9C94BDB7DE81A278D69 /* Sources */,
+				E941D276077F09BBD74C16880C1F033B /* Frameworks */,
+				79403F78B34A00175B6B8748EB87C2F8 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimpleButton;
+			productName = SimpleButton;
+			productReference = A9BEA324BEE0A48519D4EEDC703C75E2 /* SimpleButton.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		C320C9070D08D91766DD70B2E3928FDF /* SwiftyJSON */ = {
@@ -638,42 +653,7 @@
 			);
 			name = SwiftyJSON;
 			productName = SwiftyJSON;
-			productReference = 134942B1C13A7FA808CBFAD318183CFA /* SwiftyJSON.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		D4FDD27151731821150A04BDF69B285C /* Presentr */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DB9DF8543C02FF0EB231F604BD5AE866 /* Build configuration list for PBXNativeTarget "Presentr" */;
-			buildPhases = (
-				8EFBB6F57D8720F457E3F7557F4A6E11 /* Sources */,
-				7A4C6E2C2BAF906E590C25D066839A45 /* Frameworks */,
-				EAF124F2DB6F1C879F3C2C52D35C508B /* Resources */,
-				C7919842685FD2F7E6376A27CCB96858 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Presentr;
-			productName = Presentr;
-			productReference = 19F875020DC95F58793EAECC9F7DAC21 /* Presentr.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		D59BE930E11583486B5DFD3A9708C7A7 /* SimpleButton */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 38C371B7FE6A11A0623EAF92A156EF28 /* Build configuration list for PBXNativeTarget "SimpleButton" */;
-			buildPhases = (
-				DB78BDEAB33B6866CD17078E14516E09 /* Sources */,
-				36610D0E1A38189EE506794B98E73BE5 /* Frameworks */,
-				6C7D7DE0116C1A16861742595B0F0D7D /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = SimpleButton;
-			productName = SimpleButton;
-			productReference = 9F568E5308EB2EEDB7F17FFFA2400994 /* SimpleButton.framework */;
+			productReference = 9B786218888CEB515C814D2E9550EC04 /* SwiftyJSON.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		DA2550D7D94491C4B4EA8F3435FEEC4B /* MMWormhole */ = {
@@ -690,28 +670,7 @@
 			);
 			name = MMWormhole;
 			productName = MMWormhole;
-			productReference = E3670224545C7217CEA40C35252BE070 /* MMWormhole.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		E522AFA64470BCD2EC83D51A24EBD613 /* Pods-TrainTrackerLIMainApp */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9E7EFBED4153EFDF118D8DA6A219AE8D /* Build configuration list for PBXNativeTarget "Pods-TrainTrackerLIMainApp" */;
-			buildPhases = (
-				42EA174E6BEB8D46E1758E2485D66186 /* Sources */,
-				66DB4A44A1C116471C3C314473EC876A /* Frameworks */,
-				33625D2B77925C3E0A5F3F1DB2867A78 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				CBC2AD1FB48DB10247DC9BF824D19A3A /* PBXTargetDependency */,
-				F479AB88445FC10768E4E94F34D385DD /* PBXTargetDependency */,
-				747B85DACB178D51C81323EED01695AA /* PBXTargetDependency */,
-				C4BB49DF7BFF3B52D37F055F15E75094 /* PBXTargetDependency */,
-			);
-			name = "Pods-TrainTrackerLIMainApp";
-			productName = "Pods-TrainTrackerLIMainApp";
-			productReference = 90FE8B9E2A0B8B8C49F8BBA3D6FFC7E4 /* Pods_TrainTrackerLIMainApp.framework */;
+			productReference = ECCAE62A3FD3223C37D424B6DEAE5532 /* MMWormhole.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		E721F86FCE2BB65F98AD56F3B49191D1 /* Pods-SharedCode */ = {
@@ -729,7 +688,48 @@
 			);
 			name = "Pods-SharedCode";
 			productName = "Pods-SharedCode";
-			productReference = F0A335E04FC0016036D3082DA53F8182 /* Pods_SharedCode.framework */;
+			productReference = 1BA223382EFA8128DB2FE688C1B475CB /* Pods_SharedCode.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FA72C89B43AF53DBC8BB7320EFB24A82 /* Pods-TrainHopperMainApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 717A40E632F17A2B966DB4E0CF377EB9 /* Build configuration list for PBXNativeTarget "Pods-TrainHopperMainApp" */;
+			buildPhases = (
+				AD45337C97BBB493CA3DE03DCCCFBD5A /* Sources */,
+				0D3EF80DE1EC736BA53569F76232CA6F /* Frameworks */,
+				ACCB296B8E8B17D6B42179FDB9DE2A9A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B8B2DDBB9A05C6FF9F952C5D9959F050 /* PBXTargetDependency */,
+				3CB41EB0A855DB1BA1E465BEE298E283 /* PBXTargetDependency */,
+				ED084202BD978D1A2AC55D596D3CE3B1 /* PBXTargetDependency */,
+				860DC45D7BEF2C6EDC74F696714BD7E4 /* PBXTargetDependency */,
+			);
+			name = "Pods-TrainHopperMainApp";
+			productName = "Pods-TrainHopperMainApp";
+			productReference = A26A36CA962BD3E29D414FC070B99759 /* Pods_TrainHopperMainApp.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FA8BF771976F3541F49A4A37CE276533 /* Pods-TrainHopperWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 265A4BE09217C47089A64940D0D48EEC /* Build configuration list for PBXNativeTarget "Pods-TrainHopperWidget" */;
+			buildPhases = (
+				F753B13754240D97C1498613310F53F9 /* Sources */,
+				B0C190A9ABB585BC539B2207E2B2835D /* Frameworks */,
+				18F59F1369BB7D3FEAA503B10C5B94EB /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				059A3E8E89A3399EF875B656296960F6 /* PBXTargetDependency */,
+				332CD39DC76BD6B5E6E4C3E4734FAB0F /* PBXTargetDependency */,
+				8109D8FE7E9C59FF378AE5FAF5D795BF /* PBXTargetDependency */,
+			);
+			name = "Pods-TrainHopperWidget";
+			productName = "Pods-TrainHopperWidget";
+			productReference = B5B84D28F0A3999028A1B26AF7739143 /* Pods_TrainHopperWidget.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -749,29 +749,29 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 55E8AF525ACCAFB9BBE55DFFB7C154BB /* Products */;
+			productRefGroup = F9C67DAC3A1ACFD029339BD34E7806D8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				DA2550D7D94491C4B4EA8F3435FEEC4B /* MMWormhole */,
 				E721F86FCE2BB65F98AD56F3B49191D1 /* Pods-SharedCode */,
-				7766B265DEDC1FA6952364F1881011BE /* Pods-TrainTrackerLIExtension */,
-				E522AFA64470BCD2EC83D51A24EBD613 /* Pods-TrainTrackerLIMainApp */,
-				D4FDD27151731821150A04BDF69B285C /* Presentr */,
-				D59BE930E11583486B5DFD3A9708C7A7 /* SimpleButton */,
+				FA72C89B43AF53DBC8BB7320EFB24A82 /* Pods-TrainHopperMainApp */,
+				FA8BF771976F3541F49A4A37CE276533 /* Pods-TrainHopperWidget */,
+				25DC7C766E111847578FE2E4E3CF5AA2 /* Presentr */,
+				B3D9C70AEB5DC70389AE82B74E455FC3 /* SimpleButton */,
 				C320C9070D08D91766DD70B2E3928FDF /* SwiftyJSON */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		EAF124F2DB6F1C879F3C2C52D35C508B /* Resources */ = {
+		1C8EDD506DA43525DB9861389061BB98 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A93E581C490795609EEC23011803CE42 /* Alert.xib in Resources */,
-				E393936B1F0FC44EB0DC1BD8A96C6104 /* Montserrat-Regular.ttf in Resources */,
-				3DD53F28D412641A6B2DA432CC4E0264 /* SourceSansPro-Regular.ttf in Resources */,
+				23EF25B8C489E64BBBE4B7F90F3D28BF /* Alert.xib in Resources */,
+				5C5ADA076C1134339253772BE9F3C31D /* Montserrat-Regular.ttf in Resources */,
+				D6072EBD13895C7C21B58DDFA9F9A0E5 /* SourceSansPro-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -787,19 +787,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3478D6A1E9EE20EE1A90B56C156738E2 /* Sources */ = {
+		65AF3CA0D41F2699C457C51EF741C22D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDAB9011E2B8E1F58BC11C1B6C3B3829 /* Pods-TrainTrackerLIExtension-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		42EA174E6BEB8D46E1758E2485D66186 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				488A0806123D7F6D35E65486BD18D956 /* Pods-TrainTrackerLIMainApp-dummy.m in Sources */,
+				E51CA77138D1D4631FA78B849FD4DCAA /* AlertViewController.swift in Sources */,
+				D1DC09F7BFC17E6F98D0C1EEFBDBD2B5 /* CoverHorizontalAnimation.swift in Sources */,
+				95F870C5DC68F1AFB828FBF466FD32F6 /* CoverVerticalFromTopAnimation.swift in Sources */,
+				F0A4EDD8D3F2E2E94895CF44B97744FC /* ModalCenterPosition.swift in Sources */,
+				CC816A838D6BB7E50101EF2FF5B24F3F /* ModalSize.swift in Sources */,
+				DA43CE93815F59992EC200143BE3777F /* PresentationType.swift in Sources */,
+				1471880D8B4DE9F12A770858506F8C5D /* Presentr+Equatable.swift in Sources */,
+				3EC425CFEB3C187873589BDE385E120F /* Presentr-dummy.m in Sources */,
+				654A79CEA76C0FAAF0804D84778E6DE7 /* Presentr.swift in Sources */,
+				1BE106402125F685963BBA1E707DA398 /* PresentrAnimation.swift in Sources */,
+				7F5C4DAB1C1DD232AB3D509807D104E6 /* PresentrController.swift in Sources */,
+				F3CACE28A6853DF69257F5901DBE5242 /* TransitionType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -808,25 +811,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				928281D1F20C4180E4BBC145149A3948 /* Pods-SharedCode-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8EFBB6F57D8720F457E3F7557F4A6E11 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DE6F2F6F62A830AD9FBE97CDC5997842 /* AlertViewController.swift in Sources */,
-				A6C7F8D036C5C62DBA536EAB77F44794 /* CoverHorizontalAnimation.swift in Sources */,
-				197A52ADC887DEA69F9CD32F66DC8AAB /* CoverVerticalFromTopAnimation.swift in Sources */,
-				F15E2901BB0FA43CABC3AB700C9869D3 /* ModalCenterPosition.swift in Sources */,
-				3B56BA6C160AE313801CE57A99859B84 /* ModalSize.swift in Sources */,
-				48DB220535908A7C9FA483EA2E5AF483 /* PresentationType.swift in Sources */,
-				56DF7D8FC96FCAB2356050D5DADF5CB6 /* Presentr+Equatable.swift in Sources */,
-				E166EFE1A08F4455B15860A3155E2B73 /* Presentr-dummy.m in Sources */,
-				E5D50AA36D46DA8F84959D2B2579A396 /* Presentr.swift in Sources */,
-				627A3ABA2D5D4BD94844C0AB529E57D5 /* PresentrAnimation.swift in Sources */,
-				4A4280DAA38818A454D5DC77CD85000F /* PresentrController.swift in Sources */,
-				4B6089078CEF896180C1DE853201DD97 /* TransitionType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -845,25 +829,53 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DB78BDEAB33B6866CD17078E14516E09 /* Sources */ = {
+		97EBDB42BA68C9C94BDB7DE81A278D69 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CCA3E5F402CB210B69551F68FC310517 /* SimpleButton-dummy.m in Sources */,
-				F86EEAFBBB840463A8F36CB6B456FB27 /* SimpleButton.swift in Sources */,
-				B8F1E3985FB742ED0ACEDF5EC9BBF89D /* SimpleButtonControlState.swift in Sources */,
-				17948E9CBF90CB7B7DA2EEBE36DF79BA /* SimpleButtonStateChangeValue.swift in Sources */,
+				AE685B24A74D94634C8AFC3B2F60F27A /* SimpleButton-dummy.m in Sources */,
+				55EFBCD897325FCF0079C8D6D2AFAD22 /* SimpleButton.swift in Sources */,
+				1B3393A3F78BEA1082C5D05B6F238A60 /* SimpleButtonControlState.swift in Sources */,
+				15BA837213FA0FA9C946E75325DB71D7 /* SimpleButtonStateChangeValue.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD45337C97BBB493CA3DE03DCCCFBD5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C754A3F56647E2CEE8521784F905A4E /* Pods-TrainHopperMainApp-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F753B13754240D97C1498613310F53F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3ACECC32B7218538CE6FDEBD1FB3FA6 /* Pods-TrainHopperWidget-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		108100F42B0C8C1EF1DBBEA9C587E0BB /* PBXTargetDependency */ = {
+		059A3E8E89A3399EF875B656296960F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MMWormhole;
+			target = DA2550D7D94491C4B4EA8F3435FEEC4B /* MMWormhole */;
+			targetProxy = 95928EFDB95BC07CBDA0C80228BEB72E /* PBXContainerItemProxy */;
+		};
+		332CD39DC76BD6B5E6E4C3E4734FAB0F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SimpleButton;
-			target = D59BE930E11583486B5DFD3A9708C7A7 /* SimpleButton */;
-			targetProxy = ACAE6741C814837B2032BEC3EA2BBBDB /* PBXContainerItemProxy */;
+			target = B3D9C70AEB5DC70389AE82B74E455FC3 /* SimpleButton */;
+			targetProxy = F8EFE9CDB16C9E519574DAC1E1A152A0 /* PBXContainerItemProxy */;
+		};
+		3CB41EB0A855DB1BA1E465BEE298E283 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Presentr;
+			target = 25DC7C766E111847578FE2E4E3CF5AA2 /* Presentr */;
+			targetProxy = 5693885AD23D3669D00AF835BB863B94 /* PBXContainerItemProxy */;
 		};
 		3F0FBB645D488D419B0CAAF76D525035 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -871,45 +883,104 @@
 			target = C320C9070D08D91766DD70B2E3928FDF /* SwiftyJSON */;
 			targetProxy = 9622D50FFE9BA65F8EF41A9D32B08F3E /* PBXContainerItemProxy */;
 		};
-		747B85DACB178D51C81323EED01695AA /* PBXTargetDependency */ = {
+		8109D8FE7E9C59FF378AE5FAF5D795BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyJSON;
+			target = C320C9070D08D91766DD70B2E3928FDF /* SwiftyJSON */;
+			targetProxy = 9DE32E6C3D753234999D808257AB1454 /* PBXContainerItemProxy */;
+		};
+		860DC45D7BEF2C6EDC74F696714BD7E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyJSON;
+			target = C320C9070D08D91766DD70B2E3928FDF /* SwiftyJSON */;
+			targetProxy = B01A49E405F2E85435F15BF4281A8A40 /* PBXContainerItemProxy */;
+		};
+		B8B2DDBB9A05C6FF9F952C5D9959F050 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MMWormhole;
+			target = DA2550D7D94491C4B4EA8F3435FEEC4B /* MMWormhole */;
+			targetProxy = 2B96AD74CA0522D0DFB50595461318C5 /* PBXContainerItemProxy */;
+		};
+		ED084202BD978D1A2AC55D596D3CE3B1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SimpleButton;
-			target = D59BE930E11583486B5DFD3A9708C7A7 /* SimpleButton */;
-			targetProxy = 6F5DA1A5AB5040C4FA492A863AFEEED2 /* PBXContainerItemProxy */;
-		};
-		A5E9A7888EF2B9B04FF27D5B64319FD9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = MMWormhole;
-			target = DA2550D7D94491C4B4EA8F3435FEEC4B /* MMWormhole */;
-			targetProxy = 2D4B8C198777E17538806351EEB9C985 /* PBXContainerItemProxy */;
-		};
-		BC096FEB1B4113FFA15B71D6F3A49AF2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SwiftyJSON;
-			target = C320C9070D08D91766DD70B2E3928FDF /* SwiftyJSON */;
-			targetProxy = 6D96C8CD8FEE6B3CC2A38BF50E32A95E /* PBXContainerItemProxy */;
-		};
-		C4BB49DF7BFF3B52D37F055F15E75094 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SwiftyJSON;
-			target = C320C9070D08D91766DD70B2E3928FDF /* SwiftyJSON */;
-			targetProxy = 2D810B1352DD2094518463127A9E7C23 /* PBXContainerItemProxy */;
-		};
-		CBC2AD1FB48DB10247DC9BF824D19A3A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = MMWormhole;
-			target = DA2550D7D94491C4B4EA8F3435FEEC4B /* MMWormhole */;
-			targetProxy = 8009CC7ADC2D638C5F79D2B36D8D644D /* PBXContainerItemProxy */;
-		};
-		F479AB88445FC10768E4E94F34D385DD /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Presentr;
-			target = D4FDD27151731821150A04BDF69B285C /* Presentr */;
-			targetProxy = CD1B9747270AD9A23E27F4222C5D6BDA /* PBXContainerItemProxy */;
+			target = B3D9C70AEB5DC70389AE82B74E455FC3 /* SimpleButton */;
+			targetProxy = C2CF11B8414E5615BD3ACEC2ADD4EC6F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		00D6AB4CF517C8EF6576C0A9A46ABFD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6596540822F9F2D8B6532C16C9E5BBA5 /* Pods-TrainHopperWidget.debug.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TrainHopperWidget/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TrainHopperWidget/Pods-TrainHopperWidget.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TrainHopperWidget;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		105FE8F9B4BE990B17AD930D81C38FC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B57288AF21FEFDF46231B82EEDB9595B /* SimpleButton.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SimpleButton/SimpleButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SimpleButton/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SimpleButton/SimpleButton.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SimpleButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		12914D756594D15C6F2CA12FE5F89F1B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -954,9 +1025,9 @@
 			};
 			name = Debug;
 		};
-		12E9D79DD903344CDBD2B8951AFA5D32 /* Release */ = {
+		12D00CF949765C251AAA5F305C22BB05 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 93BE27B477873128ABDA12213566EB75 /* Pods-TrainTrackerLIMainApp.release.xcconfig */;
+			baseConfigurationReference = 9903A435DD2A90D9F1B677EB4AE865B1 /* Presentr.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -969,20 +1040,17 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-TrainTrackerLIMainApp/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/Presentr/Presentr-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Presentr/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-TrainTrackerLIMainApp/Pods-TrainTrackerLIMainApp.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Presentr/Presentr.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_TrainTrackerLIMainApp;
+				PRODUCT_NAME = Presentr;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -991,7 +1059,7 @@
 		};
 		2CFB1E5430211DD33B6310F70CBCA407 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 01C4A7EB4CCE7EB626CBC37C2AF1FCF9 /* Pods-SharedCode.release.xcconfig */;
+			baseConfigurationReference = 9719347051C55957683AF68622A023E8 /* Pods-SharedCode.release.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1027,7 +1095,7 @@
 		};
 		4DF8B37AD556DC1E6EE0B06C0667CD01 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3AF0FCB8A87B29A3102F8F240A290A6D /* Pods-SharedCode.debug.xcconfig */;
+			baseConfigurationReference = D55DF941B2369CAB4663549B1A867528 /* Pods-SharedCode.debug.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1056,110 +1124,6 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		4E03B40DC07B07A75BA02DC1B61B0EFC /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B57288AF21FEFDF46231B82EEDB9595B /* SimpleButton.xcconfig */;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SimpleButton/SimpleButton-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SimpleButton/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SimpleButton/SimpleButton.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = SimpleButton;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		66980AF9A57412DE79C0C3606F6E8BDF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2CD06965D18F3D434806A0FB66A704C4 /* Pods-TrainTrackerLIExtension.debug.xcconfig */;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-TrainTrackerLIExtension/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-TrainTrackerLIExtension/Pods-TrainTrackerLIExtension.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_TrainTrackerLIExtension;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		672D68A80C5D22FF9ACFD78B6C239AFD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B57288AF21FEFDF46231B82EEDB9595B /* SimpleButton.xcconfig */;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SimpleButton/SimpleButton-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SimpleButton/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SimpleButton/SimpleButton.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = SimpleButton;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1199,9 +1163,9 @@
 			};
 			name = Debug;
 		};
-		7293482A53525327FAC2F0415A46B647 /* Debug */ = {
+		7FB7D9576F6EBBE620841B9AB01A1CC5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BFE795C52C604C190487E77A53B5B022 /* Pods-TrainTrackerLIMainApp.debug.xcconfig */;
+			baseConfigurationReference = 28A238F06972A1E474678F0E757B3F33 /* Pods-TrainHopperMainApp.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1214,18 +1178,18 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-TrainTrackerLIMainApp/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-TrainHopperMainApp/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-TrainTrackerLIMainApp/Pods-TrainTrackerLIMainApp.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-TrainHopperMainApp/Pods-TrainHopperMainApp.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_TrainTrackerLIMainApp;
+				PRODUCT_NAME = Pods_TrainHopperMainApp;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1234,6 +1198,41 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		824CD536E2A2648381A36D10D81C0C4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DE1C6C9BD6A44E6C746E5D79F1720E5 /* Pods-TrainHopperMainApp.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TrainHopperMainApp/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TrainHopperMainApp/Pods-TrainHopperMainApp.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TrainHopperMainApp;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		87F7D4C44780860A167469FD5D28B98C /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1269,42 +1268,6 @@
 			};
 			name = Debug;
 		};
-		88DB941085EBE95519930A576601A221 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 98A1F17B99D623BB4D88A65D2F35F7CD /* Pods-TrainTrackerLIExtension.release.xcconfig */;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-TrainTrackerLIExtension/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-TrainTrackerLIExtension/Pods-TrainTrackerLIExtension.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_TrainTrackerLIExtension;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		936E032712BF4B760C530D9DDA47BC1E /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A484AF40A05D82F6BCEACF1C467E2BF7 /* MMWormhole.xcconfig */;
@@ -1338,7 +1301,7 @@
 			};
 			name = Release;
 		};
-		9B25439DC9E297A220168FFCE85A5E71 /* Debug */ = {
+		A28566249F58EAB93D2DC04F55051476 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9903A435DD2A90D9F1B677EB4AE865B1 /* Presentr.xcconfig */;
 			buildSettings = {
@@ -1370,6 +1333,42 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		A4CCE36C57C83EF624CEA43E26A82ED5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F6F6616F3F0EEE900B6C23B03858348 /* Pods-TrainHopperWidget.release.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TrainHopperWidget/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TrainHopperWidget/Pods-TrainHopperWidget.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TrainHopperWidget;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		E72E7977875C2D251FC62736BBDDC389 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1411,6 +1410,39 @@
 			};
 			name = Release;
 		};
+		EDC6D8CB34CA3AA2D18963253B7C5E3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B57288AF21FEFDF46231B82EEDB9595B /* SimpleButton.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SimpleButton/SimpleButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SimpleButton/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SimpleButton/SimpleButton.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SimpleButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		F132121F98352A16EF0BF559579E7812 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4A1FB6E7A365C84B1B1CDFD599359A3C /* SwiftyJSON.xcconfig */;
@@ -1444,55 +1476,23 @@
 			};
 			name = Release;
 		};
-		F95AA54FE491908847E641AD3B44A3AE /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9903A435DD2A90D9F1B677EB4AE865B1 /* Presentr.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Presentr/Presentr-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Presentr/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Presentr/Presentr.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = Presentr;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		265A4BE09217C47089A64940D0D48EEC /* Build configuration list for PBXNativeTarget "Pods-TrainHopperWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00D6AB4CF517C8EF6576C0A9A46ABFD1 /* Debug */,
+				A4CCE36C57C83EF624CEA43E26A82ED5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				12914D756594D15C6F2CA12FE5F89F1B /* Debug */,
 				E72E7977875C2D251FC62736BBDDC389 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		38C371B7FE6A11A0623EAF92A156EF28 /* Build configuration list for PBXNativeTarget "SimpleButton" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				672D68A80C5D22FF9ACFD78B6C239AFD /* Debug */,
-				4E03B40DC07B07A75BA02DC1B61B0EFC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1515,20 +1515,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9E7EFBED4153EFDF118D8DA6A219AE8D /* Build configuration list for PBXNativeTarget "Pods-TrainTrackerLIMainApp" */ = {
+		717A40E632F17A2B966DB4E0CF377EB9 /* Build configuration list for PBXNativeTarget "Pods-TrainHopperMainApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7293482A53525327FAC2F0415A46B647 /* Debug */,
-				12E9D79DD903344CDBD2B8951AFA5D32 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B7A57DE0FFEC6B5D6D9DC4283D23D478 /* Build configuration list for PBXNativeTarget "Pods-TrainTrackerLIExtension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				66980AF9A57412DE79C0C3606F6E8BDF /* Debug */,
-				88DB941085EBE95519930A576601A221 /* Release */,
+				7FB7D9576F6EBBE620841B9AB01A1CC5 /* Debug */,
+				824CD536E2A2648381A36D10D81C0C4F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1542,11 +1533,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DB9DF8543C02FF0EB231F604BD5AE866 /* Build configuration list for PBXNativeTarget "Presentr" */ = {
+		E0F5A077A344D9274C64524D037BDFCB /* Build configuration list for PBXNativeTarget "Presentr" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9B25439DC9E297A220168FFCE85A5E71 /* Debug */,
-				F95AA54FE491908847E641AD3B44A3AE /* Release */,
+				A28566249F58EAB93D2DC04F55051476 /* Debug */,
+				12D00CF949765C251AAA5F305C22BB05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2293E259782EA39979EB7DA2F8A3013 /* Build configuration list for PBXNativeTarget "SimpleButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				105FE8F9B4BE990B17AD930D81C38FC4 /* Debug */,
+				EDC6D8CB34CA3AA2D18963253B7C5E3B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

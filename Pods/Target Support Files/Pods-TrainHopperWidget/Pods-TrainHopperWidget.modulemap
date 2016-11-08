@@ -1,0 +1,6 @@
+framework module Pods_TrainHopperWidget {
+  umbrella header "Pods-TrainHopperWidget-umbrella.h"
+
+  export *
+  module * { export * }
+}

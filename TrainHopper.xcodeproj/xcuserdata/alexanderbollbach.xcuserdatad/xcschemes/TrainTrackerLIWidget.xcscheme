@@ -16,9 +16,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "29B4A5421DB182FC0057607C"
-               BuildableName = "TrainTrackerLIWidget.appex"
-               BlueprintName = "TrainTrackerLIWidget"
-               ReferencedContainer = "container:TrainTrackerLI.xcodeproj">
+               BuildableName = "TrainHopperWidget.appex"
+               BlueprintName = "TrainHopperWidget"
+               ReferencedContainer = "container:TrainHopper.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -30,9 +30,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "290406B81D331E0200A76B49"
-               BuildableName = "TrainTrackerLI.app"
-               BlueprintName = "TrainTrackerLIMainApp"
-               ReferencedContainer = "container:TrainTrackerLI.xcodeproj">
+               BuildableName = "TrainHopper.app"
+               BlueprintName = "TrainHopperMainApp"
+               ReferencedContainer = "container:TrainHopper.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -48,9 +48,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "29B4A5421DB182FC0057607C"
-            BuildableName = "TrainTrackerLIWidget.appex"
-            BlueprintName = "TrainTrackerLIWidget"
-            ReferencedContainer = "container:TrainTrackerLI.xcodeproj">
+            BuildableName = "TrainHopperWidget.appex"
+            BlueprintName = "TrainHopperWidget"
+            ReferencedContainer = "container:TrainHopper.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "290406B81D331E0200A76B49"
-            BuildableName = "TrainTrackerLI.app"
-            BlueprintName = "TrainTrackerLIMainApp"
-            ReferencedContainer = "container:TrainTrackerLI.xcodeproj">
+            BuildableName = "TrainHopper.app"
+            BlueprintName = "TrainHopperMainApp"
+            ReferencedContainer = "container:TrainHopper.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -92,9 +92,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "290406B81D331E0200A76B49"
-            BuildableName = "TrainTrackerLI.app"
-            BlueprintName = "TrainTrackerLIMainApp"
-            ReferencedContainer = "container:TrainTrackerLI.xcodeproj">
+            BuildableName = "TrainHopper.app"
+            BlueprintName = "TrainHopperMainApp"
+            ReferencedContainer = "container:TrainHopper.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

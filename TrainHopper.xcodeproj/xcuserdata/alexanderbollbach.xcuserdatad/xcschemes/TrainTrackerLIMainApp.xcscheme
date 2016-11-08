@@ -16,9 +16,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "290406B81D331E0200A76B49"
-               BuildableName = "TrainTrackerLI.app"
-               BlueprintName = "TrainTrackerLIMainApp"
-               ReferencedContainer = "container:TrainTrackerLI.xcodeproj">
+               BuildableName = "TrainHopper.app"
+               BlueprintName = "TrainHopperMainApp"
+               ReferencedContainer = "container:TrainHopper.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -36,7 +36,7 @@
             BlueprintIdentifier = "290406D11D331E0B00A76B49"
             BuildableName = "TrainTrackerLIExtension.appex"
             BlueprintName = "TrainTrackerLIExtension"
-            ReferencedContainer = "container:TrainTrackerLI.xcodeproj">
+            ReferencedContainer = "container:TrainHopper.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -57,9 +57,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "290406B81D331E0200A76B49"
-            BuildableName = "TrainTrackerLI.app"
-            BlueprintName = "TrainTrackerLIMainApp"
-            ReferencedContainer = "container:TrainTrackerLI.xcodeproj">
+            BuildableName = "TrainHopper.app"
+            BlueprintName = "TrainHopperMainApp"
+            ReferencedContainer = "container:TrainHopper.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -77,9 +77,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "290406B81D331E0200A76B49"
-            BuildableName = "TrainTrackerLI.app"
-            BlueprintName = "TrainTrackerLIMainApp"
-            ReferencedContainer = "container:TrainTrackerLI.xcodeproj">
+            BuildableName = "TrainHopper.app"
+            BlueprintName = "TrainHopperMainApp"
+            ReferencedContainer = "container:TrainHopper.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

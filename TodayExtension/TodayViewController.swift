@@ -130,4 +130,24 @@ extension TodayViewController : UITableViewDelegate {
    }
    
    
+   
+   
+   
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+      
+      let headerView = StationHeaderView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 100))
+
+      headerView.departingStationLabel.text = dao.getFromStation().name
+      headerView.arrivingStationLabel.text = dao.getToStation().name
+      
+      
+      return headerView
+   }
+   
+   
+   func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+      return 40
+   }
+   
+   
 }

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StationHeaderView" customModule="TrainTrackerLIWidget" customModuleProvider="target">
+            <connections>
+                <outlet property="arrivingStationLabel" destination="QkL-Cl-ST9" id="ADw-HP-ZeX"/>
+                <outlet property="departingStationLabel" destination="w4h-14-h32" id="nEO-f6-4EY"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="blah blah" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w4h-14-h32" userLabel="departingStation">
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="blah blah" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QkL-Cl-ST9" userLabel="arrivingStation">
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstItem="QkL-Cl-ST9" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="87g-2V-UTq"/>
+                <constraint firstItem="QkL-Cl-ST9" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.3" id="G6U-5X-HGA"/>
+                <constraint firstItem="QkL-Cl-ST9" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Vn0-gB-FSD"/>
+                <constraint firstItem="w4h-14-h32" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Z7x-az-VK5"/>
+                <constraint firstItem="QkL-Cl-ST9" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailing" constant="-25" id="lzt-mj-Khy"/>
+                <constraint firstItem="w4h-14-h32" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="25" id="pEI-G4-NvI"/>
+                <constraint firstItem="w4h-14-h32" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="ty7-QK-u35"/>
+                <constraint firstItem="w4h-14-h32" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.3" id="yZk-JZ-QR2"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

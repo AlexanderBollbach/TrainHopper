@@ -8,55 +8,46 @@
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>2</integer>
 		</dict>
 		<key>Pods-SharedCode.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>3</integer>
 		</dict>
-		<key>Pods-TrainTrackerLIExtension.xcscheme</key>
+		<key>Pods-TrainHopperMainApp.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>4</integer>
 		</dict>
-		<key>Pods-TrainTrackerLIMainApp.xcscheme</key>
+		<key>Pods-TrainHopperWidget.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>5</integer>
 		</dict>
 		<key>Presentr.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>6</integer>
 		</dict>
 		<key>SimpleButton.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>7</integer>
 		</dict>
 		<key>SwiftyJSON.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>8</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>7766B265DEDC1FA6952364F1881011BE</key>
+		<key>25DC7C766E111847578FE2E4E3CF5AA2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B3D9C70AEB5DC70389AE82B74E455FC3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -66,27 +57,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D4FDD27151731821150A04BDF69B285C</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>D59BE930E11583486B5DFD3A9708C7A7</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>DA2550D7D94491C4B4EA8F3435FEEC4B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E522AFA64470BCD2EC83D51A24EBD613</key>
+		<key>E721F86FCE2BB65F98AD56F3B49191D1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E721F86FCE2BB65F98AD56F3B49191D1</key>
+		<key>FA72C89B43AF53DBC8BB7320EFB24A82</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FA8BF771976F3541F49A4A37CE276533</key>
 		<dict>
 			<key>primary</key>
 			<true/>

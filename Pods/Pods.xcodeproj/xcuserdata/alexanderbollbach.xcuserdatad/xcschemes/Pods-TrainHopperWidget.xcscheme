@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7766B265DEDC1FA6952364F1881011BE"
-               BuildableName = "Pods_TrainTrackerLIExtension.framework"
-               BlueprintName = "Pods-TrainTrackerLIExtension"
+               BlueprintIdentifier = "FA8BF771976F3541F49A4A37CE276533"
+               BuildableName = "Pods_TrainHopperWidget.framework"
+               BlueprintName = "Pods-TrainHopperWidget"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7766B265DEDC1FA6952364F1881011BE"
-            BuildableName = "Pods_TrainTrackerLIExtension.framework"
-            BlueprintName = "Pods-TrainTrackerLIExtension"
+            BlueprintIdentifier = "FA8BF771976F3541F49A4A37CE276533"
+            BuildableName = "Pods_TrainHopperWidget.framework"
+            BlueprintName = "Pods-TrainHopperWidget"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
