@@ -50,7 +50,6 @@
 		6EC0CF2BBBDC4CE830A15195 /* Pods_TrainHopperWidget.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CB6BED56414D17A4F7AAD32 /* Pods_TrainHopperWidget.framework */; };
 		776F76FC984B997940701363 /* Pods_SharedCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7461BF0F889001538349AB2B /* Pods_SharedCode.framework */; };
 		7A5441E261A0DA4B27FA13B1 /* Pods_TrainHopperMainApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A47735140AD4ADD19541D37D /* Pods_TrainHopperMainApp.framework */; };
-		C8226F45FD8177382227E234 /* Pods_TrainTrackerLIMainApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E34BEFB792DE463A8284CFE6 /* Pods_TrainTrackerLIMainApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -160,7 +159,6 @@
 			files = (
 				290F50E21D9B95EE006D31D7 /* MapKit.framework in Frameworks */,
 				29C8B8001DA1EDCE00034CEB /* SharedCode.framework in Frameworks */,
-				C8226F45FD8177382227E234 /* Pods_TrainTrackerLIMainApp.framework in Frameworks */,
 				7A5441E261A0DA4B27FA13B1 /* Pods_TrainHopperMainApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

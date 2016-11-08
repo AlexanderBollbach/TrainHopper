@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="8xy-mc-Peo">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="8xy-mc-Peo">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -11,7 +11,7 @@
         <!--pick stations-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="pick stations" id="BYZ-38-t0r" customClass="MainController" customModule="TrainTrackerLI" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="pick stations" id="BYZ-38-t0r" customClass="MainController" customModule="TrainHopper" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -20,7 +20,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="URY-Zp-aIo" customClass="ABSimpleButton" customModule="TrainTrackerLI">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="URY-Zp-aIo" customClass="ABSimpleButton" customModule="TrainHopper">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="Wqv-Uh-MqG"/>
                                 </constraints>
@@ -46,7 +46,7 @@
                                     <action selector="fromStationTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1fW-He-8Bo"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZeZ-iT-3C4" customClass="ABSimpleButton" customModule="TrainTrackerLI" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZeZ-iT-3C4" customClass="ABSimpleButton" customModule="TrainHopper" customModuleProvider="target">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="6wz-yp-nZM"/>
                                 </constraints>
@@ -128,7 +128,7 @@
         <!--Pick Station View Controller-->
         <scene sceneID="uLq-iU-9Qz">
             <objects>
-                <viewController storyboardIdentifier="PickStation" id="ea6-pN-Ydl" customClass="PickStationViewController" customModule="TrainTrackerLI" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PickStation" id="ea6-pN-Ydl" customClass="PickStationViewController" customModule="TrainHopper" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Gay-4s-DcB"/>
                         <viewControllerLayoutGuide type="bottom" id="gIn-xb-zeY"/>
@@ -151,11 +151,11 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" red="0.68067175759999998" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="stationCell" id="nMT-jB-Fb3" customClass="StationCell" customModule="TrainTrackerLI" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="57"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="stationCell" id="nMT-jB-Fb3" customClass="StationCell" customModule="TrainHopper" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="1000" height="57"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nMT-jB-Fb3" id="qem-4E-EDd">
-                                            <frame key="frameInset" width="375" height="57"/>
+                                            <frame key="frameInset" width="1000" height="57"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eTX-5Q-8Ju">
@@ -211,7 +211,7 @@
         <!--CountDown-->
         <scene sceneID="aAf-zW-r0V">
             <objects>
-                <viewController storyboardIdentifier="CountDownVC" title="CountDown" id="OGZ-CM-xgQ" customClass="CountDownVC" customModule="TrainTrackerLI" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CountDownVC" title="CountDown" id="OGZ-CM-xgQ" customClass="CountDownVC" customModule="TrainHopper" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="VlT-99-LpU"/>
                         <viewControllerLayoutGuide type="bottom" id="PxH-Po-CRC"/>
@@ -250,7 +250,7 @@
                 <navigationController title="nav" automaticallyAdjustsScrollViewInsets="NO" id="8xy-mc-Peo" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="Gov-bJ-c5v"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="VJE-ct-N9s">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="VJE-ct-N9s">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -271,7 +271,7 @@
         <!--MapVC-->
         <scene sceneID="zPN-KF-QWx">
             <objects>
-                <viewController storyboardIdentifier="mapVC" title="MapVC" id="cYg-9d-6vf" customClass="MapVC" customModule="TrainTrackerLI" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="mapVC" title="MapVC" id="cYg-9d-6vf" customClass="MapVC" customModule="TrainHopper" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hn5-II-5OE"/>
                         <viewControllerLayoutGuide type="bottom" id="k4c-rO-wai"/>
